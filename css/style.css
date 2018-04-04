@@ -88,3 +88,8 @@ footer {
 .personalDP img {
     max-width: 120px;
 }
+@media (min-width: 767px) {
+    .personalDP {
+        display: none;
+    }
+}
