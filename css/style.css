@@ -1,0 +1,90 @@
+.bgColorPrimary {
+    background: #2E3E4D;
+}
+.colorPrimary {
+	color: #34495E;
+}
+.colorWhite {
+    color: #fff;
+}
+.posRel {
+	position: relative;
+}
+.padRightLeft20 {
+	padding: 0 20px;
+}
+.padTopBottom50 {
+	padding: 60px 0 40px;
+}
+.padTop20 {
+	padding-top: 20px;
+}
+.personalDP {
+	position: absolute;
+	background: #fff;
+	font-size: 120px;
+	border-radius: 50%;
+	left: 80px;
+    overflow: hidden;
+    height: 120px;
+}
+.personalDetails .fa {
+	width: 30px;
+	text-align: center;
+}
+.title {
+    position: absolute;
+    padding: 0 20px;
+    color: #fff;
+    top: 0;
+    font-size: 25px;
+    line-height: 27px;
+    left: 0;
+    right: 0;
+    width: 280px;
+    text-align: center;
+    margin: auto;
+}
+.title:before {
+    border-top: 100px solid #2E3E4D;
+    border-right: 70px solid transparent;
+    border-left: 70px solid transparent;
+    position: absolute;
+    content: ' ';
+    width: 400px;
+    top: -60px;
+    z-index: -1;
+    left: -60px;
+}
+.experience {
+	background: #e6e6e6;
+}
+.experience .title {
+	color: #666;
+    z-index: 0;
+}
+.experience .title:before {
+	border-top: 100px solid #fff;
+    z-index: -1;
+}
+.amazingProjects .title {
+    color: #333;
+    z-index: 0;
+}
+.amazingProjects  .title:before {
+    border-top: 100px solid #e6e6e6;
+    z-index: -1;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    background: #666;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 10px;
+}
+.personalDP img {
+    max-width: 120px;
+}
