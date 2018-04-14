@@ -7,6 +7,12 @@
 .colorWhite {
     color: #fff;
 }
+ul {
+    padding-left: 20px;
+}
+address ul {
+    padding-bottom: 20px;
+}
 .posRel {
 	position: relative;
 }

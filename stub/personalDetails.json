@@ -1,0 +1,148 @@
+{
+	"title": "Resume: Yogesh Krishna Jadhav",
+	"includeCss" : [{
+			"url": "css/bootstrap.min.css"
+		},{
+			"url": "css/style.css"
+		},{
+			"url": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		}
+	],
+	"personalDetails": {
+		"name" : "Yogesh Jadhav",
+		"position" : "Associate Consultant",
+		"experience" : "5+ yrs of Experinence",
+		"mail" : "yogesh131jadhav@gmail.com",
+		"phone" : "+91-8149706306",
+		"education" : "Computer Science Engineer 2012 Passout",
+		"location" : "Karve Nagar, Pune"
+	},
+	"articles" : [
+		{
+			"class" : "aboutUs posRel padTopBottom50",
+			"title" : "About Me",
+			"content" : [
+				{ "point" : "Techno Savvy and always hunts for new technology" },
+				{ "point" : "Growth of company leads to growth of employee" },
+				{ "point" : "Worked on different departments and prove myself over there" },
+				{ "point" : "Working for Banking Domain" },
+				{ "point" : "Love challenges" },
+				{ "point" : "Artistic" }
+			],
+			"content1" : [
+				{ "yr" : "2006 - 08", "std" : "12th Science", "university" : "M. R.Collage, Shivaji University"},
+				{ "yr" : "2008 - 12", "std" : "Comp. Science", "university" : "T.K.I.E.T collage, Shivaji University"}
+			]
+		},
+		{
+			"class" : "experience posRel padTopBottom50",
+			"title" : "Experience",
+			"content" : [
+				{
+					"title" : "Oct 2012 - Feb 2014 (17 months) : Extreme Webtech Pvt. Ltd. : Freasher",
+					"points" : [
+						{ "point" : "Started as a fresher." },
+		           		{ "point" : "Small scale company (max - 8 developers, 7 working on .net projects and I was working on PHP, CSS, HTML, Support Marketing, so on...)" },
+		           		{ "point" : "Worked lots and got of experience in each department like Marketing, Business Analyst, Developer, Hiring people, Dealing with third party providers for negotitation" },
+		                { "point" : "Improve logics and design sense." }
+					]
+				},
+				{
+					"title" : "March 2014 - Nov 2014 (9 months) : Xoptimo Pvt. Ltd. : Software Developer",
+					"points" : [
+						{ "point" : "2nd Company" },
+		           		{ "point" : "Worked on PHP CMS like Drupal, Magento, got opportunity to learn jQuery, core css in detail" },
+		           		{ "point" : "I worked on some startup projects." },
+		                { "point" : "Interesting part is client is not aware about his requirement, we provide him solutions which he required." }
+					]
+				},
+				{
+					"title" : "Dec 2014 - June 2016 (19 months) : Hartley Lab Pvt. Ltd. : Sr. Software Developer",
+					"points" : [
+						{ "point" : "3rd Company and I was 1st Employee" },
+		           		{ "point" : "Got opportunity to explore scope" },
+		           		{ "point" : "Utilize Agile Development flow with Jira as a project management tool, github as repository - worked on Bootstrap, core css, jQuery" },
+		                { "point" : "Having knowledge about Adobe Photoshop" },
+			            { "point" : "For one project worked on angular too." },
+						{ "point" : "Too much challenging experience and only worked on critical projects." },
+						{ "point" : "Arrange session on new technologies for team growth." }
+					]
+				},
+				{
+					"title" : "June 2016 - Till Date (23 months) : Capgemini India Pvt. Ltd. : Associate Consultant",
+					"points" : [
+						{ "point" : "Working on Banking Domain" },
+		           		{ "point" : "Got opportunity to utilize my experience in Software Development, repository management and project management" },
+		           		{ "point" : "Developing project in Angular JS version 1.6" }
+					]
+				}
+			]
+		},
+		{
+			"class" : "amazingProjects posRel padTopBottom50",
+			"title" : "Amazing Projects",
+			"content" : [
+				{
+					"title" : "Helping Hands",
+					"points" : [
+						{ "point" : "PHP project" },
+		           		{ "point" : "Major task is handling reports, too much queries, SMS gateway integration, critical mathematical logics" },
+		           		{ "point" : "We take care of handling client to handover project with KT to user" }
+					]
+				},
+				{
+					"title" : "Salon project",
+					"points" : [
+						{ "point" : "e-commerse Project" },
+		           		{ "point" : "complete core PHP development" },
+		           		{ "point" : "Handles forms and CURD operations" },
+		                { "point" : "integrated third Rparty plugins like payment Gateway and SMS gateway" }
+					]
+				},
+				{
+					"title" : "Relian Elevator",
+					"points" : [
+						{ "point" : "Informative website" },
+		           		{ "point" : "Core UI and wordpress integrated site" },
+		           		{ "point" : "Challenge is unique and creative design with wordpress CMS integration" },
+		                { "point" : "Responsive" }
+					]
+				},
+				{
+					"title" : "Travel Site and E-Commerse site in Drupal and Magento respective",
+					"points" : [
+						{ "point" : "Development in drupal CMS and Magento CMS respectively" },
+		           		{ "point" : "Challenge was learning new technologies in small period of time" }
+					]
+				},
+				{
+					"title" : "Baseball portal",
+					"points" : [
+						{ "point" : "Developed in bootstrap responsive framework" },
+		           		{ "point" : "Challenge here was make site responsive module wise. As site was 3 yrs old. We need to update design module independent other development and confirm it from client." },
+		           		{ "point" : "Responsive module does not affect non responsive website and modules." },
+		           		{ "point" : "Client was too much caring about coding standard and development." }
+					]
+				},
+				{
+					"title" : "Dubai Hotel ERP for B2B",
+					"points" : [
+						{ "point" : "Backend was in ROR." },
+		           		{ "point" : "My work was support UI in bootstrap." },
+		           		{ "point" : "Assigned to project when project was in critical position." },
+		           		{ "point" : "Challenge was improve development and coding standards without affecting developed project. Worked with SCSS version of CSS." },
+		           		{ "point" : "Developed site in modularized way so that only with CSS class most of issues got resolved." }
+					]
+				},
+				{
+					"title" : "Banking Domain",
+					"points" : [
+						{ "point" : "Working on banking domain in angular js version 1.6" },
+		           		{ "point" : "Challenge is development in ES6 and component level granularity." }
+					]
+				}
+			]
+		}
+	],
+	"foooter": "Yogesh Krishna Jadhav"
+}
