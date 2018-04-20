@@ -91,12 +91,13 @@
 					]
 				},
 				{
-					"title" : "Salon project",
+					"title" : "My Salon project",
 					"points" : [
-						{ "point" : "e-commerse Project" },
-		           		{ "point" : "complete core PHP development" },
+						{ "point" : "e-Commerse Project" },
+		           		{ "point" : "Complete core PHP development" },
 		           		{ "point" : "Handles forms and CURD operations" },
-		                { "point" : "integrated third Rparty plugins like payment Gateway and SMS gateway" }
+		                { "point" : "Integrated third Rparty plugins like payment Gateway and SMS gateway" },
+		                { "point" : "Create new small framework in core PHP for CURD operation PHP project. Made CURD operation easy and faster development achieved" }
 					]
 				},
 				{
@@ -131,7 +132,7 @@
 		           		{ "point" : "My work was support UI in bootstrap." },
 		           		{ "point" : "Assigned to project when project was in critical position." },
 		           		{ "point" : "Challenge was improve development and coding standards without affecting developed project. Worked with SCSS version of CSS." },
-		           		{ "point" : "Developed site in modularized way so that only with CSS class most of issues got resolved." }
+		           		{ "point" : "Developed site in modularized way such that only CSS class resolve most of issues" }
 					]
 				},
 				{
