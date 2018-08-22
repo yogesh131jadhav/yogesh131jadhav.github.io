@@ -1,0 +1,219 @@
+# pack-refs with: peeled fully-peeled 
+144f03b114f791f66a7db68ae8bc644c8c30a227 refs/remotes/origin/0.9.x
+a0c885c3812cc608602869e153f678359ec16614 refs/remotes/origin/aisensiy-master
+3d1ba53c6067b19f398c6aba80cd3add49cde1f3 refs/remotes/origin/gaearon-patch-1
+dfbc71ce2ae07547a8544cce14a1a23fac99e071 refs/remotes/origin/master
+3e165448a7fd84c1df037045672a9cb5c5baf9f8 refs/remotes/origin/next
+e621a1a264c60af08b20df6c9f43e7946be4cd18 refs/remotes/origin/revert-3832-remove-cssm-docs
+c19624023c7d617d014f658fbf2f751af9e65ea4 refs/remotes/origin/workaround-jest-issue
+7ac8777ed1cebec6084a03e84272cfd21128b356 refs/tags/babel-preset-react-app@0.2.1
+a5f760bab9b1876df13ac4345a4b42655fec46fa refs/tags/babel-preset-react-app@1.0.0
+5ee027d638a582b2f1d47c35b4bc1d4c9f134737 refs/tags/babel-preset-react-app@2.0.0
+67e6cf5a529a7a7a020e50d11dceca789901bae7 refs/tags/babel-preset-react-app@2.1.0
+9e2624f332eea9032051dceb95eebfad5c158561 refs/tags/babel-preset-react-app@2.1.1
+9b237625d553e4f01f31704a42440d50b48314ed refs/tags/babel-preset-react-app@2.2.0
+bf9eca25f519c73f69cff20ac49ce9500e578fe0 refs/tags/babel-preset-react-app@3.0.0
+7796c94d79519f1632b89739040c154b5b66176a refs/tags/babel-preset-react-app@3.0.1
+a009d1fb7f1de080cb36074a30ac10a7b47a14e6 refs/tags/babel-preset-react-app@3.0.3
+^b2c0b3f74b47f0f85e3f17f7d3249b7e536cda05
+3a8c699630cf00ff17b7c9770887172c5183b3b1 refs/tags/babel-preset-react-app@3.1.0
+^5e7b9675aa66de7ec73addfd15ec81b2e5eb7300
+c7418355df383bcae6510ba830f6c4c92ed38376 refs/tags/babel-preset-react-app@3.1.1
+^e73a783ef1f0deec3401f1d0c853a30b6c88bf71
+7ac8777ed1cebec6084a03e84272cfd21128b356 refs/tags/create-react-app@0.5.0
+a5f760bab9b1876df13ac4345a4b42655fec46fa refs/tags/create-react-app@0.6.0
+5ee027d638a582b2f1d47c35b4bc1d4c9f134737 refs/tags/create-react-app@0.7.0
+b57d8711b0df0cebe6230685238442901ff44c65 refs/tags/create-react-app@1.0.0
+e7d71bd574b893ebace06b8111d20fcd466d5d69 refs/tags/create-react-app@1.0.1
+96f4be9b75e5909ac222a960137a5a2506fbf2e4 refs/tags/create-react-app@1.0.2
+a5b838940eeed1d214b89601268ccf6323e3f968 refs/tags/create-react-app@1.0.3
+67e6cf5a529a7a7a020e50d11dceca789901bae7 refs/tags/create-react-app@1.0.4
+9e2624f332eea9032051dceb95eebfad5c158561 refs/tags/create-react-app@1.1.0
+aaf1e819014c501b2e786738be5b6f9ea8a214fb refs/tags/create-react-app@1.2.0
+422847bd7d9a7ec0a77a5eb01a0c9e65ff158f5a refs/tags/create-react-app@1.3.0
+bf9eca25f519c73f69cff20ac49ce9500e578fe0 refs/tags/create-react-app@1.3.1
+7796c94d79519f1632b89739040c154b5b66176a refs/tags/create-react-app@1.3.2
+314a1ed538941727c81f378f5030ccb06962a9d1 refs/tags/create-react-app@1.3.3
+^ad35fd1d13f6497bd4b4244896e3c9e88ccef419
+e72e8c0a03c23c1b6ef5935b1c8e63261d416d89 refs/tags/create-react-app@1.4.1
+^b2c0b3f74b47f0f85e3f17f7d3249b7e536cda05
+09668606d01aa5155247621fe7265923ba41d7e3 refs/tags/create-react-app@1.4.3
+^dc95d18c9ccbf69ccc2e85b11de638f6462d7181
+5d459b95ca908669ee5ad35ff354dc3ff8203a8b refs/tags/create-react-app@1.5.0
+^e73a783ef1f0deec3401f1d0c853a30b6c88bf71
+dd5579293f9789d201eac413e4b4abff0b7b03d2 refs/tags/create-react-app@1.5.2
+^0b1d6365768ae3bd267b042b74bab249673f1a9f
+7ac8777ed1cebec6084a03e84272cfd21128b356 refs/tags/eslint-config-react-app@0.2.1
+a5f760bab9b1876df13ac4345a4b42655fec46fa refs/tags/eslint-config-react-app@0.3.0
+5ee027d638a582b2f1d47c35b4bc1d4c9f134737 refs/tags/eslint-config-react-app@0.4.0
+67e6cf5a529a7a7a020e50d11dceca789901bae7 refs/tags/eslint-config-react-app@0.5.1
+9e2624f332eea9032051dceb95eebfad5c158561 refs/tags/eslint-config-react-app@0.5.2
+422847bd7d9a7ec0a77a5eb01a0c9e65ff158f5a refs/tags/eslint-config-react-app@0.6.1
+9b237625d553e4f01f31704a42440d50b48314ed refs/tags/eslint-config-react-app@0.6.2
+bf9eca25f519c73f69cff20ac49ce9500e578fe0 refs/tags/eslint-config-react-app@1.0.0
+cd5c6d5717edf4b002d9601c787651d857583ffb refs/tags/eslint-config-react-app@1.0.1
+d649b8a0de6e94822f60a38637f41ef9efa90b31 refs/tags/eslint-config-react-app@1.0.2
+ad00bd74784366ba491a64cff6588dbc4f399972 refs/tags/eslint-config-react-app@1.0.3
+7a1873c0a788b4d7e7719e7469d4d67d6fc8a87c refs/tags/eslint-config-react-app@1.0.4
+7796c94d79519f1632b89739040c154b5b66176a refs/tags/eslint-config-react-app@1.0.5
+bf88d1feee10ba93beb1533261223580cfc0d8f6 refs/tags/eslint-config-react-app@2.0.1
+^b2c0b3f74b47f0f85e3f17f7d3249b7e536cda05
+cba01f422e52ef6d775bd5e994e457b5651ac8b1 refs/tags/eslint-config-react-app@2.1.0
+^e73a783ef1f0deec3401f1d0c853a30b6c88bf71
+7ac8777ed1cebec6084a03e84272cfd21128b356 refs/tags/react-dev-utils@0.1.0
+dc6074abbc7ada0bb19b8828dddadfc25b4bd06b refs/tags/react-dev-utils@0.2.1
+a5f760bab9b1876df13ac4345a4b42655fec46fa refs/tags/react-dev-utils@0.3.0
+5ee027d638a582b2f1d47c35b4bc1d4c9f134737 refs/tags/react-dev-utils@0.4.0
+96f4be9b75e5909ac222a960137a5a2506fbf2e4 refs/tags/react-dev-utils@0.4.2
+67e6cf5a529a7a7a020e50d11dceca789901bae7 refs/tags/react-dev-utils@0.5.0
+9e2624f332eea9032051dceb95eebfad5c158561 refs/tags/react-dev-utils@0.5.1
+422847bd7d9a7ec0a77a5eb01a0c9e65ff158f5a refs/tags/react-dev-utils@0.5.2
+bf9eca25f519c73f69cff20ac49ce9500e578fe0 refs/tags/react-dev-utils@1.0.0
+cd5c6d5717edf4b002d9601c787651d857583ffb refs/tags/react-dev-utils@1.0.1
+ae0cb23dc927e1d47c026b8d801cb2a2328822e9 refs/tags/react-dev-utils@1.0.2
+d649b8a0de6e94822f60a38637f41ef9efa90b31 refs/tags/react-dev-utils@1.0.3
+ad00bd74784366ba491a64cff6588dbc4f399972 refs/tags/react-dev-utils@2.0.0
+7a1873c0a788b4d7e7719e7469d4d67d6fc8a87c refs/tags/react-dev-utils@2.0.1
+58d8c5c05cc90d9286beb6b4200f5ac1918a8910 refs/tags/react-dev-utils@3.0.0
+7796c94d79519f1632b89739040c154b5b66176a refs/tags/react-dev-utils@3.0.1
+676341de377684c355d2078ebfe1df1331920d75 refs/tags/react-dev-utils@3.0.2
+^ad35fd1d13f6497bd4b4244896e3c9e88ccef419
+17d2d95458ccd8911b2d4cab1a89d22a5ad4d1e5 refs/tags/react-dev-utils@4.0.0
+^a51be9582a53700aae1eb7e81dc66d33e80dad88
+8e6dae576d8ba345e0236df4c318c136b7cc0f16 refs/tags/react-dev-utils@4.0.1
+^c22dc7092627aa0281f690fe5f3ea1ec725c2f42
+970324bce75de966ebdb59cad199020ce3e9e25d refs/tags/react-dev-utils@4.1.0
+^b2c0b3f74b47f0f85e3f17f7d3249b7e536cda05
+8cd0d75a8b20b307d572f5c48f38b084f86724a8 refs/tags/react-dev-utils@4.2.0
+^5e7b9675aa66de7ec73addfd15ec81b2e5eb7300
+e8eef1e798ecb21ce905f607aef1f72184d83148 refs/tags/react-dev-utils@4.2.1
+^dc95d18c9ccbf69ccc2e85b11de638f6462d7181
+29a7012f644664e256cab3ca3935b48a8198f9b3 refs/tags/react-dev-utils@5.0.0
+^e73a783ef1f0deec3401f1d0c853a30b6c88bf71
+5febc74ca0f3874420754dc2435ffcc89be95b13 refs/tags/react-dev-utils@5.0.1
+^dfbc71ce2ae07547a8544cce14a1a23fac99e071
+bf9eca25f519c73f69cff20ac49ce9500e578fe0 refs/tags/react-error-overlay@1.0.0
+cd5c6d5717edf4b002d9601c787651d857583ffb refs/tags/react-error-overlay@1.0.1
+ae0cb23dc927e1d47c026b8d801cb2a2328822e9 refs/tags/react-error-overlay@1.0.2
+d649b8a0de6e94822f60a38637f41ef9efa90b31 refs/tags/react-error-overlay@1.0.3
+7e25c9a6046fe057d3b4cc2eae20a0661d0273f3 refs/tags/react-error-overlay@1.0.4
+ad00bd74784366ba491a64cff6588dbc4f399972 refs/tags/react-error-overlay@1.0.5
+7a1873c0a788b4d7e7719e7469d4d67d6fc8a87c refs/tags/react-error-overlay@1.0.6
+58d8c5c05cc90d9286beb6b4200f5ac1918a8910 refs/tags/react-error-overlay@1.0.7
+7796c94d79519f1632b89739040c154b5b66176a refs/tags/react-error-overlay@1.0.8
+08395ee94175acda18b9c9571c20aafd1e038353 refs/tags/react-error-overlay@1.0.9
+^ad35fd1d13f6497bd4b4244896e3c9e88ccef419
+2c17ab392bd00d6fbf2c219ec840272d53e368f2 refs/tags/react-error-overlay@2.0.0
+^a51be9582a53700aae1eb7e81dc66d33e80dad88
+9343970b69d57d66d7ec67bf0f4e38fefc51d3aa refs/tags/react-error-overlay@2.0.1
+^c22dc7092627aa0281f690fe5f3ea1ec725c2f42
+36c0de5c98bf1ebe1c56d4d32d3296e54861d9f6 refs/tags/react-error-overlay@2.0.2
+^b2c0b3f74b47f0f85e3f17f7d3249b7e536cda05
+53154cd3c57d2915f0046b60678fe73c352b6a7e refs/tags/react-error-overlay@3.0.0
+^5e7b9675aa66de7ec73addfd15ec81b2e5eb7300
+7236470bd262809c8133c68846d3c198f80c85e2 refs/tags/react-error-overlay@4.0.0
+^e73a783ef1f0deec3401f1d0c853a30b6c88bf71
+7ac8777ed1cebec6084a03e84272cfd21128b356 refs/tags/react-scripts@0.5.0
+dc6074abbc7ada0bb19b8828dddadfc25b4bd06b refs/tags/react-scripts@0.6.1
+a5f760bab9b1876df13ac4345a4b42655fec46fa refs/tags/react-scripts@0.7.0
+5ee027d638a582b2f1d47c35b4bc1d4c9f134737 refs/tags/react-scripts@0.8.0
+b844e4e878603edb8ed11cbb81775a1548e2d754 refs/tags/react-scripts@0.8.1
+49414d6ba01bcdeef190df66c5962ed9ff12be51 refs/tags/react-scripts@0.8.2
+e7d71bd574b893ebace06b8111d20fcd466d5d69 refs/tags/react-scripts@0.8.3
+96f4be9b75e5909ac222a960137a5a2506fbf2e4 refs/tags/react-scripts@0.8.4
+a5b838940eeed1d214b89601268ccf6323e3f968 refs/tags/react-scripts@0.8.5
+67e6cf5a529a7a7a020e50d11dceca789901bae7 refs/tags/react-scripts@0.9.0
+9e2624f332eea9032051dceb95eebfad5c158561 refs/tags/react-scripts@0.9.1
+aaf1e819014c501b2e786738be5b6f9ea8a214fb refs/tags/react-scripts@0.9.3
+422847bd7d9a7ec0a77a5eb01a0c9e65ff158f5a refs/tags/react-scripts@0.9.4
+9b237625d553e4f01f31704a42440d50b48314ed refs/tags/react-scripts@0.9.5
+bf9eca25f519c73f69cff20ac49ce9500e578fe0 refs/tags/react-scripts@1.0.0
+cd5c6d5717edf4b002d9601c787651d857583ffb refs/tags/react-scripts@1.0.1
+3db16b0ec2476d8a3f931d989085cd78c243aefc refs/tags/react-scripts@1.0.10
+^ad35fd1d13f6497bd4b4244896e3c9e88ccef419
+2a69ffcc993cbf1d0d8248ecfb2771620c07cf51 refs/tags/react-scripts@1.0.12
+^a51be9582a53700aae1eb7e81dc66d33e80dad88
+b7caa5ca2073a0c1e6e6bf7bcdd603f8bb54321a refs/tags/react-scripts@1.0.13
+^c22dc7092627aa0281f690fe5f3ea1ec725c2f42
+e6f1902ed031fc369558ec5a85d696f263c9f5ad refs/tags/react-scripts@1.0.14
+^b2c0b3f74b47f0f85e3f17f7d3249b7e536cda05
+dea9a197c5497767df342755eec09e8d3f0871fa refs/tags/react-scripts@1.0.15
+^5e7b9675aa66de7ec73addfd15ec81b2e5eb7300
+897bca63d6e5410a01341742364c53f8c5a61722 refs/tags/react-scripts@1.0.16
+^dc95d18c9ccbf69ccc2e85b11de638f6462d7181
+f1a0a438e34d8da13b59d064ed5e9f2d8e097b62 refs/tags/react-scripts@1.0.17
+^4b55193f0ad479f26b0f5e153bb4b152a1ee03e7
+ae0cb23dc927e1d47c026b8d801cb2a2328822e9 refs/tags/react-scripts@1.0.2
+d649b8a0de6e94822f60a38637f41ef9efa90b31 refs/tags/react-scripts@1.0.3
+7e25c9a6046fe057d3b4cc2eae20a0661d0273f3 refs/tags/react-scripts@1.0.4
+ad00bd74784366ba491a64cff6588dbc4f399972 refs/tags/react-scripts@1.0.5
+7a1873c0a788b4d7e7719e7469d4d67d6fc8a87c refs/tags/react-scripts@1.0.6
+58d8c5c05cc90d9286beb6b4200f5ac1918a8910 refs/tags/react-scripts@1.0.7
+7796c94d79519f1632b89739040c154b5b66176a refs/tags/react-scripts@1.0.8
+a06f2cda269a23a7deb7b936845382155887b11b refs/tags/react-scripts@1.0.9
+^adf334f88690596b5ffd3bb62e25cec7797e3b34
+5895e9ae2023c7a09ddea447129c9d24d2d6e560 refs/tags/react-scripts@1.1.0
+^e73a783ef1f0deec3401f1d0c853a30b6c88bf71
+0312e5844f37105e27897fdf97ff085dc374c11c refs/tags/react-scripts@1.1.1
+^0b1d6365768ae3bd267b042b74bab249673f1a9f
+652911f2243025ab32f6ca7f375b3c144588eedb refs/tags/react-scripts@1.1.2
+^609aeea67b18fb1a8eb399a1384ea61ca35175af
+9a8da5ebebb92244f0530e6793ea625ef8933c6c refs/tags/react-scripts@1.1.3
+^408db51973fab34025336f9647105aa7e51c70ab
+9f51b4678a905b96a887deb9badba386192e4ddf refs/tags/react-scripts@1.1.4
+^dfbc71ce2ae07547a8544cce14a1a23fac99e071
+11a33de544523fee00cd81d542554d942e87cc46 refs/tags/timer-react-scripts@0.7.1
+61178727aca4cc8e09cbe6c124350e8364214ab5 refs/tags/timer-react-scripts@0.8.2
+9c31d4f916e69aa8e6ef4d74bab734e637bd1645 refs/tags/v0.1.0
+a5e424fa20236b589996dc211515cb2dab84dae7 refs/tags/v0.2.0
+af31719d6388206ee38d0800773a75be07fef558 refs/tags/v0.2.1
+997b432833881474da3ef3a55447d51404523a10 refs/tags/v0.2.2
+279a71a8ee317a124c7708c03c55d2b7021a1021 refs/tags/v0.2.3
+706dc94da33faaab3b77eeb93b5bada52d3bd8f0 refs/tags/v0.3.0
+b484e3eb65b8e83b0c34bbaf59a0799b07357fcf refs/tags/v0.3.1
+106267cde3159d6ca76bd7c48858111f9af0cae5 refs/tags/v0.4.0
+4185a9d311beeb562b90e02a0c7338f628340a64 refs/tags/v0.4.1
+7d2304090ff544fd6a7baa8e355158369aa62130 refs/tags/v0.4.2
+36afd8baa76c151b6a476eaf8c4d0f1bf71b0a8c refs/tags/v0.4.3
+7ac8777ed1cebec6084a03e84272cfd21128b356 refs/tags/v0.5.0
+12c95f313a0e0e539cf9b1d14bbbd3222a62db1c refs/tags/v0.5.1
+059536291e9f1deddceba55d91606593840c4843 refs/tags/v0.6.0
+dc6074abbc7ada0bb19b8828dddadfc25b4bd06b refs/tags/v0.6.1
+a5f760bab9b1876df13ac4345a4b42655fec46fa refs/tags/v0.7.0
+0c1d49a1365fc97de556d21aba190fc6c4c877b1 refs/tags/v0.7.0-public-url
+5ee027d638a582b2f1d47c35b4bc1d4c9f134737 refs/tags/v0.8.0
+b844e4e878603edb8ed11cbb81775a1548e2d754 refs/tags/v0.8.1
+d44c0040bfaf6c4b995acf5b0178eb5c1dd8badc refs/tags/v0.8.1-babel-fixes+public-url
+2d7d28cc50f6ed3185349a40991ee8ee2635dfd2 refs/tags/v0.8.1-public-url
+49414d6ba01bcdeef190df66c5962ed9ff12be51 refs/tags/v0.8.2
+e7d71bd574b893ebace06b8111d20fcd466d5d69 refs/tags/v0.8.3
+96f4be9b75e5909ac222a960137a5a2506fbf2e4 refs/tags/v0.8.4
+a5b838940eeed1d214b89601268ccf6323e3f968 refs/tags/v0.8.5
+84be4dd0bdf6155c075f9e9bee9f075d8982d0cd refs/tags/v0.9.0
+0ad2c725447c680d25721b53b491394d644b7bff refs/tags/v0.9.1
+fbae44aec78e8175f1caaef1f77f28d2a8afe695 refs/tags/v0.9.2
+aaf1e819014c501b2e786738be5b6f9ea8a214fb refs/tags/v0.9.3
+422847bd7d9a7ec0a77a5eb01a0c9e65ff158f5a refs/tags/v0.9.4
+67d04032a3e4d8d4d44c395e7fe291e0d9a381c8 refs/tags/v0.9.5
+bf9eca25f519c73f69cff20ac49ce9500e578fe0 refs/tags/v1.0.0
+cd5c6d5717edf4b002d9601c787651d857583ffb refs/tags/v1.0.1
+ad35fd1d13f6497bd4b4244896e3c9e88ccef419 refs/tags/v1.0.10
+bfaee410c502a95076a6bd89721c76ca08e15f7b refs/tags/v1.0.11
+a51be9582a53700aae1eb7e81dc66d33e80dad88 refs/tags/v1.0.12
+c22dc7092627aa0281f690fe5f3ea1ec725c2f42 refs/tags/v1.0.13
+59e74fcde5bbac2f3b9b20cf375a882b5ac6e5a4 refs/tags/v1.0.15
+dc95d18c9ccbf69ccc2e85b11de638f6462d7181 refs/tags/v1.0.16
+4b55193f0ad479f26b0f5e153bb4b152a1ee03e7 refs/tags/v1.0.17
+ae0cb23dc927e1d47c026b8d801cb2a2328822e9 refs/tags/v1.0.2
+d649b8a0de6e94822f60a38637f41ef9efa90b31 refs/tags/v1.0.3
+7e25c9a6046fe057d3b4cc2eae20a0661d0273f3 refs/tags/v1.0.4
+2558c3e32fbf9292a95671501abe0da4de4e893e refs/tags/v1.0.5
+7a1873c0a788b4d7e7719e7469d4d67d6fc8a87c refs/tags/v1.0.6
+58d8c5c05cc90d9286beb6b4200f5ac1918a8910 refs/tags/v1.0.7
+7796c94d79519f1632b89739040c154b5b66176a refs/tags/v1.0.8
+adf334f88690596b5ffd3bb62e25cec7797e3b34 refs/tags/v1.0.9
+d9799641268dfadffb625af68ce0a78895147728 refs/tags/v1.1.0
+0b1d6365768ae3bd267b042b74bab249673f1a9f refs/tags/v1.1.1
+609aeea67b18fb1a8eb399a1384ea61ca35175af refs/tags/v1.1.2
+408db51973fab34025336f9647105aa7e51c70ab refs/tags/v1.1.3
+dfbc71ce2ae07547a8544cce14a1a23fac99e071 refs/tags/v1.1.4
