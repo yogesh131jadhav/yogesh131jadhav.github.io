@@ -3,3 +3,31 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+/*Resume*/
+.bgColorPrimary {
+    background: #2E3E4D;
+}
+.colorPrimary {
+	color: #34495E;
+}
+.colorWhite {
+    color: #fff;
+}
+ul {
+    padding-left: 20px;
+}
+address ul {
+    padding-bottom: 20px;
+}
+.posRel {
+	position: relative;
+}
+.padRightLeft20 {
+	padding: 0 20px;
+}
+.padTopBottom50 {
+	padding: 60px 0 40px;
+}
+.padTop20 {
+	padding-top: 20px;
+}

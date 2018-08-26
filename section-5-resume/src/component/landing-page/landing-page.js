@@ -1,16 +1,26 @@
 import React, { Component } from 'react';
 import './landing-page.css';
 import Headers from '../headers/headers';
+import Sections from '../sections/sections';
 
 class landingPage extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      "personalDetails":""
+    };
+    this.count = 0;
   }
   render(props) {
+    if(this.props.serviceData.personalDetails && this.count == 0) {
+      this.setState({personalDetails : this.props.serviceData.personalDetails});
+      this.setState({articles : this.props.serviceData.articles});
+      this.count++;
+    }
     return (
       <div className="landingPage">
-        <Headers personalDetails={this.props.serviceData.personalDetails}/>
+        <Headers personalDetails={this.state.personalDetails}/>
+        <Sections articles={this.state.articles}/>
       </div>
     );
   }

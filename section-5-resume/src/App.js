@@ -3,8 +3,8 @@ import './App.css';
 import LandingPage from './component/landing-page/landing-page';
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       "landingPage" : ""
     };
