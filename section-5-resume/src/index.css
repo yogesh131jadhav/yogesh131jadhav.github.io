@@ -16,6 +16,9 @@ body {
 ul {
     padding-left: 20px;
 }
+address {
+  text-align: left;
+}
 address ul {
     padding-bottom: 20px;
 }
@@ -24,6 +27,7 @@ address ul {
 }
 .padRightLeft20 {
 	padding: 0 20px;
+  text-align: left;
 }
 .padTopBottom50 {
 	padding: 60px 0 40px;

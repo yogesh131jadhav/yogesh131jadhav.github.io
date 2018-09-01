@@ -11,6 +11,7 @@ class Sections extends Component {
     this.aboutUsList = this.aboutUsList.bind(this);
     this.formAboutUs = this.formAboutUs.bind(this);
     this.educationList = this.educationList.bind(this);
+    this.formArticlePage = this.formArticlePage.bind(this);
     this.article = "";
   }
 
@@ -18,8 +19,6 @@ class Sections extends Component {
     if(classes === '') {
       let classes = "ng-binding ng-scope text-align-left";
     }
-    console.log("content");
-    console.log(content);
     return content.map(function(item,index) {
       return (
         <li className={classes} key={index}>{item.point}</li>
@@ -39,52 +38,70 @@ class Sections extends Component {
     });
   }
 
+  formArticlePage(articleData) {
+    var articleDataContent = '';
+    if(articleData.title === 'About Me') {
+      return articleDataContent = <div className="row ng-scope">
+        <div className="col-md-6">
+          <ul>
+            {this.aboutUsList(articleData.content)}
+          </ul>
+        </div>
+        <div className="col-md-6">
+          <p className="text-center"><b>Education</b></p>
+          {this.educationList(articleData.content1)}
+        </div>
+      </div>;
+    }
+    if(articleData.title !== 'About Me') {
+      let className = "col-md-6";
+      if(articleData.title === 'Experience') {
+        className = "col-md-12";
+      }
+      return articleDataContent = articleData.content.map(function(item,index) {
+        return (
+          <div className={className}>
+            <address>
+              <strong>{item.title}</strong>
+              <ul>
+                {this.aboutUsList(item.points)}
+              </ul>
+            </address>
+          </div>
+        );
+      }, this);
+    }
+  }
+
   formAboutUs() {
+    var articleDataContent = '';
+    var totalArticleData = '';
     if(this.props.articles && this.count == 0) {
       this.state.articles = this.props.articles;
-      for(var i = 0; i < this.state.articles.length; i++) {
+      totalArticleData = this.state.articles.map(function(item,index) {
+        var articleData = item;
+        articleDataContent = this.formArticlePage(item);
+        return (
+          <article className={articleData.class} key={index}>
+            <div className="title ng-binding">{articleData.title}</div>
+            <div className="container">
+              {articleDataContent}
+            </div>
+          </article>
+        );
+      }, this);
+      /*for(var i = 0; i < this.state.articles.length; i++) {
         var articleData = this.state.articles[i];
-        if(articleData.title === 'About Me') {
-          var articleDataContent = <div className="row ng-scope">
-            <div className="col-md-6">
-              <ul>
-                {this.aboutUsList(articleData.content)}
-              </ul>
-            </div>
-            <div className="col-md-6">
-              <p className="text-center"><b>Education</b></p>
-              {this.educationList(articleData.content1)}
-            </div>
-          </div>;
-        }
-        if(articleData.title !== 'About Me') {
-          let className = "col-md-6";
-          if(articleData.title === 'Experience') {
-            className = "col-md-12";
-          }
-          var articleDataContent = articleData.content.map(function(item,index) {
-            return (
-              <div className={className}>
-                <address>
-                  <strong>{item.title}</strong>
-                  <ul>
-                    {this.aboutUsList(item.points)}
-                  </ul>
-                </address>
-              </div>
-            );
-          }, this);
-        }
-        this.article = <div>
-            <article className={articleData.class}>
-              <div className="title ng-binding">{articleData.title}</div>
-              <div className="container">
-                {articleDataContent}
-              </div>
-            </article>
-        </div>;
-      }
+        articleDataContent = this.formArticlePage(articleData);
+        totalArticleData = <article className={articleData.class}>
+          <div className="title ng-binding">{articleData.title}</div>
+          <div className="container">
+            {articleDataContent}
+          </div>
+        </article>;
+      }*/
       this.count++;
+      this.article = totalArticleData;
     }
   }
 

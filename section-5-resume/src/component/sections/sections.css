@@ -35,6 +35,9 @@
     z-index: -1;
     left: -60px;
 }
+li {
+    text-align: left;
+}
 @media (max-width: 767px) {
     .personalDP {
         display: none;
