@@ -109,7 +109,6 @@ class Sections extends Component {
     this.formAboutUs();
     return (
       <div>
-        Yogesh
         {this.article}
       </div>
     );
