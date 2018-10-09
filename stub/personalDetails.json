@@ -72,8 +72,8 @@
 					"title" : "June 2016 - Till Date (23 months) : Capgemini India Pvt. Ltd. : Associate Consultant",
 					"points" : [
 						{ "point" : "Working on Banking Domain" },
-		           		{ "point" : "Got opportunity to utilize my experience in Software Development, repository management and project management" },
-		           		{ "point" : "Developing project in Angular JS version 1.6" }
+		           			{ "point" : "Got opportunity to utilize my experience in Software Development, repository management and project management" },
+		           			{ "point" : "Developing project in Angular JS version 1.6" }
 					]
 				}
 			]
@@ -86,60 +86,67 @@
 					"title" : "Helping Hands",
 					"points" : [
 						{ "point" : "PHP project" },
-		           		{ "point" : "Major task is handling reports, too much queries, SMS gateway integration, critical mathematical logics" },
-		           		{ "point" : "We take care of handling client to handover project with KT to user" }
+		           			{ "point" : "Major task is handling reports, too much queries, SMS gateway integration, critical mathematical logics" },
+		           			{ "point" : "We take care of handling client to handover project with KT to user" }
 					]
 				},
 				{
 					"title" : "My Salon project",
 					"points" : [
 						{ "point" : "e-Commerse Project" },
-		           		{ "point" : "Complete core PHP development" },
-		           		{ "point" : "Handles forms and CURD operations" },
-		                { "point" : "Integrated third Rparty plugins like payment Gateway and SMS gateway" },
-		                { "point" : "Create new small framework in core PHP for CURD operation PHP project. Made CURD operation easy and faster development achieved" }
+		           			{ "point" : "Complete core PHP development" },
+		           			{ "point" : "Handles forms and CURD operations" },
+		                		{ "point" : "Integrated third Rparty plugins like payment Gateway and SMS gateway" },
+		                		{ "point" : "Create new small framework in core PHP for CURD operation PHP project. Made CURD operation easy and faster development achieved" }
 					]
 				},
 				{
 					"title" : "Relian Elevator",
 					"points" : [
 						{ "point" : "Informative website" },
-		           		{ "point" : "Core UI and wordpress integrated site" },
-		           		{ "point" : "Challenge is unique and creative design with wordpress CMS integration" },
-		                { "point" : "Responsive" }
+		           			{ "point" : "Core UI and wordpress integrated site" },
+		           			{ "point" : "Challenge is unique and creative design with wordpress CMS integration" },
+		               			{ "point" : "Responsive" }
 					]
 				},
 				{
 					"title" : "Travel Site and E-Commerse site in Drupal and Magento respective",
 					"points" : [
 						{ "point" : "Development in drupal CMS and Magento CMS respectively" },
-		           		{ "point" : "Challenge was learning new technologies in small period of time" }
+		           			{ "point" : "Challenge was learning new technologies in small period of time" }
 					]
 				},
 				{
 					"title" : "Baseball portal",
 					"points" : [
 						{ "point" : "Developed in bootstrap responsive framework" },
-		           		{ "point" : "Challenge here was make site responsive module wise. As site was 3 yrs old. We need to update design module independent other development and confirm it from client." },
-		           		{ "point" : "Responsive module does not affect non responsive website and modules." },
-		           		{ "point" : "Client was too much caring about coding standard and development." }
+		           			{ "point" : "Challenge here was make site responsive module wise. As site was 3 yrs old. We need to update design module independent other development and confirm it from client." },
+		           			{ "point" : "Responsive module does not affect non responsive website and modules." },
+		           			{ "point" : "Client was too much caring about coding standard and development." }
 					]
 				},
 				{
 					"title" : "Dubai Hotel ERP for B2B",
 					"points" : [
 						{ "point" : "Backend was in ROR." },
-		           		{ "point" : "My work was support UI in bootstrap." },
-		           		{ "point" : "Assigned to project when project was in critical position." },
-		           		{ "point" : "Challenge was improve development and coding standards without affecting developed project. Worked with SCSS version of CSS." },
-		           		{ "point" : "Developed site in modularized way such that only CSS class resolve most of issues" }
+		           			{ "point" : "My work was support UI in bootstrap." },
+		           			{ "point" : "Assigned to project when project was in critical position." },
+		           			{ "point" : "Challenge was improve development and coding standards without affecting developed project. Worked with SCSS version of CSS." },
+		           			{ "point" : "Developed site in modularized way such that only CSS class resolve most of issues" }
 					]
 				},
 				{
 					"title" : "Banking Domain",
 					"points" : [
 						{ "point" : "Working on banking domain in angular js version 1.6" },
-		           		{ "point" : "Challenge is development in ES6 and component level granularity." }
+		           			{ "point" : "Challenge is development in ES6 and component level granularity." }
+					]
+				},
+				{
+					"title" : "Banking Domain",
+					"points" : [
+						{ "point" : "Working on banking domain in React js 16.3" },
+		           			{ "point" : "Challenge is development in JSX and component level granularity." }
 					]
 				}
 			]
