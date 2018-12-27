@@ -5,7 +5,7 @@ angular.module('plunker', [])
 });
 
 function callPersonalJson($scope, $http) {
-	$http.get("stub/personalDetails.json").then(function (response) {
+	$http.get("../stub/personalDetails.json").then(function (response) {
         $scope.projectDetails = response.data;
     });
 }
