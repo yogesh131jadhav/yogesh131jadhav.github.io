@@ -94,6 +94,18 @@ footer {
 .personalDP img {
     max-width: 120px;
 }
+.mySkills {
+	background: #666;
+  color: #fff;
+}
+.mySkills .title {
+	color: #666;
+  z-index: 0;
+}
+.mySkills .title:before {
+	border-top: 100px solid #fff;
+  z-index: -1;
+}
 @media (max-width: 767px) {
     .personalDP {
         display: none;
