@@ -99,11 +99,6 @@ p {
   position: absolute;
   width: 100%;
 }
-a,
-.nav a,
-.productPopup a {
-  cursor: pointer;
-}
 .navbar-brand {
   font-size: 48px;
   color: #fff;
@@ -192,45 +187,12 @@ a,
   height: 100%;
   z-index: 1;
   transition-duration: 1s;
-  overflow: hidden;
 }
 .productPopup h3 {
   color: #fff;
   font-family:'Raleway-bold';
   text-align: center;
   letter-spacing: 2px;
-  text-transform: uppercase;
-
-  position: absolute;
-  top: -100px;
-  width: 100%;
-  left: 0;
-}
-.productPopup p {
-  position: absolute;
-  left: -400px;
-  padding: 60px 20px;
-  width: 100%;
-}
-.productPopup a {
-  position: absolute;
-  bottom: -200px;
-  right: 30px;
-}
-.productPopup:hover * {
-  transition-duration: 1s;
-}
-.productPopup:hover h3 {
-  top: 20px;
-  transition-delay: 0.2s;
-}
-.productPopup:hover p {
-  left: 0;
-  transition-delay: 1.5s;
-}
-.productPopup:hover a {
-  bottom: 20px;
-  transition-delay: 2s;
 }
 .productPopupWrapper:hover .productPopup {
   top: 0;
@@ -312,53 +274,4 @@ footer {
 }
 .productList .productPopupWrapper {
   border: 1px solid #e8e8e8;
-}
-/*Loader*/
-.slidingShutter {
-  background: url(../img/slidingShutter.jpg);
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 10000;
-}
-.slidingShutter.open,
-.slidingShutter.close {
-  -webkit-animation-name: openShutter; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-  animation-name: openShutter;
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-}
-.slidingShutter.close {
-  -webkit-animation-name: closeShutter; /* Safari 4.0 - 8.0 */
-  animation-name: closeShutter;
-}
-.loading {
-  background: rgba(255, 255, 255, 0.5);
-  bottom: 0;
-  font-size: 50px;
-  left: 0;
-  height: 100px;
-  margin: auto;
-  padding: 20px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  text-align: center;
-  width: 320px;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes openShutter {
-  0% {left: 0;}
-  95% {left: -100%;}
-  100% {left: -120%;}
-}
-@-webkit-keyframes closeShutter {
-  0% {left: -120;}
-  15% {left: -100%;}
-  100% {left: 0%;}
 }

@@ -1,137 +1,167 @@
-<!DOCTYPE HTML>
-<html>
+<html ng-app="skWholesaler" ng-controller="MainCtrl">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="favicon.ico">
     <title>SK's Wholesaler</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <section class="banner">
-      <div class="navbar-wrapper">
+    <div ng-class="activePage === 1 ? 'home' : 'productList'">
+      <div ng-class="showPage ? 'slidingShutter open' : 'slidingShutter'">
+        <div class="loading">
+          Loading...
+        </div>
+      </div>
+      <section class="banner">
+        <div class="navbar-wrapper">
+          <div class="container">
+            <div class="navbar navbar-fixed-top" id="id-navigation" role="navigation">
+              <div class="containwrapper"></div>
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">{{skDetails.title}}</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li ng-repeat="link in skDetails.navLinks">
+                      <a ng-class="((activePage === 1 && link.navTitle === 'Home') || (activePage === 2 && link.navTitle !== 'Home')) ? 'active' : ''" 
+                        ng-click="handlePageChange(link.navTitle)">{{link.navTitle}}</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bannerContainer" ng-if="activePage === 1">
+          <h2>{{skDetails.banner.title}}</h2>
+          <h1>{{skDetails.banner.subTitle}}</h1>
+          <h3>{{skDetails.banner.location}}</h3>
+        </div>
+        <div class="bannerContainer" ng-if="activePage === 2">
+          <div class="container">
+            <h1>Product List</h1>
+          </div>
+        </div>
+        <div class="bannerContainer" ng-if="activePage === 3">
+          <div class="container">
+            <h1>{{pruductDetails.title | uppercase}}</h1>
+          </div>
+        </div>
+      </section>
+      <div ng-if="activePage === 1">
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 aboutUsBanner imageWrapper"></div>
+              <div class="col-md-6">
+                <h2>{{skDetails.aboutUs.title}}</h2>
+                <p ng-repeat="message in skDetails.aboutUs.content">{{message.msg}}</p>
+                <a ng-click="handlePageChange('Product')">View All Products</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="products odd">
+          <div class="container">
+            <div class="row text-center titleSection">
+              <h2>Prooducts</h2>
+              <a ng-click="handlePageChange('Product')" class="btn">Read More</a>
+            </div>
+            <ul class="row">
+              <li class="col-sm-4" ng-repeat="product in skDetails.products" ng-if="$index < 3">
+                <div class="productPopupWrapper">
+                  <img ng-src="./img/products/{{product.title}}.jpg"/>
+                  <div class="productPopup">
+                    <h3 class="text-uppercase">{{product.title}}</h3>
+                    <p>{{product.msgOnThumbnail}}</p>
+                    <a ng-click="productDetailsPage(product)">Read More</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="team">
+          <div class="container">
+            <div class="row text-center">
+              <h2>Our Team</h2>
+            </div>
+            <ul class="row text-center">
+              <li class="col-sm-6" ng-repeat="teamMate in skDetails.team">
+                <div class="teamMates">
+                  <h2>{{teamMate.title}}</h2>
+                  <p>{{teamMate.details}}</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div ng-if="activePage === 2">
+        <section class="products">
+          <div class="container">
+            <ul class="row">
+              <li class="col-sm-4" ng-repeat="product in skDetails.products">
+                <div class="productPopupWrapper">
+                  <img ng-src="./img/products/{{product.title}}.jpg"/>
+                  <div class="productPopup">
+                    <h3>{{product.title | uppercase}}</h3>
+                    <p>{{product.msgOnThumbnail}}</p>
+                    <a ng-click="productDetailsPage(product)">Read More</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div ng-if="activePage === 3">
+        <section class="products">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <img ng-src="./img/products/{{pruductDetails.title}}.jpg"/>
+              </div>
+              <div class="col-sm-6">
+                <h2>{{pruductDetails.title | uppercase}}</h2>
+                <p>{{pruductDetails.msgOnThumbnail}}</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="map">
         <div class="container">
-          <div class="navbar navbar-fixed-top" id="id-navigation" role="navigation">
-            <div class="containwrapper"></div>
-            <div class="container">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">SK Wholesaler</a>
+          <div class="row">
+            <li class="col-md-4 col-md-push-8 col-sm-6 col-sm-push-6">
+              <div class="address">
+                <h2 class="marginTop0">Contact Us</h2>
+                <h4>Office Address</h4>
+                <p class="marginBottom20">5/237, Dhanya Lane,  Near Federal Bank, Opp PNG Jewellers,  Ichalkaranji – 416115</p>
+                <h4>Office Telephone Number</h4>
+                <p class="marginBottom20">0230 – 2423381</p>
+                <h4>Office Mobile Number</h4>
+                <p class="marginBottom20">0230 – 2423381</p>
+                <h4>Email Address</h4>
+                <p>skswholesale@gmail.com</p>
               </div>
-              <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a class="active" href="index.html">Home</a></li>
-                  <li><a href="productList.html">Product</a></li>
-                </ul>
-              </div>
-            </div>
+            </li>
           </div>
         </div>
-      </div>
-      <div class="bannerContainer">
-        <h2>Sunilkumar Kantilal Grain Merchant</h2>
-        <h1>SK's Wholesaler</h1>
-        <h3>ICHALKARANJI</h3>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 aboutUsBanner imageWrapper"></div>
-          <div class="col-md-6">
-            <h2>Welcome to SK Wholesaler</h2>
-            <p>With the dream of providing quality grains supply, the late Mr. Kantilal Bora started his journey in wholesale business 50 years ago.</p>
-            <p>His guidance & vision helps Mr. Sunilkumar Bora, lead our company to the top of its segment. We are proudly reaching new heights everyday with the trust & support of our beloved clients and well wishers.</p>
-            <p>We have recently inaugurated our company at Two more locations in last two years.</p>
-            <a href="#">View All Products</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="products odd">
-      <div class="container">
-        <div class="row text-center titleSection">
-          <h2>Prooducts</h2>
-          <a href="#" class="btn">Read More</a>
-        </div>
-        <ul class="row">
-          <li class="col-sm-4">
-            <div class="productPopupWrapper">
-              <img src="./img/products/bajri.jpg"/>
-              <div class="productPopup">
-                <h3>Bajri</h3>
-                <p>The packaging of Bajari is availabe in 25Kg and 30Kg.</p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </li>
-          <li class="col-sm-4">
-            <div class="productPopupWrapper">
-              <img src="./img/products/besan.jpg"/>
-              <div class="productPopup">
-                <h3>Besan</h3>
-                <p>The packaging of Besan is availabe in 25Kg and 30Kg.</p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </li>
-          <li class="col-sm-4">
-            <div class="productPopupWrapper">
-              <img src="./img/products/chana-dal.jpg"/>
-              <div class="productPopup">
-                <h3>Chana Dal</h3>
-                <p>The packaging of Chana Dal is availabe in 25kg and 30Kg.</p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="team">
-      <div class="container">
-        <div class="row text-center">
-          <h2>Our Team</h2>
-        </div>
-        <ul class="row text-center">
-          <li class="col-sm-6">
-            <div class="teamMates">
-              <h2>Mr. Sunilkumar Bora</h2>
-              <p>With 30 years of work experience he is continuously working towards the innovation & quality improvement of our products.</p>
-            </div>
-          </li>
-          <li class="col-sm-6">
-            <div class="teamMates">
-              <h2>Mr. Yash Bora</h2>
-              <p>Graduated from MIT, Pune, with Masters degree of Business Administration. He is working hard towards the business expansion of SK's Wholesale.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="map">
-      <div class="container">
-        <div class="row">
-          <li class="col-md-4 col-md-push-8 col-sm-6 col-sm-push-6">
-            <div class="address">
-              <h2 class="marginTop0">Contact Us</h2>
-              <h4>Office Address</h4>
-              <p class="marginBottom20">5/237, Dhanya Lane,  Near Federal Bank, Opp PNG Jewellers,  Ichalkaranji – 416115</p>
-              <h4>Office Telephone Number</h4>
-              <p class="marginBottom20">0230 – 2423381</p>
-              <h4>Office Mobile Number</h4>
-              <p class="marginBottom20">0230 – 2423381</p>
-              <h4>Email Address</h4>
-              <p>skswholesale@gmail.com</p>
-            </div>
-          </li>
-        </div>
-      </div>
-    </section>
-    <footer class="text-center">&copy; Copyright SK's Wholesaler</footer>
+      </section>
+      <footer class="text-center">&copy; Copyright SK's Wholesaler</footer>
+    </div>
+    <script src="js/angular.min.js" data-semver="1.5.10"></script>
+    <script src="js/script.js"></script>
     <script>
       window.onscroll = function() {
         if (window.pageYOffset > 500) {
