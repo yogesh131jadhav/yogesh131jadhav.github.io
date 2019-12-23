@@ -1,0 +1,175 @@
+<html ng-app="skWholesaler" ng-controller="MainCtrl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="favicon.ico">
+    <title>SK's Wholesaler</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div ng-class="activePage === 1 ? 'home' : 'productList'">
+      <div ng-class="showPage ? 'slidingShutter open' : 'slidingShutter'">
+        <div class="loading">
+          Loading...
+        </div>
+      </div>
+      <section class="banner">
+        <div class="navbar-wrapper">
+          <div class="container">
+            <div class="navbar navbar-fixed-top" id="id-navigation" role="navigation">
+              <div class="containwrapper"></div>
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">{{skDetails.title}}</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li ng-repeat="link in skDetails.navLinks">
+                      <a ng-class="((activePage === 1 && link.navTitle === 'Home') || (activePage === 2 && link.navTitle !== 'Home')) ? 'active' : ''" 
+                        ng-click="handlePageChange(link.navTitle)">{{link.navTitle}}</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bannerContainer" ng-if="activePage === 1">
+          <h2>{{skDetails.banner.title}}</h2>
+          <h1>{{skDetails.banner.subTitle}}</h1>
+          <h3>{{skDetails.banner.location}}</h3>
+        </div>
+        <div class="bannerContainer" ng-if="activePage === 2">
+          <div class="container">
+            <h1>Product List</h1>
+          </div>
+        </div>
+        <div class="bannerContainer" ng-if="activePage === 3">
+          <div class="container">
+            <h1>{{pruductDetails.title | uppercase}}</h1>
+          </div>
+        </div>
+      </section>
+      <div ng-if="activePage === 1">
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 aboutUsBanner imageWrapper"></div>
+              <div class="col-md-6">
+                <h2>{{skDetails.aboutUs.title}}</h2>
+                <p ng-repeat="message in skDetails.aboutUs.content">{{message.msg}}</p>
+                <a ng-click="handlePageChange('Product')">View All Products</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="products odd">
+          <div class="container">
+            <div class="row text-center titleSection">
+              <h2>Prooducts</h2>
+              <a ng-click="handlePageChange('Product')" class="btn">Read More</a>
+            </div>
+            <ul class="row">
+              <li class="col-sm-4" ng-repeat="product in skDetails.products" ng-if="$index < 3">
+                <div class="productPopupWrapper">
+                  <img ng-src="./img/products/{{product.title}}.jpg"/>
+                  <div class="productPopup">
+                    <h3 class="text-uppercase">{{product.title}}</h3>
+                    <p>{{product.msgOnThumbnail}}</p>
+                    <a ng-click="productDetailsPage(product)">Read More</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="team">
+          <div class="container">
+            <div class="row text-center">
+              <h2>Our Team</h2>
+            </div>
+            <ul class="row text-center">
+              <li class="col-sm-6" ng-repeat="teamMate in skDetails.team">
+                <div class="teamMates">
+                  <h2>{{teamMate.title}}</h2>
+                  <p>{{teamMate.details}}</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div ng-if="activePage === 2">
+        <section class="products">
+          <div class="container">
+            <ul class="row">
+              <li class="col-sm-4" ng-repeat="product in skDetails.products">
+                <div class="productPopupWrapper">
+                  <img ng-src="./img/products/{{product.title}}.jpg"/>
+                  <div class="productPopup">
+                    <h3>{{product.title | uppercase}}</h3>
+                    <p>{{product.msgOnThumbnail}}</p>
+                    <a ng-click="productDetailsPage(product)">Read More</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div ng-if="activePage === 3">
+        <section class="products">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <img ng-src="./img/products/{{pruductDetails.title}}.jpg"/>
+              </div>
+              <div class="col-sm-6">
+                <h2>{{pruductDetails.title | uppercase}}</h2>
+                <p>{{pruductDetails.msgOnThumbnail}}</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="map">
+        <div class="container">
+          <div class="row">
+            <li class="col-md-4 col-md-push-8 col-sm-6 col-sm-push-6">
+              <div class="address">
+                <h2 class="marginTop0">Contact Us</h2>
+                <h4>Office Address</h4>
+                <p class="marginBottom20">5/237, Dhanya Lane,  Near Federal Bank, Opp PNG Jewellers,  Ichalkaranji – 416115</p>
+                <h4>Office Telephone Number</h4>
+                <p class="marginBottom20">0230 – 2423381</p>
+                <h4>Office Mobile Number</h4>
+                <p class="marginBottom20">0230 – 2423381</p>
+                <h4>Email Address</h4>
+                <p>skswholesale@gmail.com</p>
+              </div>
+            </li>
+          </div>
+        </div>
+      </section>
+      <footer class="text-center">&copy; Copyright SK's Wholesaler</footer>
+    </div>
+    <script src="js/angular.min.js" data-semver="1.5.10"></script>
+    <script src="js/script.js"></script>
+    <script>
+      window.onscroll = function() {
+        if (window.pageYOffset > 500) {
+          document.getElementById('id-navigation').classList.add('flatNav');
+        } else {
+          document.getElementById('id-navigation').classList.remove('flatNav');
+        }
+      }
+    </script>
+  </body>
+</html>

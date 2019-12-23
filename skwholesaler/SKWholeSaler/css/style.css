@@ -1,0 +1,364 @@
+@font-face{
+  font-family:'Raleway';
+  src: url(../fonts/Raleway/Raleway-Light.ttf) format('truetype')
+}
+@font-face{
+  font-family:'Raleway-bold';
+  src: url(../fonts/Raleway/Raleway-Bold.ttf) format('truetype')
+}
+::-moz-selection { /* Code for Firefox */
+    color: #fff;    
+    background: #d02922;
+}
+::selection { /* Code for Firefox */
+    color: #fff;    
+    background: #d02922;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+}
+a {
+  color: #ff770f;
+}
+a:hover,
+a:focus {
+  color: #d02922;
+  text-decoration: none;
+  outline: none;
+}
+section {
+  padding: 60px 0;
+}
+h2 {
+  font-size: 36px;
+}
+h1 {
+  font-size: 46px;
+}
+h2, h3 {
+  color: #ff770f;
+  font-family:'Raleway';
+  margin-bottom: 30px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 10px 0;
+  text-align: justify;
+}
+.odd {
+  background: #efefef;
+}
+.titleSection {
+  position: relative;
+}
+.banner h2, .banner h3 {
+  color: #fff;
+  font-family:'Raleway-bold';
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.bannerImage,
+.banner,
+.aboutUsBanner {
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;  
+  padding: 0;
+}
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+}
+.imageWrapper::before,
+.banner::before {
+  background: rgba(0,0,0,0.8);
+  content: ' ';
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.banner {
+  background: url(../img/banner.jpg);
+  min-height: 570px;
+  width: 100%;
+}
+.banner::before {
+  background: rgba(0,0,0,0.8);
+  content: ' ';
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+a,
+.nav a,
+.productPopup a {
+  cursor: pointer;
+}
+.navbar-brand {
+  font-size: 48px;
+  color: #fff;
+}
+.navbar-nav a {
+  font-size: 14px;
+  color: #fff;
+}
+.navbar {
+  padding: 25px 0;
+  transition-duration: 0.5s;
+}
+.navbar.flatNav {
+  background: #ff770f;
+  transition-duration: 0.5s;
+  padding: 5px 0;
+}
+.navbar.flatNav .navbar-brand {
+  font-size: 28px;
+}
+.nav li {
+  margin-left: 10px;
+}
+.nav > li > a {
+  transition-duration: 0.5s;
+}
+.nav > li > a.active,
+.nav > li > a:hover,
+.nav > li > a:focus {
+  transition-duration: 0.5s;
+  background: rgba(0,0,0,0.3);
+}
+.productList .nav > li > a.active,
+.productList .nav > li > a:hover,
+.productList .nav > li > a:focus {
+  color: #fff;
+  background: rgba(0,0,0,0.6);
+}
+.bannerContainer {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  padding: 200px 0;
+}
+.aboutUsBanner {
+  background: url('../img/aboutUs.jpg');
+  height: 330px;
+}
+.aboutUsBanner::before {
+  background: rgba(0,0,0,0.4);
+}
+.products {
+  padding: 60px 0 40px;
+}
+.products img {
+  max-width: 100%;
+}
+.products .btn {
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  background: #fff;
+  border: 1px solid #ff770f;
+  transition-duration: 0.5s;
+}
+.products .btn:hover {
+  color: #fff;
+  background: #ff770f;
+  border: 1px solid #ff770f;
+  transition-duration: 0.5s;
+}
+.productPopupWrapper {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  transition-duration: 1s;
+  margin-bottom: 20px;
+}
+.productPopup {
+  position: absolute;
+  padding: 20px;
+  top: 360px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition-duration: 1s;
+  overflow: hidden;
+}
+.productPopup h3 {
+  color: #fff;
+  font-family:'Raleway-bold';
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  position: absolute;
+  top: -100px;
+  width: 100%;
+  left: 0;
+}
+.productPopup p {
+  position: absolute;
+  left: -400px;
+  padding: 60px 20px;
+  width: 100%;
+}
+.productPopup a {
+  position: absolute;
+  bottom: -200px;
+  right: 30px;
+}
+.productPopup:hover * {
+  transition-duration: 1s;
+}
+.productPopup:hover h3 {
+  top: 20px;
+  transition-delay: 0.2s;
+}
+.productPopup:hover p {
+  left: 0;
+  transition-delay: 1.5s;
+}
+.productPopup:hover a {
+  bottom: 20px;
+  transition-delay: 2s;
+}
+.productPopupWrapper:hover .productPopup {
+  top: 0;
+  transition-duration: 1s;
+}
+.map:before,
+.productPopup:before {
+  background: rgba(0,0,0,0.7);
+  content: ' ';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.teamMates {
+  padding-top: 100px;
+  background: url('../img/team.png') no-repeat top center;
+}
+.teamMates p{
+  text-align: center;
+}
+.map {
+  background: url('../img/contactMap.jpg') no-repeat center center;
+  min-height: 400px;
+  position: relative;
+}
+.map:before {
+  z-index: 0;
+}
+.address {
+  position: relative;
+  z-index: 2;
+}
+.address * {
+  color: #fff;
+}
+.address h4 {
+  color: #ff770f;
+}
+.marginBottom20 {
+  margin-bottom: 20px;
+}
+.marginTop0 {
+  margin-top: 0;
+}
+footer {
+  background: #111;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 0;
+}
+/*-----------------productList------------------------*/
+.productList .navbar {
+  background: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.productList .nav > li > a,
+.productList .navbar-brand {
+  color: #ff770f;
+}
+.productList .navbar-brand {
+  font-size: 28px;
+}
+.productList .nav > li > a {
+  color: #ff770f;
+}
+.productList .bannerContainer {
+  padding: 70px 0 10px;
+}
+.productList .bannerContainer h1 {
+  font-size: 36px;
+  text-align: left;
+}
+.productList .banner {
+  min-height: 100px;
+}
+.productList .productPopupWrapper {
+  border: 1px solid #e8e8e8;
+}
+/*Loader*/
+.slidingShutter {
+  background: url(../img/slidingShutter.jpg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+}
+.slidingShutter.open,
+.slidingShutter.close {
+  -webkit-animation-name: openShutter; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: openShutter;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.slidingShutter.close {
+  -webkit-animation-name: closeShutter; /* Safari 4.0 - 8.0 */
+  animation-name: closeShutter;
+}
+.loading {
+  background: rgba(255, 255, 255, 0.5);
+  bottom: 0;
+  font-size: 50px;
+  left: 0;
+  height: 100px;
+  margin: auto;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  width: 320px;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes openShutter {
+  0% {left: 0;}
+  95% {left: -100%;}
+  100% {left: -120%;}
+}
+@-webkit-keyframes closeShutter {
+  0% {left: -120;}
+  15% {left: -100%;}
+  100% {left: 0%;}
+}

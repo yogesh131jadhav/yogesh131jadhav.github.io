@@ -1,0 +1,70 @@
+{
+  "title": "SK's Wholesale",
+  "navLinks": [{
+    "navTitle": "Home"
+  },{
+    "navTitle": "Product"
+  }],
+  "banner": {
+    "title": "Sunilkumar Kantilal Grain Merchant",
+    "subTitle": "SK`s Wholesale",
+    "location": "ICHALKARANJI"
+  },
+  "aboutUs": {
+    "title" : "Welcome to SK Wholesale",
+    "content" : [{
+      "msg": "With the dream of providing quality grains supply, the late Mr. Kantilal Bora started his journey in wholesale business 50 years ago."
+    },{
+      "msg": "His guidance & vision helps Mr. Sunilkumar Bora, lead our company to the top of its segment. We are proudly reaching new heights everyday with the trust & support of our beloved clients and well wishers."
+    },{
+      "msg": "We have recently inaugurated our company at Two more locations in last two years."
+    }]
+  },
+  "products" : [{
+      "title" : "bajri",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg"
+    }, {
+      "title" : "besan",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg"
+    },{
+      "title" : "chana-dal",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg"
+    }, {
+      "title" : "jwari",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg"
+    }, {
+      "title" : "masoor-dal",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg"
+    }, {
+      "title" : "moog-dal",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg"
+    },{
+      "title" : "poha",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg"
+    }, {
+      "title" : "toor-dal",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg"
+    }, {
+      "title" : "wheat",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg"
+    }
+  ],
+  "team" : [{
+    "imgPath": "",
+    "title": "Mr. Sunilkumar Bora",
+    "details": "With 30 years of work experience he is continuously working towards the innovation & quality improvement of our products"
+  },{
+    "imgPath": "",
+    "title": "Mr. Yash Bora",
+    "details": "Graduated from MIT, Pune, with Masters degree of Business Administration. He is working hard towards the business expansion of SK's Wholesale."
+  }],
+  "contactUs": {
+    "officeAddres": "5/237, Dhanya Lane, Near Federal Bank, Opp PNG Jewellers, Ichalkaranji – 416115",
+    "telephoneNumber": "0230 – 2423381",
+    "phoneNumber": "0230 – 2423381",
+    "Email Address": "skswholesale@gmail.com",
+    "map": "contactMap.jpg",
+    "mapPath": ""
+  },
+  "foooter": "Yogesh Krishna Jadhav"
+}
