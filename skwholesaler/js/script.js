@@ -10,10 +10,17 @@ angular.module('skWholesaler', [])
     $scope.skDetails = response.data;
   });
   $scope.handlePageChange = function(menu, product = null) {
-    $window.scrollTo(0, 0);
+    $window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
     return menu === 'Home' ? $scope.activePage = 1 : $scope.activePage = 2;
   }
   $scope.productDetailsPage = function(product) {
+    $window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
     $scope.activePage = 3;
     $scope.singleProductDetail = product;
   }

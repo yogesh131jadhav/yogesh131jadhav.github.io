@@ -400,10 +400,22 @@ footer {
   .bannerContainer {
     padding: 200px 0 120px;
   }
+  .productPopup:hover * {
+    transition-duration: 0s;
+  }
   .productPopup:hover h3,
   .productPopup:hover p,
   .productPopup:hover a {
     transition-delay: 0s;
+  }
+  .productPopup h3 {
+    top: 20px;
+  }
+  .productPopup p {
+    left: 0;
+  }
+  .productPopup a {
+    bottom: 20px;
   }
   .productDetailsImage {
     float: none;
