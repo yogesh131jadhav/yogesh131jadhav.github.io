@@ -23,9 +23,9 @@
   "products" : [{
       "title" : "rice",
       "img" : "rice",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg",
+      "msgOnThumbnail" : "The packaging of Bajari is available in 25Kg and 30Kg",
       "productDetails" : [{
-        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+        "msg": "The packaging of Bajari is available in 25Kg and 30Kg"
       }],
       "productBrands": [{
           "brandName":"Basmati",
@@ -64,64 +64,64 @@
     },{
       "title" : "bajri",
       "img" : "bajri",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg",
+      "msgOnThumbnail" : "The packaging of Bajari is available in 25Kg and 30Kg",
       "productDetails" : [{
-        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+        "msg": "The packaging of Bajari is available in 25Kg and 30Kg"
       },{
-        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+        "msg": "The packaging of Bajari is available in 25Kg and 30Kg"
       }]
     },{
       "title" : "chana dal",
       "img" : "chana-dal",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg",
+      "msgOnThumbnail" : "The packaging of Bajari is available in 25Kg and 30Kg",
       "productDetails" : [{
-        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+        "msg": "The packaging of Bajari is available in 25Kg and 30Kg"
       },{
-        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+        "msg": "The packaging of Bajari is available in 25Kg and 30Kg"
       }]
     },{
       "title" : "jwari",
       "img" : "jwari",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg",
+      "msgOnThumbnail" : "The packaging of Bajari is available in 25Kg and 30Kg",
       "productDetails" : [{
-        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+        "msg": "The packaging of Bajari is available in 25Kg and 30Kg"
       }]
     },{
       "title" : "masoor dal",
       "img" : "masoor-dal",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg",
+      "msgOnThumbnail" : "The packaging of Bajari is available in 25Kg and 30Kg",
       "productDetails" : [{
-        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+        "msg": "The packaging of Bajari is available in 25Kg and 30Kg"
       }]
     },{
       "title" : "moog dal",
       "img" : "moog-dal",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg",
+      "msgOnThumbnail" : "The packaging of Bajari is available in 25Kg and 30Kg",
       "productDetails" : [{
-        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+        "msg": "The packaging of Bajari is available in 25Kg and 30Kg"
       },{
-        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+        "msg": "The packaging of Bajari is available in 25Kg and 30Kg"
       }]
     },{
       "title" : "poha",
       "img" : "poha",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg",
+      "msgOnThumbnail" : "The packaging of Bajari is available in 25Kg and 30Kg",
       "productDetails" : [{
-        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+        "msg": "The packaging of Bajari is available in 25Kg and 30Kg"
       }]
     },{
       "title" : "toor-dal",
       "img" : "toor-dal",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg",
+      "msgOnThumbnail" : "The packaging of Bajari is available in 25Kg and 30Kg",
       "productDetails" : [{
-        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+        "msg": "The packaging of Bajari is available in 25Kg and 30Kg"
       }]
     },{
       "title" : "wheat",
       "img" : "wheat",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg",
+      "msgOnThumbnail" : "The packaging of Bajari is available in 25Kg and 30Kg",
       "productDetails" : [{
-        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+        "msg": "The packaging of Bajari is available in 25Kg and 30Kg"
       }]
     }
   ],
