@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="favicon.ico">
-    <title>SK's Wholesaler</title>
+    <title>SK's Wholesale</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -14,7 +14,7 @@
           Loading...
         </div>
       </div>
-      <section class="banner">
+      <section ng-class="(activePage === 1 && showPage) ? 'banner activeBanner' : 'banner'">
         <div class="navbar-wrapper">
           <div class="container">
             <div class="navbar navbar-fixed-top" id="id-navigation" role="navigation">
@@ -53,7 +53,7 @@
         </div>
         <div class="bannerContainer" ng-if="activePage === 3">
           <div class="container">
-            <h1>{{pruductDetails.title | uppercase}}</h1>
+            <h1>{{singleProductDetail.title | uppercase}}</h1>
           </div>
         </div>
       </section>
@@ -73,15 +73,15 @@
         <section class="products odd">
           <div class="container">
             <div class="row text-center titleSection">
-              <h2>Prooducts</h2>
+              <h2>Products</h2>
               <a ng-click="handlePageChange('Product')" class="btn">Read More</a>
             </div>
             <ul class="row">
               <li class="col-sm-4" ng-repeat="product in skDetails.products" ng-if="$index < 3">
                 <div class="productPopupWrapper">
-                  <img ng-src="./img/products/{{product.title}}.jpg"/>
+                  <img ng-src="./img/products/{{product.img}}.jpg"/>
                   <div class="productPopup">
-                    <h3 class="text-uppercase">{{product.title}}</h3>
+                    <h3 class="text-uppercase">{{product.title | uppercase}}</h3>
                     <p>{{product.msgOnThumbnail}}</p>
                     <a ng-click="productDetailsPage(product)">Read More</a>
                   </div>
@@ -112,7 +112,7 @@
             <ul class="row">
               <li class="col-sm-4" ng-repeat="product in skDetails.products">
                 <div class="productPopupWrapper">
-                  <img ng-src="./img/products/{{product.title}}.jpg"/>
+                  <img ng-src="./img/products/{{product.img}}.jpg"/>
                   <div class="productPopup">
                     <h3>{{product.title | uppercase}}</h3>
                     <p>{{product.msgOnThumbnail}}</p>
@@ -128,13 +128,21 @@
         <section class="products">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6">
-                <img ng-src="./img/products/{{pruductDetails.title}}.jpg"/>
-              </div>
-              <div class="col-sm-6">
-                <h2>{{pruductDetails.title | uppercase}}</h2>
-                <p>{{pruductDetails.msgOnThumbnail}}</p>
-              </div>
+              <div class="col-sm-12">
+                <img class="productDetailsImage" ng-src="./img/products/{{singleProductDetail.img}}.jpg"/>
+                <div class="productDetailsPage">
+                  <h2>{{singleProductDetail.title | uppercase}}</h2>
+                  <p ng-repeat="productDetail in singleProductDetail.productDetails">{{productDetail.msg}}</p>
+                  <div ng-repeat="productBrands in singleProductDetail.productBrands">
+                    <h3>{{productBrands.brandName}}</h3>
+                    <div ng-repeat="brandtype in productBrands.brandtypes">
+                      <h4>{{brandtype.brandtype}}</h4>
+                      <ul>
+                        <li ng-repeat="description in brandtype.details">{{description.msg}}</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
         </section>

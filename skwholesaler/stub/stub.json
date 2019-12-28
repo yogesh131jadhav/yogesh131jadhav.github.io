@@ -21,32 +21,108 @@
     }]
   },
   "products" : [{
-      "title" : "bajri",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg"
-    }, {
-      "title" : "besan",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg"
+      "title" : "rice",
+      "img" : "rice",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg",
+      "productDetails" : [{
+        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+      }],
+      "productBrands": [{
+          "brandName":"Basmati",
+          "brandtypes": [{
+            "brandtype": "Steam",
+            "details": [{
+                "msg": "We have Silver type in Basmati Steam brand. We have different variations in it like Silver Pearl, Silver Star, Silver Gold, Silver Regular, Silver Platinum with 10 KG packing variety."
+              },{
+                "msg": "We have Rizwan type in Basmati Steam brand. We have different variations in it like Rizwan Delight, Rizwan Everyday, Rizwan Mini Mogra, Rizwan Regular with 10 KG packing variety."
+              },{
+                "msg": "We have Ruchi Bhog type in Basmati Steam brand. We have different variations in it like Ruchi Bhog Best, Ruchi Bhog Dubar, Ruchi Bhog Gold Biryani, Ruchi Bhog Hyderabadi, Ruchi Bhog Mughlai, Ruchi Bhog Super Mogra, Ruchi Bhog Tini with 10 KG packing variety."
+              },{
+                "msg": "We have Shahabzada type in Basmati Steam brand. We have different variations in it like Shahabzada Super Mogra, Shahabzada Mini Dubar, Shahabzada Premium, Shahabzada Dubar, Shahabzada Special with 10 KG packing variety."
+              },{
+                "msg": "We have Al Abrar type in Basmati Steam brand. We have Al Abrar Tini variations in itin 10 KG packing"
+              },{
+                "msg": "Likewise we have different types in Basmati Steam brand as Grand India in 20 Kg Packing, Khushiyon Ke Pal in 20 Kg Packing, Swagat Super in 20 Kg Packing,00aarif 40 Kg Packing, Badhai Basmati in 25 Kg Packing"
+            }]
+          },{
+            "brandtype": "Non Steam",
+            "details": [{
+                "msg": "We have Silver type in Basmati Steam brand. We have different variations in it like Silver Pearl, Silver Star, Silver Gold, Silver Regular, Silver Platinum with 10 KG packing variety."
+              },{
+                "msg": "We have Rizwan type in Basmati Steam brand. We have different variations in it like Rizwan Delight, Rizwan Everyday, Rizwan Mini Mogra, Rizwan Regular with 10 KG packing variety."
+              },{
+                "msg": "We have Ruchi Bhog type in Basmati Steam brand. We have different variations in it like Ruchi Bhog Best, Ruchi Bhog Dubar, Ruchi Bhog Gold Biryani, Ruchi Bhog Hyderabadi, Ruchi Bhog Mughlai, Ruchi Bhog Super Mogra, Ruchi Bhog Tini with 10 KG packing variety."
+              },{
+                "msg": "We have Shahabzada type in Basmati Steam brand. We have different variations in it like Shahabzada Super Mogra, Shahabzada Mini Dubar, Shahabzada Premium, Shahabzada Dubar, Shahabzada Special with 10 KG packing variety."
+              },{
+                "msg": "We have Al Abrar type in Basmati Steam brand. We have Al Abrar Tini variations in itin 10 KG packing"
+              },{
+                "msg": "Likewise we have different types in Basmati Steam brand as Grand India in 20 Kg Packing, Khushiyon Ke Pal in 20 Kg Packing, Swagat Super in 20 Kg Packing,00aarif 40 Kg Packing, Badhai Basmati in 25 Kg Packing"
+            }]
+          }]
+        }]
     },{
-      "title" : "chana-dal",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg"
-    }, {
+      "title" : "bajri",
+      "img" : "bajri",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg",
+      "productDetails" : [{
+        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+      },{
+        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+      }]
+    },{
+      "title" : "chana dal",
+      "img" : "chana-dal",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg",
+      "productDetails" : [{
+        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+      },{
+        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+      }]
+    },{
       "title" : "jwari",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg"
-    }, {
-      "title" : "masoor-dal",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg"
-    }, {
-      "title" : "moog-dal",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg"
+      "img" : "jwari",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg",
+      "productDetails" : [{
+        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+      }]
+    },{
+      "title" : "masoor dal",
+      "img" : "masoor-dal",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg",
+      "productDetails" : [{
+        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+      }]
+    },{
+      "title" : "moog dal",
+      "img" : "moog-dal",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg",
+      "productDetails" : [{
+        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+      },{
+        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+      }]
     },{
       "title" : "poha",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg"
-    }, {
+      "img" : "poha",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg",
+      "productDetails" : [{
+        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+      }]
+    },{
       "title" : "toor-dal",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg"
-    }, {
+      "img" : "toor-dal",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg",
+      "productDetails" : [{
+        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+      }]
+    },{
       "title" : "wheat",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg"
+      "img" : "wheat",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg",
+      "productDetails" : [{
+        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg"
+      }]
     }
   ],
   "team" : [{

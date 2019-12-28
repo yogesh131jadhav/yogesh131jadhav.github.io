@@ -1,7 +1,7 @@
 angular.module('skWholesaler', [])
-.controller('MainCtrl', function($scope, $http, $timeout) {
+.controller('MainCtrl', function($scope, $http, $timeout, $window) {
   $scope.activePage = 1;
-  $scope.pruductDetails = null;
+  $scope.singleProductDetail = null;
   $scope.showPage = false;
   $http.get("./stub/stub.json").then(function (response) {
     $timeout(() => {
@@ -10,11 +10,11 @@ angular.module('skWholesaler', [])
     $scope.skDetails = response.data;
   });
   $scope.handlePageChange = function(menu, product = null) {
+    $window.scrollTo(0, 0);
     return menu === 'Home' ? $scope.activePage = 1 : $scope.activePage = 2;
   }
   $scope.productDetailsPage = function(product) {
     $scope.activePage = 3;
-    $scope.pruductDetails = product;
-    console.log($scope.pruductDetails);
+    $scope.singleProductDetail = product;
   }
 });

@@ -1,3 +1,6 @@
+* {
+  animation-fill-mode: forwards;
+}
 @font-face{
   font-family:'Raleway';
   src: url(../fonts/Raleway/Raleway-Light.ttf) format('truetype')
@@ -222,19 +225,15 @@ a,
 }
 .productPopup:hover h3 {
   top: 20px;
-  transition-delay: 0.2s;
 }
 .productPopup:hover p {
   left: 0;
-  transition-delay: 1.5s;
 }
 .productPopup:hover a {
   bottom: 20px;
-  transition-delay: 2s;
 }
 .productPopupWrapper:hover .productPopup {
   top: 0;
-  transition-duration: 1s;
 }
 .map:before,
 .productPopup:before {
@@ -328,7 +327,7 @@ footer {
   -webkit-animation-name: openShutter; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
   animation-name: openShutter;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 }
@@ -350,7 +349,6 @@ footer {
   text-align: center;
   width: 320px;
 }
-
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes openShutter {
   0% {left: 0;}
@@ -361,4 +359,84 @@ footer {
   0% {left: -120;}
   15% {left: -100%;}
   100% {left: 0%;}
+}
+.productDetailsImage {
+  float: left;
+  margin: 0 30px 20px 0;
+}
+.productDetailsPage h3 {
+  margin: 10px 0;
+}
+.productDetailsPage h4 {
+  font-weight: bold;
+  font-size: 24px;
+}
+.productDetailsPage ul {
+  list-style: disc;
+  list-style-position: inside;
+  margin-bottom: 20px;
+}
+.productDetailsPage li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+/*Mobile responsive*/
+@media only screen and (max-width: 767px) {
+  .aboutUsBanner {
+    display: none;
+  }
+  .products ul > li {
+    width: 320px;
+    margin: auto;
+  }
+  .titleSection h2 {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 30px;
+  }
+  .products .btn {
+    top: 20px;
+  }
+  .bannerContainer {
+    padding: 200px 0 120px;
+  }
+  .productPopup:hover h3,
+  .productPopup:hover p,
+  .productPopup:hover a {
+    transition-delay: 0s;
+  }
+  .productDetailsImage {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+  .productDetailsPage ul > li {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .navbar-brand {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  .home .banner h3,
+  .home .banner h2,
+  .home .banner h1  {
+    position: absolute;
+    width: 100%;
+    top: -80px;
+    text-align: center;
+    transition-delay: 2s;
+    transition-duration: 2s;
+  }
+  .home .banner.activeBanner h2 {
+    top: 190px;
+  }
+  .home .banner.activeBanner h1 {
+    top: 250px;
+  }
+  .home .banner.activeBanner h3 {
+    top: 320px;
+  }
 }
