@@ -1,0 +1,68 @@
+{
+  "stores": [{
+    "profile": {
+      "fname": "Ranjeet",
+      "lname": "Gangdhar",
+      "company": "Nutan Cycle",
+      "address": "Pune",
+      "contact": "123 456 7890",
+      "email": "test@gmail.com"
+    },
+    "inventory": [{
+        "itemID": "1",
+        "brandName": "BMW",
+        "supplierName": "ABCD",
+        "supplierContactNumber": "1234123412",
+        "productName": "BMW bicycle",
+        "quanitity": "100",
+        "unit": "dozen",
+        "minimumQuantity": "1",
+        "pricePerUnit": "12000",
+        "displayPricePerUnit": "15000",
+        "productSpecification": [{
+          "spec": "This bike is awesome"
+        }],
+        "productDetails": [{
+          "info": "This bike is awesome"
+        }]
+      },{
+        "itemID": "2",
+        "brandName": "Tata",
+        "supplierName": "ABCD",
+        "supplierContactNumber": "1234123412",
+        "productName": "Electron",
+        "quanitity": "10",
+        "unit": "dozen",
+        "minimumQuantity": "1",
+        "pricePerUnit": "17000",
+        "displayPricePerUnit": "20000",
+        "productSpecification": [{
+          "spec": "Having Electrical option"
+        },{
+          "spec": "This cycle having two varients. 1. Worth rupies 19000 without gear and 2. 29000 with gear."
+        }],
+        "productDetails": [{
+          "info": "This bike is awesome"
+        }]
+    }],
+    "stock": [{
+      "stockID": "1",
+      "productID": "1",
+      "qantity": "100",
+      "purchaseDate": "31-12-2019",
+      "supplierName": "ABCD",
+      "supplierContactNumber": "1234123412",
+      "amountPerUnit": "233",
+      "invoicePaymentDate": "12-12-2012"
+    },{
+      "stockID": "2",
+      "productID": "2",
+      "qantity": "100",
+      "purchaseDate": "31-12-2019",
+      "supplierName": "ABCD",
+      "supplierContactNumber": "1234123412",
+      "amountPerUnit": "233",
+      "invoicePaymentDate": "12-12-2012"
+    }]
+  }]
+}

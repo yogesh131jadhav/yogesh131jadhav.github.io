@@ -1,0 +1,137 @@
+{
+  "stores": [{
+    "profile": {
+      "fname": "Ranjeet",
+      "lname": "Gangdhar",
+      "company": "Nutan Cycle",
+      "address": "Pune",
+      "contact": "123 456 7890",
+      "email": "test@gmail.com"
+    },
+    "supplier": [{
+      "sID": "1",
+      "sName": "Yogesh Jadhav",
+      "sEmail": "yogesh131jadhav@gmail.com",
+      "sPhone": [{
+        "number": "1234567890"
+      },{
+        "number": "1234567890"
+      },{
+        "number": "1234567890"
+      }],
+      "sAddress": "Pune",
+      "sCity": "Pune",
+      "sPostalCode": "411052",
+      "sState": "Maharastra",
+      "sCountry": "India",
+      "sHeadquarter": "Mumbai",
+      "sWarehouse": "Mumbai",
+      "sSpecialDate": {
+        "companyInauguration": "12-01-2000",
+        "wedding": "12-01-2010",
+        "birthday": "12-01-1990"
+      }
+    }],
+    "customer": [{
+      "cID": "1",
+      "cName": "Yogesh Jadhav",
+      "cEmail": "yogesh131jadhav@gmail.com",
+      "cPhone": [{
+        "number": "1234567890"
+      },{
+        "number": "1234567890"
+      },{
+        "number": "1234567890"
+      }],
+      "cAddress": "Pune",
+      "cCity": "Pune",
+      "cPostalCode": "411052",
+      "cState": "Maharastra",
+      "cCountry": "India",
+      "cHeadquarter": "Mumbai",
+      "cWarehouse": "Mumbai"
+    }],
+    "brands": [{
+      "brandID": "1",
+      "brandName": "BMW",
+      "category": "Sport"
+    },{
+      "brandID": "2",
+      "brandName": "Hero",
+      "category": "Sport"
+    }],
+    "inventory": [{
+        "itemID": "1",
+        "brandName": "BMW",
+        "supplierName": "ABCD",
+        "supplierContactNumber": "1234123412",
+        "productName": "BMW bicycle",
+        "quanitity": "100",
+        "unit": "dozen",
+        "minimumQuantity": "1",
+        "pricePerUnit": "12000",
+        "displayPricePerUnit": "15000",
+        "viewRecord": "true",
+        "productSpecification": [{
+          "spec": "This bike is awesome"
+        }],
+        "productDetails": [{
+          "info": "This bike is awesome"
+        }]
+      },{
+        "itemID": "2",
+        "brandName": "Tata",
+        "productName": "Electron",
+        "quanitity": "10",
+        "unit": "dozen",
+        "minimumQuantity": "1",
+        "pricePerUnit": "17000",
+        "displayPricePerUnit": "20000",
+        "viewRecord": "true",
+        "productSpecification": [{
+          "spec": "Having Electrical option"
+        },{
+          "spec": "This cycle having two varients. 1. Worth rupies 19000 without gear and 2. 29000 with gear."
+        }],
+        "productDetails": [{
+          "info": "This bike is awesome"
+        }]
+    }],
+    "stockManagement": [{
+      "stockID": "1",
+      "productID": "1",
+      "qantity": "100",
+      "purchaseDate": "31-12-2019",
+      "supplierID": "1",
+      "amount": "233",
+      "invoicePaymentDate": "12-12-2012",
+      "orderList": [{
+        "productID": "1",
+        "amountOfferedPerUnit": "11000",
+        "quanitity": "3"
+      },{
+        "productID": "2",
+        "amountOfferedPerUnit": "10000",
+        "quanitity": "2"
+      }]
+    }],
+    "invoice": [{
+      "invoiceID": "1",
+      "customerID": "1",
+      "status": "paid",
+      "statusMode": "cash",
+      "statusReferenceNumber": "",
+      "amount": "233",
+      "invoicePaymentDate": "12-12-2012",
+      "orderList": [{
+        "productID": "1",
+        "amountOfferedPerUnit": "11000",
+        "quanitity": "3"
+      },{
+        "productID": "2",
+        "amountOfferedPerUnit": "10000",
+        "quanitity": "2"
+      }]
+    }]
+  }]
+}
