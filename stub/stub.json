@@ -18,14 +18,33 @@
       "msg": "His guidance & vision helps Mr. Sunilkumar Bora, lead our company to the top of its segment. We are proudly reaching new heights everyday with the trust & support of our beloved clients and well wishers."
     },{
       "msg": "We have recently inaugurated our company at Two more locations in last two years."
+    }],
+    "specialContent": [{
+      "title": "Vision",
+      "msg": [
+        {"msg":"We aim to provide the highest quality, adulteration free grains at reasonable prices and to achieve & maintain the top most position in wholesale market."}
+      ]
+    },{
+      "title": "Mission",
+      "msg": [
+        {"msg":"To build the trust & security within our customers & society with supply of quality grains to keep our brand respected in market."}
+      ]
+    },{
+      "title": "Our work culture",
+      "msg": [
+        {"msg":"Isn’t it great to check out the quality of the grain, you are going to buy? That’s why we have a wide range of samples available for our customers. Customers can choose the grains from the samples they require and the same is available in the packaging starting from 10 kg to 50 kg."},
+        {"msg":"We are concerned with the quality, shipping, processing, and storage of the grains and we store our products in a clean & hygienic places."},
+        {"msg":"We proudly offer direct sales of packaged and bulk grains. With decades of experience in sourcing only the finest grains, you can be assured that every ingredient is having the highest quality."},
+        {"msg":"Customer satisfaction is our motto & we keep it intact in all circumstances, if the delivered product is damaged then, we make sure to replace it within a certain period of time."}
+      ]
     }]
   },
   "products" : [{
       "title" : "rice",
       "img" : "rice",
-      "msgOnThumbnail" : "The packaging of Rice is available in 25Kg and 30Kg",
+      "msgOnThumbnail" : "The packaging of Rice is availabe in 10Kg, 20Kg, 25kg and 30Kg.",
       "productDetails" : [{
-        "msg": "The packaging of Rice is available in 25Kg and 30Kg"
+        "msg": "The packaging of Rice is availabe in 10Kg, 20Kg, 25kg and 30Kg."
       }],
       "productBrands": [{
           "brandName":"Basmati",
@@ -64,44 +83,44 @@
     },{
       "title" : "bajri",
       "img" : "bajri",
-      "msgOnThumbnail" : "The packaging of Bajari is available in 25Kg and 30Kg",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg.",
       "productDetails" : [{
-        "msg": "The packaging of Bajari is available in 25Kg and 30Kg"
+        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg."
       }]
     },{
       "title" : "wheat",
       "img" : "wheat",
-      "msgOnThumbnail" : "The packaging of wheat is available in 25Kg and 30Kg",
+      "msgOnThumbnail" : "The packaging of Wheat is available in 30Kg.",
       "productDetails" : [{
-        "msg": "The packaging of wheat is available in 25Kg and 30Kg"
+        "msg": "The packaging of Wheat is available in 30Kg."
       }]
     },{
       "title" : "chana dal",
       "img" : "chana-dal",
-      "msgOnThumbnail" : "The packaging of Chana Dal is available in 25Kg and 30Kg",
+      "msgOnThumbnail" : "The packaging of Chana Dal is availabe in 25kg and 30Kg.",
       "productDetails" : [{
-        "msg": "The packaging of Chana Dal is available in 25Kg and 30Kg"
+        "msg": "The packaging of Chana Dal is availabe in 25kg and 30Kg."
       }]
     },{
       "title" : "Jwari",
       "img" : "jwari",
-      "msgOnThumbnail" : "The packaging of Jwari is available in 25Kg and 30Kg",
+      "msgOnThumbnail" : "The packaging of Jwari is availabe in 30Kg and 50Kg.",
       "productDetails" : [{
-        "msg": "The packaging of Jwari is available in 25Kg and 30Kg"
+        "msg": "The packaging of Jwari is availabe in 30Kg and 50Kg."
       }]
     },{
       "title" : "masoor dal",
       "img" : "masoor-dal",
-      "msgOnThumbnail" : "The packaging of Masoor Dal is available in 25Kg and 30Kg",
+      "msgOnThumbnail" : "The packaging of Masur Daal is availabe in 30Kg",
       "productDetails" : [{
-        "msg": "The packaging of Masoor Dal is available in 25Kg and 30Kg"
+        "msg": "The packaging of Masur Daal is availabe in 30Kg"
       }]
     },{
       "title" : "moog dal",
       "img" : "moog-dal",
-      "msgOnThumbnail" : "The packaging of moog dal is available in 25Kg and 30Kg",
+      "msgOnThumbnail" : "The packaging of Moong Dal is availabe in 30Kg",
       "productDetails" : [{
-        "msg": "The packaging of moog dal is available in 25Kg and 30Kg"
+        "msg": "The packaging of Moong Dal is availabe in 30Kg"
       }]
     },{
       "title" : "poha",
@@ -113,9 +132,16 @@
     },{
       "title" : "toor dal",
       "img" : "toor-dal",
-      "msgOnThumbnail" : "The packaging of Toor Dal is available in 25Kg and 30Kg",
+      "msgOnThumbnail" : "The packaging of Toor Dal is availabe in 30Kg",
       "productDetails" : [{
-        "msg": "The packaging of Toor Dal is available in 25Kg and 30Kg"
+        "msg": "The packaging of Toor Dal is availabe in 30Kg"
+      }]
+    },{
+      "title" : "Wheat Atta",
+      "img" : "wheat-atta",
+      "msgOnThumbnail" : "The packaging of Toor Dal is availabe in 30Kg",
+      "productDetails" : [{
+        "msg": "The packaging of Toor Dal is availabe in 30Kg"
       }]
     }
   ],

@@ -1,100 +1,198 @@
-<html>
+<html ng-app="skWholesale" ng-controller="MainCtrl">
   <head>
-    <title>Baby Name Ceremony</title>
-    <style>
-      .container {
-        box-shadow: 0 0 5px 2px #ddd;
-        padding: 20px;
-        width: 350px;
-        height: 400px;
-        margin: auto;
-        right: 0;
-        left:0;
-        top: 0;
-        bottom: 0;
-        position: absolute;
-        font-family: calibri;
-        font-size: 18px;
-        background: #f1ffff;
-      }
-      .paw {
-        height: 80px;
-        width: 70px;
-        background: #2b38a1;
-        display: inline-block;
-        border-radius: 50px 30px 25px 70px;
-        transform: rotate(-10deg);
-        position: relative;
-        margin-top: 40px;
-      }
-      .paw.right {
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-      }
-      .paw span {
-        position: absolute;
-        border-radius: 100%;
-      }
-      .paw span.first {
-        height: 22px;
-        width: 22px;
-        top: -28px;
-        right: 0;
-        background: #01a8ee;
-      }
-      .paw span.second {
-        height: 18px;
-        width: 18px;
-        top: -26px;
-        right: 25px;
-        background: #3ccdca;
-      }
-      .paw span.third {
-        height: 15px;
-        width: 15px;
-        top: -19px;
-        right: 47px;
-        background: #2685c5;
-      }
-      .paw span.fourth {
-        height: 13px;
-        width: 13px;
-        top: -6px;
-        right: 65px;
-        background: #3ccdca;
-      }
-      .paw span.fifth {
-        height: 10px;
-        width: 10px;
-        top: 12px;
-        right: 76px;
-        background: #2685c5;
-      }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="favicon.ico">
+    <title>SK's Wholesale</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <div class="container">
-      <div style="height: 150px; text-align: center; padding-top: 30px;">
-        <span class="paw" style="margin-right: 10px;">
-          <span class="first"></span>
-          <span class="second"></span>
-          <span class="third"></span>
-          <span class="fourth"></span>
-          <span class="fifth"></span>
-        </span>
-        <span class="paw right">
-          <span class="fifth"></span>
-          <span class="fourth"></span>
-          <span class="third"></span>
-          <span class="second"></span>
-          <span class="first"></span>
-        </span>
+    <div ng-class="activePage === 1 ? 'home' : 'productList'">
+      <div ng-class="showPage ? 'slidingShutter open' : 'slidingShutter'">
+        <div class="loading">
+          Loading...
+        </div>
       </div>
-      <div style="text-align: center;">
-        <p>With greate pleasure we codially invite you for naming ceremony of our baby doughter.</p>
-        <p>Venue: Vishal Bakery, Radhanagari</p>
-        <p>Timing: 10AM onwards</p>
+      <section ng-class="(activePage === 1 && showPage) ? 'banner activeBanner' : 'banner'">
+        <div class="navbar-wrapper">
+          <div class="container">
+            <div class="navbar navbar-fixed-top" id="id-navigation" role="navigation">
+              <div class="containwrapper"></div>
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" ng-click="handlePageChange('Home')"><img src="img/SkswholeLogo.png" />{{skDetails.title}}</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li ng-repeat="link in skDetails.navLinks">
+                      <a ng-class="((activePage === 1 && link.navTitle === 'Home') || (activePage === 2 && link.navTitle !== 'Home')) ? 'active' : ''" 
+                        ng-click="handlePageChange(link.navTitle)">{{link.navTitle}}</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bannerContainer" ng-if="activePage === 1">
+          <h2>{{skDetails.banner.title}}</h2>
+          <h1>{{skDetails.banner.subTitle}}</h1>
+          <h3>{{skDetails.banner.location}}</h3>
+        </div>
+        <div class="bannerContainer" ng-if="activePage !== 1">
+          <div class="container">
+            <h1>{{title | uppercase}}</h1>
+          </div>
+        </div>
+      </section>
+      <div ng-if="activePage === 1">
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 aboutUsBanner imageWrapper"></div>
+              <div class="col-md-6">
+                <h2>{{skDetails.aboutUs.title}}</h2>
+                <p ng-repeat="message in skDetails.aboutUs.content">{{message.msg}}</p>
+                <a ng-click="aboutUsPage()">More..</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="products odd">
+          <div class="container">
+            <div class="row text-center titleSection">
+              <h2>Products</h2>
+              <a ng-click="handlePageChange('Product')" class="btn">Read More</a>
+            </div>
+            <ul class="row">
+              <li class="col-sm-4" ng-repeat="product in skDetails.products" ng-if="$index < 3">
+                <div class="productPopupWrapper">
+                  <img ng-src="./img/products/{{product.img}}.jpg"/>
+                  <div class="productPopup">
+                    <h3 class="text-uppercase">{{product.title | uppercase}}</h3>
+                    <p>{{product.msgOnThumbnail}}</p>
+                    <a ng-click="productDetailsPage(product)">Read More</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="team">
+          <div class="container">
+            <div class="row text-center">
+              <h2>Our Team</h2>
+            </div>
+            <ul class="row text-center">
+              <li class="col-sm-6" ng-repeat="teamMate in skDetails.team">
+                <div class="teamMates">
+                  <h2>{{teamMate.title}}</h2>
+                  <p>{{teamMate.details}}</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
+      <div ng-if="activePage === 2">
+        <section class="products">
+          <div class="container">
+            <ul class="row">
+              <li class="col-sm-4" ng-repeat="product in skDetails.products">
+                <div class="productPopupWrapper">
+                  <img ng-src="./img/products/{{product.img}}.jpg"/>
+                  <div class="productPopup">
+                    <h3>{{product.title | uppercase}}</h3>
+                    <p>{{product.msgOnThumbnail}}</p>
+                    <a ng-click="productDetailsPage(product)">Read More</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div ng-if="activePage === 3">
+        <section class="products">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <img class="productDetailsImage" ng-src="./img/products/{{singleProductDetail.img}}.jpg"/>
+                <div class="productDetailsPage">
+                  <h2>{{singleProductDetail.title | uppercase}}</h2>
+                  <p ng-repeat="productDetail in singleProductDetail.productDetails">{{productDetail.msg}}</p>
+                  <div ng-repeat="productBrands in singleProductDetail.productBrands">
+                    <h3>{{productBrands.brandName}}</h3>
+                    <div ng-repeat="brandtype in productBrands.brandtypes">
+                      <h4>{{brandtype.brandtype}}</h4>
+                      <ul>
+                        <li ng-repeat="description in brandtype.details">{{description.msg}}</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div ng-if="activePage === 4">
+        <section class="products">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <img class="productDetailsImage" src="./img/aboutUs.jpg"/>
+                <div class="productDetailsPage">
+                  <h3>SK's Wholesale</h3>
+                  <p ng-repeat="message in skDetails.aboutUs.content">{{message.msg}}</p>
+                  <div ng-repeat="specialContent in skDetails.aboutUs.specialContent">
+                    <h3>{{specialContent.title}}</h3>
+                    <p ng-repeat="message in specialContent.msg">{{message.msg}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="map">
+        <div class="container">
+          <div class="row">
+            <li class="col-md-4 col-md-push-8 col-sm-6 col-sm-push-6">
+              <div class="address">
+                <h2 class="marginTop0">Contact Us</h2>
+                <h4>Address</h4>
+                <p class="marginBottom20">5/237, Dhanya Lane, Near Federal Bank, Opp PNG Jewellers, Ichalkaranji – 416115</p>
+                <h4>Telephone Number</h4>
+                <p class="marginBottom20">0230 – 2423381</p>
+                <h4>Mobile Number</h4>
+                <p class="marginBottom20">9823014200 / 9823159900</p>
+                <h4>Email Address</h4>
+                <p>skswholesale@gmail.com</p>
+              </div>
+            </li>
+          </div>
+        </div>
+      </section>
+      <footer class="text-center">&copy; 2020 SK Wholesale All rights reserved</footer>
     </div>
+    <script src="js/angular.min.js" data-semver="1.5.10"></script>
+    <script src="js/script.js"></script>
+    <script>
+      window.onscroll = function() {
+        if (window.pageYOffset > 500) {
+          document.getElementById('id-navigation').classList.add('flatNav');
+        } else {
+          document.getElementById('id-navigation').classList.remove('flatNav');
+        }
+      }
+    </script>
   </body>
 </html>
