@@ -11,7 +11,7 @@
     "location": "ICHALKARANJI"
   },
   "aboutUs": {
-    "title" : "Welcome to SK Wholesale",
+    "title" : "Welcome to SK's Wholesale",
     "content" : [{
       "msg": "With the dream of providing quality grains supply, the late Mr. Kantilal Bora started his journey in wholesale business 50 years ago."
     },{
@@ -32,7 +32,7 @@
     },{
       "title": "Our work culture",
       "msg": [
-        {"msg":"Isn’t it great to check out the quality of the grain, you are going to buy? That’s why we have a wide range of samples available for our customers. Customers can choose the grains from the samples they require and the same is available in the packaging starting from 10 kg to 50 kg."},
+        {"msg":"Isn’t it great to check out the quality of the grain, you are going to buy? That’s why we have a wide range of samples available for our customers. Customers can choose the grains from the samples they require and the same is available in the packaging starting from 10 KG to 50 KG."},
         {"msg":"We are concerned with the quality, shipping, processing, and storage of the grains and we store our products in a clean & hygienic places."},
         {"msg":"We proudly offer direct sales of packaged and bulk grains. With decades of experience in sourcing only the finest grains, you can be assured that every ingredient is having the highest quality."},
         {"msg":"Customer satisfaction is our motto & we keep it intact in all circumstances, if the delivered product is damaged then, we make sure to replace it within a certain period of time."}
@@ -42,9 +42,9 @@
   "products" : [{
       "title" : "rice",
       "img" : "rice",
-      "msgOnThumbnail" : "The packaging of Rice is availabe in 10Kg, 20Kg, 25kg and 30Kg.",
+      "msgOnThumbnail" : "The packaging of Rice is availabe in 10KG, 20KG, 25KG and 30KG.",
       "productDetails" : [{
-        "msg": "The packaging of Rice is availabe in 10Kg, 20Kg, 25kg and 30Kg."
+        "msg": "The packaging of Rice is availabe in 10KG, 20KG, 25KG and 30KG."
       }],
       "productBrands": [{
           "brandName":"Basmati",
@@ -61,7 +61,7 @@
               },{
                 "msg": "We have Al Abrar type in Basmati Steam brand. We have Al Abrar Tini variations in itin 10 KG packing"
               },{
-                "msg": "Likewise we have different types in Basmati Steam brand as Grand India in 20 Kg Packing, Khushiyon Ke Pal in 20 Kg Packing, Swagat Super in 20 Kg Packing,00aarif 40 Kg Packing, Badhai Basmati in 25 Kg Packing"
+                "msg": "Likewise we have different types in Basmati Steam brand as Grand India in 20 KG Packing, Khushiyon Ke Pal in 20 KG Packing, Swagat Super in 20 KG Packing,00aarif 40 KG Packing, Badhai Basmati in 25 KG Packing"
             }]
           },{
             "brandtype": "Non Steam",
@@ -76,72 +76,72 @@
               },{
                 "msg": "We have Al Abrar type in Basmati Steam brand. We have Al Abrar Tini variations in itin 10 KG packing"
               },{
-                "msg": "Likewise we have different types in Basmati Steam brand as Grand India in 20 Kg Packing, Khushiyon Ke Pal in 20 Kg Packing, Swagat Super in 20 Kg Packing,00aarif 40 Kg Packing, Badhai Basmati in 25 Kg Packing"
+                "msg": "Likewise we have different types in Basmati Steam brand as Grand India in 20 KG Packing, Khushiyon Ke Pal in 20 KG Packing, Swagat Super in 20 KG Packing,00aarif 40 KG Packing, Badhai Basmati in 25 KG Packing"
             }]
           }]
         }]
     },{
       "title" : "bajri",
       "img" : "bajri",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 25Kg and 30Kg.",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 50KG and 80KG.",
       "productDetails" : [{
-        "msg": "The packaging of Bajari is availabe in 25Kg and 30Kg."
+        "msg": "The packaging of Bajari is availabe in 50KG and 80KG."
       }]
     },{
       "title" : "wheat",
       "img" : "wheat",
-      "msgOnThumbnail" : "The packaging of Wheat is available in 30Kg.",
+      "msgOnThumbnail" : "The packaging of Wheat is available in 30KG.",
       "productDetails" : [{
-        "msg": "The packaging of Wheat is available in 30Kg."
+        "msg": "The packaging of Wheat is available in 30KG."
       }]
     },{
       "title" : "chana dal",
       "img" : "chana-dal",
-      "msgOnThumbnail" : "The packaging of Chana Dal is availabe in 25kg and 30Kg.",
+      "msgOnThumbnail" : "The packaging of Chana Dal is availabe in 25KG, 30KG and 50KG.",
       "productDetails" : [{
-        "msg": "The packaging of Chana Dal is availabe in 25kg and 30Kg."
+        "msg": "The packaging of Chana Dal is availabe in 25KG, 30KG and 50KG."
       }]
     },{
       "title" : "Jwari",
       "img" : "jwari",
-      "msgOnThumbnail" : "The packaging of Jwari is availabe in 30Kg and 50Kg.",
+      "msgOnThumbnail" : "The packaging of Jwari is availabe in 30KG and 50KG.",
       "productDetails" : [{
-        "msg": "The packaging of Jwari is availabe in 30Kg and 50Kg."
+        "msg": "The packaging of Jwari is availabe in 30KG and 50KG."
       }]
     },{
       "title" : "masoor dal",
       "img" : "masoor-dal",
-      "msgOnThumbnail" : "The packaging of Masur Daal is availabe in 30Kg",
+      "msgOnThumbnail" : "The packaging of Masur Daal is availabe in 30KG",
       "productDetails" : [{
-        "msg": "The packaging of Masur Daal is availabe in 30Kg"
+        "msg": "The packaging of Masur Daal is availabe in 30KG"
       }]
     },{
       "title" : "moog dal",
       "img" : "moog-dal",
-      "msgOnThumbnail" : "The packaging of Moong Dal is availabe in 30Kg",
+      "msgOnThumbnail" : "The packaging of Moong Dal is availabe in 30KG",
       "productDetails" : [{
-        "msg": "The packaging of Moong Dal is availabe in 30Kg"
+        "msg": "The packaging of Moong Dal is availabe in 30KG"
       }]
     },{
       "title" : "poha",
       "img" : "poha",
-      "msgOnThumbnail" : "The packaging of Poha is available in 25Kg and 30Kg",
+      "msgOnThumbnail" : "The packaging of Poha is available in 25KG and 30KG",
       "productDetails" : [{
-        "msg": "The packaging of Poha is available in 25Kg and 30Kg"
+        "msg": "The packaging of Poha is available in 25KG and 30KG"
       }]
     },{
       "title" : "toor dal",
       "img" : "toor-dal",
-      "msgOnThumbnail" : "The packaging of Toor Dal is availabe in 30Kg",
+      "msgOnThumbnail" : "The packaging of Toor Dal is availabe in 30KG",
       "productDetails" : [{
-        "msg": "The packaging of Toor Dal is availabe in 30Kg"
+        "msg": "The packaging of Toor Dal is availabe in 30KG"
       }]
     },{
       "title" : "Wheat Atta",
       "img" : "wheat-atta",
-      "msgOnThumbnail" : "The packaging of Toor Dal is availabe in 30Kg",
+      "msgOnThumbnail" : "The packaging of Wheat Atta is availabe in 5KG, 6KG and 10KG",
       "productDetails" : [{
-        "msg": "The packaging of Toor Dal is availabe in 30Kg"
+        "msg": "The packaging of Wheat Atta is availabe in 30KG"
       }]
     }
   ],

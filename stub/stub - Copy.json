@@ -1,5 +1,5 @@
 {
-  "title": "SK's Wholesaler",
+  "title": "SK's wholesale",
   "navLinks": [{
     "navTitle": 'Home'
   },{
@@ -7,11 +7,11 @@
   }],
   "banner": {
     "title": 'Sunilkumar Kantilal Grain Merchant',
-    "subTitle": 'SK`s Wholesaler',
+    "subTitle": 'SK`s wholesale',
     "location": 'ICHALKARANJI',
   },
   "aboutUs": {
-    "title" : "Welcome to SK Wholesaler",
+    "title" : "Welcome to SK's Wholesale",
     "content" : [{
       "msg": "With the dream of providing quality grains supply, the late Mr. Kantilal Bora started his journey in wholesale business 50 years ago."
     },{

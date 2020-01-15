@@ -114,11 +114,13 @@ a,
   position: relative;
 }
 .navbar-brand img {
+  background: #fff;
+  border-radius: 100%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   position: absolute;
   top: 0;
-  bottom: 0;
-  margin: auto;
-  left: 0;
 }
 .navbar-nav a {
   font-size: 14px;
