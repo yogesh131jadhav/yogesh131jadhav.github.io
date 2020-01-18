@@ -81,13 +81,6 @@
           }]
         }]
     },{
-      "title" : "bajri",
-      "img" : "bajri",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 50KG and 80KG.",
-      "productDetails" : [{
-        "msg": "The packaging of Bajari is availabe in 50KG and 80KG."
-      }]
-    },{
       "title" : "wheat",
       "img" : "wheat",
       "msgOnThumbnail" : "The packaging of Wheat is available in 30KG.",
@@ -139,9 +132,16 @@
     },{
       "title" : "Wheat Atta",
       "img" : "wheat-atta",
-      "msgOnThumbnail" : "The packaging of Wheat Atta is availabe in 5KG, 6KG and 10KG",
+      "msgOnThumbnail" : "The packaging of Wheat Atta is availabe in 30KG (5KG * 6 & 10KG * 3)",
       "productDetails" : [{
-        "msg": "The packaging of Wheat Atta is availabe in 30KG"
+        "msg": "The packaging of Wheat Atta is availabe in 30KG (5KG * 6 & 10KG * 3)"
+      }]
+    },{
+      "title" : "bajri",
+      "img" : "bajri",
+      "msgOnThumbnail" : "The packaging of Bajari is availabe in 50KG and 30KG.",
+      "productDetails" : [{
+        "msg": "The packaging of Bajari is availabe in 50KG and 30KG."
       }]
     }
   ],
