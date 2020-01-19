@@ -81,6 +81,13 @@
           }]
         }]
     },{
+      "title" : "Jwari",
+      "img" : "jwari",
+      "msgOnThumbnail" : "The packaging of Jwari is availabe in 30KG and 50KG.",
+      "productDetails" : [{
+        "msg": "The packaging of Jwari is availabe in 30KG and 50KG."
+      }]
+    },{
       "title" : "wheat",
       "img" : "wheat",
       "msgOnThumbnail" : "The packaging of Wheat is available in 30KG.",
@@ -93,13 +100,6 @@
       "msgOnThumbnail" : "The packaging of Chana Dal is availabe in 25KG, 30KG and 50KG.",
       "productDetails" : [{
         "msg": "The packaging of Chana Dal is availabe in 25KG, 30KG and 50KG."
-      }]
-    },{
-      "title" : "Jwari",
-      "img" : "jwari",
-      "msgOnThumbnail" : "The packaging of Jwari is availabe in 30KG and 50KG.",
-      "productDetails" : [{
-        "msg": "The packaging of Jwari is availabe in 30KG and 50KG."
       }]
     },{
       "title" : "masoor dal",
