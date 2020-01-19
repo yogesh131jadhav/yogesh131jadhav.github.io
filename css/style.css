@@ -464,3 +464,9 @@ footer {
     top: 320px;
   }
 }
+.classification ul li {
+  margin-left: 20px;
+}
+.classification h3 {
+  margin-bottom: 10px;
+}

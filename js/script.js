@@ -16,7 +16,17 @@ angular.module('skWholesale', [])
       behavior: 'smooth',
     });
     $scope.title = 'Product List';
-    return menu === 'Home' ? $scope.activePage = 1 : $scope.activePage = 2;
+    switch(menu) {
+      case 'Home':
+        return $scope.activePage = 1;
+      case 'Product':
+        return $scope.activePage = 2;
+      case 'Item Classification':
+        $scope.title = menu;
+        return $scope.activePage = 5;
+      default:
+        return $scope.activePage = 1;
+    }
   }
   $scope.productDetailsPage = function(product) {
     $window.scrollTo({

@@ -32,7 +32,10 @@
                 <div class="navbar-collapse collapse">
                   <ul class="nav navbar-nav navbar-right">
                     <li ng-repeat="link in skDetails.navLinks">
-                      <a ng-class="((activePage === 1 && link.navTitle === 'Home') || (activePage === 2 && link.navTitle !== 'Home')) ? 'active' : ''" 
+                      <a ng-class="((activePage === 1 && link.navTitle === 'Home') || 
+                                    (activePage === 2 && link.navTitle === 'Product') || 
+                                    (activePage === 5 && link.navTitle === 'Item Classification') || 
+                                    (activePage === 6 && link.navTitle === 'Branding')) ? 'active' : ''" 
                         ng-click="handlePageChange(link.navTitle)">{{link.navTitle}}</a>
                     </li>
                   </ul>
@@ -157,6 +160,80 @@
                     <p ng-repeat="message in specialContent.msg">{{message.msg}}</p>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div ng-if="activePage === 5">
+        <section class="products classification">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <ul><h2>Rice</h2>
+                  <li>
+                    <ul><h3>Basmati</h3>
+                      <li>Steam</li>
+                      <li>Non Steam</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul><h3>Steam</h3>
+                      <li>Akkha </li>
+                      <li>Tukda</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul><h3>Kolam Rice</h3>
+                      <li>Steam</li>
+                      <li>
+                        <ul><h5>Non Steam</h5>
+                          <li>Akkha </li>
+                          <li>Tukda</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h3>Parboiled Rice ( Ukda )</h3>
+                  </li>
+                  <li>
+                    <h3>Pana Rice</h3>
+                  </li>
+                  <li>
+                    <ul><h3>Ambemore</h3>
+                      <li>Akkha </li>
+                      <li>Tukda</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h3>Ghansal</h3>
+                  </li>
+                  <li>
+                    <h3>Sela Rice</h3>
+                  </li>
+                  <li>
+                    <h3>Masoorie</h3>
+                  </li>
+                  <li>
+                    <ul><h3>Indrayani Rice</h3>
+                      <li>Akkha </li>
+                      <li>Tukda</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-4">
+                <ul><h2>Wheat</h2>
+                  <li>Bansi</li>
+                  <li>Sihore</li>
+                </ul>
+              </div>
+              <div class="col-sm-4">
+                <ul><h2>Jwari</h2>
+                  <li>Hybrid</li>
+                  <li>Shalu</li>
+                </ul>
               </div>
             </div>
           </div>
