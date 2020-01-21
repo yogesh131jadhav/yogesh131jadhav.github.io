@@ -5,7 +5,7 @@
   },{
     "navTitle": "Product"
   },{
-    "navTitle": "Item Classification"
+    "navTitle": "Branding"
   }],
   "banner": {
     "title": "Sunilkumar Kantilal Grain Merchant",
@@ -164,5 +164,130 @@
     "map": "contactMap.jpg",
     "mapPath": ""
   },
+  "branding": [{
+    "title": "Rice",
+    "subItem": [{
+      "title": "Basmati",
+      "subItem": [{
+        "title": "Steam",
+        "subItem": [{
+          "title": "Silver ( Packing :  10 Kg )",
+          "subItem": [{
+            "title": "Silver Pearl"
+          },{
+            "title": "Silver Star"
+          },{
+            "title": "Silver Gold"
+          },{
+            "title": "Silver Regular"
+          },{
+            "title": "Silver Platinum"
+          }]
+        },{
+          "title": "Rizwan ( Packing :  10 Kg )",
+          "subItem": [{
+            "title": "Rizwan Delight"
+          },{
+            "title": "Rizwan Everyday"
+          },{
+            "title": "Rizwan Mini Mogra"
+          },{
+            "title": "Rizwan Regular"
+          }]
+        },{
+          "title": "Ruchi Bhog ( Packing :  10 Kg )",
+          "subItem": [{
+            "title": "Ruchi Bhog Best"
+          },{
+            "title": "Ruchi Bhog Dubar"
+          },{
+            "title": "Ruchi Bhog Gold Biryani"
+          },{
+            "title": "Ruchi Bhog Hyderabadi"
+          },{
+            "title": "Ruchi Bhog Mughlai"
+          },{
+            "title": "Ruchi Bhog Super Mogra"
+          },{
+            "title": "Ruchi Bhog Tini"
+          }]
+        }]
+      },{
+        "title": "Non Steam",
+        "subItem": [{
+          "title": "Daawat ( Old & New ) ( Packing :  10 Kg )",
+          "subItem": [{
+            "title": "Daawat 40 Carat"
+          },{
+            "title": "Daawat 50 Carat"
+          },{
+            "title": "Daawat 60 Carat"
+          },{
+            "title": "Daawat 70 Carat"
+          },{
+            "title": "Daawat 90 Carat"
+          },{
+            "title": "Daawat Super Box"
+          }]
+        },{
+          "title": "Chamak ( Packing :  10 Kg )",
+          "subItem": [{
+            "title": "Chamak 25 Carat"
+          },{
+            "title": "Chamak 40 Carat"
+          },{
+            "title": "Chamak 50 Carat"
+          },{
+            "title": "Chamak 75 Carat"
+          }]
+        }]
+      }]
+    },{
+      "title": "Steam",
+      "subItem": [{
+        "title": "Akkha ( Packing :  25 Kg )",
+        "subItem": [{
+          "title": "Maharaja Steam"
+        },{
+          "title": "Namokar Steam"
+        },{
+          "title": "Gemine Gold Old"
+        },{
+          "title": "Gemine Lamination"
+        },{
+          "title": "Pruthviraj Steam"
+        }]
+      },{
+        "title": "Tukda ( Kani ) ( Packing :  25 Kg )",
+        "subItem": [{
+          "title": "Murlidhar Kani"
+        },{
+          "title": "Rani Kani"
+        },{
+          "title": "SS Gold Kani"
+        },{
+          "title": "Kalbhairav Steam Kani"
+        },{
+          "title": "Half Steam Kani"
+        },{
+          "title": "Trupti Steam Kani"
+        }]
+      }]
+    }]
+  },{
+    "title": "Bajari",
+    "subItem": [{
+      "title": "Bansi"
+    },{
+      "title": "Sihore"
+    }]
+  },{
+    "title": "Jwari",
+    "subItem": [{
+      "title": "Hybrid"
+    },{
+      "title": "Shalu"
+    }]
+  }],
   "foooter": "Yogesh Krishna Jadhav"
 }

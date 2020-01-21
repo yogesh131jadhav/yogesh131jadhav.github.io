@@ -3,6 +3,7 @@ angular.module('skWholesale', [])
   $scope.activePage = 1;
   $scope.singleProductDetail = null;
   $scope.showPage = false;
+  $scope.mobileNavClass = false;
   $scope.title = 'Product List';
   $http.get("./stub/stub.json").then(function (response) {
     $timeout(() => {
@@ -21,7 +22,7 @@ angular.module('skWholesale', [])
         return $scope.activePage = 1;
       case 'Product':
         return $scope.activePage = 2;
-      case 'Item Classification':
+      case 'Branding':
         $scope.title = menu;
         return $scope.activePage = 5;
       default:
@@ -44,6 +45,9 @@ angular.module('skWholesale', [])
     });
     $scope.title = 'About Us';
     $scope.activePage = 4;
+  }
+  $scope.handleMobileNav = function() {
+    $scope.mobileNavClass = $scope.mobileNavClass ? false : true;
   }
 });
 

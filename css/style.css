@@ -437,8 +437,14 @@ footer {
   .productDetailsPage ul > li {
     width: 100%;
   }
+  .navbar-toggle {
+    background: rgba(0,0,0,0.75);
+  }
+  .navbar-toggle .icon-bar {
+    background: #fff;
+  }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 479px) {
   .navbar-brand {
     font-size: 32px;
   }
