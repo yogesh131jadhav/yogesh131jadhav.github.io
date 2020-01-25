@@ -11,7 +11,7 @@
     <div ng-class="activePage === 1 ? 'home' : 'productList'">
       <div ng-class="showPage ? 'slidingShutter open' : 'slidingShutter'">
         <div class="loading">
-          Loading...
+          Welcome...
         </div>
       </div>
       <section ng-class="(activePage === 1 && showPage) ? 'banner activeBanner' : 'banner'">
@@ -170,15 +170,15 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-4">
-                <ul ng-if="skDetails.branding.length">
+                <ul ng-if="skDetails.branding.length" class="brandingMenuBar">
                   <li ng-repeat="brand in skDetails.branding">
-                    <h3 ng-class="$index ===0 ? 'marginTop0':''">{{brand.title}}</h3>
-                    <ul ng-if="brand.subItem.length">
+                    <h3 ng-class="$index === 0 ? 'marginTop0':''" ng-click="toggleBrandNavClass(brand, 0)">{{brand.title}}</h3>
+                    <ul ng-if="brand.subItem.length" ng-class="brand.toggleClass ? 'show':''">
                       <li ng-repeat="item in brand.subItem">
-                        <h4>{{item.title}}</h4>
-                        <ul ng-if="item.subItem.length">
+                        <h4 ng-click="toggleBrandNavClass(item, 1)">{{item.title}}</h4>
+                        <ul ng-if="item.subItem.length" ng-class="item.toggleClass ? 'show':''">
                           <li ng-repeat="itemSubSet in item.subItem">
-                            <h5>{{itemSubSet.title}}</h5>
+                            <h5 ng-click="setSelectedBrand(itemSubSet)">{{itemSubSet.title}}</h5>
                           </li>
                         </ul>
                       </li>
@@ -187,30 +187,24 @@
                 </ul>
               </div>
               <div class="col-sm-8">
-                <ol class="breadcrumb">
-                  <li><a>Rice</a></li>
-                  <li><a>Basmati</a></li>
-                  <li class="active">Steam</li>
+                <ol class="breadcrumb" ng-if="selectedBrandBreadCrumb.length">
+                  <li ng-repeat="breadcrumb in selectedBrandBreadCrumb" ng-class="$index === (selectedBrandBreadCrumb.length - 1) ? 'active' : ''"><a>{{breadcrumb}}</a></li>
                 </ol>
-                <ul ng-if="skDetails.branding.length">
-                  <li ng-repeat="brand in skDetails.branding">
-                    <ul ng-if="brand.subItem.length">
-                      <li ng-repeat="item in brand.subItem">
-                        <h4 ng-if="$index === 0">{{item.title}}</h4>
-                        <ul ng-if="item.subItem.length">
-                          <li ng-repeat="itemSubSet in item.subItem">
-                            <h5>{{itemSubSet.title}}</h5>
-                            <ul ng-if="itemSubSet.subItem.length">
-                              <li ng-repeat="itemSubSetSubSet in itemSubSet.subItem">
-                                <h6>{{itemSubSetSubSet.title}}</h6>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h3>{{selectedBrand.title}}</h3>
+                  </div>
+                  <ul ng-if="selectedBrand.subItem.length" class="brandDetailsObject">
+                    <li ng-repeat="brand in selectedBrand.subItem" class="col-sm-4">
+                      <strong>{{brand.title}}</strong>
+                      <ul ng-if="brand.subItem.length">
+                        <li ng-repeat="item in brand.subItem">
+                          {{item.title}}
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -290,22 +284,22 @@
           </div>
         </section>
       </div>
-      <section class="map">
-        <div class="container">
-          <div class="row">
-            <li class="col-md-4 col-md-push-8 col-sm-6 col-sm-push-6">
-              <div class="address">
-                <h2 class="marginTop0">Contact Us</h2>
-                <h4>Address</h4>
-                <p class="marginBottom20">5/237, Dhanya Lane, Near Federal Bank, Opp PNG Jewellers, Ichalkaranji – 416115</p>
-                <h4>Telephone Number</h4>
-                <p class="marginBottom20">0230 – 2423381</p>
-                <h4>Mobile Number</h4>
-                <p class="marginBottom20">9823014200 / 9823159900</p>
-                <h4>Email Address</h4>
-                <p>skswholesale@gmail.com</p>
-              </div>
-            </li>
+      <section class="map clearfix">
+        <!--iframe src="{{contact.mapPath}}"></iframe-->
+        <div class="mapContainer">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.8701552570574!2d74.46418651486665!3d16.68337978850412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd451ff7da1aa0dd8!2sSUNILKUMAR%20KANTILAL%20(%20SK&#39;s%20WHOLESALE%20)!5e0!3m2!1sen!2sin!4v1579942397501!5m2!1sen!2sin" frameborder="0" style="position: absolute;width: 100%;top: 0;left: 0;height: 420px;" allowfullscreen=""></iframe>
+        </div>
+        <div class="mapAddress">
+          <div class="address">
+            <h2 class="marginTop0">Contact Us</h2>
+            <h4>Address</h4>
+            <p class="marginBottom20">5/237, Dhanya Lane, Near Federal Bank, Opp PNG Jewellers, Ichalkaranji – 416115</p>
+            <h4>Telephone Number</h4>
+            <p class="marginBottom20">0230 – 2423381</p>
+            <h4>Mobile Number</h4>
+            <p class="marginBottom20">9823014200 / 9823159900</p>
+            <h4>Email Address</h4>
+            <p>skswholesale@gmail.com</p>
           </div>
         </div>
       </section>
