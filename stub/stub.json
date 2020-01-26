@@ -13,8 +13,8 @@
     "location": "ICHALKARANJI"
   },
   "aboutUs": {
-    "title" : "Welcome to SK's Wholesale",
-    "content" : [{
+    "title": "Welcome to SK's Wholesale",
+    "content": [{
       "msg": "With the dream of providing quality grains supply, the late Mr. Kantilal Bora started his journey in wholesale business 50 years ago."
     },{
       "msg": "His guidance & vision helps Mr. Sunilkumar Bora, lead our company to the top of its segment. We are proudly reaching new heights everyday with the trust & support of our beloved clients and well wishers."
@@ -41,11 +41,11 @@
       ]
     }]
   },
-  "products" : [{
-      "title" : "rice",
-      "img" : "rice",
-      "msgOnThumbnail" : "The packaging of Rice is availabe in 10KG, 20KG, 25KG and 30KG.",
-      "productDetails" : [{
+  "products": [{
+      "title": "rice",
+      "img": "rice",
+      "msgOnThumbnail": "The packaging of Rice is availabe in 10KG, 20KG, 25KG and 30KG.",
+      "productDetails": [{
         "msg": "The packaging of Rice is availabe in 10KG, 20KG, 25KG and 30KG."
       }],
       "productBrands": [{
@@ -83,71 +83,71 @@
           }]
         }]
     },{
-      "title" : "Jwari",
-      "img" : "jwari",
-      "msgOnThumbnail" : "The packaging of Jwari is availabe in 30KG and 50KG.",
-      "productDetails" : [{
+      "title": "Jwari",
+      "img": "jwari",
+      "msgOnThumbnail": "The packaging of Jwari is availabe in 30KG and 50KG.",
+      "productDetails": [{
         "msg": "The packaging of Jwari is availabe in 30KG and 50KG."
       }]
     },{
-      "title" : "wheat",
-      "img" : "wheat",
-      "msgOnThumbnail" : "The packaging of Wheat is available in 30KG.",
-      "productDetails" : [{
+      "title": "wheat",
+      "img": "wheat",
+      "msgOnThumbnail": "The packaging of Wheat is available in 30KG.",
+      "productDetails": [{
         "msg": "The packaging of Wheat is available in 30KG."
       }]
     },{
-      "title" : "chana dal",
-      "img" : "chana-dal",
-      "msgOnThumbnail" : "The packaging of Chana Dal is availabe in 25KG, 30KG and 50KG.",
-      "productDetails" : [{
+      "title": "chana dal",
+      "img": "chana-dal",
+      "msgOnThumbnail": "The packaging of Chana Dal is availabe in 25KG, 30KG and 50KG.",
+      "productDetails": [{
         "msg": "The packaging of Chana Dal is availabe in 25KG, 30KG and 50KG."
       }]
     },{
-      "title" : "masoor dal",
-      "img" : "masoor-dal",
-      "msgOnThumbnail" : "The packaging of Masur Daal is availabe in 30KG",
-      "productDetails" : [{
+      "title": "masoor dal",
+      "img": "masoor-dal",
+      "msgOnThumbnail": "The packaging of Masur Daal is availabe in 30KG",
+      "productDetails": [{
         "msg": "The packaging of Masur Daal is availabe in 30KG"
       }]
     },{
-      "title" : "moog dal",
-      "img" : "moog-dal",
-      "msgOnThumbnail" : "The packaging of Moong Dal is availabe in 30KG",
-      "productDetails" : [{
+      "title": "moog dal",
+      "img": "moog-dal",
+      "msgOnThumbnail": "The packaging of Moong Dal is availabe in 30KG",
+      "productDetails": [{
         "msg": "The packaging of Moong Dal is availabe in 30KG"
       }]
     },{
-      "title" : "poha",
-      "img" : "poha",
-      "msgOnThumbnail" : "The packaging of Poha is available in 25KG and 30KG",
-      "productDetails" : [{
+      "title": "poha",
+      "img": "poha",
+      "msgOnThumbnail": "The packaging of Poha is available in 25KG and 30KG",
+      "productDetails": [{
         "msg": "The packaging of Poha is available in 25KG and 30KG"
       }]
     },{
-      "title" : "toor dal",
-      "img" : "toor-dal",
-      "msgOnThumbnail" : "The packaging of Toor Dal is availabe in 30KG",
-      "productDetails" : [{
+      "title": "toor dal",
+      "img": "toor-dal",
+      "msgOnThumbnail": "The packaging of Toor Dal is availabe in 30KG",
+      "productDetails": [{
         "msg": "The packaging of Toor Dal is availabe in 30KG"
       }]
     },{
-      "title" : "Wheat Atta",
-      "img" : "wheat-atta",
-      "msgOnThumbnail" : "The packaging of Wheat Atta is availabe in 30KG (5KG * 6 & 10KG * 3)",
-      "productDetails" : [{
+      "title": "Wheat Atta",
+      "img": "wheat-atta",
+      "msgOnThumbnail": "The packaging of Wheat Atta is availabe in 30KG (5KG * 6 & 10KG * 3)",
+      "productDetails": [{
         "msg": "The packaging of Wheat Atta is availabe in 30KG (5KG * 6 & 10KG * 3)"
       }]
     },{
-      "title" : "bajri",
-      "img" : "bajri",
-      "msgOnThumbnail" : "The packaging of Bajari is availabe in 50KG and 30KG.",
-      "productDetails" : [{
+      "title": "bajri",
+      "img": "bajri",
+      "msgOnThumbnail": "The packaging of Bajari is availabe in 50KG and 30KG.",
+      "productDetails": [{
         "msg": "The packaging of Bajari is availabe in 50KG and 30KG."
       }]
     }
   ],
-  "team" : [{
+  "team": [{
     "imgPath": "",
     "title": "Mr. Sunilkumar Bora",
     "details": "With 30 years of work experience he is continuously working towards the innovation & quality improvement of our products"
@@ -174,10 +174,12 @@
         "title": "Steam",
         "toggleClass": false,
         "subItem": [{
-          "title": "Silver ( Packing :  10 Kg )",
+          "title": "Silver (Packing:  10 Kg)",
           "toggleClass": false,
           "subItem": [{
             "title": "Silver Pearl"
+          },{
+            "title": "Silver Diamond"
           },{
             "title": "Silver Star"
           },{
@@ -188,7 +190,7 @@
             "title": "Silver Platinum"
           }]
         },{
-          "title": "Rizwan ( Packing :  10 Kg )",
+          "title": "Rizwan (Packing:  10 Kg)",
           "toggleClass": false,
           "subItem": [{
             "title": "Rizwan Delight"
@@ -200,7 +202,7 @@
             "title": "Rizwan Regular"
           }]
         },{
-          "title": "Ruchi Bhog ( Packing :  10 Kg )",
+          "title": "Ruchi Bhog (Packing:  10 Kg)",
           "toggleClass": false,
           "subItem": [{
             "title": "Ruchi Bhog Best"
@@ -218,7 +220,7 @@
             "title": "Ruchi Bhog Tini"
           }]
         },{
-          "title": "Shahabzada ( Packing :  10 Kg )",
+          "title": "Shahabzada (Packing:  10 Kg)",
           "toggleClass": false,
           "subItem": [{
             "title": "Shahabzada Super Mogra"
@@ -232,29 +234,31 @@
             "title": "Shahabzada Special"
           }]
         },{
-          "title": "Al Abrar ( Packing :  10 Kg )",
+          "title": "Al Abrar (Packing:  10 Kg)",
           "toggleClass": false,
           "subItem": [{
             "title": "Al Abrar Tini"
           }]
         },{
-          "title": "Grand India ( Packing :  20 Kg )"
+          "title": "Grand India (Packing:  20 Kg)"
         },{
-          "title": "Khushiyon Ke Pal ( Packing :  20 Kg )"
+          "title": "Khushiyon Ke Pal (Packing:  20 Kg)"
         },{
-          "title": "Swagat Super ( Packing :  20 Kg )"
+          "title": "Swagat Super (Packing:  20 Kg)"
         },{
-          "title": "Taarif ( Packing : 40 Kg )"
+          "title": "Taarif (Packing: 40 Kg)"
         },{
-          "title": "Badhai Basmati ( Packing :  25 Kg )"
+          "title": "Badhai Basmati (Packing:  25 Kg)"
+        },{
+          "title": "Masala Bhat (Mini Mogra) (Packing:  10 Kg)"
         }]
       },{
         "title": "Non Steam",
         "toggleClass": false,
         "subItem": [{
-          "title": "Daawat ( Old & New ) ( Packing :  10 Kg )",
+          "title": "Daawat (Old & New) (Packing:  10 Kg)",
           "toggleClass": false,
-          "note": "Note - Old : Plastic Bag, New : Cloth Bag",
+          "note": "Note - Old: Plastic Bag, New: Cloth Bag",
           "subItem": [{
             "title": "Daawat 40 Carat"
           },{
@@ -269,7 +273,7 @@
             "title": "Daawat Super Box"
           }]
         },{
-          "title": "Chamak ( Packing :  10 Kg )",
+          "title": "Chamak (Packing:  10 Kg)",
           "toggleClass": false,
           "subItem": [{
             "title": "Chamak 25 Carat"
@@ -281,7 +285,7 @@
             "title": "Chamak 75 Carat"
           }]
         },{
-          "title": "Keshav ( Packing :  10 Kg )",
+          "title": "Keshav (Packing:  10 Kg)",
           "toggleClass": false,
           "subItem": [{
             "title": "Keshav 40 Carat"
@@ -293,7 +297,7 @@
             "title": "Keshav 80 Carat"
           }]
         },{
-          "title": "Boat ( Packing :  10 Kg )",
+          "title": "Boat (Packing:  10 Kg)",
           "toggleClass": false,
           "subItem": [{
             "title": "Boat Daily"
@@ -307,7 +311,7 @@
             "title": "Boat Supreme"
           }]
         },{
-          "title": "Red Rose ( Packing :  10 Kg )",
+          "title": "Red Rose (Packing:  10 Kg)",
           "toggleClass": false,
           "subItem": [{
             "title": "Red Rose Delight"
@@ -323,7 +327,7 @@
             "title": "Red Rose Rozana"
           }]
         },{
-          "title": "Hatti ( Packing :  10 Kg )",
+          "title": "Hatti (Packing:  10 Kg)",
           "toggleClass": false,
           "subItem": [{
             "title": "Hatti Mini Dubar"
@@ -332,30 +336,26 @@
           },{
             "title": "Hatti Broken"
           }]
-        },{
-          "title": "Masala Bhat ( Mini Mogra ) ( Packing :  10 Kg )"
         }]
       }]
     },{
       "title": "Steam",
       "toggleClass": false,
       "subItem": [{
-        "title": "Akkha ( Packing :  25 Kg )",
+        "title": "Akkha (Packing:  25 Kg)",
         "toggleClass": false,
         "subItem": [{
           "title": "Maharaja Steam"
         },{
           "title": "Namokar Steam"
         },{
-          "title": "Gemine Gold Old"
-        },{
           "title": "Gemine Lamination"
         },{
           "title": "Pruthviraj Steam"
         },{
-          "title": "Star Hirva ( Sona Masoori )"
+          "title": "Star Hirva (Sona Masoori)"
         },{
-          "title": "Star Neela ( Sona Masoori )"
+          "title": "Star Neela (Sona Masoori)"
         },{
           "title": "Star Jeera"
         },{
@@ -372,9 +372,33 @@
           "title": "5 Steam"
         },{
           "title": "Orange Steam"
+        },{
+          "title": "Magic Steam"
+        },{
+          "title": "Lucky Gold Steam"
+        },{
+          "title": "Audi Steam"
+        },{
+          "title": "Manpasand Steam"
+        },{
+          "title": "Mother Gold Steam"
+        },{
+          "title": "Srimathi Steam"
+        },{
+          "title": "Shubham India Steam"
+        },{
+          "title": "1 + Steam"
+        },{
+          "title": "Zara Steam"
+        },{
+          "title": "Gemine Steam (White Bag)"
+        },{
+          "title": "Gemine Steam (Yellow Bag)"
+        },{
+          "title": "Orange Steam"
         }]
       },{
-        "title": "Tukda ( Kani ) ( Packing :  25 Kg )",
+        "title": "Tukda (Kani) (Packing:  25 Kg)",
         "toggleClass": false,
         "subItem": [{
           "title": "Murlidhar Kani"
@@ -388,37 +412,51 @@
           "title": "Half Steam Kani"
         },{
           "title": "Trupti Steam Kani"
+        },{
+          "title": "Kitty Bites"
+        },{
+          "title": "Joker Kani"
+        },{
+          "title": "Pari Kani"
+        },{
+          "title": "5 Brand Kani"
         }]
       }]
     },{
       "title": "Non Steam",
       "toggleClass": false,
       "subItem": [{
-        "title": "Neela Kamal ( Packing :  25 Kg )"
+        "title": "Neela Kamal (Packing:  25 Kg)"
       },{
-        "title": "Bhagwa Kamal ( Packing :  25 Kg )"
+        "title": "Bhagwa Kamal (Packing:  25 Kg)"
       },{
-        "title": "Blackberry ( Packing :  25 Kg )"
+        "title": "Blackberry (Packing:  25 Kg)"
       },{
-        "title": "Bajaj Sona ( Packing :  25 Kg )"
+        "title": "Bajaj Sona (Packing:  25 Kg)"
       },{
-        "title": "Saarthi ( Packing :  25 Kg )"
+        "title": "Saarthi (Packing:  25 Kg)"
       },{
-        "title": "Bajaj Silver ( Packing :  25 Kg )"
+        "title": "Bajaj Silver (Packing:  25 Kg)"
       },{
-        "title": "Kali Mooch ( Packing : 30 Kg )"
+        "title": "Kali Mooch (Packing: 30 Kg)"
       },{
-        "title": "Cherry ( Packing : 30 Kg )"
+        "title": "Cherry (Packing: 30 Kg)"
       },{
-        "title": "7 Star ( Packing :  30 Kg )"
+        "title": "7 Star (Packing:  30 Kg)"
+      },{
+        "title": "Aishwarya Tibar (Packing: 25 Kg)"
+      },{
+        "title": "Yashraj (Packing: 30 Kg)"
       }]
     },{
       "title": "Karjat",
       "toggleClass": false,
       "subItem": [{
-        "title": "Kissan Karjat( Packing : 25 Kg )"
+        "title": "Kissan Karjat(Packing: 25 Kg)"
       },{
-        "title": "Haran Karjat( Packing :  25Kg )"
+        "title": "Haran Karjat(Packing:  25Kg)"
+      },{
+        "title": "Swastik Karjat (Packing: 25 Kg)"
       }]
     },{
       "title": "Kolam Rice",
@@ -427,37 +465,37 @@
         "title": "Steam Kolam",
         "toggleClass": false,
         "subItem": [{
-          "title": "Chand Tara( Packing : 25 Kg )"
+          "title": "Chand Tara(Packing: 25 Kg)"
         },{
-          "title": "Qurbani( Packing : 25 Kg )"
+          "title": "Qurbani(Packing: 25 Kg)"
         },{
-          "title": "Kubera( Packing : 25 Kg )"
+          "title": "Kubera(Packing: 25 Kg)"
         },{
-          "title": "KB( Packing : 25 Kg )"
+          "title": "KB(Packing: 25 Kg)"
         },{
-          "title": "Ulta Chashma( Packing : 25 Kg )"
+          "title": "Ulta Chashma(Packing: 25 Kg)"
         },{
-          "title": "Mother( Packing : 25 Kg )"
+          "title": "Mother(Packing: 25 Kg)"
         },{
-          "title": "Bullet( Packing : 25 Kg )"
+          "title": "Bullet(Packing: 25 Kg)"
         },{
-          "title": "JSR ( Jai Shree Ram )( Packing : 25 Kg )"
+          "title": "JSR (Jai Shree Ram)(Packing: 25 Kg)"
         },{
-          "title": "Daawat ( Packing : 25 Kg )"
+          "title": "Daawat (Packing: 25 Kg)"
         },{
-          "title": "Singham( Packing : 25 Kg )"
+          "title": "Singham(Packing: 25 Kg)"
         },{
-          "title": "Supreme( Packing : 25 Kg )"
+          "title": "Supreme(Packing: 25 Kg)"
         },{
-          "title": "Bhivate( Packing : 25 Kg )"
+          "title": "Bhivate(Packing: 25 Kg)"
         },{
-          "title": "Sultan( Packing : 25 Kg )"
+          "title": "Sultan(Packing: 25 Kg)"
         },{
-          "title": "Joker( Packing : 25 Kg )"
+          "title": "Joker(Packing: 25 Kg)"
         },{
-          "title": "Siddhi( Packing : 25 Kg )"
+          "title": "Siddhi(Packing: 25 Kg)"
         },{
-          "title": "555 ( Packing : 25 Kg )"
+          "title": "555 (Packing: 25 Kg)"
         }]
       },{
         "title": "Non Steam Kolam",
@@ -466,55 +504,61 @@
           "title": "Akkha",
           "toggleClass": false,
           "subItem": [{
-            "title": "Shreeram Kolam ( Old & New )( Packing : 30 Kg )"
+            "title": "Shreeram Kolam (Old & New)(Packing: 30 Kg)"
           },{
-            "title": "Royal Chetak Kolam( Packing : 10 Kg )"
+            "title": "Royal Chetak Kolam(Packing: 10 Kg)"
           },{
-            "title": "Shahi Chetak Kolam( Packing : 25 Kg )"
+            "title": "Shahi Chetak Kolam(Packing: 25 Kg)"
           },{
-            "title": "Aishwarya Kolam ( Old & New )( Packing : 25 Kg )"
+            "title": "Aishwarya Kolam (Old & New)(Packing: 25 Kg)"
           },{
-            "title": "Chetak Kolam ( Old & New )( Packing : 25 Kg )"
+            "title": "Chetak Kolam (Old & New)(Packing: 25 Kg)"
+          },{
+            "title": "Tulsi Gold Kolam (Packing: 25 Kg)"
           }]
         },{
           "title": "Tukda",
           "toggleClass": false,
           "subItem": [{
-            "title": "Cherry Tukda( Packing : 30 Kg )"
+            "title": "Cherry Tukda(Packing: 30 Kg)"
           },{
-            "title": "Barkath( Packing : 25 Kg )"
+            "title": "Barkath(Packing: 25 Kg)"
           },{
-            "title": "Bullet ( Packing : 25 Kg )"
+            "title": "Bullet (Packing: 25 Kg)"
           },{
-            "title": "Chetak Kolam Tukda( Packing : 25 Kg )"
+            "title": "Chetak Kolam Tukda(Packing: 25 Kg)"
           }]
         }]
       }]
     },{
-      "title": "Parboiled Rice ( Ukda )",
+      "title": "Parboiled Rice (Ukda)",
       "toggleClass": false,
       "subItem": [{
-        "title": "Deepam( Packing : 25 Kg )"
+        "title": "Deepam(Packing: 25 Kg)"
       }]
     },{
-      "title": "Pana Rice",
+      "title": "Pana Rice (Packing: 25 Kg)",
       "toggleClass": false,
       "subItem": [{
-        "title": "Apple Pana ( Packing : 25 Kg )"
+        "title": "Apple Pana"
       },{
-        "title": "Diamond Pana( Packing : 25 Kg )"
+        "title": "Diamond Pana"
       },{
-        "title": "Bawarchi Pana(  Packing : 25 Kg )"
+        "title": "Bawarchi Pana"
       },{
-        "title": "Maharaja Pana( Packing : 25 Kg )"
+        "title": "Maharaja Pana"
       },{
-        "title": "Star Pana( Packing : 25 Kg )"
+        "title": "Star Pana"
       },{
-        "title": "Mayur Pana( Packing : 25 Kg )"
+        "title": "Mayur Pana"
       },{
-        "title": "Ooty Pana( Packing : 25 Kg )"
+        "title": "Ooty Pana"
       },{
-        "title": "Bawarchi Indrayani Pana( Packing : 25 Kg )"
+        "title": "Bawarchi Indrayani Pana"
+      },{
+        "title": "Cycle Pana"
+      },{
+        "title": "Nawab Pana"
       }]
     },{
       "title": "Indrayani Rice",
@@ -523,31 +567,37 @@
         "title": "Akkha",
         "toggleClass": false,
         "subItem": [{
-          "title": "Ajara Indrayani( Packing : 25 Kg )"
+          "title": "Ajara Indrayani(Packing: 25 Kg)"
         },{
-          "title": "Bhivate Indrayani( Packing : 25 Kg )"
+          "title": "Bhivate Indrayani(Packing: 25 Kg)"
         },{
-          "title": "Om Indrayani( Packing : 30 Kg )"
+          "title": "Om Indrayani(Packing: 30 Kg)"
         },{
-          "title": "Hero Indrayani( Packing : 25 Kg )"
+          "title": "Hero Indrayani(Packing: 25 Kg)"
         },{
-          "title": "Sarvoday Indrayani( Packing : 25 Kg )"
+          "title": "Sarvoday Indrayani(Packing: 25 Kg)"
         },{
-          "title": "RC Indrayani( Packing : 30 Kg )"
+          "title": "RC Indrayani(Packing: 30 Kg)"
         },{
-          "title": "Shetkari Indrayani( Packing : 25 Kg )"
+          "title": "Shetkari Indrayani(Packing: 25 Kg)"
+        },{
+          "title": "Jay Malhar Indrayani (Packing: 25 Kg)"
         }]
       },{
-        "title": "Tukda ( Kani )",
+        "title": "Tukda (Kani)",
         "toggleClass": false,
         "subItem": [{
-          "title": "Ajara Indrayani Kani( Packing : 25 Kg )"
+          "title": "Ajara Indrayani Kani(Packing: 25 Kg)"
         },{
-          "title": "Bhivate Indrayani Kani( Packing : 25 Kg )"
+          "title": "Bhivate Indrayani Kani(Packing: 25 Kg)"
         },{
-          "title": "Rajhans Indrayani Kani( Packing : 25 Kg )"
+          "title": "Rajhans Indrayani Kani(Packing: 25 Kg)"
         },{
-          "title": "Lotus Indrayani Kani( Packing : 30 Kg )"
+          "title": "Lotus Indrayani Kani(Packing: 30 Kg)"
+        },{
+          "title": "Ajara Indrayani Dubar (Packing: 10 Kg)"
+        },{
+          "title": "Jay Malhar Indrayani Dubar (Packing: 25 Kg)"
         }]
       }]
     },{
@@ -557,11 +607,13 @@
         "title": "Akhand",
         "toggleClass": false,
         "subItem": [{
-          "title": "Gopal Ambemore( Packing : 25 Kg & 10 Kg )"
+          "title": "Gopal Ambemore(Packing: 25 Kg & 10 Kg)"
         },{
-          "title": "Mast Mogra Ambemore( Packing : 25 Kg & 10 Kg )"
+          "title": "Mast Mogra Ambemore(Packing: 25 Kg & 10 Kg)"
         },{
-          "title": "Bal Gopal Ambemore( Packing : 25 Kg )"
+          "title": "Bal Gopal Ambemore(Packing: 25 Kg & 10 Kg)"
+        },{
+          "title": "Triveni Ambemore (Packing: 25 Kg)"
         }]
       },{
         "title": "Tukda",
@@ -571,20 +623,28 @@
         }]
       }]
     },{
-      "title": "Ghansal( Packing : 25 Kg )"
+      "title": "Ghansal(Packing: 25 Kg)"
     },{
       "title": "Masoori",
       "toggleClass": false,
       "subItem": [{
-        "title": "Swastik Masoori( Packing : 25 Kg )"
+        "title": "Swastik Masoori(Packing: 25 Kg)"
       },{
-        "title": "Bawarchi Masoori( Packing : 25 Kg )"
+        "title": "Bawarchi Masoori(Packing: 25 Kg)"
       },{
-        "title": "Red Chilly Masoori( Packing : 25 Kg )"
+        "title": "Red Chilly Masoori(Packing: 25 Kg)"
       },{
-        "title": "Mango Masoori( Packing : 25 Kg )"
+        "title": "Mango Masoori(Packing: 25 Kg)"
       },{
-        "title": "Hatti Masoori( Packing : 25 Kg )"
+        "title": "Hatti Masoori(Packing: 25 Kg)"
+      },{
+        "title": "Kalash Masoori(Packing: 25 Kg)"
+      }]
+    },{
+      "title": "Ratnagiri",
+      "toggleClass": false,
+      "subItem": [{
+        "title": "Kalash Ratnagiri (Packing: 30 Kg)"
       }]
     }]
   },{
@@ -697,9 +757,9 @@
     "title": "Bajari",
     "toggleClass": false,
     "subItem": [{
-      "title": "High Choice ( Packing : 30 Kg ) ( Gujarat )"
+      "title": "High Choice (Packing: 30 Kg) (Gujarat)"
     },{
-      "title": "Non Brand ( Packing : 50 Kg ) ( Karnataka )"
+      "title": "Non Brand (Packing: 50 Kg) (Karnataka)"
     }]
   },{
     "title": "Jwari",
@@ -708,37 +768,37 @@
       "title": "Shalu",
       "toggleClass": false,
       "subItem": [{
-        "title": "RT ( Packing : 50 Kg )"
+        "title": "RT (Packing: 50 Kg)"
       },{
-        "title": "Tulsi ( Packing : 30 Kg & 50 Kg )"
+        "title": "Tulsi (Packing: 30 Kg & 50 Kg)"
       },{
-        "title": "Five Star ( Packing : 30 Kg )"
+        "title": "Five Star (Packing: 30 Kg)"
       },{
-        "title": "Moti Gold ( Packing : 30 Kg )"
+        "title": "Moti Gold (Packing: 30 Kg)"
       },{
-        "title": "Champion ( Packing : 30 Kg )"
+        "title": "Champion (Packing: 30 Kg)"
       },{
-        "title": "Chavi ( Packing : 30 Kg )"
+        "title": "Chavi (Packing: 30 Kg)"
       },{
-        "title": "Gruhlaxmi ( Packing : 30 Kg )"
+        "title": "Gruhlaxmi (Packing: 30 Kg)"
       },{
-        "title": "Mahalaxmi ( Packing : 30 Kg )"
+        "title": "Mahalaxmi (Packing: 30 Kg)"
       },{
-        "title": "Gulab ( Packing : 30 Kg )"
+        "title": "Gulab (Packing: 30 Kg)"
       },{
-        "title": "Manikmoti ( Packing : 30 Kg )"
+        "title": "Manikmoti (Packing: 30 Kg)"
       },{
-        "title": "Green Ganesh ( Packing : 30 Kg )"
+        "title": "Green Ganesh (Packing: 30 Kg)"
       },{
-        "title": "Siddhi Ganesh ( Packing : 30 Kg )"
+        "title": "Siddhi Ganesh (Packing: 30 Kg)"
       },{
-        "title": "Kesar Pista ( Packing : 30 Kg )"
+        "title": "Kesar Pista (Packing: 30 Kg)"
       },{
-        "title": "A One ( Packing : 30 Kg )"
+        "title": "A One (Packing: 30 Kg)"
       },{
-        "title": "Blue Bird ( Packing : 30 Kg )"
+        "title": "Blue Bird (Packing: 30 Kg)"
       },{
-        "title": "Dhanlaxmi ( Packing : 30 Kg )"
+        "title": "Dhanlaxmi (Packing: 30 Kg)"
       },{
         "title": "And many other non-branded shalu available in 30 Kg & 50 Kg"
       }]
@@ -746,33 +806,33 @@
       "title": "Hybrid / Vasant / Namdyal",
       "toggleClass": false,
       "subItem": [{
-        "title": "Om Nandyal ( Packing : 50 Kg )"
+        "title": "Om Nandyal (Packing: 50 Kg)"
       },{
-        "title": "Dairy Milk ( Packing : 25 Kg )"
+        "title": "Dairy Milk (Packing: 25 Kg)"
       },{
-        "title": "Maharaja ( Packing : 25 Kg )"
+        "title": "Maharaja (Packing: 25 Kg)"
       },{
-        "title": "Bullet ( Packing : 50 Kg )"
+        "title": "Bullet (Packing: 50 Kg)"
       },{
-        "title": "Deepak ( Packing : 30 Kg )"
+        "title": "Deepak (Packing: 30 Kg)"
       },{
-        "title": "Kamal ( Packing : 30 Kg )"
+        "title": "Kamal (Packing: 30 Kg)"
       },{
-        "title": "Three Mango ( Packing : 50 Kg )"
+        "title": "Three Mango (Packing: 50 Kg)"
       },{
-        "title": "Annapurna ( Packing : 50 Kg )"
+        "title": "Annapurna (Packing: 50 Kg)"
       },{
-        "title": "Green Apple  ( Packing : 30 Kg )"
+        "title": "Green Apple  (Packing: 30 Kg)"
       },{
-        "title": "Diamond ( Packing : 50 Kg )"
+        "title": "Diamond (Packing: 50 Kg)"
       },{
-        "title": "Kisan( Packing : 50 Kg )"
+        "title": "Kisan(Packing: 50 Kg)"
       },{
-        "title": "Kohinoor ( Packing : 30 Kg )"
+        "title": "Kohinoor (Packing: 30 Kg)"
       },{
-        "title": "Mango ( Packing : 50 Kg )"
+        "title": "Mango (Packing: 50 Kg)"
       },{
-        "title": "Kalash ( Packing : 50 Kg )"
+        "title": "Kalash (Packing: 50 Kg)"
       },{
         "title": "And many other non-branded varieties available in 30 Kg & 50 Kg"
       }]
@@ -785,31 +845,31 @@
     },{
       "title": "Kitchen Partner (Packing: 30 Kg)"
     },{
-      "title": "ETC ( Packing : 30 Kg )"
+      "title": "ETC (Packing: 30 Kg)"
     },{
-      "title": "Apple ( Packing : 30  Kg )"
+      "title": "Apple (Packing: 30  Kg)"
     },{
-      "title": "3 Star ( Packing :  30 Kg )"
+      "title": "3 Star (Packing:  30 Kg)"
     },{
-      "title": "Angel  ( Packing : 25 Kg )"
+      "title": "Angel  (Packing: 25 Kg)"
     },{
-      "title": "Classic ( Packing :  30 Kg )"
+      "title": "Classic (Packing:  30 Kg)"
     },{
-      "title": "Badshah ( Packing :  30 Kg )"
+      "title": "Badshah (Packing:  30 Kg)"
     },{
-      "title": "JM ( Packing :  50 Kg )"
+      "title": "JM (Packing:  50 Kg)"
     },{
-      "title": "Saylee ( Packing : 30 Kg )"
+      "title": "Saylee (Packing: 30 Kg)"
     },{
-      "title": "White Lotus ( Packing :  30 Kg )"
+      "title": "White Lotus (Packing:  30 Kg)"
     },{
-      "title": "H 2 O ( Packing :  30 Kg )"
+      "title": "H 2 O (Packing:  30 Kg)"
     },{
-      "title": "Dal Parivar ( Packing : 30  Kg )"
+      "title": "Dal Parivar (Packing: 30  Kg)"
     },{
-      "title": "Swad ( Packing :  30 Kg )"
+      "title": "Swad (Packing:  30 Kg)"
     },{
-      "title": "Bhushan Gold ( Packing :  30 Kg )"
+      "title": "Bhushan Gold (Packing:  30 Kg)"
     }]
   },{
     "title": "Mugdal",
@@ -832,7 +892,7 @@
       "title": "RC"
     }]
   },{
-    "title": "Turdal( Packing : 30 Kg )",
+    "title": "Turdal(Packing: 30 Kg)",
     "toggleClass": false,
     "subItem": [{
       "title": "Surabhi"
@@ -882,24 +942,24 @@
       "title": "Krishna Gold"
     }]
   },{
-    "title": "Wheat Atta ( Packing : 30 Kg )",
+    "title": "Wheat Atta (Packing: 30 Kg)",
     "toggleClass": false,
     "subItem": [{
-      "title": "Ruchi ( Packing : 10 Kg*3 & 5 Kg*6 )"
+      "title": "Ruchi (Packing: 10 Kg*3 & 5 Kg*6)"
     },{
-      "title": "Jagruti( Packing : 10 Kg*3 & 5 Kg*6 )"
+      "title": "Jagruti(Packing: 10 Kg*3 & 5 Kg*6)"
     },{
-      "title": "Bigul( Packing : 10 Kg*3 & 5 Kg*6 )"
+      "title": "Bigul(Packing: 10 Kg*3 & 5 Kg*6)"
     },{
-      "title": "SS ( Packing : 10 Kg*3 & 5 Kg*6 )"
+      "title": "SS (Packing: 10 Kg*3 & 5 Kg*6)"
     },{
-      "title": "Swastik( Packing : 10 Kg*3 & 5 Kg*6 )"
+      "title": "Swastik(Packing: 10 Kg*3 & 5 Kg*6)"
     },{
-      "title": "Indore Gold ( Packing : 10 Kg*3 )"
+      "title": "Indore Gold (Packing: 10 Kg*3)"
     },{
-      "title": "MP No.1 ( Packing : 5Kg*6 )"
+      "title": "MP No.1 (Packing: 5Kg*6)"
     },{
-      "title": "Maharaja ( packing : 10 Kg*3 & 5 Kg*6 )"
+      "title": "Maharaja (packing: 10 Kg*3 & 5 Kg*6)"
     }]
   }],
   "foooter": "Yogesh Krishna Jadhav"
