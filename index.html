@@ -171,29 +171,26 @@
             <div class="row">
               <div class="col-sm-4">
                 <ul ng-if="skDetails.branding.length" class="brandingMenuBar">
-                  <li ng-repeat="brand in skDetails.branding">
+                  <li ng-repeat="brand in skDetails.branding" ng-class="brand.toggleClass ? 'show':''">
                     <h3 ng-class="$index === 0 ? 'marginTop0':''" ng-click="toggleBrandNavClass(brand, 0)">{{brand.title}}</h3>
                     <ul ng-if="brand.subItem.length" ng-class="brand.toggleClass ? 'show':''">
                       <li ng-repeat="item in brand.subItem">
                         <h4 ng-click="toggleBrandNavClass(item, 1)">{{item.title}}</h4>
-                        <ul ng-if="item.subItem.length" ng-class="item.toggleClass ? 'show':''">
+                        <!--ul ng-if="item.subItem.length" ng-class="item.toggleClass ? 'show':''">
                           <li ng-repeat="itemSubSet in item.subItem">
                             <h5 ng-click="setSelectedBrand(itemSubSet)">{{itemSubSet.title}}</h5>
                           </li>
-                        </ul>
+                        </ul-->
                       </li>
                     </ul>
                   </li>
                 </ul>
               </div>
-              <div class="col-sm-8">
-                <ol class="breadcrumb" ng-if="selectedBrandBreadCrumb.length">
+              <div class="col-sm-8 borderCCC" ng-if="selectedBrandBreadCrumb.length">
+                <ol class="breadcrumb">
                   <li ng-repeat="breadcrumb in selectedBrandBreadCrumb" ng-class="$index === (selectedBrandBreadCrumb.length - 1) ? 'active' : ''"><a>{{breadcrumb}}</a></li>
                 </ol>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <h3>{{selectedBrand.title}}</h3>
-                  </div>
+                <div class="row" ng-if="selectedBrand.subItem.length">
                   <ul ng-if="selectedBrand.subItem.length" class="brandDetailsObject">
                     <li ng-repeat="brand in selectedBrand.subItem" class="col-sm-4">
                       <strong>{{brand.title}}</strong>

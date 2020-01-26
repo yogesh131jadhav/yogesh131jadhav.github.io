@@ -26,6 +26,9 @@ angular.module('skWholesale', [])
         return $scope.activePage = 2;
       case 'Branding':
         $scope.title = menu;
+        $scope.skDetails.branding[0].toggleClass = true;
+        $scope.handleBreadCrumbArray($scope.skDetails.branding[0], 0);
+        $scope.setSelectedBrand($scope.skDetails.branding[0]);
         return $scope.activePage = 5;
       default:
         return $scope.activePage = 1;
@@ -55,9 +58,8 @@ angular.module('skWholesale', [])
     $scope.handleBreadCrumbArray(brand, index);
     if(brand.subItem && brand.subItem.length && brand.subItem[0].subItem && brand.subItem[0].subItem.length) {
       brand.toggleClass = brand.toggleClass ? false : true;
-    } else {
-      $scope.setSelectedBrand(brand);
     }
+    $scope.setSelectedBrand(brand);
   }
   $scope.setSelectedBrand = function(setBrandObject) {
     $scope.handleBreadCrumbArray(setBrandObject, 2);
