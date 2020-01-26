@@ -176,11 +176,11 @@
                     <ul ng-if="brand.subItem.length" ng-class="brand.toggleClass ? 'show':''">
                       <li ng-repeat="item in brand.subItem">
                         <h4 ng-click="toggleBrandNavClass(item, 1)">{{item.title}}</h4>
-                        <!--ul ng-if="item.subItem.length" ng-class="item.toggleClass ? 'show':''">
+                        <ul ng-if="item.subItem.length" ng-class="item.toggleClass ? 'show':''">
                           <li ng-repeat="itemSubSet in item.subItem">
                             <h5 ng-click="setSelectedBrand(itemSubSet)">{{itemSubSet.title}}</h5>
                           </li>
-                        </ul-->
+                        </ul>
                       </li>
                     </ul>
                   </li>

@@ -14,10 +14,7 @@ angular.module('skWholesale', [])
     $scope.skDetails = response.data;
   });
   $scope.handlePageChange = function(menu, product = null) {
-    $window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
+    $scope.scrollTop();
     $scope.title = 'Product List';
     switch(menu) {
       case 'Home':
@@ -35,19 +32,13 @@ angular.module('skWholesale', [])
     }
   }
   $scope.productDetailsPage = function(product) {
-    $window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
+    $scope.scrollTop();
     $scope.title = $scope.singleProductDetail.title;
     $scope.activePage = 3;
     $scope.singleProductDetail = product;
   }
   $scope.aboutUsPage = function() {
-    $window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
+    $scope.scrollTop();
     $scope.title = 'About Us';
     $scope.activePage = 4;
   }
@@ -75,6 +66,13 @@ angular.module('skWholesale', [])
         $scope.selectedBrandBreadCrumb.push(brand.title);
       }
     }
+    $scope.scrollTop();
+  }
+  $scope.scrollTop = function() {
+    $window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   }
 });
 
