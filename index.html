@@ -173,7 +173,7 @@
                 <ul ng-if="skDetails.branding.length" class="brandingMenuBar">
                   <li ng-repeat="brand in skDetails.branding" ng-class="brand.toggleClass ? 'show':''">
                     <h3 ng-class="$index === 0 ? 'marginTop0':''" ng-click="toggleBrandNavClass(brand, 0)">{{brand.title}}</h3>
-                    <ul ng-if="brand.subItem.length" ng-class="brand.toggleClass ? 'show':''">
+                    <!--ul ng-if="brand.subItem.length" ng-class="brand.toggleClass ? 'show':''">
                       <li ng-repeat="item in brand.subItem">
                         <h4 ng-click="toggleBrandNavClass(item, 1)">{{item.title}}</h4>
                         <ul ng-if="item.subItem.length" ng-class="item.toggleClass ? 'show':''">
@@ -182,7 +182,7 @@
                           </li>
                         </ul>
                       </li>
-                    </ul>
+                    </ul-->
                   </li>
                 </ul>
               </div>
@@ -192,11 +192,24 @@
                 </ol>
                 <div class="row" ng-if="selectedBrand.subItem.length">
                   <ul ng-if="selectedBrand.subItem.length" class="brandDetailsObject">
-                    <li ng-repeat="brand in selectedBrand.subItem" class="col-sm-4">
-                      <strong>{{brand.title}}</strong>
-                      <ul ng-if="brand.subItem.length">
-                        <li ng-repeat="item in brand.subItem">
-                          {{item.title}}
+                    <li ng-repeat="brand in selectedBrand.subItem" style="margin-bottom: 20px;" ng-class="selectedBrand.subItem.length && selectedBrand.subItem[0].subItem.length ? 'col-sm-12' : 'col-sm-4'">
+                      <h3 ng-if="selectedBrand.subItem.length && selectedBrand.subItem[0].subItem.length" style="margin-bottom: 10px; display: block;">{{brand.title}}</h3>
+                      <strong ng-if="!(selectedBrand.subItem.length && selectedBrand.subItem[0].subItem.length)" style="margin-bottom: 10px; display: block;">{{brand.title}}</strong>
+                      <ul ng-if="brand.subItem.length" class="row">
+                        <li ng-repeat="item in brand.subItem" ng-class="brand.subItem.length && brand.subItem[0].subItem.length ? 'col-sm-12' : 'col-sm-4'">
+                          <h4 ng-if="brand.subItem.length && brand.subItem[0].subItem.length" style="margin-bottom: 10px; display: block;">{{item.title}}</h4>
+                          <span ng-if="!(brand.subItem.length && brand.subItem[0].subItem.length)" style="margin-bottom: 10px; display: block;">{{item.title}}</span>
+                          <ul ng-if="item.subItem.length" class="row">
+                            <li ng-repeat="item1 in item.subItem" ng-class="item.subItem.length && item.subItem[0].subItem.length ? 'col-sm-12' : 'col-sm-4'">
+                              <h4 ng-if="item.subItem.length && item.subItem[0].subItem.length" style="margin-bottom: 10px; display: block;">{{item1.title}}</h4>
+                              <span ng-if="!(item.subItem.length && item.subItem[0].subItem.length)" style="margin-bottom: 10px; display: block;">{{item1.title}}</span>
+                              <ul ng-if="item1.subItem.length" class="row">
+                                <li ng-repeat="item2 in item1.subItem" ng-class="item1.subItem.length && item1.subItem[0].subItem.length ? 'col-sm-12' : 'col-sm-4'">
+                                  {{item2.title}}
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
                         </li>
                       </ul>
                     </li>

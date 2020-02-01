@@ -47,8 +47,9 @@ angular.module('skWholesale', [])
   }
   $scope.toggleBrandNavClass = function(brand, index) {
     $scope.handleBreadCrumbArray(brand, index);
-    if(brand.subItem && brand.subItem.length && brand.subItem[0].subItem && brand.subItem[0].subItem.length) {
-      brand.toggleClass = brand.toggleClass ? false : true;
+    $scope.resetToggleClass($scope.skDetails.branding);
+    if(brand.subItem && brand.subItem.length) {
+      brand.toggleClass = true;
     }
     $scope.setSelectedBrand(brand);
   }
@@ -73,6 +74,24 @@ angular.module('skWholesale', [])
       top: 0,
       behavior: 'smooth',
     });
+  }
+  $scope.resetToggleClass = function(brand) {
+    brand.toggleClass = false;
+    if(brand.subItem && brand.subItem.length) {
+      brand.subItem.map(singleBrand => {
+        singleBrand.toggleClass = false;
+        if(singleBrand.subItem && singleBrand.subItem.length) {
+          $scope.resetToggleClass(singleBrand);
+        }
+      })
+    } else {
+      brand.map(singleBrand => {
+        singleBrand.toggleClass = false;
+        if(singleBrand.subItem && singleBrand.subItem.length) {
+          $scope.resetToggleClass(singleBrand);
+        }
+      })
+    }
   }
 });
 
