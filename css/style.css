@@ -447,7 +447,34 @@ footer {
   border: 1px solid #ccc;
   padding-bottom: 15px;
 }
+.classification ul li {
+  margin-left: 20px;
+}
+.classification h3 {
+  margin-bottom: 10px;
+}
+.brandingMenuBarMobile {
+  display: none;
+}
 /*Mobile responsive*/
+@media only screen and (max-width: 959px) {
+  .branding .products ul > li {
+    width: 100%;
+  }
+  .branding .classification ul li {
+    margin-left: 0;
+  }
+  .brandingSideMenu,
+  .brandingSection {
+    float: left;
+  }
+  .brandingSideMenu {
+    width: 30%;
+  }
+  .brandingSection {
+    width: 70%;
+  }
+}
 @media only screen and (max-width: 767px) {
   .aboutUsBanner {
     display: none;
@@ -502,6 +529,31 @@ footer {
   .mapAddress {
     width: 100%;
   }
+  .brandingSideMenu,
+  .brandingSection {
+    float: none;
+    width: 100%;
+  }
+  .brandingMenuBar {
+    display: none;
+  }
+  .brandingMenuBarMobile {
+    display: block;
+  }
+  .brandingMenuBarMobile button {
+    width: 100%;
+    margin-top: -60px;
+    position: relative;
+    display: inline-block;
+    right: auto !important;
+    color: #333;
+    text-align: left;
+  }
+  .brandingMenuBarMobile button .caret {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
 }
 @media only screen and (max-width: 479px) {
   .navbar-brand {
@@ -528,10 +580,4 @@ footer {
   .home .banner.activeBanner h3 {
     top: 320px;
   }
-}
-.classification ul li {
-  margin-left: 20px;
-}
-.classification h3 {
-  margin-bottom: 10px;
 }

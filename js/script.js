@@ -6,6 +6,7 @@ angular.module('skWholesale', [])
   $scope.mobileNavClass = false;
   $scope.title = 'Product List';
   $scope.selectedBrand = null;
+  $scope.toggleBrandDropdownClass = null;
   $scope.selectedBrandBreadCrumb = [];
   $http.get("./stub/stub.json").then(function (response) {
     $timeout(() => {
@@ -15,6 +16,7 @@ angular.module('skWholesale', [])
   });
   $scope.handlePageChange = function(menu, product = null) {
     $scope.scrollTop();
+    $scope.mobileNavClass = false;
     $scope.title = 'Product List';
     switch(menu) {
       case 'Home':
@@ -46,6 +48,7 @@ angular.module('skWholesale', [])
     $scope.mobileNavClass = $scope.mobileNavClass ? false : true;
   }
   $scope.toggleBrandNavClass = function(brand, index) {
+    $scope.toggleBrandDropdownClass = null;
     $scope.handleBreadCrumbArray(brand, index);
     $scope.resetToggleClass($scope.skDetails.branding);
     if(brand.subItem && brand.subItem.length) {
@@ -91,6 +94,13 @@ angular.module('skWholesale', [])
           $scope.resetToggleClass(singleBrand);
         }
       })
+    }
+  }
+  $scope.toggleDropdownClass = function(param) {
+    if(param) {
+      $scope.toggleBrandDropdownClass = null;
+    } else {
+      $scope.toggleBrandDropdownClass = 'open';
     }
   }
 });
