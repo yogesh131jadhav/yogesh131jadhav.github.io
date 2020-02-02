@@ -6,6 +6,8 @@
     "navTitle": "Product"
   },{
     "navTitle": "Branding"
+  },{
+    "navTitle": "Item Classification"
   }],
   "banner": {
     "title": "Sunilkumar Kantilal Grain Merchant",
@@ -960,6 +962,107 @@
       "title": "MP No.1"
     },{
       "title": "Maharaja"
+    }]
+  }],
+  "itemClassification": [{
+    "title": "Rice",
+    "toggleClass": false,
+    "subItem": [{
+      "title": "Basmati",
+      "toggleClass": false,
+      "subItem": [{
+        "title": "Steam"
+      },{
+        "title": "Non Steam"
+      }]
+    },{
+      "title": "Steam",
+      "toggleClass": false,
+      "subItem": [{
+        "title": "Akkha"
+      },{
+        "title": "Tukda(Kani)"
+      }]
+    },{
+      "title": "Kolam Rice",
+      "toggleClass": false,
+      "subItem": [{
+        "title": "Steam Kolam"
+      },{
+        "title": "Non Steam Kolam",
+        "toggleClass": false,
+        "subItem": [{
+          "title": "Akkha"
+        },{
+          "title": "Tukda"
+        }]
+      }]
+    },{
+      "title": "Parboiled Rice (Ukda)"
+    },{
+      "title": "Pana Rice"
+    },{
+      "title": "Ambemore Rice",
+      "toggleClass": false,
+      "subItem": [{
+        "title": "Akhand"
+      },{
+        "title": "Tukda"
+      }]
+    },{
+      "title": "Ghansal"
+    },{
+      "title": "Sela Rice"
+    },{
+      "title": "Masoorie"
+    },{
+      "title": "Indrayani Rice",
+      "toggleClass": false,
+      "subItem": [{
+        "title": "Akhand"
+      },{
+        "title": "Tukda"
+      }]
+    }]
+  },{
+    "title": "Wheat",
+    "toggleClass": false,
+    "subItem": [{
+      "title": "Bansi",
+      "toggleClass": false
+    },{
+      "title": "Sihori",
+      "toggleClass": false
+    }]
+  },{
+    "title": "Jwari",
+    "toggleClass": false,
+    "subItem": [{
+      "title": "Shalu",
+      "toggleClass": false
+    },{
+      "title": "Hybrid",
+      "toggleClass": false
+    }]
+  },{
+    "title": "Chanadal",
+    "toggleClass": false,
+    "subItem": [{
+      "title": "Rajwadi"
+    }]
+  },{
+    "title": "Turdal",
+    "toggleClass": false,
+    "subItem": [{
+      "title": "President"
+    }]
+  },{
+    "title": "Bajari",
+    "toggleClass": false,
+    "subItem": [{
+      "title": "Gujarat"
+    },{
+      "title": "Karnataka"
     }]
   }],
   "foooter": "Yogesh Krishna Jadhav"

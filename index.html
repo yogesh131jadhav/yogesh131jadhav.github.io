@@ -222,71 +222,50 @@
         <section class="products classification">
           <div class="container">
             <div class="row">
-              <div class="col-sm-4">
-                <ul><h2>Rice</h2>
-                  <li>
-                    <ul><h3>Basmati</h3>
-                      <li>Steam</li>
-                      <li>Non Steam</li>
+              <div class="col-sm-4 brandingSideMenu">
+                <div ng-if="skDetails.itemClassification.length">
+                  <ul class="brandingMenuBar">
+                    <li ng-repeat="brand in skDetails.itemClassification" ng-class="brand.toggleClass ? 'show':''">
+                      <h3 ng-class="$index === 0 ? 'marginTop0':''" ng-click="toggleBrandNavClass(brand, 0)">{{brand.title}}</h3>
+                    </li>
+                  </ul>
+                  <div ng-class="toggleBrandDropdownClass ? 'dropdown brandingMenuBarMobile open':'dropdown brandingMenuBarMobile'">
+                    <button class="btn btn-primary dropdown-toggle" ng-click="toggleDropdownClass(toggleBrandDropdownClass)" type="button">{{selectedBrandBreadCrumb[0]}}<span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li ng-repeat="brand in skDetails.itemClassification"><a ng-click="toggleBrandNavClass(brand, 0)">{{brand.title}}</a></li>
                     </ul>
-                  </li>
-                  <li>
-                    <ul><h3>Steam</h3>
-                      <li>Akkha </li>
-                      <li>Tukda</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul><h3>Kolam Rice</h3>
-                      <li>Steam</li>
-                      <li>
-                        <ul><h5>Non Steam</h5>
-                          <li>Akkha </li>
-                          <li>Tukda</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h3>Parboiled Rice ( Ukda )</h3>
-                  </li>
-                  <li>
-                    <h3>Pana Rice</h3>
-                  </li>
-                  <li>
-                    <ul><h3>Ambemore</h3>
-                      <li>Akkha </li>
-                      <li>Tukda</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h3>Ghansal</h3>
-                  </li>
-                  <li>
-                    <h3>Sela Rice</h3>
-                  </li>
-                  <li>
-                    <h3>Masoorie</h3>
-                  </li>
-                  <li>
-                    <ul><h3>Indrayani Rice</h3>
-                      <li>Akkha </li>
-                      <li>Tukda</li>
-                    </ul>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
-              <div class="col-sm-4">
-                <ul><h2>Wheat</h2>
-                  <li>Bansi</li>
-                  <li>Sihore</li>
-                </ul>
-              </div>
-              <div class="col-sm-4">
-                <ul><h2>Jwari</h2>
-                  <li>Hybrid</li>
-                  <li>Shalu</li>
-                </ul>
+              <div class="col-sm-8 brandingSection borderCCC" ng-if="selectedBrandBreadCrumb.length">
+                <ol class="breadcrumb">
+                  <li ng-repeat="breadcrumb in selectedBrandBreadCrumb" ng-class="$index === (selectedBrandBreadCrumb.length - 1) ? 'active' : ''"><a>{{breadcrumb}}</a></li>
+                </ol>
+                <div class="row" ng-if="selectedBrand.subItem.length">
+                  <ul ng-if="selectedBrand.subItem.length" class="brandDetailsObject">
+                    <li ng-repeat="brand in selectedBrand.subItem" style="margin-bottom: 20px;" ng-class="selectedBrand.subItem.length && selectedBrand.subItem[0].subItem.length ? 'col-sm-12' : 'col-sm-4'">
+                      <h3 ng-if="selectedBrand.subItem.length && selectedBrand.subItem[0].title" style="margin-bottom: 10px; display: block;">{{brand.title}}</h3>
+                      <strong ng-if="!(selectedBrand.subItem.length && selectedBrand.subItem[0].title)" style="margin-bottom: 10px; display: block;">{{brand.title}}</strong>
+                      <ul ng-if="brand.subItem.length" class="row">
+                        <li ng-repeat="item in brand.subItem" ng-class="brand.subItem.length && (brand.subItem[0].subItem.length || brand.subItem[1].subItem.length) ? 'col-sm-12' : 'col-sm-4'">
+                          <h4 ng-if="brand.subItem.length && brand.subItem[0].title" style="margin-bottom: 10px; display: block;">{{item.title}}</h4>
+                          <span ng-if="!(brand.subItem.length && brand.subItem[0].title)" style="margin-bottom: 10px; display: block;">{{item.title}}</span>
+                          <ul ng-if="item.subItem.length" class="row">
+                            <li ng-repeat="item1 in item.subItem" ng-class="item.subItem.length && item.subItem[0].subItem.length ? 'col-sm-12' : 'col-sm-4'">
+                              <h5 ng-if="item.subItem.length && item.subItem[0].title" style="margin-bottom: 10px; display: block;">{{item1.title}}</h5>
+                              <span ng-if="!(item.subItem.length && item.subItem[0].title)" style="margin-bottom: 10px; display: block;">{{item1.title}}</span>
+                              <ul ng-if="item1.subItem.length" class="row">
+                                <li ng-repeat="item2 in item1.subItem" ng-class="item1.subItem.length && item1.subItem[0].subItem.length ? 'col-sm-12' : 'col-sm-4'">
+                                  {{item2.title}}
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

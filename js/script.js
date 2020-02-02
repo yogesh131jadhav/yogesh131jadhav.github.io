@@ -29,6 +29,12 @@ angular.module('skWholesale', [])
         $scope.handleBreadCrumbArray($scope.skDetails.branding[0], 0);
         $scope.setSelectedBrand($scope.skDetails.branding[0]);
         return $scope.activePage = 5;
+      case 'Item Classification':
+        $scope.title = 'Item Classification';
+        $scope.skDetails.itemClassification[0].toggleClass = true;
+        $scope.handleBreadCrumbArray($scope.skDetails.itemClassification[0], 0);
+        $scope.setSelectedBrand($scope.skDetails.itemClassification[0]);
+        return $scope.activePage = 6;
       default:
         return $scope.activePage = 1;
     }
@@ -110,4 +116,6 @@ angular.module('skWholesale', [])
  * 2: Product List page
  * 3: Product Details page
  * 4: About Us page
+ * 5: Branding
+ * 6: Item Classification
  */
