@@ -455,6 +455,17 @@ footer {
 .classification h3 {
   margin-bottom: 10px;
 }
+.classification .brandDetailsObject h3 {
+  margin-top: 0;
+}
+.classification .brandDetailsObject h4 {
+  color: #3399cc;
+  font-weight: bold;
+}
+.classification .brandDetailsObject h5 {
+  color: #66cc33;
+  font-weight: bold;
+}
 .brandingMenuBarMobile {
   display: none;
 }

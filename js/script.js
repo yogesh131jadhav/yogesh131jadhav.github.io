@@ -23,7 +23,7 @@ angular.module('skWholesale', [])
         return $scope.activePage = 1;
       case 'Product':
         return $scope.activePage = 2;
-      case 'Branding':
+      case 'Brand':
         $scope.title = menu;
         $scope.skDetails.branding[0].toggleClass = true;
         $scope.handleBreadCrumbArray($scope.skDetails.branding[0], 0);
@@ -116,6 +116,6 @@ angular.module('skWholesale', [])
  * 2: Product List page
  * 3: Product Details page
  * 4: About Us page
- * 5: Branding
+ * 5: Brand
  * 6: Item Classification
  */
