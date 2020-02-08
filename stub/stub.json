@@ -161,10 +161,10 @@
   "contactUs": {
     "officeAddres": "5/237, Dhanya Lane, Near Federal Bank, Opp PNG Jewellers, Ichalkaranji – 416115",
     "telephoneNumber": "0230 – 2423381",
-    "phoneNumber": "0230 – 2423381",
-    "Email Address": "skswholesale@gmail.com",
+    "phoneNumber": "9823014200 / 9823159900",
+    "emailAddress": "skswholesale1@gmail.com",
     "map": "contactMap.jpg",
-    "mapPath": "https://goo.gl/maps/8hRkR9aBvNjtUXvz7"
+    "mapPath": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.8701552570574!2d74.46418651486665!3d16.68337978850412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd451ff7da1aa0dd8!2sSUNILKUMAR%20KANTILAL%20(%20SK&#39;s%20WHOLESALE%20)!5e0!3m2!1sen!2sin!4v1579942397501!5m2!1sen!2sin"
   },
   "branding": [{
     "title": "Rice",
@@ -179,17 +179,17 @@
           "title": "Silver",
           "toggleClass": false,
           "subItem": [{
-            "title": "Silver Pearl"
-          },{
             "title": "Silver Diamond"
-          },{
-            "title": "Silver Star"
           },{
             "title": "Silver Gold"
           },{
-            "title": "Silver Regular"
+            "title": "Silver Pearl"
           },{
             "title": "Silver Platinum"
+          },{
+            "title": "Silver Regular"
+          },{
+            "title": "Silver Star"
           }]
         },{
           "title": "Rizwan",
@@ -225,15 +225,15 @@
           "title": "Shahabzada",
           "toggleClass": false,
           "subItem": [{
-            "title": "Shahabzada Super Mogra"
+            "title": "Shahabzada Dubar"
           },{
             "title": "Shahabzada Mini Dubar"
           },{
             "title": "Shahabzada Premium"
           },{
-            "title": "Shahabzada Dubar"
-          },{
             "title": "Shahabzada Special"
+          },{
+            "title": "Shahabzada Super Mogra"
           }]
         },{
           "title": "Al Abrar",
@@ -332,11 +332,11 @@
           "title": "Hatti",
           "toggleClass": false,
           "subItem": [{
+            "title": "Hatti Broken"
+          },{
             "title": "Hatti Mini Dubar"
           },{
             "title": "Hatti Mogra"
-          },{
-            "title": "Hatti Broken"
           }]
         }]
       }]
@@ -347,13 +347,35 @@
         "title": "Akkha",
         "toggleClass": false,
         "subItem": [{
-          "title": "Maharaja Steam"
+          "title": "Audi Steam"
         },{
-          "title": "Namokar Steam"
+          "title": "Bawarchi Steam"
         },{
           "title": "Gemine Lamination"
         },{
+          "title": "Gemine Steam (White Bag)"
+        },{
+          "title": "Gemine Steam (Yellow Bag)"
+        },{
+          "title": "Lucky Gold Steam"
+        },{
+          "title": "Magic Steam"
+        },{
+          "title": "Maharaja Steam"
+        },{
+          "title": "Manpasand Steam"
+        },{
+          "title": "Mother Gold Steam"
+        },{
+          "title": "Mubarak Steam"
+        },{
+          "title": "Namokar Steam"
+        },{
+          "title": "Orange Steam"
+        },{
           "title": "Pruthviraj Steam"
+        },{
+          "title": "Rajmoti Steam"
         },{
           "title": "Star Hirva (Sona Masoori)"
         },{
@@ -361,65 +383,41 @@
         },{
           "title": "Star Jeera"
         },{
-          "title": "Mubarak Steam"
+          "title": "Srimathi Steam"
         },{
-          "title": "Bawarchi Steam"
+          "title": "Shubham India Steam"
         },{
-          "title": "7 Star"
+          "title": "Zara Steam"
         },{
-          "title": "Rajmoti Steam"
+          "title": "1 + Steam"
         },{
           "title": "5 Star Steam"
         },{
           "title": "5 Steam"
         },{
-          "title": "Orange Steam"
-        },{
-          "title": "Magic Steam"
-        },{
-          "title": "Lucky Gold Steam"
-        },{
-          "title": "Audi Steam"
-        },{
-          "title": "Manpasand Steam"
-        },{
-          "title": "Mother Gold Steam"
-        },{
-          "title": "Srimathi Steam"
-        },{
-          "title": "Shubham India Steam"
-        },{
-          "title": "1 + Steam"
-        },{
-          "title": "Zara Steam"
-        },{
-          "title": "Gemine Steam (White Bag)"
-        },{
-          "title": "Gemine Steam (Yellow Bag)"
-        },{
-          "title": "Orange Steam"
+          "title": "7 Star"
         }]
       },{
         "title": "Tukda(Kani)",
         "toggleClass": false,
         "subItem": [{
+          "title": "Half Steam Kani"
+        },{
+          "title": "Joker Kani"
+        },{
+          "title": "Kitty Bites"
+        },{
+          "title": "Kalbhairav Steam Kani"
+        },{
           "title": "Murlidhar Kani"
+        },{
+          "title": "Pari Kani"
         },{
           "title": "Rani Kani"
         },{
           "title": "SS Gold Kani"
         },{
-          "title": "Kalbhairav Steam Kani"
-        },{
-          "title": "Half Steam Kani"
-        },{
           "title": "Trupti Steam Kani"
-        },{
-          "title": "Kitty Bites"
-        },{
-          "title": "Joker Kani"
-        },{
-          "title": "Pari Kani"
         },{
           "title": "5 Brand Kani"
         }]
@@ -428,35 +426,35 @@
       "title": "Non Steam",
       "toggleClass": false,
       "subItem": [{
-        "title": "Neela Kamal"
+        "title": "Aishwarya Tibar"
+      },{
+        "title": "Bajaj Silver"
+      },{
+        "title": "Bajaj Sona"
       },{
         "title": "Bhagwa Kamal"
       },{
         "title": "Blackberry"
       },{
-        "title": "Bajaj Sona"
-      },{
-        "title": "Saarthi"
-      },{
-        "title": "Bajaj Silver"
+        "title": "Cherry"
       },{
         "title": "Kali Mooch"
       },{
-        "title": "Cherry"
+        "title": "Neela Kamal"
       },{
-        "title": "7 Star"
-      },{
-        "title": "Aishwarya Tibar"
+        "title": "Saarthi"
       },{
         "title": "Yashraj"
+      },{
+        "title": "7 Star"
       }]
     },{
       "title": "Karjat",
       "toggleClass": false,
       "subItem": [{
-        "title": "Kissan Karjat"
-      },{
         "title": "Haran Karjat"
+      },{
+        "title": "Kissan Karjat"
       },{
         "title": "Swastik Karjat"
       }]
@@ -467,35 +465,35 @@
         "title": "Steam Kolam",
         "toggleClass": false,
         "subItem": [{
-          "title": "Chand Tara"
-        },{
-          "title": "Qurbani"
-        },{
-          "title": "Kubera"
-        },{
-          "title": "KB"
-        },{
-          "title": "Ulta Chashma"
-        },{
-          "title": "Mother"
-        },{
           "title": "Bullet"
-        },{
-          "title": "JSR (Jai Shree Ram)"
-        },{
-          "title": "Daawat"
-        },{
-          "title": "Singham"
-        },{
-          "title": "Supreme"
         },{
           "title": "Bhivate"
         },{
-          "title": "Sultan"
+          "title": "Chand Tara"
+        },{
+          "title": "Daawat"
         },{
           "title": "Joker"
         },{
+          "title": "JSR (Jai Shree Ram)"
+        },{
+          "title": "KB"
+        },{
+          "title": "Kubera"
+        },{
+          "title": "Mother"
+        },{
+          "title": "Qurbani"
+        },{
+          "title": "Singham"
+        },{
           "title": "Siddhi"
+        },{
+          "title": "Sultan"
+        },{
+          "title": "Supreme"
+        },{
+          "title": "Ulta Chashma"
         },{
           "title": "555"
         }]
@@ -506,15 +504,15 @@
           "title": "Akkha",
           "toggleClass": false,
           "subItem": [{
-            "title": "Shreeram Kolam (Old & New)"
+            "title": "Aishwarya Kolam (Old & New)"
+          },{
+            "title": "Chetak Kolam (Old & New)"
           },{
             "title": "Royal Chetak Kolam"
           },{
             "title": "Shahi Chetak Kolam"
           },{
-            "title": "Aishwarya Kolam (Old & New)"
-          },{
-            "title": "Chetak Kolam (Old & New)"
+            "title": "Shreeram Kolam (Old & New)"
           },{
             "title": "Tulsi Gold Kolam"
           }]
@@ -522,13 +520,13 @@
           "title": "Tukda",
           "toggleClass": false,
           "subItem": [{
-            "title": "Cherry Tukda"
-          },{
             "title": "Barkath"
           },{
             "title": "Bullet"
           },{
             "title": "Chetak Kolam Tukda"
+          },{
+            "title": "Cherry Tukda"
           }]
         }]
       }]
@@ -544,23 +542,23 @@
       "subItem": [{
         "title": "Apple Pana"
       },{
-        "title": "Diamond Pana"
+        "title": "Bawarchi Indrayani Pana"
       },{
         "title": "Bawarchi Pana"
       },{
-        "title": "Maharaja Pana"
+        "title": "Cycle Pana"
       },{
-        "title": "Star Pana"
+        "title": "Diamond Pana"
+      },{
+        "title": "Maharaja Pana"
       },{
         "title": "Mayur Pana"
       },{
+        "title": "Nawab Pana"
+      },{
         "title": "Ooty Pana"
       },{
-        "title": "Bawarchi Indrayani Pana"
-      },{
-        "title": "Cycle Pana"
-      },{
-        "title": "Nawab Pana"
+        "title": "Star Pana"
       }]
     },{
       "title": "Indrayani Rice",
@@ -573,33 +571,33 @@
         },{
           "title": "Bhivate Indrayani"
         },{
-          "title": "Om Indrayani"
-        },{
           "title": "Hero Indrayani"
         },{
-          "title": "Sarvoday Indrayani"
+          "title": "Jay Malhar Indrayani"
+        },{
+          "title": "Om Indrayani"
         },{
           "title": "RC Indrayani"
         },{
-          "title": "Shetkari Indrayani"
+          "title": "Sarvoday Indrayani"
         },{
-          "title": "Jay Malhar Indrayani"
+          "title": "Shetkari Indrayani"
         }]
       },{
         "title": "Tukda (Kani)",
         "toggleClass": false,
         "subItem": [{
+          "title": "Ajara Indrayani Dubar"
+        },{
           "title": "Ajara Indrayani Kani"
         },{
           "title": "Bhivate Indrayani Kani"
         },{
-          "title": "Rajhans Indrayani Kani"
-        },{
           "title": "Lotus Indrayani Kani"
         },{
-          "title": "Ajara Indrayani Dubar"
-        },{
           "title": "Jay Malhar Indrayani Dubar"
+        },{
+          "title": "Rajhans Indrayani Kani"
         }]
       }]
     },{
@@ -609,11 +607,11 @@
         "title": "Akhand",
         "toggleClass": false,
         "subItem": [{
+          "title": "Bal Gopal Ambemore"
+        },{
           "title": "Gopal Ambemore"
         },{
           "title": "Mast Mogra Ambemore"
-        },{
-          "title": "Bal Gopal Ambemore"
         },{
           "title": "Triveni Ambemore "
         }]
@@ -630,17 +628,17 @@
       "title": "Masoori",
       "toggleClass": false,
       "subItem": [{
-        "title": "Swastik Masoori"
-      },{
         "title": "Bawarchi Masoori"
-      },{
-        "title": "Red Chilly Masoori"
-      },{
-        "title": "Mango Masoori"
       },{
         "title": "Hatti Masoori"
       },{
         "title": "Kalash Masoori"
+      },{
+        "title": "Mango Masoori"
+      },{
+        "title": "Red Chilly Masoori"
+      },{
+        "title": "Swastik Masoori"
       }]
     },{
       "title": "Ratnagiri",
@@ -658,101 +656,101 @@
       "subItem": [{
         "title": "Alishan"
       },{
-        "title": "Sun"
-      },{
-        "title": "Rajbhog"
-      },{
-        "title": "NamoNamo"
-      },{
-        "title": "Sixer"
-      },{
-        "title": "King"
-      },{
-        "title": "No.1"
-      },{
-        "title": "Charlie"
-      },{
-        "title": "Nice"
-      },{
         "title": "Amul"
-      },{
-        "title": "Olympic"
-      },{
-        "title": "Olympic Bhari"
-      },{
-        "title": "Blackberry"
-      },{
-        "title": "Radhika"
-      },{
-        "title": "Chakra"
-      },{
-        "title": "Smart Choice"
-      },{
-        "title": "Mahalaxmi"
-      },{
-        "title": "Kohinoor"
-      },{
-        "title": "Swarna Mayur"
-      },{
-        "title": "Charlie Champion"
-      },{
-        "title": "Bullet"
-      },{
-        "title": "Yuvraj"
-      },{
-        "title": "DilKaRishta"
-      },{
-        "title": "Moraya"
-      },{
-        "title": "Ratnadeep"
-      },{
-        "title": "Kesar"
-      },{
-        "title": "24 Carat"
-      },{
-        "title": "Ganesh"
-      },{
-        "title": "Rajat Gold"
-      },{
-        "title": "Gulal"
-      },{
-        "title": "Blue Star"
       },{
         "title": "Bahubali"
       },{
-        "title": "Surabhi Gold"
+        "title": "Blackberry"
       },{
-        "title": "Virat"
+        "title": "Blue Star"
+      },{
+        "title": "Bullet"
+      },{
+        "title": "Chakra"
+      },{
+        "title": "Charlie"
+      },{
+        "title": "Charlie Champion"
+      },{
+        "title": "Cooking Delight"
+      },{
+        "title": "DilKaRishta"
+      },{
+        "title": "Fruti"
+      },{
+        "title": "Ganesh"
+      },{
+        "title": "Gulal"
+      },{
+        "title": "IPL"
+      },{
+        "title": "Kesar"
       },{
         "title": "Khushbu Khajana"
       },{
         "title": "Kitchen Delight"
       },{
-        "title": "Cooking Delight"
+        "title": "King"
+      },{
+        "title": "Kohinoor"
+      },{
+        "title": "Mahalaxmi"
+      },{
+        "title": "Moraya"
+      },{
+        "title": "Nakshtra"
+      },{
+        "title": "NamoNamo"
+      },{
+        "title": "Nice"
+      },{
+        "title": "No.1"
+      },{
+        "title": "Olympic"
+      },{
+        "title": "Olympic Bhari"
+      },{
+        "title": "Rajbhog"
+      },{
+        "title": "Radhika"
+      },{
+        "title": "Rajat Gold"
+      },{
+        "title": "Ratnadeep"
+      },{
+        "title": "Sixer"
+      },{
+        "title": "Sun"
+      },{
+        "title": "Smart Choice"
+      },{
+        "title": "Swarna Mayur"
       },{
         "title": "Siya Gold"
       },{
+        "title": "Surabhi Gold"
+      },{
         "title": "SS"
       },{
-        "title": "IPL"
+        "title": "Virat"
       },{
-        "title": "Fruti"
+        "title": "Yuvraj"
       },{
-        "title": "Nakshtra"
+        "title": "24 Carat"
       }]
     },{
       "title": "Sihori",
       "toggleClass": false,
       "subItem": [{
-        "title": "Patrani"
+        "title": "Akhand Diya"
       },{
         "title": "Jaora Champion"
       },{
-        "title": "Titan"
+        "title": "Patrani"
       },{
         "title": "Rajat Diamond"
       },{
-        "title": "Akhand Diya"
+        "title": "Titan"
       }]
     }]
   },{
@@ -770,37 +768,37 @@
       "title": "Shalu",
       "toggleClass": false,
       "subItem": [{
-        "title": "RT"
+        "title": "A One"
       },{
-        "title": "Tulsi"
-      },{
-        "title": "Five Star"
-      },{
-        "title": "Moti Gold"
+        "title": "Blue Bird"
       },{
         "title": "Champion"
       },{
         "title": "Chavi"
       },{
-        "title": "Gruhlaxmi"
+        "title": "Dhanlaxmi"
       },{
-        "title": "Mahalaxmi"
+        "title": "Five Star"
       },{
         "title": "Gulab"
       },{
-        "title": "Manikmoti"
-      },{
         "title": "Green Ganesh"
       },{
-        "title": "Siddhi Ganesh"
+        "title": "Gruhlaxmi"
       },{
         "title": "Kesar Pista"
       },{
-        "title": "A One"
+        "title": "Mahalaxmi"
       },{
-        "title": "Blue Bird"
+        "title": "Manikmoti"
       },{
-        "title": "Dhanlaxmi"
+        "title": "Moti Gold"
+      },{
+        "title": "RT"
+      },{
+        "title": "Siddhi Ganesh"
+      },{
+        "title": "Tulsi"
       },{
         "title": "And many other non-branded shalu available in 30 Kg & 50 Kg"
       }]
@@ -808,160 +806,158 @@
       "title": "Hybrid / Vasant / Namdyal",
       "toggleClass": false,
       "subItem": [{
-        "title": "Om Nandyal"
-      },{
-        "title": "Dairy Milk"
-      },{
-        "title": "Maharaja"
+        "title": "Annapurna"
       },{
         "title": "Bullet"
       },{
+        "title": "Dairy Milk"
+      },{
         "title": "Deepak"
       },{
-        "title": "Kamal"
-      },{
-        "title": "Three Mango"
-      },{
-        "title": "Annapurna"
+        "title": "Diamond"
       },{
         "title": "Green Apple"
       },{
-        "title": "Diamond"
+        "title": "Kalash"
+      },{
+        "title": "Kamal"
       },{
         "title": "Kisan"
       },{
         "title": "Kohinoor"
       },{
+        "title": "Maharaja"
+      },{
         "title": "Mango"
       },{
-        "title": "Kalash"
+        "title": "Om Nandyal"
       },{
-        "title": "And many other non-branded varieties available in 30 Kg & 50 Kg"
+        "title": "Three Mango"
       }]
     }]
   },{
     "title": "Chanadal",
     "toggleClass": false,
     "subItem": [{
-      "title": "Pistol"
-    },{
-      "title": "Kitchen Partner"
-    },{
-      "title": "ETC"
-    },{
       "title": "Apple"
-    },{
-      "title": "3 Star"
     },{
       "title": "Angel"
     },{
-      "title": "Classic"
-    },{
       "title": "Badshah"
     },{
-      "title": "JM"
+      "title": "Bhushan Gold"
     },{
-      "title": "Saylee "
-    },{
-      "title": "White Lotus"
-    },{
-      "title": "H 2 O"
+      "title": "Classic"
     },{
       "title": "Dal Parivar"
     },{
+      "title": "ETC"
+    },{
+      "title": "H 2 O"
+    },{
+      "title": "JM"
+    },{
+      "title": "Kitchen Partner"
+    },{
+      "title": "Pistol"
+    },{
+      "title": "Saylee "
+    },{
       "title": "Swad"
     },{
-      "title": "Bhushan Gold"
+      "title": "White Lotus"
+    },{
+      "title": "3 Star"
     }]
   },{
     "title": "Mugdal",
     "toggleClass": false,
     "subItem": [{
-      "title": "Rajasthan No.1"
-    },{
-      "title": "Swadishta"
-    },{
       "title": "Almond"
-    },{
-      "title": "Lemon"
     },{
       "title": "Arawali"
     },{
-      "title": "Natural Green"
-    },{
       "title": "Gold Crown"
     },{
+      "title": "Lemon"
+    },{
+      "title": "Natural Green"
+    },{
+      "title": "Rajasthan No.1"
+    },{
       "title": "RC"
+    },{
+      "title": "Swadishta"
     }]
   },{
     "title": "Turdal",
     "toggleClass": false,
     "subItem": [{
-      "title": "Surabhi"
-    },{
-      "title": "Moti Gold"
-    },{
-      "title": "Star Gold"
-    },{
       "title": "Dolphin"
-    },{
-      "title": "Good Morning"
     },{
       "title": "Everyday"
     },{
-      "title": "Tractor"
+      "title": "Good Morning"
+    },{
+      "title": "Moti Gold"
     },{
       "title": "Orange"
+    },{
+      "title": "Star Gold"
+    },{
+      "title": "Surabhi"
+    },{
+      "title": "Tractor"
     }]
   },{
     "title": "Poha ",
     "toggleClass": false,
     "subItem": [{
+      "title": "Bindass"
+    },{
+      "title": "BMW"
+    },{
+      "title": "Crown"
+    },{
+      "title": "DI"
+    },{
+      "title": "Kakaji"
+    },{
+      "title": "Gitanjali"
+    },{
+      "title": "Kalash"
+    },{
+      "title": "Krishna Gold"
+    },{
       "title": "RT"
     },{
       "title": "Ship"
     },{
-      "title": "Crown"
-    },{
-      "title": "Bindass"
-    },{
       "title": "Tajmahal"
-    },{
-      "title": "Kakaji"
-    },{
-      "title": "BMW"
-    },{
-      "title": "Kalash"
-    },{
-      "title": "DI"
     },{
       "title": "SafedGulab"
     },{
-      "title": "Gitanjali"
-    },{
       "title": "Surya"
-    },{
-      "title": "Krishna Gold"
     }]
   },{
     "title": "Wheat Atta ",
     "toggleClass": false,
     "subItem": [{
-      "title": "Ruchi"
+      "title": "Bigul"
+    },{
+      "title": "Indore Gold"
     },{
       "title": "Jagruti"
     },{
-      "title": "Bigul"
+      "title": "Maharaja"
+    },{
+      "title": "MP No.1"
+    },{
+      "title": "Ruchi"
     },{
       "title": "SS"
     },{
       "title": "Swastik"
-    },{
-      "title": "Indore Gold"
-    },{
-      "title": "MP No.1"
-    },{
-      "title": "Maharaja"
     }]
   }],
   "itemClassification": [{

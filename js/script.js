@@ -8,6 +8,7 @@ angular.module('skWholesale', [])
   $scope.selectedBrand = null;
   $scope.toggleBrandDropdownClass = null;
   $scope.selectedBrandBreadCrumb = [];
+  $scope.copyright = new Date();
   $http.get("./stub/stub.json").then(function (response) {
     $timeout(() => {
       $scope.showPage = true;
@@ -53,10 +54,10 @@ angular.module('skWholesale', [])
   $scope.handleMobileNav = function() {
     $scope.mobileNavClass = $scope.mobileNavClass ? false : true;
   }
-  $scope.toggleBrandNavClass = function(brand, index) {
+  $scope.toggleBrandNavClass = function(brand, index, section) {
     $scope.toggleBrandDropdownClass = null;
     $scope.handleBreadCrumbArray(brand, index);
-    $scope.resetToggleClass($scope.skDetails.branding);
+    section === 'branding' ? $scope.resetToggleClass($scope.skDetails.branding) :  $scope.resetToggleClass($scope.skDetails.itemClassification);
     if(brand.subItem && brand.subItem.length) {
       brand.toggleClass = true;
     }

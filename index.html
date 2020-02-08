@@ -173,13 +173,13 @@
                 <div ng-if="skDetails.branding.length">
                   <ul class="brandingMenuBar">
                     <li ng-repeat="brand in skDetails.branding" ng-class="brand.toggleClass ? 'show':''">
-                      <h3 ng-class="$index === 0 ? 'marginTop0':''" ng-click="toggleBrandNavClass(brand, 0)">{{brand.title}}</h3>
+                      <h3 ng-class="$index === 0 ? 'marginTop0':''" ng-click="toggleBrandNavClass(brand, 0, 'branding')">{{brand.title}}</h3>
                     </li>
                   </ul>
                   <div ng-class="toggleBrandDropdownClass ? 'dropdown brandingMenuBarMobile open':'dropdown brandingMenuBarMobile'">
                     <button class="btn btn-primary dropdown-toggle" ng-click="toggleDropdownClass(toggleBrandDropdownClass)" type="button">{{selectedBrandBreadCrumb[0]}}<span class="caret"></span></button>
                     <ul class="dropdown-menu">
-                      <li ng-repeat="brand in skDetails.branding"><a ng-click="toggleBrandNavClass(brand, 0)">{{brand.title}}</a></li>
+                      <li ng-repeat="brand in skDetails.branding"><a ng-click="toggleBrandNavClass(brand, 0, 'branding')">{{brand.title}}</a></li>
                     </ul>
                   </div>
                 </div>
@@ -226,13 +226,13 @@
                 <div ng-if="skDetails.itemClassification.length">
                   <ul class="brandingMenuBar">
                     <li ng-repeat="brand in skDetails.itemClassification" ng-class="brand.toggleClass ? 'show':''">
-                      <h3 ng-class="$index === 0 ? 'marginTop0':''" ng-click="toggleBrandNavClass(brand, 0)">{{brand.title}}</h3>
+                      <h3 ng-class="$index === 0 ? 'marginTop0':''" ng-click="toggleBrandNavClass(brand, 0, 'itemClassification')">{{brand.title}}</h3>
                     </li>
                   </ul>
                   <div ng-class="toggleBrandDropdownClass ? 'dropdown brandingMenuBarMobile open':'dropdown brandingMenuBarMobile'">
                     <button class="btn btn-primary dropdown-toggle" ng-click="toggleDropdownClass(toggleBrandDropdownClass)" type="button">{{selectedBrandBreadCrumb[0]}}<span class="caret"></span></button>
                     <ul class="dropdown-menu">
-                      <li ng-repeat="brand in skDetails.itemClassification"><a ng-click="toggleBrandNavClass(brand, 0)">{{brand.title}}</a></li>
+                      <li ng-repeat="brand in skDetails.itemClassification"><a ng-click="toggleBrandNavClass(brand, 0, 'itemClassification')">{{brand.title}}</a></li>
                     </ul>
                   </div>
                 </div>
@@ -280,17 +280,17 @@
           <div class="address">
             <h2 class="marginTop0">Contact Us</h2>
             <h4>Address</h4>
-            <p class="marginBottom20">5/237, Dhanya Lane, Near Federal Bank, Opp PNG Jewellers, Ichalkaranji – 416115</p>
+            <p class="marginBottom20">{{skDetails.contactUs.officeAddres}}</p>
             <h4>Telephone Number</h4>
-            <p class="marginBottom20">0230 – 2423381</p>
+            <p class="marginBottom20">{{skDetails.contactUs.telephoneNumber}}</p>
             <h4>Mobile Number</h4>
-            <p class="marginBottom20">9823014200 / 9823159900</p>
+            <p class="marginBottom20">{{skDetails.contactUs.phoneNumber}}</p>
             <h4>Email Address</h4>
-            <p>skswholesale@gmail.com</p>
+            <p>{{skDetails.contactUs.emailAddress}}</p>
           </div>
         </div>
       </section>
-      <footer class="text-center">&copy; 2020 SK's Wholesale All rights reserved</footer>
+      <footer class="text-center">&copy; {{copyright | date:'yyyy'}} SK's Wholesale All rights reserved</footer>
     </div>
     <script src="js/angular.min.js" data-semver="1.5.10"></script>
     <script src="js/script.js"></script>
