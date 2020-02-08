@@ -469,6 +469,15 @@ footer {
 .brandingMenuBarMobile {
   display: none;
 }
+.breadCrumbNotice {
+  font-size: 10px;
+  color: blue;
+  float: right;
+}
+.brandNote {
+  font-size: 10px;
+  color: red;
+}
 /*Mobile responsive*/
 @media only screen and (max-width: 959px) {
   .branding .products ul > li {

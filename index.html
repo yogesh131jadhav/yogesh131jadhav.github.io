@@ -187,6 +187,7 @@
               <div class="col-sm-8 brandingSection borderCCC" ng-if="selectedBrandBreadCrumb.length">
                 <ol class="breadcrumb">
                   <li ng-repeat="breadcrumb in selectedBrandBreadCrumb" ng-class="$index === (selectedBrandBreadCrumb.length - 1) ? 'active' : ''"><a>{{breadcrumb}}</a></li>
+                  <span class="breadCrumbNotice" ng-if="selectedBrand.packing">* Packing: {{selectedBrand.packing}}</span>
                 </ol>
                 <div class="row" ng-if="selectedBrand.subItem.length">
                   <ul ng-if="selectedBrand.subItem.length" class="brandDetailsObject">
@@ -206,12 +207,16 @@
                                   {{item2.title}}
                                 </li>
                               </ul>
+                              <div class="brandNote" ng-if="item1.note">{{item1.note}}</div>
                             </li>
                           </ul>
+                          <div class="brandNote" ng-if="item.note">{{item.note}}</div>
                         </li>
                       </ul>
+                      <div class="brandNote" ng-if="brand.note">{{brand.note}}</div>
                     </li>
                   </ul>
+                  <div class="col-sm-12 brandNote" ng-if="selectedBrand.note">{{selectedBrand.note}}</div>
                 </div>
               </div>
             </div>
