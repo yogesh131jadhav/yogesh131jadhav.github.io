@@ -1,0 +1,26 @@
+{
+  "title": "Nootan Cycle",
+  "navLinks": [{
+      "navTitle": "Dashboard"
+    },{
+      "navTitle": "Products"
+    },{
+      "navTitle": "Inventory"
+    },{
+      "navTitle": "Sales"
+  }],
+  "productList": [
+    {
+      "productID": "",
+      "name": "",
+      "description": "",
+      "quantity": "",
+      "pricePerUnit": ""
+    }
+  ],
+  "custommer": [],
+  "specialDate": [],
+  "productCategory": [],
+  "productSupplier": [],
+  "foooter": "Yogesh Krishna Jadhav"
+}

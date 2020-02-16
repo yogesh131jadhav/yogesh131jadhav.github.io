@@ -1,0 +1,67 @@
+<div class="alert alert-{{notificationStatus.notificationType}}" role="alert" ng-if="notificationStatus.notificationMessage">
+  {{notificationStatus.notificationMessage}}
+</div>
+<div ng-if="activeAction === 'list'">
+  <div class="col-sm-12 text-right marginBottom10">
+    <button ng-click="addUpdateRecord('add')">Add Sales</button>
+  </div>
+  <div class="col-sm-12">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Product Name</th>
+          <th>Product Quantity</th>
+          <th>Product Price Per Unit</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody ng-if="inventoryResp.productList.length">
+        <tr ng-repeat="product in inventoryResp.productList" ng-class="product.deleteFlag ? 'deletedRow' : ''">
+          <th scope="row">{{$index + 1}}</th>
+          <td>{{product.name}}</td>
+          <td>{{product.quantity}}</td>
+          <td>{{product.pricePerUnit}}</td>
+          <td>
+            <button ng-click="addUpdateRecord('view', product)">View</button>
+            <button ng-click="addUpdateRecord('edit', product)">Edit</button>
+            <button ng-click="addProduct('delete', product)" ng-if="product.deleteFlag === false">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+      <tbody ng-if="!inventoryResp.productList.length">
+        <tr>
+          <td colspan="5">No Record found</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div ng-if="activeAction !== 'list'">
+  <div class="row">
+    <div class="form-group col-sm-8">
+      <h3 style="text-transform: capitalize; margin: 0;">{{activeAction}} Sales</h3>
+    </div>
+    <div class="form-group col-sm-4 text-right">
+      <button ng-click="addUpdateRecord('list')">Close</button>
+    </div>
+  </div>
+  <hr style="margin-top: 0;"/>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="sale in saleForm">
+        <th scope="row">{{$index + 1}}</th>
+        <th>
+          <button ng-click="addUpdateRecord('view', product)">View</button>
+          <button ng-click="addUpdateRecord('edit', product)">Edit</button>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</div>
