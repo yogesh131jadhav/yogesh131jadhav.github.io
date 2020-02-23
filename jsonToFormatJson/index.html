@@ -1,0 +1,232 @@
+<html ng-app="jsonToFormatJSON" ng-controller="MainCtrl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>JSON To Smart JSON</title>
+  </head>
+  <body class="container">
+    <div class="rawJSON row" ng-if="flag === 'JSON'">
+      <br/>
+      <div class="col-sm-12">
+        <textarea ng-model="jsonToFormat" class="form-control col-sm-12" rows="13"></textarea>
+      </div>
+      <div class="col-sm-12">
+        <br/><button class="btn btn-primary" ng-click="submitJSON(jsonToFormat)">Submit</button>
+      </div>
+    </div>
+    <div ng-if="flag === 'SUBMITJSON'" class="row">
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseHome" aria-expanded="true" aria-controls="collapseHome">Home</a>
+            </h4>
+          </div>
+          <div id="collapseHome" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <div class="form-group">
+                <label for="title">Project Title</label>
+                <input type="text" class="form-control" id="title" placeholder="Title" ng-model="validateJSON.title">
+              </div>
+              <div class="form-group">
+                <label for="title">Banner => Title</label>
+                <input type="text" class="form-control" id="bannerTitle" placeholder="Banner Title" ng-model="validateJSON.banner.title">
+              </div>
+              <div class="form-group">
+                <label for="title">Banner => Sub Title</label>
+                <input type="text" class="form-control" id="bannerSubTitle" placeholder="Banner Subtitle" ng-model="validateJSON.banner.subTitle">
+              </div>
+              <div class="form-group">
+                <label for="title">Banner => Location</label>
+                <input type="text" class="form-control" id="bannerLocation" placeholder="Banner Location" ng-model="validateJSON.banner.location">
+              </div>
+              <div ng-repeat="teamMate in validateJSON.team">
+                <div class="form-group">
+                  <label for="teamMate{{$index}}Title">Team Mate {{$index + 1}} => Title</label>
+                  <input type="text" class="form-control" id="teamMate{{$index}}Title" placeholder="Team Mate Name" ng-model="teamMate.title">
+                </div>
+                <div class="form-group">
+                  <label for="teamMate{{$index}}Details">Team Mate {{$index + 1}} => Details</label>
+                  <input type="text" class="form-control" id="teamMate{{$index}}Details" placeholder="Team Mate Details" ng-model="teamMate.details">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="officeAddres">Contact Us Office Address</label>
+                <input type="text" class="form-control" id="officeAddres" placeholder="Title" ng-model="validateJSON.contactUs.officeAddres">
+              </div>
+              <div class="form-group">
+                <label for="telephoneNumber">Contact Us Telephone Number</label>
+                <input type="text" class="form-control" id="telephoneNumber" placeholder="Banner Title" ng-model="validateJSON.contactUs.telephoneNumber">
+              </div>
+              <div class="form-group">
+                <label for="phoneNumber">Contact Us Phone Number</label>
+                <input type="text" class="form-control" id="phoneNumber" placeholder="Banner Subtitle" ng-model="validateJSON.contactUs.phoneNumber">
+              </div>
+              <div class="form-group">
+                <label for="emailAddress">Contact Us Email Address</label>
+                <input type="text" class="form-control" id="emailAddress" placeholder="Banner Location" ng-model="validateJSON.contactUs.emailAddress">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseAboutUs" aria-expanded="true" aria-controls="collapseAboutUs">
+                About Us
+              </a>
+            </h4>
+          </div>
+          <div id="collapseAboutUs" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <div class="form-group">
+                <label for="aboutUsTitle">About Us Title</label>
+                <input type="text" class="form-control" id="aboutUsTitle" placeholder="About Us Title" ng-model="validateJSON.aboutUs.title">
+              </div>
+              <div ng-repeat="content in validateJSON.aboutUs.content">
+                <div class="form-group">
+                  <label for="content{{$index}}">About Us => Content</label>
+                  <input type="text" class="form-control" id="content{{$index}}" placeholder="About Us Title" ng-model="content.msg">
+                </div>
+              </div>
+              <!-- div ng-repeat="specialContent in validateJSON.aboutUs.specialContent">
+                <div class="form-group">
+                  <label for="specialContent{{$index}}">About Us => Special Content</label>
+                  <input type="text" class="form-control" id="content{{$index}}" placeholder="About Us Title" ng-model="content.msg">
+                </div>
+              </div ->
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseProducts" aria-expanded="true" aria-controls="collapseProducts">
+                Products
+              </a>
+            </h4>
+          </div>
+          <div id="collapseProducts" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              Products Section
+            </div>
+          </div>
+        </div-->
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseBranding" aria-expanded="true" aria-controls="collapseBranding">
+                Branding
+              </a>
+            </h4>
+          </div>
+          <div id="collapseBranding" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <div ng-repeat="brand in validateJSON.branding">
+                <div class="form-group" class="col-sm-12">
+                  <label for="brand{{$index}}Title">Brand {{$index + 1}} => Title</label>
+                  <input type="text" class="form-control" id="brand{{$index}}Title" placeholder="Brand Name" ng-model="brand.title">
+                </div>
+                <div ng-repeat="subBrand in brand.subItem" ng-if="brand.subItem.length" class="col-sm-11 col-sm-offset-1">
+                  <div class="form-group">
+                    <label for="subBrand{{$index}}Title">Sub Brand {{$index + 1}} => Title</label>
+                    <input type="text" class="form-control" id="subBrand{{$index}}Title" placeholder="Sub Brand Name" ng-model="subBrand.title">
+                  </div>
+                  <div ng-repeat="subSubBrand in subBrand.subItem" ng-if="subBrand.subItem.length" class="col-sm-11 col-sm-offset-1">
+                    <div class="form-group">
+                      <label for="subSubBrand{{$index}}Title">Sub Brand {{$index + 1}} => Title</label>
+                      <input type="text" class="form-control" id="subSubBrand{{$index}}Title" placeholder="Sub Brand Name" ng-model="subSubBrand.title">
+                    </div>
+                    <div ng-repeat="subSubSubBrand in subSubBrand.subItem" ng-if="subSubBrand.subItem.length" class="col-sm-11 col-sm-offset-1">
+                      <div class="form-group">
+                        <label for="subSubSubBrand{{$index}}Title">Sub Brand {{$index + 1}} => Title</label>
+                        <input type="text" class="form-control" id="subSubSubBrand{{$index}}Title" placeholder="Sub Brand Name" ng-model="subSubSubBrand.title">
+                      </div>
+                      <div ng-repeat="subSubSubSubBrand in subSubSubBrand.subItem" ng-if="subSubSubBrand.subItem.length" class="col-sm-11 col-sm-offset-1">
+                        <div class="form-group">
+                          <label for="subSubSubSubBrand{{$index}}Title">Sub Brand {{$index + 1}} => Title</label>
+                          <input type="text" class="form-control" id="subSubSubSubBrand{{$index}}Title" placeholder="Sub Brand Name" ng-model="subSubSubSubBrand.title">
+                        </div>
+                        <div ng-repeat="subSubSubSubSubBrand in subSubSubSubBrand.subItem" ng-if="subSubSubSubBrand.subItem.length" class="col-sm-11 col-sm-offset-1">
+                          <div class="form-group">
+                            <label for="subSubSubSubSubBrand{{$index}}Title">Sub Brand {{$index + 1}} => Title</label>
+                            <input type="text" class="form-control" id="subSubSubSubSubBrand{{$index}}Title" placeholder="Sub Brand Name" ng-model="subSubSubSubSubBrand.title">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseItemClassification" aria-expanded="true" aria-controls="collapseItemClassification">
+                Item Classification
+              </a>
+            </h4>
+          </div>
+          <div id="collapseItemClassification" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <div ng-repeat="brand in validateJSON.itemClassification">
+                <div class="form-group" class="col-sm-12">
+                  <label for="brand{{$index}}Title">Brand {{$index + 1}} => Title</label>
+                  <input type="text" class="form-control" id="brand{{$index}}Title" placeholder="Brand Name" ng-model="brand.title">
+                </div>
+                <div ng-repeat="subBrand in brand.subItem" ng-if="brand.subItem.length" class="col-sm-11 col-sm-offset-1">
+                  <div class="form-group">
+                    <label for="subBrand{{$index}}Title">Sub Brand {{$index + 1}} => Title</label>
+                    <input type="text" class="form-control" id="subBrand{{$index}}Title" placeholder="Sub Brand Name" ng-model="subBrand.title">
+                  </div>
+                  <div ng-repeat="subSubBrand in subBrand.subItem" ng-if="subBrand.subItem.length" class="col-sm-11 col-sm-offset-1">
+                    <div class="form-group">
+                      <label for="subSubBrand{{$index}}Title">Sub Brand {{$index + 1}} => Title</label>
+                      <input type="text" class="form-control" id="subSubBrand{{$index}}Title" placeholder="Sub Brand Name" ng-model="subSubBrand.title">
+                    </div>
+                    <div ng-repeat="subSubSubBrand in subSubBrand.subItem" ng-if="subSubBrand.subItem.length" class="col-sm-11 col-sm-offset-1">
+                      <div class="form-group">
+                        <label for="subSubSubBrand{{$index}}Title">Sub Brand {{$index + 1}} => Title</label>
+                        <input type="text" class="form-control" id="subSubSubBrand{{$index}}Title" placeholder="Sub Brand Name" ng-model="subSubSubBrand.title">
+                      </div>
+                      <div ng-repeat="subSubSubSubBrand in subSubSubBrand.subItem" ng-if="subSubSubBrand.subItem.length" class="col-sm-11 col-sm-offset-1">
+                        <div class="form-group">
+                          <label for="subSubSubSubBrand{{$index}}Title">Sub Brand {{$index + 1}} => Title</label>
+                          <input type="text" class="form-control" id="subSubSubSubBrand{{$index}}Title" placeholder="Sub Brand Name" ng-model="subSubSubSubBrand.title">
+                        </div>
+                        <div ng-repeat="subSubSubSubSubBrand in subSubSubSubBrand.subItem" ng-if="subSubSubSubBrand.subItem.length" class="col-sm-11 col-sm-offset-1">
+                          <div class="form-group">
+                            <label for="subSubSubSubSubBrand{{$index}}Title">Sub Brand {{$index + 1}} => Title</label>
+                            <input type="text" class="form-control" id="subSubSubSubSubBrand{{$index}}Title" placeholder="Sub Brand Name" ng-model="subSubSubSubSubBrand.title">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <br/><button class="btn btn-primary" ng-click="updateJSON()">Submit</button>
+      </div>
+    </div>
+    <div ng-if="flag === 'FORMATJSON'" class="row">
+      <pre>{{validateJSON | json}}</pre>
+    </div>
+    <script src="./js/angular.min.js" data-semver="1.5.10"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.collapse').collapse();
+      });
+    </script>
+  </body>
+</html>
