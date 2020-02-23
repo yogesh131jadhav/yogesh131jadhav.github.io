@@ -1,0 +1,126 @@
+<div class="alert alert-{{notificationStatus.notificationType}}" role="alert" ng-if="notificationStatus.notificationMessage">
+  {{notificationStatus.notificationMessage}}
+</div>
+<div ng-if="activeAction === 'list'">
+  <div class="col-sm-12 text-right marginBottom10">
+    <button ng-click="addUpdateRecord('add')">Add Sales</button>
+  </div>
+  <div class="col-sm-12">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Customer Name</th>
+          <th>Transaction Model</th>
+          <th>Transaction Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody ng-if="inventoryResp.saleList.length">
+        <tr ng-repeat="sale in inventoryResp.saleList" ng-class="sale.deleteFlag ? 'deletedRow' : ''">
+          <th scope="row">{{$index + 1}}</th>
+          <td>
+            <div ng-repeat="customer in inventoryResp.customerList">
+              <span ng-if="customer.customerID === sale.customerID">{{customer.name}}</span>
+            </div>
+          </td>
+          <td>{{sale.transactionMode}}</td>
+          <td>{{sale.transactionDate}}</td>
+          <td>
+            <button ng-click="addUpdateRecord('view', product)">View</button>
+            <button ng-click="addUpdateRecord('edit', product)">Edit</button>
+            <button ng-click="addProduct('delete', product)" ng-if="product.deleteFlag === false">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+      <tbody ng-if="!inventoryResp.saleList.length">
+        <tr>
+          <td colspan="5">No Record found</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div ng-if="activeAction !== 'list'" class="container">
+  <div class="row">
+    <div class="form-group col-xs-8">
+      <h3 style="text-transform: capitalize; margin: 0;">{{activeAction}} Sales</h3>
+    </div>
+    <div class="form-group col-sm-4 text-right">
+      <button ng-click="addUpdateRecord('list')">Close</button>
+    </div>
+  </div>
+  <hr style="margin-top: 0;"/>
+  <div class="row">
+    <div class="form-group col-sm-4">
+      <label for="customerID">Customer Name</label>
+      <select class="form-control" id="customerID" ng-model="saleForm.customerID">
+        <option ng-repeat="customer in inventoryResp.customerList" value="{{customer.customerID}}" ng-selected="customer.customerID === saleForm.customerID">{{product.name}}</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-group col-sm-4">
+      <label for="transactionMode">Transaction Mode</label>
+      <input type="text" class="form-control" id="transactionMode" placeholder="Transaction Mode" ng-model="saleForm.transactionMode" ng-disabled="isViewMode()">
+    </div>
+    <div class="form-group col-sm-4">
+      <label for="transactionDate">Transaction Date</label>
+      <input type="text" class="form-control" id="transactionDate" placeholder="Transaction Date" value="{{getDate(saleForm.transactionDate)}}" disabled>
+    </div>
+  </div>
+  <div class="row" ng-if="saleForm.customerID === 'other'">
+    <hr style="margin-top: 0;"/>
+    <div class="form-group col-sm-12">
+      <h4 style="margin: 0;">Add Customer</h3>
+    </div>
+    <div class="form-group col-sm-4">
+      <label for="customerName">Customer Name</label>
+      <input type="text" class="form-control" id="customerName" placeholder="Customer Name" ng-model="customerForm.customerName" ng-disabled="isViewMode()">
+    </div>
+    <div class="form-group col-sm-4">
+      <label for="customerNumber">Customer Number</label>
+      <input type="text" class="form-control" id="customerNumber" placeholder="Customer Number" ng-model="customerForm.customerNumber" ng-disabled="isViewMode()">
+    </div>
+    <div class="form-group col-sm-4">
+      <label for="customerAddress">Customer Address</label>
+      <input type="text" class="form-control" id="customerAddress" placeholder="Customer Address" ng-model="customerForm.customerAddress" ng-disabled="isViewMode()">
+    </div>
+  </div>
+  <hr style="margin-top: 0;"/>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Product Name</th>
+        <th>Product MRP</th>
+        <th>Product Quantity</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="sale in saleForm.transaction">
+        <th scope="row">{{$index + 1}}</th>
+        <td>
+          <select class="form-control" 
+            ng-model="sale.productID" 
+            ng-options="product.productID as product.name for product in inventoryResp.productList"
+            ng-change="setProductPrice($index)">
+          </select>
+        </td>
+        <td>
+          <input type="text" class="form-control" id="pricePerUnit" value="{{sale.pricePerUnit}}" disabled>
+        </td>
+        <td>
+          <input type="text" class="form-control" id="quantity" placeholder="Quantity" ng-model="sale.quantity" ng-change="validateQuantity($index)">
+        </td>
+        <td>
+          <input type="text" class="form-control" value="{{sale.quantity * sale.pricePerUnit}}" disabled>
+          <div ng-if="($index + 1) === saleForm.transaction.length">
+            <button>Delete</button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button ng-click="submitSale()">Submit</button>
+</div>
