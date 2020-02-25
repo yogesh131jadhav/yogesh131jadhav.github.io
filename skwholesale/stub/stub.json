@@ -1023,6 +1023,30 @@
     }]
   }],
   "itemClassification": [{
+    "title": "Bajari",
+    "toggleClass": false,
+    "subItem": [{
+      "title": "Gujarat"
+    },{
+      "title": "Karnataka"
+    }]
+  },{
+    "title": "Chanadal",
+    "toggleClass": false,
+    "subItem": [{
+      "title": "Rajwadi"
+    }]
+  },{
+    "title": "Jwari",
+    "toggleClass": false,
+    "subItem": [{
+      "title": "Shalu",
+      "toggleClass": false
+    },{
+      "title": "Hybrid / Vasant / Nandyal",
+      "toggleClass": false
+    }]
+  },{
     "title": "Rice",
     "toggleClass": false,
     "subItem": [{
@@ -1083,6 +1107,12 @@
       }]
     }]
   },{
+    "title": "Toor Dal",
+    "toggleClass": false,
+    "subItem": [{
+      "title": "President"
+    }]
+  },{
     "title": "Wheat",
     "toggleClass": false,
     "subItem": [{
@@ -1091,36 +1121,6 @@
     },{
       "title": "Sihori",
       "toggleClass": false
-    }]
-  },{
-    "title": "Jwari",
-    "toggleClass": false,
-    "subItem": [{
-      "title": "Shalu",
-      "toggleClass": false
-    },{
-      "title": "Hybrid / Vasant / Nandyal",
-      "toggleClass": false
-    }]
-  },{
-    "title": "Chanadal",
-    "toggleClass": false,
-    "subItem": [{
-      "title": "Rajwadi"
-    }]
-  },{
-    "title": "Toor Dal",
-    "toggleClass": false,
-    "subItem": [{
-      "title": "President"
-    }]
-  },{
-    "title": "Bajari",
-    "toggleClass": false,
-    "subItem": [{
-      "title": "Gujarat"
-    },{
-      "title": "Karnataka"
     }]
   }],
   "foooter": "myGroup Corporation"
