@@ -167,6 +167,202 @@
     "mapPath": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.8701552570574!2d74.46418651486665!3d16.68337978850412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd451ff7da1aa0dd8!2sSUNILKUMAR%20KANTILAL%20(%20SK&#39;s%20WHOLESALE%20)!5e0!3m2!1sen!2sin!4v1579942397501!5m2!1sen!2sin"
   },
   "branding": [{
+    "title": "Bajari",
+    "toggleClass": false,
+    "subItem": [{
+      "title": "High Choice ( Gujarat ) ( Packing : 30KG )"
+    },{
+      "title": "Non Brand ( Karnataka ) ( Packing : 50KG )"
+    }]
+  },{
+    "title": "Chanadal",
+    "packing": "30 Kg",
+    "toggleClass": false,
+    "subItem": [{
+      "title": "Apple"
+    },{
+      "title": "Angel ( Packing : 25KG )"
+    },{
+      "title": "Badshah"
+    },{
+      "title": "Bhushan Gold"
+    },{
+      "title": "Classic"
+    },{
+      "title": "Dal Parivar"
+    },{
+      "title": "ETC"
+    },{
+      "title": "H 2 O"
+    },{
+      "title": "JM ( Packing : 50KG )"
+    },{
+      "title": "Kitchen Partner"
+    },{
+      "title": "Pistol"
+    },{
+      "title": "Saylee "
+    },{
+      "title": "Swad"
+    },{
+      "title": "White Lotus"
+    },{
+      "title": "3 Star"
+    }]
+  },{
+    "title": "Jwari",
+    "note": "Many other non-branded and hybrid shalu available in 30 Kg & 50 Kg",
+    "packing": "30 Kg",
+    "toggleClass": false,
+    "subItem": [{
+      "title": "Shalu",
+      "toggleClass": false,
+      "subItem": [{
+        "title": "A One"
+      },{
+        "title": "Blue Bird"
+      },{
+        "title": "Champion"
+      },{
+        "title": "Chavi"
+      },{
+        "title": "Dhanlaxmi"
+      },{
+        "title": "Five Star"
+      },{
+        "title": "Gulab"
+      },{
+        "title": "Green Ganesh"
+      },{
+        "title": "Gruhlaxmi"
+      },{
+        "title": "Kesar Pista"
+      },{
+        "title": "Mahalaxmi"
+      },{
+        "title": "Manikmoti"
+      },{
+        "title": "Moti Gold"
+      },{
+        "title": "RT ( Packing : 50KG )"
+      },{
+        "title": "Siddhi Ganesh"
+      },{
+        "title": "Tulsi ( 30KG & 50KG )"
+      }]
+    },{
+      "title": "Hybrid / Vasant / Nandyal",
+      "toggleClass": false,
+      "subItem": [{
+        "title": "Annapurna ( Packing : 50KG )"
+      },{
+        "title": "Bullet ( Packing : 50KG )"
+      },{
+        "title": "Dairy Milk ( Packing : 25KG )"
+      },{
+        "title": "Deepak"
+      },{
+        "title": "Diamond ( Packing : 50KG )"
+      },{
+        "title": "Green Apple"
+      },{
+        "title": "Kalash ( Packing : 50KG )"
+      },{
+        "title": "Kamal"
+      },{
+        "title": "Kisan ( Packing : 50KG )"
+      },{
+        "title": "Kohinoor"
+      },{
+        "title": "Maharaja ( Packing : 25KG )"
+      },{
+        "title": "Mango ( Packing : 50KG )"
+      },{
+        "title": "Om Nandyal ( Packing : 50KG )"
+      },{
+        "title": "Rose ( Packing : 30KG )"
+      },{
+        "title": "Swastik"
+      },{
+        "title": "Three Mango ( Packing : 50KG )"
+      }]
+    }]
+  },{
+    "title": "Masoor Dal",
+    "packing": "30 Kg",
+    "toggleClass": false,
+    "subItem": [{
+      "title": "Dal Parivar"
+    },{
+      "title": "Deluxe"
+    },{
+      "title": "Double Hatti"
+    },{
+      "title": "ETC"
+    },{
+      "title": "KK"
+    },{
+      "title": "Ship"
+    },{
+      "title": "Single Dollar"
+    },{
+      "title": "3 Badshah"
+    }]
+  },{
+    "title": "Moong Dal",
+    "packing": "30 Kg",
+    "toggleClass": false,
+    "subItem": [{
+      "title": "Almond"
+    },{
+      "title": "Arawali"
+    },{
+      "title": "Gold Crown"
+    },{
+      "title": "Lemon"
+    },{
+      "title": "Natural Green"
+    },{
+      "title": "Rajasthan No.1"
+    },{
+      "title": "RC"
+    },{
+      "title": "Sarvottam"
+    },{
+      "title": "Swadishta"
+    }]
+  },{
+    "title": "Poha",
+    "packing": "30 Kg",
+    "toggleClass": false,
+    "subItem": [{
+      "title": "Bindass"
+    },{
+      "title": "BMW"
+    },{
+      "title": "Crown"
+    },{
+      "title": "DI"
+    },{
+      "title": "Kakaji"
+    },{
+      "title": "Gitanjali"
+    },{
+      "title": "Kalash"
+    },{
+      "title": "Krishna Gold"
+    },{
+      "title": "RT"
+    },{
+      "title": "Ship"
+    },{
+      "title": "Tajmahal"
+    },{
+      "title": "SafedGulab"
+    },{
+      "title": "Surya"
+    }]
+  },{
     "title": "Rice",
     "toggleClass": false,
     "subItem": [{
@@ -258,7 +454,7 @@
         "subItem": [{
           "title": "Daawat (Old & New) ( Packing : 10KG )",
           "toggleClass": false,
-          "note": "Note - Old Rice: Plastic Bag, New Rice: Cloth Bag",
+          "note1": "Note - Old Rice: Plastic Bag, New Rice: Cloth Bag",
           "subItem": [{
             "title": "Daawat 40 Carat ( NIKI )"
           },{
@@ -429,9 +625,9 @@
         "title": "3/4th Steam ( Packing : 25KG )",
         "toggleClass": false,
         "subItem": [{
-          "title": "Star ¾"
-        },{
           "title": "Jyoti ¾"
+        },{
+          "title": "Star ¾"
         }]
       }]
     },{
@@ -670,6 +866,29 @@
       }]
     }]
   },{
+    "title": "Toor dal",
+    "packing": "30 Kg",
+    "toggleClass": false,
+    "subItem": [{
+      "title": "5G"
+    },{
+      "title": "Dolphin"
+    },{
+      "title": "Everyday"
+    },{
+      "title": "Good Morning"
+    },{
+      "title": "Moti Gold"
+    },{
+      "title": "Orange"
+    },{
+      "title": "Star Gold"
+    },{
+      "title": "Surabhi"
+    },{
+      "title": "Tractor"
+    }]
+  },{
     "title": "Wheat",
     "packing": "30 Kg",
     "toggleClass": false,
@@ -777,226 +996,6 @@
       },{
         "title": "Titan"
       }]
-    }]
-  },{
-    "title": "Bajari",
-    "toggleClass": false,
-    "subItem": [{
-      "title": "High Choice ( Gujarat ) ( Packing : 30KG )"
-    },{
-      "title": "Non Brand ( Karnataka ) ( Packing : 50KG )"
-    }]
-  },{
-    "title": "Jwari",
-    "note": "Many other non-branded and hybrid shalu available in 30 Kg & 50 Kg",
-    "packing": "30 Kg",
-    "toggleClass": false,
-    "subItem": [{
-      "title": "Shalu",
-      "toggleClass": false,
-      "subItem": [{
-        "title": "A One"
-      },{
-        "title": "Blue Bird"
-      },{
-        "title": "Champion"
-      },{
-        "title": "Chavi"
-      },{
-        "title": "Dhanlaxmi"
-      },{
-        "title": "Five Star"
-      },{
-        "title": "Gulab"
-      },{
-        "title": "Green Ganesh"
-      },{
-        "title": "Gruhlaxmi"
-      },{
-        "title": "Kesar Pista"
-      },{
-        "title": "Mahalaxmi"
-      },{
-        "title": "Manikmoti"
-      },{
-        "title": "Moti Gold"
-      },{
-        "title": "RT ( Packing : 50KG )"
-      },{
-        "title": "Siddhi Ganesh"
-      },{
-        "title": "Tulsi ( 30KG & 50KG )"
-      }]
-    },{
-      "title": "Hybrid / Vasant / Nandyal",
-      "toggleClass": false,
-      "subItem": [{
-        "title": "Annapurna ( Packing : 50KG )"
-      },{
-        "title": "Bullet ( Packing : 50KG )"
-      },{
-        "title": "Dairy Milk ( Packing : 25KG )"
-      },{
-        "title": "Deepak"
-      },{
-        "title": "Diamond ( Packing : 50KG )"
-      },{
-        "title": "Green Apple"
-      },{
-        "title": "Kalash ( Packing : 50KG )"
-      },{
-        "title": "Kamal"
-      },{
-        "title": "Kisan ( Packing : 50KG )"
-      },{
-        "title": "Kohinoor"
-      },{
-        "title": "Maharaja ( Packing : 25KG )"
-      },{
-        "title": "Mango ( Packing : 50KG )"
-      },{
-        "title": "Om Nandyal ( Packing : 50KG )"
-      }
-      ,{
-        "title": "Rose ( Packing : 30KG )"
-      },{
-        "title": "Swastik"
-      },{
-        "title": "Three Mango ( Packing : 50KG )"
-      }]
-    }]
-  },{
-    "title": "Chanadal",
-    "packing": "30 Kg",
-    "toggleClass": false,
-    "subItem": [{
-      "title": "Apple"
-    },{
-      "title": "Angel ( Packing : 25KG )"
-    },{
-      "title": "Badshah"
-    },{
-      "title": "Bhushan Gold"
-    },{
-      "title": "Classic"
-    },{
-      "title": "Dal Parivar"
-    },{
-      "title": "ETC"
-    },{
-      "title": "H 2 O"
-    },{
-      "title": "JM ( Packing : 50KG )"
-    },{
-      "title": "Kitchen Partner"
-    },{
-      "title": "Pistol"
-    },{
-      "title": "Saylee "
-    },{
-      "title": "Swad"
-    },{
-      "title": "White Lotus"
-    },{
-      "title": "3 Star"
-    }]
-  },{
-    "title": "Moong Dal",
-    "packing": "30 Kg",
-    "toggleClass": false,
-    "subItem": [{
-      "title": "Almond"
-    },{
-      "title": "Arawali"
-    },{
-      "title": "Gold Crown"
-    },{
-      "title": "Lemon"
-    },{
-      "title": "Natural Green"
-    },{
-      "title": "Rajasthan No.1"
-    },{
-      "title": "RC"
-    },{
-      "title": "Sarvottam"
-    },{
-      "title": "Swadishta"
-    }]
-  },{
-    "title": "Masoor Dal",
-    "packing": "30 Kg",
-    "toggleClass": false,
-    "subItem": [{
-      "title": "Dal Parivar"
-    },{
-      "title": "Deluxe"
-    },{
-      "title": "Double Hatti"
-    },{
-      "title": "ETC"
-    },{
-      "title": "KK"
-    },{
-      "title": "Ship"
-    },{
-      "title": "Single Dollar"
-    },{
-      "title": "3 Badshah"
-    }]
-  }, {
-    "title": "Toor dal",
-    "packing": "30 Kg",
-    "toggleClass": false,
-    "subItem": [{
-      "title": "5G"
-    },{
-      "title": "Dolphin"
-    },{
-      "title": "Everyday"
-    },{
-      "title": "Good Morning"
-    },{
-      "title": "Moti Gold"
-    },{
-      "title": "Orange"
-    },{
-      "title": "Star Gold"
-    },{
-      "title": "Surabhi"
-    },{
-      "title": "Tractor"
-    }]
-  },{
-    "title": "Poha ",
-    "packing": "30 Kg",
-    "toggleClass": false,
-    "subItem": [{
-      "title": "Bindass"
-    },{
-      "title": "BMW"
-    },{
-      "title": "Crown"
-    },{
-      "title": "DI"
-    },{
-      "title": "Kakaji"
-    },{
-      "title": "Gitanjali"
-    },{
-      "title": "Kalash"
-    },{
-      "title": "Krishna Gold"
-    },{
-      "title": "RT"
-    },{
-      "title": "Ship"
-    },{
-      "title": "Tajmahal"
-    },{
-      "title": "SafedGulab"
-    },{
-      "title": "Surya"
     }]
   },{
     "title": "Wheat Atta",
