@@ -21,15 +21,15 @@
           <th scope="row">{{$index + 1}}</th>
           <td>
             <div ng-repeat="customer in inventoryResp.customerList">
-              <span ng-if="customer.customerID === sale.customerID">{{customer.name}}</span>
+              <span ng-if="customer.customerID === sale.customerID">{{customer.customerName}}</span>
             </div>
           </td>
           <td>{{sale.transactionMode}}</td>
-          <td>{{sale.transactionDate}}</td>
+          <td>{{getDate(sale.transactionDate)}}</td>
           <td>
-            <button ng-click="addUpdateRecord('view', product)">View</button>
-            <button ng-click="addUpdateRecord('edit', product)">Edit</button>
-            <button ng-click="addProduct('delete', product)" ng-if="product.deleteFlag === false">Delete</button>
+            <button ng-click="addUpdateRecord('view', sale)">View</button>
+            <!--button ng-click="addUpdateRecord('edit', sale)">Edit</button>
+            <button ng-click="addProduct('delete', sale)" ng-if="sale.deleteFlag === false">Delete</button-->
           </td>
         </tr>
       </tbody>
@@ -54,8 +54,8 @@
   <div class="row">
     <div class="form-group col-sm-4">
       <label for="customerID">Customer Name</label>
-      <select class="form-control" id="customerID" ng-model="saleForm.customerID">
-        <option ng-repeat="customer in inventoryResp.customerList" value="{{customer.customerID}}" ng-selected="customer.customerID === saleForm.customerID">{{product.name}}</option>
+      <select class="form-control" id="customerID" ng-model="saleForm.customerID" ng-disabled="isViewMode()">
+        <option ng-repeat="customer in inventoryResp.customerList" value="{{customer.customerID}}" ng-selected="saleForm.customerID === customer.customerID">{{customer.customerName}}</option>
         <option value="other">Other</option>
       </select>
     </div>
@@ -87,6 +87,7 @@
     </div>
   </div>
   <hr style="margin-top: 0;"/>
+  <div style="color: red; text-align: right;">* Product should have minimum 1 quantity to come in list.</div>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -102,25 +103,29 @@
         <th scope="row">{{$index + 1}}</th>
         <td>
           <select class="form-control" 
+            ng-if="!isViewMode()"
             ng-model="sale.productID" 
             ng-options="product.productID as product.name for product in inventoryResp.productList"
+            ng-selected="sale.productID === product.productID"
             ng-change="setProductPrice($index)">
           </select>
+          <input ng-if="isViewMode() && product.productID === sale.productID" ng-repeat="product in inventoryResp.productList" type="text" class="form-control" id="pricePerUnit" value="{{product.name}}" disabled>
         </td>
         <td>
           <input type="text" class="form-control" id="pricePerUnit" value="{{sale.pricePerUnit}}" disabled>
         </td>
         <td>
-          <input type="text" class="form-control" id="quantity" placeholder="Quantity" ng-model="sale.quantity" ng-change="validateQuantity($index)">
+          <input type="text" class="form-control" id="quantity" placeholder="Quantity" ng-model="sale.quantity" ng-change="validateQuantity($index)" ng-disabled="isViewMode()">
         </td>
         <td>
           <input type="text" class="form-control" value="{{sale.quantity * sale.pricePerUnit}}" disabled>
-          <div ng-if="($index + 1) === saleForm.transaction.length">
-            <button>Delete</button>
+          <div ng-if="($index !== 0 || saleForm.transaction.length !== 1) && !isViewMode()">
+            <button ng-click="removeEntry($index)">Delete</button>
           </div>
         </td>
       </tr>
     </tbody>
   </table>
-  <button ng-click="submitSale()">Submit</button>
+  <h4 ng-if="totalSaleCost !== 0">Grand Total: {{totalSaleCost}}</h4>
+  <button ng-click="addSale(activeAction)" ng-if="!isViewMode() && (totalSaleCost !== 0)">Submit</button>
 </div>

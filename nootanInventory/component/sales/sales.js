@@ -3,6 +3,7 @@ angular.module('skWholesale')
   templateUrl: './component/sales/sales.html',
   controller: function($scope, $http, $timeout, $window) {
     $scope.activeAction = 'list';
+    $scope.totalSaleCost = 0;
     $scope.addUpdateRecord = function(action, item = null) {
       if(item) {
         $scope.saleForm = item;
@@ -26,19 +27,13 @@ angular.module('skWholesale')
         $scope.deleteSaleToList(item);
       }
     }
-    $scope.addSaleToList = function() {
-      let saleList = $scope.getLocalStorage('nootan_sales');
-      $scope.saleForm.saleID = 'prod-' + Math.floor(Math.random() * 1000000 + 1000000);
-      $scope.saleForm.deleteFlag = false;
-      $scope.saleForm.quantity = 0;
-      $scope.saleForm.pricePerUnit = 0;
-      $scope.saleForm.insertedDate = new Date().getTime();
-      $scope.saleForm.lastModified = new Date().getTime();
-      saleList.push($scope.saleForm);
-      $scope.addLocalStorage('nootan_sales', saleList);
-      $scope.inventoryResp.saleList = $scope.getLocalStorage('nootan_sales');
-      $scope.resetForm();
-      $scope.addUpdateRecord('list');
+    $scope.addCustomer = function() {
+      let customerList = $scope.getLocalStorage('nootan_customers');
+      $scope.saleForm.customerID = 'cust-' + Math.floor(Math.random() * 1000000 + 1000000);
+      $scope.customerForm.customerID = $scope.saleForm.customerID;
+      customerList.push($scope.customerForm);
+      $scope.addLocalStorage('nootan_customers', customerList);
+      $scope.inventoryResp.customerList = $scope.getLocalStorage('nootan_customers');
     }
     $scope.editSaleToList = function() {
       let saleList = $scope.getLocalStorage('nootan_sales');
@@ -99,12 +94,12 @@ angular.module('skWholesale')
           'pricePerUnit': 0
         }]
       };
-      $scope.customerForm = [{
+      $scope.customerForm = {
         'customerID': '',
         'customerName': '',
         'customerNumber': '',
         'customerAddress': ''
-      }];
+      };
     }
     $scope.getDate = function(dateTime) {
       date = new Date(dateTime);
@@ -134,14 +129,20 @@ angular.module('skWholesale')
     $scope.validateQuantity = function(index) {
       $scope.inventoryResp.productList.map(product => {
         if(product.productID === $scope.saleForm.transaction[index].productID) {
+          $scope.addSaleRow();
+          $scope.resetNotification();
           if(product.quantity < $scope.saleForm.transaction[index].quantity) {
-            $scope.saleForm.transaction[index].quantity = product.quantity;
-            $scope.addSaleRow();
-          } else {
-            $scope.addSaleRow();
             $scope.setError('Product quantity will not more than Inventory. For now quantity will be based on Inventory.');
+            $scope.saleForm.transaction[index].quantity = product.quantity;
           }
         }
+      });
+      $scope.calculateTotal();
+    }
+    $scope.calculateTotal = function() {
+      $scope.totalSaleCost = 0;
+      $scope.saleForm.transaction.map(transact => {
+        $scope.totalSaleCost = $scope.totalSaleCost + transact.quantity * transact.pricePerUnit;
       });
     }
     $scope.addSaleRow = function() {
@@ -167,23 +168,41 @@ angular.module('skWholesale')
       };
       $scope.scrollTop();
     }
-    $scope.submitSale = function() {
+    $scope.removeEntry = function(index) {
+      $scope.saleForm.transaction.splice(index, 1)
+    }
+    $scope.addSaleToList = function() {
       // Insert Customer record
       if ($scope.saleForm.customerID === 'other') {
-        let customerList = $scope.getLocalStorage('nootan_customers');
-        $scope.saleForm.customerID = 'cust-' + Math.floor(Math.random() * 1000000 + 1000000);
-        $scope.customerForm.customerID = $scope.saleForm.customerID;
-        customerList.push($scope.customerForm);
-        $scope.addLocalStorage('nootan_customers', customerList);
-        $scope.inventoryResp.customerList = $scope.getLocalStorage('nootan_customers');
+        $scope.addCustomer();
       }
       // Insert Sales record
-      let saleList = $scope.getLocalStorage('nootan_products');
+      let saleList = $scope.getLocalStorage('nootan_sales');
+      $scope.clearEmptyFields($scope.saleForm.transaction, ['productID','quantity','pricePerUnit']);
+      $scope.minimizeProductQuantity();
       saleList.push($scope.saleForm);
       $scope.addLocalStorage('nootan_sales', saleList);
       $scope.inventoryResp.saleList = $scope.getLocalStorage('nootan_sales');
       $scope.resetForm();
       $scope.addUpdateRecord('list');
+    }
+    $scope.minimizeProductQuantity = function() {
+      $scope.saleForm.transaction.map(transaction => {
+        $scope.inventoryResp.productList.map(product => {          
+          if(transaction.productID === product.productID) {
+            product.quantity = parseInt(product.quantity) - parseInt(transaction.quantity);
+            product.lastModified = new Date().getTime();
+          }
+        })
+      });
+      $scope.addLocalStorage('nootan_products', $scope.inventoryResp.productList);
+    }
+    $scope.clearEmptyFields = function(items, attributes) {
+      items.map((item, index) => {
+        if(item['productID'] === '' && item['quantity'] === 0 && item['pricePerUnit'] === 0) {
+           items.splice(index, 1);
+        }
+      })
     }
     $scope.fetchData();
     $scope.resetNotification();
