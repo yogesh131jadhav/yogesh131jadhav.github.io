@@ -276,6 +276,9 @@
           </div>
         </section>
       </div>
+      <div ng-if="activePage === 7" class="clearfix paddingTop20">
+        <dashboard activepage="activePage"></dashboard>
+      </div>
       <section class="map clearfix">
         <!--iframe src="{{contact.mapPath}}"></iframe-->
         <div class="mapContainer">
@@ -299,6 +302,7 @@
     </div>
     <script src="js/angular.min.js" data-semver="1.5.10"></script>
     <script src="js/script.js"></script>
+    <script src="./component/dashboard/dashboard.js"></script>
     <script>
       window.onscroll = function() {
         if (window.pageYOffset > 500) {

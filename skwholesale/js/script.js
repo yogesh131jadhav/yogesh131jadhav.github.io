@@ -36,6 +36,10 @@ angular.module('skWholesale', [])
         $scope.handleBreadCrumbArray($scope.skDetails.itemClassification[0], 0);
         $scope.setSelectedBrand($scope.skDetails.itemClassification[0]);
         return $scope.activePage = 6;
+      case 'Brand Images':
+        $scope.title = 'Brand Images';
+        $scope.skDetails.itemClassification[0].toggleClass = true;
+        return $scope.activePage = 7;
       default:
         return $scope.activePage = 1;
     }

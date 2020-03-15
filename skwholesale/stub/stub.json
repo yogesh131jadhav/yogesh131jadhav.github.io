@@ -1,13 +1,13 @@
 {
   "title": "SK's Wholesale",
   "navLinks": [{
-    "navTitle": "Home"
-  },{
     "navTitle": "Product"
   },{
     "navTitle": "Item Classification"
   },{
     "navTitle": "Brand"
+  },{
+    "navTitle": "Brand Images"
   }],
   "banner": {
     "title": "Sunilkumar Kantilal Grain Merchant",
