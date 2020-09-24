@@ -1,0 +1,71 @@
+<html ng-app="skWholesale" ng-controller="MainCtrl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="favicon.ico">
+    <title>Nootan Cycle :: Inventory Management</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div>
+      <section>
+        <div class="navbar-wrapper">
+          <div class="container">
+            <div class="navbar navbar-fixed-top" id="id-navigation" role="navigation">
+              <div class="containwrapper"></div>
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" ng-click="handleMobileNav()">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand">{{inventoryResp.title}}</a>
+                </div>
+                <div class="navbar-collapse collapse in">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li ng-repeat="link in inventoryResp.navLinks">
+                      <a ng-click="handlePageChange(link.navTitle)" ng-class="checkForActiveNag(link.navTitle, activePage) ? 'active' : ''">{{link.navTitle}}</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="row" ng-if="activePage === 'Dashboard'">
+          <dashboard activePage="activePage"></dashboard>
+        </div>
+        <div class="row" ng-if="activePage === 'Products'">
+          <products></products>
+        </div>
+        <div class="row" ng-if="activePage === 'Inventory'">
+          <inventory></inventory>
+        </div>
+        <div class="row" ng-if="activePage === 'Sales'">
+          <sales></sales>
+        </div>
+      </section>
+      <footer class="text-center">&copy; 2020 Nootan All rights reserved</footer>
+    </div>
+    <script src="./js/angular.min.js" data-semver="1.5.10"></script>
+    <script src="./js/script.js"></script>
+    <script src="./component/dashboard/dashboard.js"></script>
+    <script src="./component/products/products.js"></script>
+    <script src="./component/inventory/inventory.js"></script>
+    <script src="./component/sales/sales.js"></script>
+    <script>
+      window.onscroll = function() {
+        if (window.pageYOffset > 500) {
+          document.getElementById('id-navigation').classList.add('flatNav');
+        } else {
+          document.getElementById('id-navigation').classList.remove('flatNav');
+        }
+      }
+    </script>
+  </body>
+</html>
