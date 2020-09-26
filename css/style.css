@@ -411,3 +411,8 @@ footer textarea {
 .navbar-dark .navbar-nav .active .nav-link:hover:before {
   width: 0;
 }
+.googleMap {
+  border: 0;
+  width: 100%;
+  margin-bottom: -6px;
+}
