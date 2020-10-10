@@ -86,6 +86,7 @@ footer textarea {
 .nav-item {
   margin-left: 10px;
   position: relative;
+  text-align: center;
 }
 .navbar-dark .navbar-nav .active > .nav-link {
   box-shadow: 0 0 10px 0 inset rgba(0,0,0,0.5);
@@ -429,7 +430,35 @@ footer textarea {
 .modalImage {
   max-width: 600px;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .bannerCard:hover .animation {
+    left: 40px;
+    top: 140px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1159px) {
+  .cardLayout:hover .galleryCover {
+    h5 {
+      font-size: 16px;
+    }
+    button {
+      font-size: 12px;
+    }
+    &:before {
+      top: 10px;
+    }
+    &:after {
+      right: 12px;
+    }
+    .readLabel {
+      display: none;
+    }
+  }
+}
 @media (max-width: 767px) {
+  body {
+    padding-top: 4.2rem;
+  }
   .navbar-dark .navbar-nav .nav-link,
   .bannerCard:hover .animation:hover a {
     padding: 10px 20px;
@@ -443,6 +472,14 @@ footer textarea {
   }
   .footerCopyright .col-lg-4 {
     text-align: center !important;
+  }
+  #clientCarousel .carousel-item {
+    height: 32rem;
+  }
+}
+@media (max-width: 480px) {
+  .bannerCard:hover .animation {
+    right: 80px;
   }
 }
 .carousel-control-prev-icon,
