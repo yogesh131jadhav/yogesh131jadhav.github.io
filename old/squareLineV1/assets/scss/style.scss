@@ -312,7 +312,7 @@ footer textarea {
 .projectGalleryImages .bg-white {
   overflow: hidden;
   position: relative;
-  height: 187px;
+  height: 140px;
 }
 .projectGalleryImages .bg-white img {
   position: absolute;
@@ -476,10 +476,7 @@ footer textarea {
     text-align: center !important;
   }
   #clientCarousel .carousel-item {
-    height: 52rem;
-  }
-  .carousel-item {
-    max-height: 832px;
+    height: 32rem;
   }
 }
 @media (max-width: 480px) {
@@ -510,7 +507,4 @@ footer textarea {
 }
 .aboutUsImage {
   max-width: 100%;
-}
-td {
-  vertical-align: middle !important;
 }
