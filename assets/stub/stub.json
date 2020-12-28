@@ -1,0 +1,204 @@
+{
+  "updateFlag": "false",
+  "title": "Sujay Agro",
+  "header": {
+    "logo": "",
+    "logoAlt": "Sujay Agro",
+    "navigation": [{
+      "title": "Home",
+      "url": "/"
+    },{
+      "title": "About Us",
+      "url": "/aboutus"
+    },{
+      "title": "Gallery",
+      "url": "/gallery"
+    },{
+      "title": "Price",
+      "url": "/prices"
+    },{
+      "title": "Contact Us",
+      "url": "/contactUs"
+    }]
+  },
+  "homePage": {
+    "aboutUs": {
+      "aboutUsImage": "aboutUs",
+      "aboutUsImageAlt": "About Us Image",
+      "aboutUsContent": "<p class='text-justify'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p><p class='text-justify'>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>",
+      "aboutUsContentFooter": "<p class='text-justify'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>"
+    },
+    "services": [{
+      "titleImg": "",
+      "ImgAlt": "",
+      "faIcon": "fa-shopping-cart",
+      "title": "E-COMMERCE",
+      "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    }, {
+      "titleImg": "",
+      "ImgAlt": "",
+      "faIcon": "fa-rocket",
+      "title": "RESPONSIVE DESIGN",
+      "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    }, {
+      "titleImg": "",
+      "ImgAlt": "",
+      "faIcon": "fa-calculator",
+      "title": "WEB SECURITY",
+      "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    }],
+    "banner": [{
+      "img": "slider1",
+      "imgAlt": "slider1",
+      "captionTitle": "HELLO & WELCOME",
+      "captionSubTitle": "WE ARE SUJAY AGRO",
+      "btnTitle": "Discover our story",
+      "btnLink": "/aboutus"
+    },{
+      "img": "slider2",
+      "imgAlt": "slider2",
+      "captionTitle": "Experience Of Purity In Life",
+      "captionSubTitle": "",
+      "btnTitle": "Learn More",
+      "btnLink": "#specialities"
+    },{
+      "img": "slider3",
+      "imgAlt": "slider3",
+      "captionTitle": "TAKE A LOOK AT",
+      "captionSubTitle": "OUR SPECIALITIES",
+      "btnTitle": "Check Our Menu",
+      "btnLink": "#menu"
+    }],
+    "products": [{
+      "thumbnail": "products/Baffle.jpg",
+      "img": "products/Baffle.jpg",
+      "title": "Baffle Ceiling",
+      "subTitle": "Extruded Aluminium baffle"
+    },{
+      "thumbnail": "products/U_baffele.jpg",
+      "img": "products/U_baffele.jpg",
+      "title": "U - Profile Baffle Ceiling",
+      "subTitle": "Galvanised & Aluminium"
+    }],
+    "gallery": [{
+      "thumbnail": "gallery/akzonoble.jpg",
+      "img": "gallery/akzonoble.jpg",
+      "title": "AKZONOBLE",
+      "subTitle": null
+    }],
+    "clients": [{
+      "clientBunch": [{
+        "img": "clients/allianz.jpg",
+        "title": "Client Allianz"
+      },{
+        "img": "clients/AMS.jpg",
+        "title": "Client AMS"
+      },{
+        "img": "clients/anj.jpg",
+        "title": "Client ANJ"
+      },{
+        "img": "clients/DSP.jpg",
+        "title": "Client DSP"
+      },{
+        "img": "clients/DWP.jpg",
+        "title": "Client DWP"
+      },{
+        "img": "clients/ele.jpg",
+        "title": "Client ELE"
+      }]
+    },{
+      "clientBunch": [{
+        "img": "clients/master.jpg",
+        "title": "Client Master Cards"
+      },{
+        "img": "clients/narsi.jpg",
+        "title": "Client NARSI"
+      },{
+        "img": "clients/panchshil.jpg",
+        "title": "Client Panchshil"
+      },{
+        "img": "clients/Space.jpg",
+        "title": "Client Space Matrix"
+      },{
+        "img": "clients/toa.jpg",
+        "title": "Client TOA"
+      },{
+        "img": "clients/zyeta.jpg",
+        "title": "Client Zyeta"
+      }]
+    },{
+      "clientBunch": [{
+        "img": "clients/Akzo.jpg",
+        "title": "Client Akzo"
+      },{
+        "img": "clients/auto.jpg",
+        "title": "Client Auto"
+      },{
+        "img": "clients/cargill.jpg",
+        "title": "Client Cargill"
+      },{
+        "img": "clients/conduent.jpg",
+        "title": "Client Conduent"
+      },{
+        "img": "clients/EDB.jpg",
+        "title": "Client EDB"
+      },{
+        "img": "clients/eq.jpg",
+        "title": "Client Eq"
+      }]
+    },{
+      "clientBunch": [{
+        "img": "clients/ey.jpg",
+        "title": "Client ey"
+      },{
+        "img": "clients/fr.jpg",
+        "title": "Client fr"
+      },{
+        "img": "clients/gbrn.jpg",
+        "title": "Client gbrn"
+      },{
+        "img": "clients/impact.jpg",
+        "title": "Client impact"
+      },{
+        "img": "clients/pkc.jpg",
+        "title": "Client pkc"
+      },{
+        "img": "clients/prince.jpg",
+        "title": "Client prince"
+      }]
+    },{
+      "clientBunch": [{
+        "img": "clients/rppl.jpg",
+        "title": "Client rppl"
+      },{
+        "img": "clients/tsy.jpg",
+        "title": "Client tsy"
+      },{
+        "img": "clients/tetra.jpg",
+        "title": "Client tetra"
+      },{
+        "img": "clients/vande.jpg",
+        "title": "Client vande"
+      },{
+        "img": "clients/vc.jpg",
+        "title": "Client vc"
+      },{
+        "img": "clients/vir.jpg",
+        "title": "Client vir"
+      }]
+    }]
+  },
+  "footer": {
+    "shortAboutUs": "<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p><p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>",
+    "address": "105, Abhishek shree, Lane Number 4,<br/> Happy Colony, Kothrud,Pune, Maharashtra <br/>PIN: 411038<br/><br/>",
+    "phone": " <a href='tel:+919552591056'>+91 95 5259 1056</a><br/>",
+    "email": " <a href='mailto:narachiconsultant@gmail.com'>narachiconsultant@gmail.com</a><br/>",
+    "time": " 09.00 to 18.30 | Monday to Saturday",
+    "copyRight": "Powered By Narachi Consultant © ",
+    "logo": "../../assets/img/logo.jpg",
+    "logoAlt": "Webriven Company"
+  }
+}
