@@ -1,0 +1,20 @@
+<html>
+  <head></head>
+  <body>
+    <script src="sdk.js"></script>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId :  '1309816952714802',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v9.0'
+        });
+        FB.getLoginStatus(function(response) {
+          console.log(response);
+        });
+      };
+      fbAsyncInit();
+    </script>
+  </body>
+</html>
