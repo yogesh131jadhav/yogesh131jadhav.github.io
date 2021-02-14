@@ -2,12 +2,6 @@
   <head></head>
   <body>
     Hello World..!
-    <div
-      class="fb-like"
-      data-share="true"
-      data-width="450"
-      data-show-faces="true">
-    </div>
     <script src="./sdk.js"></script>
     <script>
       window.fbAsyncInit = function() {
@@ -18,7 +12,7 @@
           version          : 'v9.0'
         });
         FB.getLoginStatus(function(response) {
-          console.log(response);
+          console.log('-------------Get Login Status---------------', response);
         });
         FB.login(function(response) {
           if (response.authResponse) {
