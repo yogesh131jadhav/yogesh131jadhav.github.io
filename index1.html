@@ -44,11 +44,11 @@
           console.log('Successful login for: ' + response.name);
           document.getElementById('status').innerHTML =
             'Thanks for logging in, ' + response.name + '!';
-        });
-        FB.api('/{user-id}/likes', function (response) {
-          if (response && !response.error) {
-            console.log('Likes Data: ' + response);
-          }
+            FB.api('/{response.id}/likes', function (response) {
+              if (response && !response.error) {
+                console.log('Likes Data: ' + response);
+              }
+            });
         });
       }
     </script>
