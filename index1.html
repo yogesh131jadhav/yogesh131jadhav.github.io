@@ -46,7 +46,7 @@
             'Thanks for logging in, ' + response.name + '!';
             FB.api('/' + response.id + '/likes', function (response) {
               if (response && !response.error) {
-                console.log('Likes Data: ' + response);
+                console.log('Likes Data: ', response);
               }
             });
         });
