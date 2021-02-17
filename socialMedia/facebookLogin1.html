@@ -55,6 +55,106 @@
             console.log('Taggable Friends Data: ', response);
           }
         });
+        FB.api('/' + result.authResponse.userID + '/accounts', function (response) {
+          if (response && !response.error) {
+            console.log('Accounts Data: ', response);
+          }
+        });
+        FB.api('/' + result.authResponse.userID + '/albums', function (response) {
+          if (response && !response.error) {
+            console.log('Albums Data: ', response);
+          }
+        });
+        FB.api('/' + result.authResponse.userID + '/assigned_product_catalogs', function (response) {
+          if (response && !response.error) {
+            console.log('Assigned Product Catalogs Data: ', response);
+          }
+        });
+        FB.api('/' + result.authResponse.userID + '/conversations', function (response) {
+          if (response && !response.error) {
+            console.log('Conversations Data: ', response);
+          }
+        });
+        FB.api('/' + result.authResponse.userID + '/custom_labels', function (response) {
+          if (response && !response.error) {
+            console.log('Custom Labels Data: ', response);
+          }
+        });
+        FB.api('/' + result.authResponse.userID + '/events', function (response) {
+          if (response && !response.error) {
+            console.log('Events Data: ', response);
+          }
+        });
+        FB.api('/' + result.authResponse.userID + '/friends', function (response) {
+          if (response && !response.error) {
+            console.log('Friends Data: ', response);
+          }
+        });
+        FB.api('/' + result.authResponse.userID + '/feed', function (response) {
+          if (response && !response.error) {
+            console.log('Feed Data: ', response);
+          }
+        });
+        FB.api('/' + result.authResponse.userID + '/groups', function (response) {
+          if (response && !response.error) {
+            console.log('Groups Data: ', response);
+          }
+        });
+        FB.api('/' + result.authResponse.userID + '/likes', function (response) {
+          if (response && !response.error) {
+            console.log('Likes Data: ', response);
+          }
+        });
+        FB.api('/' + result.authResponse.userID + '/music', function (response) {
+          if (response && !response.error) {
+            console.log('Music Data: ', response);
+          }
+        });
+        FB.api('/' + result.authResponse.userID + '/permissions', function (response) {
+          if (response && !response.error) {
+            console.log('Permissions Data: ', response);
+          }
+        });
+        FB.api('/' + result.authResponse.userID + '/posts', function (response) {
+          if (response && !response.error) {
+            console.log('Posts Data: ', response);
+          }
+        });
+        FB.api('/' + result.authResponse.userID + '/photos', function (response) {
+          if (response && !response.error) {
+            console.log('Photos Data: ', response);
+          }
+        });
+        FB.api('/' + result.authResponse.userID + '/picture', function (response) {
+          if (response && !response.error) {
+            console.log('Picture Data: ', response);
+          }
+        });
+        FB.api('/' + result.authResponse.userID + '/permissions', function (response) {
+          if (response && !response.error) {
+            console.log('Permissions Data: ', response);
+          }
+        });
+        FB.api('/' + result.authResponse.userID + '/payment.subscriptions', function (response) {
+          if (response && !response.error) {
+            console.log('Payment Subscriptions Data: ', response);
+          }
+        });
+        FB.api('/' + result.authResponse.userID + '/videos', function (response) {
+          if (response && !response.error) {
+            console.log('Videos Data: ', response);
+          }
+        });
+        FB.api('/' + result.authResponse.userID + '/taggable_friends', function (response) {
+          if (response && !response.error) {
+            console.log('Taggable Friends Data: ', response);
+          }
+        });
+        FB.api('/me', 'GET', {'fields': 'businesses'}, function (response) {
+          if (response && !response.error) {
+            console.log('Taggable Friends Data: ', response);
+          }
+        });
       }
     </script>
     <!-- The JS SDK Login Button -->
