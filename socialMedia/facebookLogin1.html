@@ -38,10 +38,15 @@
 
       function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
         console.log('Welcome!  Fetching your information.... ');
-        FB.api('/me', function(response) {
+        /*FB.api('/me', function(response) {
           console.log('Successful login for: ' + response.name);
           document.getElementById('status').innerHTML =
             'Thanks for logging in, ' + response.name + '!';
+        });*/
+        FB.api('/me', 'GET', {'fields': 'about,birthday,id,age_range,education,email,first_name,gender,interested_in,last_name,is_guest_user,languages,link,location,middle_name,name,meeting_for,name_format,hometown,political,favorite_athletes,favorite_teams,inspirational_people,quotes,relationship_status,religion,short_name,sports,website,albums'}, function(response) {
+          if (response && !response.error) {
+            console.log('Taggable Friends Data: ', response);
+          }
         });
       }
     </script>
