@@ -40,7 +40,7 @@
         FB.login(function(response) {
           // Original FB.login code
           checkLoginState();
-        }, { auth_type: 'reauthenticate' }, {scope: 'public_profile,email'});
+        }, { auth_type: 'reauthenticate' }, {scope: 'public_profile,email, user_friends, user_birthday'});
       }
 
       function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
