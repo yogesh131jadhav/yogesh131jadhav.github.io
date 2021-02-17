@@ -11,12 +11,13 @@
     <!-- Load the JS SDK asynchronously -->
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
     <script>
+      // appId      : '438092030968447',
       window.fbAsyncInit = function() {
         FB.init({
-          appId      : '438092030968447',
+          appId      : '810879902800593',
           cookie     : true,                     // Enable cookies to allow the server to access the session.
           xfbml      : true,                     // Parse social plugins on this webpage.
-          version    : 'v7.0'                    // Use this Graph API version for this call.
+          version    : 'v9.0'                    // Use this Graph API version for this call.
         });
 
         function checkFacebookLoginStatusCallback(response) {  // Called with the results from FB.getLoginStatus().
