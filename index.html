@@ -474,7 +474,7 @@
       },{
         id: 2,
         question: 'Notes',
-        answer: '- JavaScript variables are containers for storing data values.<br/><br/><strong>Valid Syntax:</strong><br/>var person = "John Doe", carName = "Volvo", price = 200;<br/>var $$$ = "Hello World";<br/>var _lastName = "Johnson";<br/>const variable reclaration gives error but when const array or object can update<br/>null === undefined // false<br/>null == undefined // true',
+        answer: '- JavaScript variables are containers for storing data values.<br/><br/><strong>Valid Syntax:</strong><br/><code>var person = "John Doe", carName = "Volvo", price = 200;<br/>var $$$ = "Hello World";<br/>var _lastName = "Johnson";<br/>const variable reclaration gives error but when const array or object can update<br/>null === undefined // false<br/>null == undefined // true</code><br/><br/><code>cars = ["car1","car2","car3","car4"];<br/>for (i = 0, len = cars.length, text = ""; i < len; i++) {<br/>&nbsp;text += cars[i];<br/>}<br/>console.log(text);<br/></code>',
         category: 'JavaScript',
         open: false
       },{
@@ -562,15 +562,33 @@
         category: 'JavaScript',
         open: false
       },{
-        id: 16,
+        id: 17,
         question: 'Date Methods',
         answer: "- Date.parse() method to convert it to milliseconds<br/>- getFullYear(): Get the year as a four digit number (yyyy)<br/>getMonth(): Get the month as a number (0-11)<br/>getDate(): Get the day as a number (1-31)<br/>getHours(): Get the hour (0-23)<br/>getMinutes(): Get the minute (0-59)<br/>getSeconds(): Get the second (0-59)<br/>getMilliseconds(): Get the millisecond (0-999)<br/>getTime(): Get the time (milliseconds since January 1, 1970)<br/>getDay(): Get the weekday as a number (0-6)<br/>Date.now(): Get the time. ECMAScript 5.",
         category: 'JavaScript',
         open: false
       },{
-        id: 17,
+        id: 18,
         question: 'Math Methods',
         answer: "- The JavaScript Math object allows you to perform mathematical tasks on numbers.<br/>- Unlike other objects, the Math object has no constructor.<br/><br/><strong>Number to Integer</strong><br/>Math.round(x):	Returns x rounded to its nearest integer<br/>Math.ceil(x): Returns x rounded up to its nearest integer<br/>Math.floor(x): Returns x rounded down to its nearest integer<br/>Math.trunc(x): Returns the integer part of x (new in ES6): returns the integer part of x<br/>Math.sign(): (new in ES6): returns if x is negative, null or positive<br/><code>Math.sign(-4); // returns -1 <br/>Math.sign(0); // returns 0<br/>Math.sign(4); // returns 1</code><br/><br/>Math.pow(): returns the value of x to the power of y<br/><code>Math.pow(8, 2); // returns 64</code><br/><br/>Math.sqrt(): returns the square root of x<br/><code>Math.sqrt(64); // returns 8</code><br/><br/>Math.abs(): returns absolute positive value<br/><code>Math.abs(-4.7); // returns 4.7</code><br/><br/>Math.sin(): returns the sine (a value between -1 and 1) of the angle x (given in radians)<br/><code>Math.sin(90 * Math.PI / 180); // returns 1 (the sine of 90 degrees)</code><br/><br/>Math.min() and Math.max(): can be used to find the lowest or highest value in a list of arguments<br/><code>Math.min(0, 150, 30, 20, -8, -200); // returns -200</code><br/><br/>Math.random(): returns a random number between 0 (inclusive), and 1 (exclusive)<br/><code>Math.random(); // returns a random number</code>",
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 19,
+        question: 'Switch Case behaviour',
+        answer: "<strong>Switch behaviour with and without break</strong><br/><br/><i>With Break</i><br/><code>switch (3) {<br/>&nbsp;case 0:<br/>&nbsp;&nbsp;day = \"Sunday\";<br/>&nbsp;&nbsp;break;<br/>&nbsp;case 1:<br/>&nbsp;&nbsp;day = \"Monday\";<br/>&nbsp;&nbsp;break;<br/>&nbsp;case 2:<br/>&nbsp;&nbsp;day = \"Tuesday\";<br/>&nbsp;&nbsp;break;<br/>&nbsp;case 3:<br/>&nbsp;&nbsp;day = \"Wednesday\";<br/>&nbsp;&nbsp;break;<br/>&nbsp;case 4:<br/>&nbsp;&nbsp;day = \"Thursday\";<br/>&nbsp;&nbsp;break;<br/>&nbsp;case 5:<br/>&nbsp;&nbsp;day = \"Friday\";<br/>&nbsp;&nbsp;break;<br/>&nbsp;case 6:<br/>&nbsp;&nbsp;day = \"Saturday\";<br/>&nbsp;&nbsp;break<br/>}<br/> // Output: Wednesday</code><br/><br/><i>Without Break</i><br/><code>switch (3) {<br/>&nbsp;case 0:<br/>&nbsp;&nbsp;day = \"Sunday\";<br/>&nbsp;case 1:<br/>&nbsp;&nbsp;day = \"Monday\";<br/>&nbsp;case 2:<br/>&nbsp;&nbsp;day = \"Tuesday\";<br/>&nbsp;case 3:<br/>&nbsp;&nbsp;day = \"Wednesday\";<br/>&nbsp;case 4:<br/>&nbsp;&nbsp;day = \"Thursday\";<br/>&nbsp;case 5:<br/>&nbsp;&nbsp;day = \"Friday\";<br/>&nbsp;case 6:<br/>&nbsp;&nbsp;day = \"Saturday\";<br/>}<br/> // Output: Saturday</code><br/><br/><p><strong>If you omit the break statement, the next case will be executed even if the evaluation does not match the case.</strong></p><code>var x = \"0\";<br/>switch (x) {<br/>&nbsp;case 0:<br/>&nbsp;&nbsp;text = \"Off\";<br/>&nbsp;&nbsp;break;<br/>&nbsp;case 1:<br/>&nbsp;&nbsp;text = \"On\";<br/>&nbsp;&nbsp;break;<br/>&nbsp;default:<br/>&nbsp;&nbsp;text = \"No value found\";<br/>}<br/>// Output: No value found as 0 consider as false condition</code><br/><br/>- Switch cases use strict comparison (===).<br/>",
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 20,
+        question: 'Different Kinds of Loops',
+        answer: "<code>for</code> - loops through a block of code a number of times<br/><code>for/in</code> - loops through the properties of an object<br/><code>for/of</code> - loops through the values of an iterable object<br/><code>while</code> - loops through a block of code while a specified condition is true<br/><code>do/while</code> - also loops through a block of code while a specified condition is true<br/>- It is better to use a for loop, a for of loop, or Array.forEach() when the order is important.<br/><br/><strong>Code syntax</strong><br/><code>for (let i = 0; i < arr.length; ++i)<br/>arr.forEach((v, i) => { /* ... */ })<br/>for (let i in arr)<br/>for (const v of arr)</code>",
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 21,
+        question: 'JavaScript Regular Expressions',
+        answer: "- A regular expression is a sequence of characters that forms a search pattern<br/><strong>Syntax</strong><br/><code> /pattern/modifiers; </code><br/><strong>Modifiers</strong><br/><em>i</em>: Perform case-insensitive matching<br/><em>g</em>: Perform a global matching<br/><em>m</em>: Perform multiline matching<br/><br/><strong>Usage</strong><br/>Regular expression often used with <strong>search(), replace()</strong><br/><code>\"Visit W3Schools!\".search(\"W3Schools\") // Without regex<br/>\"Visit W3Schools!\".search(/w3schools/i)</code> // With regex<br/><br/>\"Visit W3Schools!\".replace(\"Microsoft\", \"W3Schools\") // string replace without regex<br/>\"Visit W3Schools!\".replace(/microsoft/i, \"W3Schools\") // string replace with regex<br/><br/><strong>Using test()</strong><br/><code>/e/.test(\"The best things in life are free!\"); //true<br/>/e/.exec(\"The best things in life are free!\"); // [\"e\", index: 2, input: \"The best things in life are free!\", groups: undefined]</code><br/><br/><strong>Error Name Values</strong><br/><strong>EvalError</strong>	An error has occurred in the eval() function<br/><strong>RangeError</strong>	A number \"out of range\" has occurred<br/><strong>ReferenceError</strong>	An illegal reference has occurred<br/><strong>SyntaxError</strong>	A syntax error has occurred<br/><strong>TypeError</strong>	A type error has occurred<br/><strong>URIError</strong>	An error in encodeURI() has occurred<br/><br/><em>Newer versions of JavaScript do not throw EvalError. Use SyntaxError instead.</em>",
         category: 'JavaScript',
         open: false
       }];
@@ -621,11 +639,12 @@
 
       ReactDOM.render(
         <div className="container pt-5">
-          <h1 className="mb-3">Welcome to Study Material</h1>
+          <h1 className="mb-3">Welcome to Study Materials</h1>
           {/*Section*/}
           <div className="accordion" id="accordionExample">
             {loadInterviewQuestion}
           </div><br/>
+          <p>Thank you W3Schools for document</p>
         </div>,
         document.getElementById('root')
       );
