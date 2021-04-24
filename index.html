@@ -591,13 +591,131 @@
         answer: "- A regular expression is a sequence of characters that forms a search pattern<br/><strong>Syntax</strong><br/><code> /pattern/modifiers; </code><br/><strong>Modifiers</strong><br/><em>i</em>: Perform case-insensitive matching<br/><em>g</em>: Perform a global matching<br/><em>m</em>: Perform multiline matching<br/><br/><strong>Usage</strong><br/>Regular expression often used with <strong>search(), replace()</strong><br/><code>\"Visit W3Schools!\".search(\"W3Schools\") // Without regex<br/>\"Visit W3Schools!\".search(/w3schools/i)</code> // With regex<br/><br/>\"Visit W3Schools!\".replace(\"Microsoft\", \"W3Schools\") // string replace without regex<br/>\"Visit W3Schools!\".replace(/microsoft/i, \"W3Schools\") // string replace with regex<br/><br/><strong>Using test()</strong><br/><code>/e/.test(\"The best things in life are free!\"); //true<br/>/e/.exec(\"The best things in life are free!\"); // [\"e\", index: 2, input: \"The best things in life are free!\", groups: undefined]</code><br/><br/><strong>Error Name Values</strong><br/><strong>EvalError</strong>	An error has occurred in the eval() function<br/><strong>RangeError</strong>	A number \"out of range\" has occurred<br/><strong>ReferenceError</strong>	An illegal reference has occurred<br/><strong>SyntaxError</strong>	A syntax error has occurred<br/><strong>TypeError</strong>	A type error has occurred<br/><strong>URIError</strong>	An error in encodeURI() has occurred<br/><br/><em>Newer versions of JavaScript do not throw EvalError. Use SyntaxError instead.</em>",
         category: 'JavaScript',
         open: false
+      },{
+        id: 21,
+        question: 'JavaScript Hoisting',
+        answer: '- Hoisting is JavaScripts default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function)<br/></br><code>carName = "Volvo";<br/>let carName;<br/>Uncaught ReferenceError: Cannot access \'carName\' before initialization<br/><br/>carName = "Volvo";<br/>const carName;<br/>Uncaught SyntaxError: Missing initializer in const declaration</code>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 22,
+        question: '<strong>The JavaScript this Keyword</strong>',
+        answer: '- this keyword refers to the object it belongs to.<br/><code>In a method, <em><strong>this</strong></em> refers to the owner object.<br/>Alone, <em><strong>this</strong></em> refers to the global object.<br/>In a function, <em><strong>this</strong></em> refers to the global object.<br/>In a function, in strict mode, <em><strong>this</strong></em> is undefined.<br/>In an event, <em><strong>this</strong></em> refers to the element that received the event.<br/>Methods like call(), and apply() can refer <em><strong>this</strong></em> to any object.</code>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 23,
+        question: 'JavaScript Arrow Function',
+        answer: '- this keyword refers to the object it belongs to.<br/><code>In a method, <em><strong>this</strong></em> refers to the owner object.<br/>Alone, <em><strong>this</strong></em> refers to the global object.<br/>In a function, <em><strong>this</strong></em> refers to the global object.<br/>In a function, in strict mode, <em><strong>this</strong></em> is undefined.<br/>In an event, <em><strong>this</strong></em> refers to the element that received the event.<br/>Methods like call(), and apply() can refer <em><strong>this</strong></em> to any object.</code><br/></br/><strong>Limitation of arrow function</strong><br/>https://www.javascripttutorial.net/es6/when-you-should-not-use-arrow-functions/<br/>- Behaviour of this is diff as well as arrow function cant be constructor so cant use with constructor. // Arrow function do not have prototype property<br/>- Object methods<br/>- class<br/>- prototype methods<br/>- Function uses arguments object<br/>- Event handling (https://codepen.io/yogeshjadhav/pen/poRqByV) <br/><strong>Benefits of arrow function</strong><br/>- Scope safety<br/>- Compactness<br/>- Clarity<br/>- Well as callback function',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 24,
+        question: 'JavaScript Classes',
+        answer: '- ECMAScript 2015, also known as ES6, introduced JavaScript Classes.<br/>- JavaScript Classes are templates for JavaScript Objects.',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 25,
+        question: 'JavaScript JSON',
+        answer: '- JSON is a format for storing and transporting data.<br/>- JSON stands for <strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation<br/>JSON.parse(): convert string to JSON<br/>JSON.stringify(): Convert JSON to string',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 26,
+        question: '<strong>JavaScript Coding Convension</strong>',
+        answer: '<a href="https://www.w3schools.com/js/js_conventions.asp">Reference Link</a>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 27,
+        question: '<strong>JavaScript Best Practices</strong>',
+        answer: '<strong>Avoid global variables, avoid new, avoid ==, avoid eval()</strong><br/><a href="https://www.w3schools.com/js/js_best_practices.asp">Reference Link</a>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 28,
+        question: '<strong>JavaScript Performance</strong>',
+        answer: '- Reduce Activity in Loops<br/>- Reduce DOM Access<br/>- Reduce DOM Size<br/>- Avoid Unnecessary Variables<br/>- Delay JavaScript Loading (Add Javascript files at the bottom of file)<br/>- Avoid Using with',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 29,
+        question: '<strong>New keywords in ECMA5 and 6</strong>',
+        answer: '- await<br/>- class<br/>- enum<br/>- export<br/>- extends<br/>- import<br/>- let<br/>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 30,
+        question: '<strong>JS major release with point</strong>',
+        answer: '<strong>ES3 ((1999))</strong>: REGEX, Added try catch<br/><strong>ES5</strong>: Added "strict mode", Added JSON support, Added Array iteration methods<br/><strong>ES6</strong>: Added let and const, Added default parameter values<br/><strong>ECMAScript 2016</strong>: Added exponential operator (**)<br/><strong>ECMAScript 2017</strong>: Added async<br/><strong>Added rest / spread properties, Added asynchronous iteration, Additions to RegExp</strong>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 31,
+        question: '<strong>HTML Constraint Validation</strong>',
+        answer: '<em>HTML constraint validation is based on</em>eg: disabled, max, min, pattern, required, type, etc<br/><br/><h3>JavaScript Validation API</h3><strong>Methods</strong><br/>checkValidity(), setCustomValidity()',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 32,
+        question: '<strong>Creating a JavaScript Object</strong>',
+        answer: '<strong>Define and create a single object, using an object literal</strong>.<br/><code>var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</code><br/><br/><strong>Define and create a single object, with the keyword new</strong>.<br/><code>var person = new Object();<br/>person.firstName = "John";<br/>person.lastName = "Doe";<br/>person.age = 50;<br/>person.eyeColor = "blue";</code><br/><br/><strong>Define an object constructor, and then create objects of the constructed type.</strong><br/><br/><strong>Object.create()</strong><br/><br/><strong>Object Methods</strong><br/>Object.values(): <br/><code>var person = {name:"John", age:30, city:"New York"};<br/>var myArray = Object.values(person); // (3) ["John", 30, "New York"]<br/>var myArray1 = Object.keys(person); // (3) ["name", "age", "city"]</code>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 33,
+        question: 'Javascript inheritance',
+        answer: '- Prototypal Inheritance (All JavaScript objects inherit properties and methods from a prototype)<br/>- classical inheritance (To create a class inheritance, use the extends keyword)<br/><code>class Car {<br/>  constructor(brand) {<br/>    this.carname = brand;<br/>  }<br/>  present() {<br/>    return \'I have a \' + this.carname;<br/>  }<br/>}<br/>class Model extends Car {<br/>  constructor(brand, mod) {<br/>    super(brand);<br/>    this.model = mod;<br/>  }<br/>  show() {<br/>    return this.present() + \', it is a \' + this.model;<br/>  }<br/>}<br/>let myCar = new Model("Ford", "Mustang");<br/>document.getElementById("demo").innerHTML = myCar.show();</code>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 34,
+        question: 'JavaScript Function Call() and apply()',
+        answer: '- call(): with help of call object 1 constructor can utilize object2 values<br/><code>var person = {<br/>  fullName: function() {<br/>    return this.firstName + " " + this.lastName;<br/>  }<br/>}<br/>var person1 = {<br/>  firstName:"John",<br/>  lastName: "Doe"<br/>}<br/>person.fullName.call(person1, "Oslo", "Norway");  // Will return "John Doe", "Oslo", "Norway"</code><br/><br/>apply(): <br/>- With the apply() method, you can write a method that can be used on different objects.<br/><br/><strong>The Difference Between call() and apply()</strong>: <br/>The call() method takes arguments separately.<br/>The apply() method takes arguments as an array.<br/><br/><strong>apply()</strong><br/><code>var person = {<br/>  fullName: function(city, country) {<br/>    return this.firstName + " " + this.lastName + "," + city + "," + country;<br/>  }<br/>}<br/>var person1 = {<br/>  firstName:"John",<br/>  lastName: "Doe"<br/>}<br/>person.fullName.apply(person1, ["Oslo", "Norway"]);<br/>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 35,
+        question: 'Javascript Closures',
+        answer: '- An anonymous function didnt die after parent function gets execcuted and die.<br/><br/><code>var add = (function () {<br/>  var counter = 0;<br/>  return function () {counter += 1; return counter}<br/>})();<br/>add();<br/>add();<br/>add();</code>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 36,
+        question: 'Javascript callback functions',
+        answer: '- Callback function function passed as an argument to another function<br/>- This technique allows a function to call another function<br/>- A callback function can run after another function has finished.<br/><br/><strong>When to Use a Callback?</strong><br/>callbacks really shine are in asynchronous functions, where one function has to wait for another function (like waiting for a file to load).<br/>Good example of callback function is setTimeout() where first parameter is function we passed as argument and second one is time',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 37,
+        question: 'Asynchronous JavaScript',
+        answer: '- Functions running in parallel with other functions are called asynchronous',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 38,
+        question: 'JavaScript Promises',
+        answer: '- A Promise is a JavaScript object that links flow between code need time to load and code who is linked to previous code and in waiting condition.<br/><code><strong>Promise Syntax</strong><br/>let myPromise = new Promise(function(myResolve, myReject) {<br/>// "Producing Code" (May take some time)<br/>&nbsp;myResolve(); // when successful<br/>&nbsp;myReject();  // when error<br/>});<br/>// "Consuming Code" (Must wait for a fulfilled Promise)<br/>myPromise.then(<br/>&nbsp;function(value) { /* code if successful */ },<br/>&nbsp;function(error) { /* code if some error */ }<br/>);</code><br/><br/><strong>Promise Object Properties</strong><br/>- Pending<br/>- Fulfilled<br/>- Rejected',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 39,
+        question: 'JavaScript async and await',
+        answer: '- ECMAScript 2017 introduced the JavaScript keywords async and await.<br/>- async and await helps to write promise in better way. Where we want to add promise we add async keyword to that function, which includes include promise and with the help of await we resolve the promise.<br/>Only important part is await need to add in async method<br/>example<br/><code>async function myDisplay() {<br/>&nbsp;let myPromise = new Promise(function(myResolve, myReject) {<br/>&nbsp;&nbsp;myResolve("I love You !!");<br/>&nbsp;});<br/>&nbsp;document.getElementById("demo").innerHTML = await myPromise;<br/>}<br/>myDisplay();</code>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 40,
+        question: 'JavaScript HTML DOM',
+        answer: '- With the HTML DOM, JavaScript can access and change all the elements of an HTML document.',
+        category: 'JavaScript',
+        open: false
       }];
       const loadInterviewQuestion = interviewQuestion.map((quest) => 
         <div className="accordion-item mb-2" key={quest.question}>
           <h2 className="accordion-header" id="headingOne">
-            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onClick={expandAccord(quest)}>
-              {quest.question}
-            </button>
+            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onClick={expandAccord(quest)} dangerouslySetInnerHTML={{__html: quest.question}} />
           </h2>
           <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div className="accordion-body" dangerouslySetInnerHTML={{__html: quest.answer}} />
