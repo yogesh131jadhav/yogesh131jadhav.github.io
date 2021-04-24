@@ -708,7 +708,37 @@
       },{
         id: 40,
         question: 'JavaScript HTML DOM',
-        answer: '- With the HTML DOM, JavaScript can access and change all the elements of an HTML document.',
+        answer: '- With the HTML DOM, JavaScript can access and change all the elements of an HTML document.<br/>- The DOM is a W3C (World Wide Web Consortium) standard.<br/><br/>The W3C DOM standard is separated into 3 different parts:<br/>- Core DOM - standard model for all document types<br/>- XML DOM - standard model for XML documents<br/>- HTML DOM - standard model for HTML documents<br/>- Never use document.write() after the document is loaded. It will overwrite the document.',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 41,
+        question: 'Event Bubbling or Event Capturing in javascript',
+        answer: '- There are two ways of event propagation in the HTML DOM, bubbling and capturing.<br/>- The bubbles event property returns a Boolean value that indicates whether or not an event is a bubbling event.<br/><br/>In bubbling the inner most element\'s event is handled first and then the outer: the <p> element\'s click event is handled first, then the <div> element\'s click event.<br/><br/>In capturing the outer most element\'s event is handled first and then the inner: the <div> element\'s click event will be handled first, then the <p> element\'s click event.',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 42,
+        question: 'JS popup alert',
+        answer: '- alert()<br/>- confirm()<br/>- prompt()',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 43,
+        question: 'JS navigator.onLine',
+        answer: '- If your internet connection is on then navigator.onLine returns true else false. Can use to clreat offline products',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 44,
+        question: 'Cookies, session storage and localstorage',
+        answer: '<strong>Cookies</strong><br/>- Cookies are data, stored in small text files, on your computer.<br/><br/><em>Limitation</em><br/>- less size<br/>- If user will disabled cookies, intension using cookies goes failed<br/>- As on client side can tamper with data<br/>- Can expires hence no consistency<br/><br/><em>Benefits</em><br/>- simple to use<br/>- simple to use<br/>- as stored at client side no server resources are required<br/><br/><strong>SessionStorage:</strong><br/><em>Benefits</em><br/>- SessionStorage is used for storing data on the client side.<br/>- Maximum limit of data saving in SessionStorage is about 5 MB.<br/>- Data in the SessionStorage exist till the current tab is open if we close the current tab then our data will also erase automatically from the SessionStorage.<br/><strong>Local Storage</strong><br/>- Simillar like session storage except no expiration time',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 45,
+        question: 'Web Workers API',
+        answer: '- A web worker is a JavaScript running in the background, without affecting the performance of the page.',
         category: 'JavaScript',
         open: false
       }];
