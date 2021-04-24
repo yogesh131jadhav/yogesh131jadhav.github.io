@@ -467,38 +467,32 @@
     <script type="text/babel">
       const interviewQuestion = [{
         id: 1,
-        question: 'When Let and const are introduced in JS',
-        answer: 'ES2015 or ES6 and ES6 is getting fully supported to browsers Chrome 58, Edge 14, Firefox 54, Safari 10, Opera 55',
+        question: 'Points feel important for projects',
+        answer: '- x.toFixed(2); // returns 9.66 for currency<br/>- SELECT * FROM `tbl_patient_details` WHERE `user_name` LIKE \'%Yoge%\'<br/>- JS navigator.onLine',
         category: 'JavaScript',
         open: false
       },{
         id: 2,
         question: 'Notes',
-        answer: '- JavaScript variables are containers for storing data values.<br/><br/><strong>Valid Syntax:</strong><br/><code>var person = "John Doe", carName = "Volvo", price = 200;<br/>var $$$ = "Hello World";<br/>var _lastName = "Johnson";<br/>const variable reclaration gives error but when const array or object can update<br/>null === undefined // false<br/>null == undefined // true</code><br/><br/><code>cars = ["car1","car2","car3","car4"];<br/>for (i = 0, len = cars.length, text = ""; i < len; i++) {<br/>&nbsp;text += cars[i];<br/>}<br/>console.log(text);<br/></code>',
+        answer: '- JavaScript variables are containers for storing data values.<br/><br/><strong>Valid Syntax:</strong><br/><code>var person = "John Doe", carName = "Volvo", price = 200; // Multiple variables comma separated<br/>var $$$ = "Hello World"; // can use $ as variable name<br/>var _lastName = "Johnson";<br/>var _ = \'test\';<br/>console.log(_); // Output: test, You can use _ as variable<br/><br/>const variable cant reassign value else it will gives error but when we update const array or object we can do it.<br/>const a = \'a\';<br/>a = \'b\'; // Uncaught TypeError: Assignment to constant variable.<br/>const c = [];<br/>c.push(2);<br/>console.log(c) // [2] even if const you can update array or object<br/><br/>null === undefined // false<br/>null == undefined // true</code><br/><br/><code>cars = ["car1","car2","car3","car4"];<br/>for (i = 0, len = cars.length, text = ""; i < len; i++) {<br/>&nbsp;text += cars[i];<br/>}<br/>console.log(text);<br/></code>',
         category: 'JavaScript',
         open: false
       },{
         id: 3,
-        question: 'Points need to varify in deep',
-        answer: '- Global Scope and Function Scope and Block Scope <br/>- JavaScript bitwise operators<br/>- Callback function',
-        category: 'JavaScript',
-        open: false
-      },{
-        id: 4,
-        question: 'JavaScript Hoisting',
-        answer: '- Hoisting is JavaScripts default behavior of moving all declarations to the top of the current scope.<br/>Variables defined with var are hoisted to the top and can be initialized at any time.',
+        question: 'Points need to verify in deep',
+        answer: '- Global Scope and Function Scope and Block Scope <br/>- JavaScript bitwise operators<br/>- Callback function<br/>- async and await<br/>- Progressive Web application and web workers<br/>- DOM and BOM<br/>- Ajax, Promise and Observable<br/>- Inheritance (Classical and prototypal)<br/>- call, apply and bind<br/> OOPs<br/>- JS versions<br/>- JS performance improving strategies<br/>- JS best practice<br/>- Benefits and limitation of arrow function',
         category: 'JavaScript',
         open: false
       },{
         id: 5,
         question: 'Primitive Data',
-        answer: '- A primitive data value is a single simple data value with no additional properties and methods.<br/>string<br/>number<br/>boolean<br/>undefined',
+        answer: 'A primitive data value is a single simple data value with no additional properties and methods.<br/>- string<br/>- number<br/>- boolean<br/>- undefined',
         category: 'JavaScript',
         open: false
       },{
         id: 6,
         question: 'Non Primitive Data',
-        answer: '- function<br/>object',
+        answer: '- function<br/>- object',
         category: 'JavaScript',
         open: false
       },{
@@ -510,7 +504,7 @@
       },{
         id: 8,
         question: 'MySql query ',
-        answer: "- SELECT * FROM `tbl_patient_details` WHERE `user_name` LIKE '%Yoge%'",
+        answer: "- SELECT * FROM `employee` WHERE `user_name` LIKE '%Test%'",
         category: 'MySql',
         open: false
       },{
@@ -522,7 +516,7 @@
       },{
         id: 10,
         question: 'String methods',
-        answer: "- String Length (variable.length)<br/>- Finding a String in a String(mainStr.indexOf('findingWord', positionNumber?))<br/>- Finding a last String in a String(mainStr.lastIndexOf('findingWord', positionNumber?))<br/>- Searching for a String in a String(mainStr.search('findingWord'))<br/><i>indexOf() and search() methods looks same but not same. search doesnt access second parameter and indexOf doesnt access regex</i><br/><br/><strong>Extracting String Parts</strong><br/>- slice(start, end)(start, end can be negative value to get value from reverse side of string)<br/>- substring(start, end)(substring() cannot accept negative indexes.)<br/>- substr(start, length)(Same like slice but second parameter is string length)<br/><br/><strong>Replacing String Content</strong><br/>- (mainStr.replace('oldString', 'newString'))(replace() method does not change the string it is called on. It returns a new string.)<br/>- replaceAll() is same like replace except it replace all occurances of matching string else try replace with regex of /g global match.<br/><br/>- Uppercase to lower case mainstring.toUpperCase()<br/>- lower case to upper case mainstring.toLowerCase()<br/><br/>- concat() joins two or more strings string1.concat(bindingString, string2) eg string1.concat(' ', string2)<br/>- The trim() method removes whitespace from both sides of a string<br/><br/><strong>JavaScript String Padding</strong><br/>- eg. '7'.padStart(4,0) reults 0007 simillarly '7'.padEnd(4,0) equals 7000<br/><br/><strong>Extracting String Characters</strong><br/>- charAt(position) <br/>- charCodeAt(position)<br/>- Property access [ ]<br/>- If no character is found, [ ] returns undefined, while charAt() returns an empty string.<br/>- It is read only. str[0] = \"A\" gives no error (but does not work!)<br/><br/><strong>Converting a String to an Array</strong><br/>- A string can be converted to an array with the split(string) method",
+        answer: "- <em>'helloWorld'.length()</em>: String Length (variable.length)<br/>- <em>indexOf</em> Finding a String in a String(mainStr.indexOf('findingWord', positionNumber?))<br/>- <em>lastIndexOf</em> Finding a last String in a String(mainStr.lastIndexOf('findingWord', positionNumber?))<br/>- <em>Search</em> Searching for a String in a String(mainStr.search('findingWord'))<br/><i>indexOf() and search() methods looks same but not same. search doesnt access second parameter and indexOf doesnt access regex</i><br/><br/><strong>Extracting String Parts</strong><br/>- slice(start, end)(start, end can be negative value to get value from reverse side of string)<br/>- substring(start, end)(substring() cannot accept negative indexes.)<br/>- substr(start, length)(Same like slice but second parameter is string length)<br/><br/><strong>Replacing String Content</strong><br/>- (mainStr.replace('oldString', 'newString'))(replace() method does not change the string it is called on. It returns a new string.)<br/>- replaceAll() is same like replace except it replace all occurances of matching string else try replace with regex of /g global match.<br/><br/>- Uppercase to lower case mainstring.toUpperCase()<br/>- lower case to upper case mainstring.toLowerCase()<br/><br/>- concat() joins two or more strings string1.concat(bindingString, string2) eg string1.concat(' ', string2)<br/>- The trim() method removes whitespace from both sides of a string<br/><br/><strong>JavaScript String Padding</strong><br/>- eg. '7'.padStart(4,0) reults 0007 simillarly '7'.padEnd(4,0) equals 7000<br/><br/><strong>Extracting String Characters</strong><br/>- charAt(position) <br/>- charCodeAt(position)<br/>- Property access [ ]<br/>- If no character is found, [ ] returns undefined, while charAt() returns an empty string.<br/>- Property access is read only. str[0] = \"A\" gives no error (but does not work!)<br/><br/><strong>Converting a String to an Array</strong><br/>- A string can be converted to an array with the split(string) method",
         category: 'JavaScript',
         open: false
       },{
@@ -546,13 +540,13 @@
       },{
         id: 14,
         question: 'How to recognize is variable is array?',
-        answer: "- Array.isArray(ArrayVariableName)<br/>- ArrayVariableName.constructor.toString().indexOf(\"Array\") > -1 returns true then variable is array<br/>- ArrayVariableName instanceof Array returns true then variable is array",
+        answer: "- Array.isArray(ArrayVariableName)<br/>- ArrayVariableName.constructor.toString().indexOf(\"Array\") > -1 returns true then variable is array<br/>- ArrayVariableName.constructor === Array // returns true if array",
         category: 'JavaScript',
         open: false
       },{
         id: 15,
         question: 'Array Function',
-        answer: "<strong>Converting Arrays to Strings</strong><br/>-  ArrayVariableName.toString();<br/>-  ArrayVariableName.join(' * ')(default is , but in join we can define variable or character like * to join array to string)<br/>- Using delete may leave undefined holes in the array. Use pop() or shift() instead.<br/><br/><strong>Splicing an Array</strong><br/>- The splice() method can be used to add new items to an array<br/>- <i>Original Array is getting updated</i><br/>- arrayVariable.splice(locationAdded, howManyShouldRemove, listOfArrayCommaSeparate)<br/>- Update original array<br/><code>var fruits = ['Banana', 'Orange', 'Apple', 'Mango'];<br/>fruits.splice(2); // ['Lemon', 'Apple', 'Mango']<br/>fruits.splice(-2); // ['Apple', 'Mango']<br/>fruits.splice(1, 3); // ['Orange', 'Lemon']<br/>fruits.splice(-3, -1); // ['Lemon', 'Apple']</code><br/><br/><strong>Merging (Concatenating) Arrays</strong><br/>- array1.concat(array2, array3)<br/></br><strong>Slicing an Array</strong><br/>- array.slice(1)<br/>- slice method slice out a piece of array into new array(On minus vlue array from last to previous get sliced)<br/>- <i>New array generated</i><br/>- slice can use with two ways first way slice having one parameter no of elements from left gets removed and in second way we pass 2 parameters from and to.<br/><code>var fruits = [\"Banana\", \"Orange\", \"Lemon\", \"Apple\", \"Mango\"];<br/>var citrus = fruits.slice(1, 3); // [\"Orange\", \"Lemon\"]<br/>var citrus = fruits.slice(-3, -1); // [\"Lemon\", \"Apple\"]<br/>var citrus = fruits.slice(2); // [\"Lemon\", \"Apple\", \"Mango\"]<br/>var citrus = fruits.slice(-2); // [\"Apple\", \"Mango\"]</code><br/><br/><strong>Sorting an Array</strong><br/><code>var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];<br/>fruits.sort(); // [\"Apple\", \"Banana\", \"Mango\", \"Orange\"]<br/>var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];<br/>fruits.reverse(); // [\"Mango\", \"Apple\", \"Orange\", \"Banana\"] reverse array</code>",
+        answer: "<strong>Converting Arrays to Strings</strong><br/>-  ArrayVariableName.toString();<br/>-  ArrayVariableName.join(' * ')(default is , but in join we can define variable or character like * to join array to string)<br/>- Using delete may leave undefined holes in the array. Use pop() or shift() instead.<br/><br/><strong>Splicing an Array</strong><br/>- The splice() method can be used to add new items to an array<br/>- <i>Original Array is getting updated</i><br/>- arrayVariable.splice(locationAdded, howManyShouldRemove, listOfArrayCommaSeparate)<br/>- Update original array<br/><code>var fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'];<br/>fruits.splice(2, 0, 'best', 'nest'); // (7) [\"Banana\", \"Orange\", \"best\", \"nest\", \"Lemon\", \"Apple\", \"Mango\"] // It adds two element at second position if second parameter will have number it will remove that much elements from array <br/>fruits.splice(2); // returns ['Lemon', 'Apple', 'Mango'] and original array updates to fruits = ['Apple', 'Mango']<br/>fruits.splice(-2); // ['Apple', 'Mango']<br/>fruits.splice(1, 3); // ['Orange', 'Lemon']<br/>fruits.splice(-3, -1); // ['Lemon', 'Apple']</code><br/><br/><strong>Merging (Concatenating) Arrays</strong><br/>- array1.concat(array2, array3)<br/></br><strong>Slicing an Array</strong><br/>- array.slice(1)<br/>- slice method slice out a piece of array into new array(On minus vlue array from last to previous get sliced)<br/>- <i>New array generated</i><br/>- slice can use with two ways first way slice having one parameter no of elements from left gets removed and in second way we pass 2 parameters from and to.<br/><code>var fruits = [\"Banana\", \"Orange\", \"Lemon\", \"Apple\", \"Mango\"];<br/>var citrus = fruits.slice(1, 3); // [\"Orange\", \"Lemon\"]<br/>var citrus = fruits.slice(-3, -1); // [\"Lemon\", \"Apple\"]<br/>var citrus = fruits.slice(2); // [\"Lemon\", \"Apple\", \"Mango\"]<br/>var citrus = fruits.slice(-2); // [\"Apple\", \"Mango\"]</code><br/><br/><strong>Sorting an Array</strong><br/><code>var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];<br/>fruits.sort(); // [\"Apple\", \"Banana\", \"Mango\", \"Orange\"]<br/>var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];<br/>fruits.reverse(); // [\"Mango\", \"Apple\", \"Orange\", \"Banana\"] reverse array</code>",
         category: 'JavaScript',
         open: false
       },{
@@ -588,13 +582,13 @@
       },{
         id: 21,
         question: 'JavaScript Regular Expressions',
-        answer: "- A regular expression is a sequence of characters that forms a search pattern<br/><strong>Syntax</strong><br/><code> /pattern/modifiers; </code><br/><strong>Modifiers</strong><br/><em>i</em>: Perform case-insensitive matching<br/><em>g</em>: Perform a global matching<br/><em>m</em>: Perform multiline matching<br/><br/><strong>Usage</strong><br/>Regular expression often used with <strong>search(), replace()</strong><br/><code>\"Visit W3Schools!\".search(\"W3Schools\") // Without regex<br/>\"Visit W3Schools!\".search(/w3schools/i)</code> // With regex<br/><br/>\"Visit W3Schools!\".replace(\"Microsoft\", \"W3Schools\") // string replace without regex<br/>\"Visit W3Schools!\".replace(/microsoft/i, \"W3Schools\") // string replace with regex<br/><br/><strong>Using test()</strong><br/><code>/e/.test(\"The best things in life are free!\"); //true<br/>/e/.exec(\"The best things in life are free!\"); // [\"e\", index: 2, input: \"The best things in life are free!\", groups: undefined]</code><br/><br/><strong>Error Name Values</strong><br/><strong>EvalError</strong>	An error has occurred in the eval() function<br/><strong>RangeError</strong>	A number \"out of range\" has occurred<br/><strong>ReferenceError</strong>	An illegal reference has occurred<br/><strong>SyntaxError</strong>	A syntax error has occurred<br/><strong>TypeError</strong>	A type error has occurred<br/><strong>URIError</strong>	An error in encodeURI() has occurred<br/><br/><em>Newer versions of JavaScript do not throw EvalError. Use SyntaxError instead.</em>",
+        answer: "- A regular expression is a sequence of characters that forms a search pattern<br/><strong>Syntax</strong><br/><code> /pattern/modifiers; </code><br/><strong>Modifiers</strong><br/><em>i</em>: Perform case-insensitive matching<br/><em>g</em>: Perform a global matching<br/><em>m</em>: Perform multiline matching<br/><br/><strong>Usage</strong><br/>Regular expression often used with <strong>search(), replace()</strong><br/><code>\"Visit W3Schools!\".search(\"W3Schools\") // Without regex<br/>\"Visit W3Schools!\".search(/w3schools/i)</code> // With regex<br/><br/>\"Visit Microsoft!\".replace(\"Microsoft\", \"W3Schools\") // string replace without regex<br/>\"Visit Microsoft!\".replace(/microsoft/i, \"W3Schools\") // string replace with regex<br/><br/><strong>Using test()</strong><br/><code>/e/.test(\"The best things in life are free!\"); //true<br/>/e/.exec(\"The best things in life are free!\"); // [\"e\", index: 2, input: \"The best things in life are free!\", groups: undefined]</code><br/><br/><strong>Error Name Values</strong><br/><strong>EvalError</strong>	An error has occurred in the eval() function<br/><strong>RangeError</strong>	A number \"out of range\" has occurred<br/><strong>ReferenceError</strong>	An illegal reference has occurred<br/><strong>SyntaxError</strong>	A syntax error has occurred<br/><strong>TypeError</strong>	A type error has occurred<br/><strong>URIError</strong>	An error in encodeURI() has occurred<br/><br/><em>Newer versions of JavaScript do not throw EvalError. Use SyntaxError instead.</em>",
         category: 'JavaScript',
         open: false
       },{
         id: 21,
         question: 'JavaScript Hoisting',
-        answer: '- Hoisting is JavaScripts default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function)<br/></br><code>carName = "Volvo";<br/>let carName;<br/>Uncaught ReferenceError: Cannot access \'carName\' before initialization<br/><br/>carName = "Volvo";<br/>const carName;<br/>Uncaught SyntaxError: Missing initializer in const declaration</code>',
+        answer: '- Hoisting is JavaScripts default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function)<br/>- Hoisting is JavaScripts default behavior of moving all declarations to the top of the current scope.<br/>- Variables defined with var are hoisted to the top and can be initialized at any time.<br/></br><code>carName = "Volvo";<br/>let carName;<br/>Uncaught ReferenceError: Cannot access \'carName\' before initialization<br/><br/>carName = "Volvo";<br/>const carName;<br/>Uncaught SyntaxError: Missing initializer in const declaration</code>',
         category: 'JavaScript',
         open: false
       },{
@@ -666,7 +660,7 @@
       },{
         id: 33,
         question: 'Javascript inheritance',
-        answer: '- Prototypal Inheritance (All JavaScript objects inherit properties and methods from a prototype)<br/>- classical inheritance (To create a class inheritance, use the extends keyword)<br/><code>class Car {<br/>  constructor(brand) {<br/>    this.carname = brand;<br/>  }<br/>  present() {<br/>    return \'I have a \' + this.carname;<br/>  }<br/>}<br/>class Model extends Car {<br/>  constructor(brand, mod) {<br/>    super(brand);<br/>    this.model = mod;<br/>  }<br/>  show() {<br/>    return this.present() + \', it is a \' + this.model;<br/>  }<br/>}<br/>let myCar = new Model("Ford", "Mustang");<br/>document.getElementById("demo").innerHTML = myCar.show();</code>',
+        answer: '- Prototypal Inheritance (All JavaScript objects inherit properties and methods from a prototype)<br/><code>function Person(first, last, age, eyecolor) {<br/>&nbsp;&nbsp;this.firstName = first;<br/>&nbsp;&nbsp;this.lastName = last;<br/>&nbsp;&nbsp;this.age = age;<br/>&nbsp;&nbsp;this.eyeColor = eyecolor;<br/>}<br/>var myFather = new Person("John", "Doe", 50, "blue");<br/>var myMother = new Person("Sally", "Rally", 48, "green");</code><br/><br/>- classical inheritance (To create a class inheritance, use the extends keyword)<br/><code>class Car {<br/>  &nbsp;constructor(brand) {<br/>&nbsp;&nbsp;this.carname = brand;<br/>&nbsp;}<br/>&nbsp;present() {<br/>&nbsp;&nbsp;return \'I have a \' + this.carname;<br/>&nbsp;}<br/>}<br/>class Model extends Car {<br/>&nbsp;constructor(brand, mod) {<br/>&nbsp;&nbsp;super(brand);<br/>&nbsp;&nbsp;this.model = mod;<br/>&nbsp;}<br/>&nbsp;show() {<br/>&nbsp;&nbsp;return this.present() + \', it is a \' + this.model;<br/>&nbsp;}<br/>}<br/>let myCar = new Model("Ford", "Mustang");<br/>document.getElementById("demo").innerHTML = myCar.show();</code>',
         category: 'JavaScript',
         open: false
       },{
@@ -684,7 +678,7 @@
       },{
         id: 36,
         question: 'Javascript callback functions',
-        answer: '- Callback function function passed as an argument to another function<br/>- This technique allows a function to call another function<br/>- A callback function can run after another function has finished.<br/><br/><strong>When to Use a Callback?</strong><br/>callbacks really shine are in asynchronous functions, where one function has to wait for another function (like waiting for a file to load).<br/>Good example of callback function is setTimeout() where first parameter is function we passed as argument and second one is time',
+        answer: '- Callback function are function passed as an argument to another function<br/>- This technique allows a function to call another function<br/>- A callback function can run after another function has finished.<br/><br/><strong>When to Use a Callback?</strong><br/>callbacks really shine are in asynchronous functions, where one function has to wait for another function (like waiting for a file to load).<br/>Good example of callback function is setTimeout() where first parameter is function we passed as argument and second one is time',
         category: 'JavaScript',
         open: false
       },{
@@ -732,7 +726,7 @@
       },{
         id: 44,
         question: 'Cookies, session storage and localstorage',
-        answer: '<strong>Cookies</strong><br/>- Cookies are data, stored in small text files, on your computer.<br/><br/><em>Limitation</em><br/>- less size<br/>- If user will disabled cookies, intension using cookies goes failed<br/>- As on client side can tamper with data<br/>- Can expires hence no consistency<br/><br/><em>Benefits</em><br/>- simple to use<br/>- simple to use<br/>- as stored at client side no server resources are required<br/><br/><strong>SessionStorage:</strong><br/><em>Benefits</em><br/>- SessionStorage is used for storing data on the client side.<br/>- Maximum limit of data saving in SessionStorage is about 5 MB.<br/>- Data in the SessionStorage exist till the current tab is open if we close the current tab then our data will also erase automatically from the SessionStorage.<br/><strong>Local Storage</strong><br/>- Simillar like session storage except no expiration time',
+        answer: '<strong>Cookies</strong><br/>- Cookies are data, stored in small text files, on your computer.<br/><br/><em>Limitation</em><br/>- less size<br/>- If user will disabled cookies, intension using cookies goes failed<br/>- As on client side can tamper with data<br/>- Can expires hence no consistency<br/><br/><em>Benefits</em><br/>- simple to use<br/>- as stored at client side no server resources are required<br/><br/><strong>SessionStorage:</strong><br/><em>Benefits</em><br/>- SessionStorage is used for storing data on the client side.<br/>- Maximum limit of data saving in SessionStorage is about 5 MB.<br/>- Data in the SessionStorage exist till the current tab is open if we close the current tab then our data will also erase automatically from the SessionStorage.<br/><strong>Local Storage</strong><br/>- Simillar like session storage except no expiration time',
         category: 'JavaScript',
         open: false
       },{
