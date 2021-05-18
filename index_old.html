@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Study Material</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <style type="text/css">svg:not(:root).svg-inline--fa {
+       overflow: visible;
+       }
+       .svg-inline--fa {
+       display: inline-block;
+       font-size: inherit;
+       height: 1em;
+       overflow: visible;
+       vertical-align: -0.125em;
+       }
+       .svg-inline--fa.fa-lg {
+       vertical-align: -0.225em;
+       }
+       .svg-inline--fa.fa-w-1 {
+       width: 0.0625em;
+       }
+       .svg-inline--fa.fa-w-2 {
+       width: 0.125em;
+       }
+       .svg-inline--fa.fa-w-3 {
+       width: 0.1875em;
+       }
+       .svg-inline--fa.fa-w-4 {
+       width: 0.25em;
+       }
+       .svg-inline--fa.fa-w-5 {
+       width: 0.3125em;
+       }
+       .svg-inline--fa.fa-w-6 {
+       width: 0.375em;
+       }
+       .svg-inline--fa.fa-w-7 {
+       width: 0.4375em;
+       }
+       .svg-inline--fa.fa-w-8 {
+       width: 0.5em;
+       }
+       .svg-inline--fa.fa-w-9 {
+       width: 0.5625em;
+       }
+       .svg-inline--fa.fa-w-10 {
+       width: 0.625em;
+       }
+       .svg-inline--fa.fa-w-11 {
+       width: 0.6875em;
+       }
+       .svg-inline--fa.fa-w-12 {
+       width: 0.75em;
+       }
+       .svg-inline--fa.fa-w-13 {
+       width: 0.8125em;
+       }
+       .svg-inline--fa.fa-w-14 {
+       width: 0.875em;
+       }
+       .svg-inline--fa.fa-w-15 {
+       width: 0.9375em;
+       }
+       .svg-inline--fa.fa-w-16 {
+       width: 1em;
+       }
+       .svg-inline--fa.fa-w-17 {
+       width: 1.0625em;
+       }
+       .svg-inline--fa.fa-w-18 {
+       width: 1.125em;
+       }
+       .svg-inline--fa.fa-w-19 {
+       width: 1.1875em;
+       }
+       .svg-inline--fa.fa-w-20 {
+       width: 1.25em;
+       }
+       .svg-inline--fa.fa-pull-left {
+       margin-right: 0.3em;
+       width: auto;
+       }
+       .svg-inline--fa.fa-pull-right {
+       margin-left: 0.3em;
+       width: auto;
+       }
+       .svg-inline--fa.fa-border {
+       height: 1.5em;
+       }
+       .svg-inline--fa.fa-li {
+       width: 2em;
+       }
+       .svg-inline--fa.fa-fw {
+       width: 1.25em;
+       }
+       .fa-layers svg.svg-inline--fa {
+       bottom: 0;
+       left: 0;
+       margin: auto;
+       position: absolute;
+       right: 0;
+       top: 0;
+       }
+       .fa-layers {
+       display: inline-block;
+       height: 1em;
+       position: relative;
+       text-align: center;
+       vertical-align: -0.125em;
+       width: 1em;
+       }
+       .fa-layers svg.svg-inline--fa {
+       -webkit-transform-origin: center center;
+       transform-origin: center center;
+       }
+       .fa-layers-counter, .fa-layers-text {
+       display: inline-block;
+       position: absolute;
+       text-align: center;
+       }
+       .fa-layers-text {
+       left: 50%;
+       top: 50%;
+       -webkit-transform: translate(-50%, -50%);
+       transform: translate(-50%, -50%);
+       -webkit-transform-origin: center center;
+       transform-origin: center center;
+       }
+       .fa-layers-counter {
+       background-color: #ff253a;
+       border-radius: 1em;
+       -webkit-box-sizing: border-box;
+       box-sizing: border-box;
+       color: #fff;
+       height: 1.5em;
+       line-height: 1;
+       max-width: 5em;
+       min-width: 1.5em;
+       overflow: hidden;
+       padding: 0.25em;
+       right: 0;
+       text-overflow: ellipsis;
+       top: 0;
+       -webkit-transform: scale(0.25);
+       transform: scale(0.25);
+       -webkit-transform-origin: top right;
+       transform-origin: top right;
+       }
+       .fa-layers-bottom-right {
+       bottom: 0;
+       right: 0;
+       top: auto;
+       -webkit-transform: scale(0.25);
+       transform: scale(0.25);
+       -webkit-transform-origin: bottom right;
+       transform-origin: bottom right;
+       }
+       .fa-layers-bottom-left {
+       bottom: 0;
+       left: 0;
+       right: auto;
+       top: auto;
+       -webkit-transform: scale(0.25);
+       transform: scale(0.25);
+       -webkit-transform-origin: bottom left;
+       transform-origin: bottom left;
+       }
+       .fa-layers-top-right {
+       right: 0;
+       top: 0;
+       -webkit-transform: scale(0.25);
+       transform: scale(0.25);
+       -webkit-transform-origin: top right;
+       transform-origin: top right;
+       }
+       .fa-layers-top-left {
+       left: 0;
+       right: auto;
+       top: 0;
+       -webkit-transform: scale(0.25);
+       transform: scale(0.25);
+       -webkit-transform-origin: top left;
+       transform-origin: top left;
+       }
+       .fa-lg {
+       font-size: 1.3333333333em;
+       line-height: 0.75em;
+       vertical-align: -0.0667em;
+       }
+       .fa-xs {
+       font-size: 0.75em;
+       }
+       .fa-sm {
+       font-size: 0.875em;
+       }
+       .fa-1x {
+       font-size: 1em;
+       }
+       .fa-2x {
+       font-size: 2em;
+       }
+       .fa-3x {
+       font-size: 3em;
+       }
+       .fa-4x {
+       font-size: 4em;
+       }
+       .fa-5x {
+       font-size: 5em;
+       }
+       .fa-6x {
+       font-size: 6em;
+       }
+       .fa-7x {
+       font-size: 7em;
+       }
+       .fa-8x {
+       font-size: 8em;
+       }
+       .fa-9x {
+       font-size: 9em;
+       }
+       .fa-10x {
+       font-size: 10em;
+       }
+       .fa-fw {
+       text-align: center;
+       width: 1.25em;
+       }
+       .fa-ul {
+       list-style-type: none;
+       margin-left: 2.5em;
+       padding-left: 0;
+       }
+       .fa-ul > li {
+       position: relative;
+       }
+       .fa-li {
+       left: -2em;
+       position: absolute;
+       text-align: center;
+       width: 2em;
+       line-height: inherit;
+       }
+       .fa-border {
+       border: solid 0.08em #eee;
+       border-radius: 0.1em;
+       padding: 0.2em 0.25em 0.15em;
+       }
+       .fa-pull-left {
+       float: left;
+       }
+       .fa-pull-right {
+       float: right;
+       }
+       .fa.fa-pull-left,
+       .fas.fa-pull-left,
+       .far.fa-pull-left,
+       .fal.fa-pull-left,
+       .fab.fa-pull-left {
+       margin-right: 0.3em;
+       }
+       .fa.fa-pull-right,
+       .fas.fa-pull-right,
+       .far.fa-pull-right,
+       .fal.fa-pull-right,
+       .fab.fa-pull-right {
+       margin-left: 0.3em;
+       }
+       .fa-spin {
+       -webkit-animation: fa-spin 2s infinite linear;
+       animation: fa-spin 2s infinite linear;
+       }
+       .fa-pulse {
+       -webkit-animation: fa-spin 1s infinite steps(8);
+       animation: fa-spin 1s infinite steps(8);
+       }
+       @-webkit-keyframes fa-spin {
+       0% {
+       -webkit-transform: rotate(0deg);
+       transform: rotate(0deg);
+       }
+       100% {
+       -webkit-transform: rotate(360deg);
+       transform: rotate(360deg);
+       }
+       }
+       @keyframes fa-spin {
+       0% {
+       -webkit-transform: rotate(0deg);
+       transform: rotate(0deg);
+       }
+       100% {
+       -webkit-transform: rotate(360deg);
+       transform: rotate(360deg);
+       }
+       }
+       .fa-rotate-90 {
+       -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+       -webkit-transform: rotate(90deg);
+       transform: rotate(90deg);
+       }
+       .fa-rotate-180 {
+       -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+       -webkit-transform: rotate(180deg);
+       transform: rotate(180deg);
+       }
+       .fa-rotate-270 {
+       -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+       -webkit-transform: rotate(270deg);
+       transform: rotate(270deg);
+       }
+       .fa-flip-horizontal {
+       -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+       -webkit-transform: scale(-1, 1);
+       transform: scale(-1, 1);
+       }
+       .fa-flip-vertical {
+       -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+       -webkit-transform: scale(1, -1);
+       transform: scale(1, -1);
+       }
+       .fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+       -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+       -webkit-transform: scale(-1, -1);
+       transform: scale(-1, -1);
+       }
+       :root .fa-rotate-90,
+       :root .fa-rotate-180,
+       :root .fa-rotate-270,
+       :root .fa-flip-horizontal,
+       :root .fa-flip-vertical,
+       :root .fa-flip-both {
+       -webkit-filter: none;
+       filter: none;
+       }
+       .fa-stack {
+       display: inline-block;
+       height: 2em;
+       position: relative;
+       width: 2.5em;
+       }
+       .fa-stack-1x,
+       .fa-stack-2x {
+       bottom: 0;
+       left: 0;
+       margin: auto;
+       position: absolute;
+       right: 0;
+       top: 0;
+       }
+       .svg-inline--fa.fa-stack-1x {
+       height: 1em;
+       width: 1.25em;
+       }
+       .svg-inline--fa.fa-stack-2x {
+       height: 2em;
+       width: 2.5em;
+       }
+       .fa-inverse {
+       color: #fff;
+       }
+       .sr-only {
+       border: 0;
+       clip: rect(0, 0, 0, 0);
+       height: 1px;
+       margin: -1px;
+       overflow: hidden;
+       padding: 0;
+       position: absolute;
+       width: 1px;
+       }
+       .sr-only-focusable:active, .sr-only-focusable:focus {
+       clip: auto;
+       height: auto;
+       margin: 0;
+       overflow: visible;
+       position: static;
+       width: auto;
+       }
+       .svg-inline--fa .fa-primary {
+       fill: var(--fa-primary-color, currentColor);
+       opacity: 1;
+       opacity: var(--fa-primary-opacity, 1);
+       }
+       .svg-inline--fa .fa-secondary {
+       fill: var(--fa-secondary-color, currentColor);
+       opacity: 0.4;
+       opacity: var(--fa-secondary-opacity, 0.4);
+       }
+       .svg-inline--fa.fa-swap-opacity .fa-primary {
+       opacity: 0.4;
+       opacity: var(--fa-secondary-opacity, 0.4);
+       }
+       .svg-inline--fa.fa-swap-opacity .fa-secondary {
+       opacity: 1;
+       opacity: var(--fa-primary-opacity, 1);
+       }
+       .svg-inline--fa mask .fa-primary,
+       .svg-inline--fa mask .fa-secondary {
+       fill: black;
+       }
+       .fad.fa-inverse {
+       color: #fff;
+       }
+    </style>
+    <link rel="stylesheet" href="https://sb-admin-angular.startbootstrap.com/styles.78ff540eab2d894731dc.css">
+    <style>#userDropdown[_ngcontent-mtu-c16]{cursor:pointer}</style>
+    <style>[_nghost-mtu-c13]{display:block;width:100%;height:100%}</style>
+    <style>[_nghost-mtu-c14]{display:block;width:100%;height:100%}</style>
+    <style>thead[_ngcontent-mtu-c15] > tr[_ngcontent-mtu-c15] > th[_ngcontent-mtu-c15]{cursor:pointer}</style>
+    <style type="text/css">/* Chart.js */
+       /*
+       * DOM element rendering detection
+       * https://davidwalsh.name/detect-node-insertion
+       */
+       @keyframes chartjs-render-animation {
+       from { opacity: 0.99; }
+       to { opacity: 1; }
+       }
+       .chartjs-render-monitor {
+       animation: chartjs-render-animation 0.001s;
+       }
+       /*
+       * DOM element resizing detection
+       * https://github.com/marcj/css-element-queries
+       */
+       .chartjs-size-monitor,
+       .chartjs-size-monitor-expand,
+       .chartjs-size-monitor-shrink {
+       position: absolute;
+       direction: ltr;
+       left: 0;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       overflow: hidden;
+       pointer-events: none;
+       visibility: hidden;
+       z-index: -1;
+       }
+       .chartjs-size-monitor-expand > div {
+       position: absolute;
+       width: 1000000px;
+       height: 1000000px;
+       left: 0;
+       top: 0;
+       }
+       .chartjs-size-monitor-shrink > div {
+       position: absolute;
+       width: 200%;
+       height: 200%;
+       left: 0;
+       top: 0;
+       }
+    </style>
+    <style>.ngb-highlight{font-weight:700}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      const interviewQuestion = [{
+        id: 1,
+        question: 'Points feel important for projects',
+        answer: '- x.toFixed(2); // returns 9.66 for currency<br/>- SELECT * FROM `tbl_patient_details` WHERE `user_name` LIKE \'%Yoge%\'<br/>- JS navigator.onLine',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 2,
+        question: 'Notes',
+        answer: '- JavaScript variables are containers for storing data values.<br/><br/><strong>Valid Syntax:</strong><br/><code>var person = "John Doe", carName = "Volvo", price = 200; // Multiple variables comma separated<br/>var $$$ = "Hello World"; // can use $ as variable name<br/>var _lastName = "Johnson";<br/>var _ = \'test\';<br/>console.log(_); // Output: test, You can use _ as variable<br/><br/>const variable cant reassign value else it will gives error but when we update const array or object we can do it.<br/>const a = \'a\';<br/>a = \'b\'; // Uncaught TypeError: Assignment to constant variable.<br/>const c = [];<br/>c.push(2);<br/>console.log(c) // [2] even if const you can update array or object<br/><br/>null === undefined // false<br/>null == undefined // true</code><br/><br/><code>cars = ["car1","car2","car3","car4"];<br/>for (i = 0, len = cars.length, text = ""; i < len; i++) {<br/>&nbsp;text += cars[i];<br/>}<br/>console.log(text);<br/></code>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 3,
+        question: 'Points need to verify in deep',
+        answer: '- Global Scope and Function Scope and Block Scope <br/>- JavaScript bitwise operators<br/>- Callback function<br/>- async and await<br/>- Progressive Web application and web workers<br/>- DOM and BOM<br/>- Ajax, Promise and Observable<br/>- Inheritance (Classical and prototypal)<br/>- call, apply and bind<br/> OOPs<br/>- JS versions<br/>- JS performance improving strategies<br/>- JS best practice<br/>- Benefits and limitation of arrow function',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 5,
+        question: 'Primitive Data',
+        answer: 'A primitive data value is a single simple data value with no additional properties and methods.<br/>- string<br/>- number<br/>- boolean<br/>- undefined',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 6,
+        question: 'Non Primitive Data',
+        answer: '- function<br/>- object',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 7,
+        question: 'Why Functions?',
+        answer: '- You can reuse code: Define the code once, and use it many times.<br/>- You can use the same code many times with different arguments, to produce different results.',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 8,
+        question: 'MySql query ',
+        answer: "- SELECT * FROM `employee` WHERE `user_name` LIKE '%Test%'",
+        category: 'MySql',
+        open: false
+      },{
+        id: 9,
+        question: 'The this Keyword',
+        answer: "- <strong><i>this</i> keyword refers to the object it belongs to.</strong><br/>- In a method, this refers to the owner object.<br/>- Alone, this refers to the global object.<br/>- In a function, this refers to the global object.<br/>- In a function, in strict mode, this is undefined.<br/>- In an event, this refers to the element that received the event.<br/>- Methods like call(), and apply() can refer this to any object.",
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 10,
+        question: 'String methods',
+        answer: "- <em>'helloWorld'.length()</em>: String Length (variable.length)<br/>- <em>indexOf</em> Finding a String in a String(mainStr.indexOf('findingWord', positionNumber?))<br/>- <em>lastIndexOf</em> Finding a last String in a String(mainStr.lastIndexOf('findingWord', positionNumber?))<br/>- <em>Search</em> Searching for a String in a String(mainStr.search('findingWord'))<br/><i>indexOf() and search() methods looks same but not same. search doesnt access second parameter and indexOf doesnt access regex</i><br/><br/><strong>Extracting String Parts</strong><br/>- slice(start, end)(start, end can be negative value to get value from reverse side of string)<br/>- substring(start, end)(substring() cannot accept negative indexes.)<br/>- substr(start, length)(Same like slice but second parameter is string length)<br/><br/><strong>Replacing String Content</strong><br/>- (mainStr.replace('oldString', 'newString'))(replace() method does not change the string it is called on. It returns a new string.)<br/>- replaceAll() is same like replace except it replace all occurances of matching string else try replace with regex of /g global match.<br/><br/>- Uppercase to lower case mainstring.toUpperCase()<br/>- lower case to upper case mainstring.toLowerCase()<br/><br/>- concat() joins two or more strings string1.concat(bindingString, string2) eg string1.concat(' ', string2)<br/>- The trim() method removes whitespace from both sides of a string<br/><br/><strong>JavaScript String Padding</strong><br/>- eg. '7'.padStart(4,0) reults 0007 simillarly '7'.padEnd(4,0) equals 7000<br/><br/><strong>Extracting String Characters</strong><br/>- charAt(position) <br/>- charCodeAt(position)<br/>- Property access [ ]<br/>- If no character is found, [ ] returns undefined, while charAt() returns an empty string.<br/>- Property access is read only. str[0] = \"A\" gives no error (but does not work!)<br/><br/><strong>Converting a String to an Array</strong><br/>- A string can be converted to an array with the split(string) method",
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 11,
+        question: 'NaN - Not a Number',
+        answer: "- NaN is a JavaScript reserved word indicating that a number is not a legal number.<br/>- typeof NaN is number<br/>- isNaN() function returns true if variable is not a number",
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 12,
+        question: 'Number methods',
+        answer: "- The toString() method returns a number as a string.<br/>- toFixed() returns a string, with the number written with a specified number of decimals<code>var x = 9.656;<br/>x.toFixed(0); // returns 10<br/>x.toFixed(2); // returns 9.66<br/>x.toFixed(4); // returns 9.6560<br/>x.toFixed(6); // returns 9.656000</code><br/>- toPrecision() returns a string, with a number written with a specified length<br/>- valueOf() returns a number as a number.",
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 13,
+        question: 'Array',
+        answer: "- An array is a special variable, which can hold more than one value at a time.<br/>- Creating an Array<br/>- var cars = ['Saab', 'Volvo', 'BMW'];<br/>- var cars = new Array('Saab', 'Volvo', 'BMW');<br/>- arr.length<br/>- arr.sort();<br/>- Array.forEach() function<br/>- array.push()<br/>- array.pop()<br/>- array.shift()<br/>- array.unshift()",
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 14,
+        question: 'How to recognize is variable is array?',
+        answer: "- Array.isArray(ArrayVariableName)<br/>- ArrayVariableName.constructor.toString().indexOf(\"Array\") > -1 returns true then variable is array<br/>- ArrayVariableName.constructor === Array // returns true if array",
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 15,
+        question: 'Array Function',
+        answer: "<strong>Converting Arrays to Strings</strong><br/>-  ArrayVariableName.toString();<br/>-  ArrayVariableName.join(' * ')(default is , but in join we can define variable or character like * to join array to string)<br/>- Using delete may leave undefined holes in the array. Use pop() or shift() instead.<br/><br/><strong>Splicing an Array</strong><br/>- The splice() method can be used to add new items to an array<br/>- <i>Original Array is getting updated</i><br/>- arrayVariable.splice(locationAdded, howManyShouldRemove, listOfArrayCommaSeparate)<br/>- Update original array<br/><code>var fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'];<br/>fruits.splice(2, 0, 'best', 'nest'); // (7) [\"Banana\", \"Orange\", \"best\", \"nest\", \"Lemon\", \"Apple\", \"Mango\"] // It adds two element at second position if second parameter will have number it will remove that much elements from array <br/>fruits.splice(2); // returns ['Lemon', 'Apple', 'Mango'] and original array updates to fruits = ['Apple', 'Mango']<br/>fruits.splice(-2); // ['Apple', 'Mango']<br/>fruits.splice(1, 3); // ['Orange', 'Lemon']<br/>fruits.splice(-3, -1); // ['Lemon', 'Apple']</code><br/><br/><strong>Merging (Concatenating) Arrays</strong><br/>- array1.concat(array2, array3)<br/></br><strong>Slicing an Array</strong><br/>- array.slice(1)<br/>- slice method slice out a piece of array into new array(On minus vlue array from last to previous get sliced)<br/>- <i>New array generated</i><br/>- slice can use with two ways first way slice having one parameter no of elements from left gets removed and in second way we pass 2 parameters from and to.<br/><code>var fruits = [\"Banana\", \"Orange\", \"Lemon\", \"Apple\", \"Mango\"];<br/>var citrus = fruits.slice(1, 3); // [\"Orange\", \"Lemon\"]<br/>var citrus = fruits.slice(-3, -1); // [\"Lemon\", \"Apple\"]<br/>var citrus = fruits.slice(2); // [\"Lemon\", \"Apple\", \"Mango\"]<br/>var citrus = fruits.slice(-2); // [\"Apple\", \"Mango\"]</code><br/><br/><strong>Sorting an Array</strong><br/><code>var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];<br/>fruits.sort(); // [\"Apple\", \"Banana\", \"Mango\", \"Orange\"]<br/>var fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];<br/>fruits.reverse(); // [\"Mango\", \"Apple\", \"Orange\", \"Banana\"] reverse array</code>",
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 16,
+        question: 'JavaScript Array Iteration Methods',
+        answer: "<strong>Array.forEach()</strong><br/>Note that the function takes 3 arguments:</br>The item value<br/>The item index<br/>The array itself<br/><code>var txt = '';<br/>var numbers = [45, 4, 9, 16, 25];<br/>numbers.forEach((value, index, array) => {<br/>&nbsp;&nbsp;txt = txt + value + '\n';<br/>});</code><br/><br/><strong>Array.map()</strong><br/>Note that the function takes 3 arguments:</br>The item value<br/>The item index<br/>The array itself<br/><code>var numbers1 = [45, 4, 9, 16, 25];<br/>var numbers2 = numbers1.map((value, index, array)=>{<br/>&nbsp;&nbsp;return value * 2;<br/>});</code><br/><br/><strong>Array.filter()</strong><br/>Note that the function takes 3 arguments:</br>The item value<br/>The item index<br/>The array itself<br/><code>var numbers1 = [45, 4, 9, 16, 25];<br/>var numbers2 = numbers1.map((value, index, array)=>{<br/>&nbsp;&nbsp;return value * 2;<br/>});</code><br/><br/><strong>Array.reduce()</strong><br/>Note that the function takes 4 arguments:</br>The total (the initial value / previously returned value)<br/>The item value<br/>The item index<br/>The array itself<br/><i>We have reduceRight() to take care of works from left-to-right in the array.</i><br/><br/><code>var numbers1 = [45, 4, 9, 16, 25];<br/>var numbers2 = numbers1.reduce((total, value, index, array)=>{<br/>&nbsp;&nbsp;return total + value;<br/>});</code><br/><br/><strong>Array.every()</strong><br/>In every loop if every element from array satisfy condition then returns true<br/>Note that the function takes 3 arguments:<br/>The item value<br/>The item index<br/>The array itself<br/><br/><code>var numbers1 = [45, 4, 9, 16, 25];<br/>var numbers2 = numbers1.every((value, index, array)=>{<br/>&nbsp;&nbsp;return total + value;<br/>});</code><br/><br/><strong>Array.some()</strong><br/>In every loop if every element from array satisfy condition then returns true<br/>Note that the function takes 3 arguments:<br/>The item value<br/>The item index<br/>The array itself<br/><br/><code>var numbers1 = [45, 4, 9, 16, 25];<br/>var numbers2 = numbers1.some((value, index, array)=>{<br/>&nbsp;&nbsp;return total + value;<br/>});</code><br/><br/><strong>Array.find()</strong><br/>Returns value of the first array element that passes a test function<br/>Note that the function takes 3 arguments:<br/>The item value<br/>The item index<br/>The array itself<br/><br/><code>var numbers1 = [45, 4, 9, 16, 25];<br/>var numbers2 = numbers1.find((value, index, array)=>{<br/>&nbsp;&nbsp;return value > 18;<br/>});</code><br/><br/><strong>Array.findIndex()</strong><br/>Returns index of the first array element that passes a test function<br/>Note that the function takes 3 arguments:<br/>The item value<br/>The item index<br/>The array itself<br/><br/><code>var numbers1 = [45, 4, 9, 16, 25];<br/>var numbers2 = numbers1.findIndex((value, index, array)=>{<br/>&nbsp;&nbsp;return value > 18;<br/>});</code>",
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 17,
+        question: 'Date Methods',
+        answer: "- Date.parse() method to convert it to milliseconds<br/>- getFullYear(): Get the year as a four digit number (yyyy)<br/>getMonth(): Get the month as a number (0-11)<br/>getDate(): Get the day as a number (1-31)<br/>getHours(): Get the hour (0-23)<br/>getMinutes(): Get the minute (0-59)<br/>getSeconds(): Get the second (0-59)<br/>getMilliseconds(): Get the millisecond (0-999)<br/>getTime(): Get the time (milliseconds since January 1, 1970)<br/>getDay(): Get the weekday as a number (0-6)<br/>Date.now(): Get the time. ECMAScript 5.",
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 18,
+        question: 'Math Methods',
+        answer: "- The JavaScript Math object allows you to perform mathematical tasks on numbers.<br/>- Unlike other objects, the Math object has no constructor.<br/><br/><strong>Number to Integer</strong><br/>Math.round(x):	Returns x rounded to its nearest integer<br/>Math.ceil(x): Returns x rounded up to its nearest integer<br/>Math.floor(x): Returns x rounded down to its nearest integer<br/>Math.trunc(x): Returns the integer part of x (new in ES6): returns the integer part of x<br/>Math.sign(): (new in ES6): returns if x is negative, null or positive<br/><code>Math.sign(-4); // returns -1 <br/>Math.sign(0); // returns 0<br/>Math.sign(4); // returns 1</code><br/><br/>Math.pow(): returns the value of x to the power of y<br/><code>Math.pow(8, 2); // returns 64</code><br/><br/>Math.sqrt(): returns the square root of x<br/><code>Math.sqrt(64); // returns 8</code><br/><br/>Math.abs(): returns absolute positive value<br/><code>Math.abs(-4.7); // returns 4.7</code><br/><br/>Math.sin(): returns the sine (a value between -1 and 1) of the angle x (given in radians)<br/><code>Math.sin(90 * Math.PI / 180); // returns 1 (the sine of 90 degrees)</code><br/><br/>Math.min() and Math.max(): can be used to find the lowest or highest value in a list of arguments<br/><code>Math.min(0, 150, 30, 20, -8, -200); // returns -200</code><br/><br/>Math.random(): returns a random number between 0 (inclusive), and 1 (exclusive)<br/><code>Math.random(); // returns a random number</code>",
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 19,
+        question: 'Switch Case behaviour',
+        answer: "<strong>Switch behaviour with and without break</strong><br/><br/><i>With Break</i><br/><code>switch (3) {<br/>&nbsp;case 0:<br/>&nbsp;&nbsp;day = \"Sunday\";<br/>&nbsp;&nbsp;break;<br/>&nbsp;case 1:<br/>&nbsp;&nbsp;day = \"Monday\";<br/>&nbsp;&nbsp;break;<br/>&nbsp;case 2:<br/>&nbsp;&nbsp;day = \"Tuesday\";<br/>&nbsp;&nbsp;break;<br/>&nbsp;case 3:<br/>&nbsp;&nbsp;day = \"Wednesday\";<br/>&nbsp;&nbsp;break;<br/>&nbsp;case 4:<br/>&nbsp;&nbsp;day = \"Thursday\";<br/>&nbsp;&nbsp;break;<br/>&nbsp;case 5:<br/>&nbsp;&nbsp;day = \"Friday\";<br/>&nbsp;&nbsp;break;<br/>&nbsp;case 6:<br/>&nbsp;&nbsp;day = \"Saturday\";<br/>&nbsp;&nbsp;break<br/>}<br/> // Output: Wednesday</code><br/><br/><i>Without Break</i><br/><code>switch (3) {<br/>&nbsp;case 0:<br/>&nbsp;&nbsp;day = \"Sunday\";<br/>&nbsp;case 1:<br/>&nbsp;&nbsp;day = \"Monday\";<br/>&nbsp;case 2:<br/>&nbsp;&nbsp;day = \"Tuesday\";<br/>&nbsp;case 3:<br/>&nbsp;&nbsp;day = \"Wednesday\";<br/>&nbsp;case 4:<br/>&nbsp;&nbsp;day = \"Thursday\";<br/>&nbsp;case 5:<br/>&nbsp;&nbsp;day = \"Friday\";<br/>&nbsp;case 6:<br/>&nbsp;&nbsp;day = \"Saturday\";<br/>}<br/> // Output: Saturday</code><br/><br/><p><strong>If you omit the break statement, the next case will be executed even if the evaluation does not match the case.</strong></p><code>var x = \"0\";<br/>switch (x) {<br/>&nbsp;case 0:<br/>&nbsp;&nbsp;text = \"Off\";<br/>&nbsp;&nbsp;break;<br/>&nbsp;case 1:<br/>&nbsp;&nbsp;text = \"On\";<br/>&nbsp;&nbsp;break;<br/>&nbsp;default:<br/>&nbsp;&nbsp;text = \"No value found\";<br/>}<br/>// Output: No value found as 0 consider as false condition</code><br/><br/>- Switch cases use strict comparison (===).<br/>",
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 20,
+        question: 'Different Kinds of Loops',
+        answer: "<code>for</code> - loops through a block of code a number of times<br/><code>for/in</code> - loops through the properties of an object<br/><code>for/of</code> - loops through the values of an iterable object<br/><code>while</code> - loops through a block of code while a specified condition is true<br/><code>do/while</code> - also loops through a block of code while a specified condition is true<br/>- It is better to use a for loop, a for of loop, or Array.forEach() when the order is important.<br/><br/><strong>Code syntax</strong><br/><code>for (let i = 0; i < arr.length; ++i)<br/>arr.forEach((v, i) => { /* ... */ })<br/>for (let i in arr)<br/>for (const v of arr)</code>",
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 21,
+        question: 'JavaScript Regular Expressions',
+        answer: "- A regular expression is a sequence of characters that forms a search pattern<br/><strong>Syntax</strong><br/><code> /pattern/modifiers; </code><br/><strong>Modifiers</strong><br/><em>i</em>: Perform case-insensitive matching<br/><em>g</em>: Perform a global matching<br/><em>m</em>: Perform multiline matching<br/><br/><strong>Usage</strong><br/>Regular expression often used with <strong>search(), replace()</strong><br/><code>\"Visit W3Schools!\".search(\"W3Schools\") // Without regex<br/>\"Visit W3Schools!\".search(/w3schools/i)</code> // With regex<br/><br/>\"Visit Microsoft!\".replace(\"Microsoft\", \"W3Schools\") // string replace without regex<br/>\"Visit Microsoft!\".replace(/microsoft/i, \"W3Schools\") // string replace with regex<br/><br/><strong>Using test()</strong><br/><code>/e/.test(\"The best things in life are free!\"); //true<br/>/e/.exec(\"The best things in life are free!\"); // [\"e\", index: 2, input: \"The best things in life are free!\", groups: undefined]</code><br/><br/><strong>Error Name Values</strong><br/><strong>EvalError</strong>	An error has occurred in the eval() function<br/><strong>RangeError</strong>	A number \"out of range\" has occurred<br/><strong>ReferenceError</strong>	An illegal reference has occurred<br/><strong>SyntaxError</strong>	A syntax error has occurred<br/><strong>TypeError</strong>	A type error has occurred<br/><strong>URIError</strong>	An error in encodeURI() has occurred<br/><br/><em>Newer versions of JavaScript do not throw EvalError. Use SyntaxError instead.</em>",
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 21,
+        question: 'JavaScript Hoisting',
+        answer: '- Hoisting is JavaScripts default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function)<br/>- Hoisting is JavaScripts default behavior of moving all declarations to the top of the current scope.<br/>- Variables defined with var are hoisted to the top and can be initialized at any time.<br/></br><code>carName = "Volvo";<br/>let carName;<br/>Uncaught ReferenceError: Cannot access \'carName\' before initialization<br/><br/>carName = "Volvo";<br/>const carName;<br/>Uncaught SyntaxError: Missing initializer in const declaration</code>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 22,
+        question: '<strong>The JavaScript this Keyword</strong>',
+        answer: '- this keyword refers to the object it belongs to.<br/><code>In a method, <em><strong>this</strong></em> refers to the owner object.<br/>Alone, <em><strong>this</strong></em> refers to the global object.<br/>In a function, <em><strong>this</strong></em> refers to the global object.<br/>In a function, in strict mode, <em><strong>this</strong></em> is undefined.<br/>In an event, <em><strong>this</strong></em> refers to the element that received the event.<br/>Methods like call(), and apply() can refer <em><strong>this</strong></em> to any object.</code>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 23,
+        question: 'JavaScript Arrow Function',
+        answer: '- this keyword refers to the object it belongs to.<br/><code>In a method, <em><strong>this</strong></em> refers to the owner object.<br/>Alone, <em><strong>this</strong></em> refers to the global object.<br/>In a function, <em><strong>this</strong></em> refers to the global object.<br/>In a function, in strict mode, <em><strong>this</strong></em> is undefined.<br/>In an event, <em><strong>this</strong></em> refers to the element that received the event.<br/>Methods like call(), and apply() can refer <em><strong>this</strong></em> to any object.</code><br/></br/><strong>Limitation of arrow function</strong><br/>https://www.javascripttutorial.net/es6/when-you-should-not-use-arrow-functions/<br/>- Behaviour of this is diff as well as arrow function cant be constructor so cant use with constructor. // Arrow function do not have prototype property<br/>- Object methods<br/>- class<br/>- prototype methods<br/>- Function uses arguments object<br/>- Event handling (https://codepen.io/yogeshjadhav/pen/poRqByV) <br/><strong>Benefits of arrow function</strong><br/>- Scope safety<br/>- Compactness<br/>- Clarity<br/>- Well as callback function',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 24,
+        question: 'JavaScript Classes',
+        answer: '- ECMAScript 2015, also known as ES6, introduced JavaScript Classes.<br/>- JavaScript Classes are templates for JavaScript Objects.',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 25,
+        question: 'JavaScript JSON',
+        answer: '- JSON is a format for storing and transporting data.<br/>- JSON stands for <strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation<br/>JSON.parse(): convert string to JSON<br/>JSON.stringify(): Convert JSON to string',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 26,
+        question: '<strong>JavaScript Coding Convension</strong>',
+        answer: '<a href="https://www.w3schools.com/js/js_conventions.asp">Reference Link</a>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 27,
+        question: '<strong>JavaScript Best Practices</strong>',
+        answer: '<strong>Avoid global variables, avoid new, avoid ==, avoid eval()</strong><br/><a href="https://www.w3schools.com/js/js_best_practices.asp">Reference Link</a>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 28,
+        question: '<strong>JavaScript Performance</strong>',
+        answer: '- Reduce Activity in Loops<br/>- Reduce DOM Access<br/>- Reduce DOM Size<br/>- Avoid Unnecessary Variables<br/>- Delay JavaScript Loading (Add Javascript files at the bottom of file)<br/>- Avoid Using with',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 29,
+        question: '<strong>New keywords in ECMA5 and 6</strong>',
+        answer: '- await<br/>- class<br/>- enum<br/>- export<br/>- extends<br/>- import<br/>- let<br/>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 30,
+        question: '<strong>JS major release with point</strong>',
+        answer: '<strong>ES3 ((1999))</strong>: REGEX, Added try catch<br/><strong>ES5</strong>: Added "strict mode", Added JSON support, Added Array iteration methods<br/><strong>ES6</strong>: Added let and const, Added default parameter values<br/><strong>ECMAScript 2016</strong>: Added exponential operator (**)<br/><strong>ECMAScript 2017</strong>: Added async<br/><strong>Added rest / spread properties, Added asynchronous iteration, Additions to RegExp</strong>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 31,
+        question: '<strong>HTML Constraint Validation</strong>',
+        answer: '<em>HTML constraint validation is based on</em>eg: disabled, max, min, pattern, required, type, etc<br/><br/><h3>JavaScript Validation API</h3><strong>Methods</strong><br/>checkValidity(), setCustomValidity()',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 32,
+        question: '<strong>Creating a JavaScript Object</strong>',
+        answer: '<strong>Define and create a single object, using an object literal</strong>.<br/><code>var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</code><br/><br/><strong>Define and create a single object, with the keyword new</strong>.<br/><code>var person = new Object();<br/>person.firstName = "John";<br/>person.lastName = "Doe";<br/>person.age = 50;<br/>person.eyeColor = "blue";</code><br/><br/><strong>Define an object constructor, and then create objects of the constructed type.</strong><br/><br/><strong>Object.create()</strong><br/><br/><strong>Object Methods</strong><br/>Object.values(): <br/><code>var person = {name:"John", age:30, city:"New York"};<br/>var myArray = Object.values(person); // (3) ["John", 30, "New York"]<br/>var myArray1 = Object.keys(person); // (3) ["name", "age", "city"]</code>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 33,
+        question: 'Javascript inheritance',
+        answer: '- Prototypal Inheritance (All JavaScript objects inherit properties and methods from a prototype)<br/><code>function Person(first, last, age, eyecolor) {<br/>&nbsp;&nbsp;this.firstName = first;<br/>&nbsp;&nbsp;this.lastName = last;<br/>&nbsp;&nbsp;this.age = age;<br/>&nbsp;&nbsp;this.eyeColor = eyecolor;<br/>}<br/>var myFather = new Person("John", "Doe", 50, "blue");<br/>var myMother = new Person("Sally", "Rally", 48, "green");</code><br/><br/>- classical inheritance (To create a class inheritance, use the extends keyword)<br/><code>class Car {<br/>  &nbsp;constructor(brand) {<br/>&nbsp;&nbsp;this.carname = brand;<br/>&nbsp;}<br/>&nbsp;present() {<br/>&nbsp;&nbsp;return \'I have a \' + this.carname;<br/>&nbsp;}<br/>}<br/>class Model extends Car {<br/>&nbsp;constructor(brand, mod) {<br/>&nbsp;&nbsp;super(brand);<br/>&nbsp;&nbsp;this.model = mod;<br/>&nbsp;}<br/>&nbsp;show() {<br/>&nbsp;&nbsp;return this.present() + \', it is a \' + this.model;<br/>&nbsp;}<br/>}<br/>let myCar = new Model("Ford", "Mustang");<br/>document.getElementById("demo").innerHTML = myCar.show();</code>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 34,
+        question: 'JavaScript Function Call() and apply()',
+        answer: '- call(): with help of call object 1 constructor can utilize object2 values<br/><code>var person = {<br/>  fullName: function() {<br/>    return this.firstName + " " + this.lastName;<br/>  }<br/>}<br/>var person1 = {<br/>  firstName:"John",<br/>  lastName: "Doe"<br/>}<br/>person.fullName.call(person1, "Oslo", "Norway");  // Will return "John Doe", "Oslo", "Norway"</code><br/><br/>apply(): <br/>- With the apply() method, you can write a method that can be used on different objects.<br/><br/><strong>The Difference Between call() and apply()</strong>: <br/>The call() method takes arguments separately.<br/>The apply() method takes arguments as an array.<br/><br/><strong>apply()</strong><br/><code>var person = {<br/>  fullName: function(city, country) {<br/>    return this.firstName + " " + this.lastName + "," + city + "," + country;<br/>  }<br/>}<br/>var person1 = {<br/>  firstName:"John",<br/>  lastName: "Doe"<br/>}<br/>person.fullName.apply(person1, ["Oslo", "Norway"]);<br/>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 35,
+        question: 'Javascript Closures',
+        answer: '- An anonymous function didnt die after parent function gets execcuted and die.<br/><br/><code>var add = (function () {<br/>  var counter = 0;<br/>  return function () {counter += 1; return counter}<br/>})();<br/>add();<br/>add();<br/>add();</code>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 36,
+        question: 'Javascript callback functions',
+        answer: '- Callback function are function passed as an argument to another function<br/>- This technique allows a function to call another function<br/>- A callback function can run after another function has finished.<br/><br/><strong>When to Use a Callback?</strong><br/>callbacks really shine are in asynchronous functions, where one function has to wait for another function (like waiting for a file to load).<br/>Good example of callback function is setTimeout() where first parameter is function we passed as argument and second one is time',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 37,
+        question: 'Asynchronous JavaScript',
+        answer: '- Functions running in parallel with other functions are called asynchronous',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 38,
+        question: 'JavaScript Promises',
+        answer: '- A Promise is a JavaScript object that links flow between code need time to load and code who is linked to previous code and in waiting condition.<br/><code><strong>Promise Syntax</strong><br/>let myPromise = new Promise(function(myResolve, myReject) {<br/>// "Producing Code" (May take some time)<br/>&nbsp;myResolve(); // when successful<br/>&nbsp;myReject();  // when error<br/>});<br/>// "Consuming Code" (Must wait for a fulfilled Promise)<br/>myPromise.then(<br/>&nbsp;function(value) { /* code if successful */ },<br/>&nbsp;function(error) { /* code if some error */ }<br/>);</code><br/><br/><strong>Promise Object Properties</strong><br/>- Pending<br/>- Fulfilled<br/>- Rejected',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 39,
+        question: 'JavaScript async and await',
+        answer: '- ECMAScript 2017 introduced the JavaScript keywords async and await.<br/>- async and await helps to write promise in better way. Where we want to add promise we add async keyword to that function, which includes include promise and with the help of await we resolve the promise.<br/>Only important part is await need to add in async method<br/>example<br/><code>async function myDisplay() {<br/>&nbsp;let myPromise = new Promise(function(myResolve, myReject) {<br/>&nbsp;&nbsp;myResolve("I love You !!");<br/>&nbsp;});<br/>&nbsp;document.getElementById("demo").innerHTML = await myPromise;<br/>}<br/>myDisplay();</code>',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 40,
+        question: 'JavaScript HTML DOM',
+        answer: '- With the HTML DOM, JavaScript can access and change all the elements of an HTML document.<br/>- The DOM is a W3C (World Wide Web Consortium) standard.<br/><br/>The W3C DOM standard is separated into 3 different parts:<br/>- Core DOM - standard model for all document types<br/>- XML DOM - standard model for XML documents<br/>- HTML DOM - standard model for HTML documents<br/>- Never use document.write() after the document is loaded. It will overwrite the document.',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 41,
+        question: 'Event Bubbling or Event Capturing in javascript',
+        answer: '- There are two ways of event propagation in the HTML DOM, bubbling and capturing.<br/>- The bubbles event property returns a Boolean value that indicates whether or not an event is a bubbling event.<br/><br/>In bubbling the inner most element\'s event is handled first and then the outer: the <p> element\'s click event is handled first, then the <div> element\'s click event.<br/><br/>In capturing the outer most element\'s event is handled first and then the inner: the <div> element\'s click event will be handled first, then the <p> element\'s click event.',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 42,
+        question: 'JS popup alert',
+        answer: '- alert()<br/>- confirm()<br/>- prompt()',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 43,
+        question: 'JS navigator.onLine',
+        answer: '- If your internet connection is on then navigator.onLine returns true else false. Can use to clreat offline products',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 44,
+        question: 'Cookies, session storage and localstorage',
+        answer: '<strong>Cookies</strong><br/>- Cookies are data, stored in small text files, on your computer.<br/><br/><em>Limitation</em><br/>- less size<br/>- If user will disabled cookies, intension using cookies goes failed<br/>- As on client side can tamper with data<br/>- Can expires hence no consistency<br/><br/><em>Benefits</em><br/>- simple to use<br/>- as stored at client side no server resources are required<br/><br/><strong>SessionStorage:</strong><br/><em>Benefits</em><br/>- SessionStorage is used for storing data on the client side.<br/>- Maximum limit of data saving in SessionStorage is about 5 MB.<br/>- Data in the SessionStorage exist till the current tab is open if we close the current tab then our data will also erase automatically from the SessionStorage.<br/><strong>Local Storage</strong><br/>- Simillar like session storage except no expiration time',
+        category: 'JavaScript',
+        open: false
+      },{
+        id: 45,
+        question: 'Web Workers API',
+        answer: '- A web worker is a JavaScript running in the background, without affecting the performance of the page.',
+        category: 'JavaScript',
+        open: false
+      }];
+      const loadInterviewQuestion = interviewQuestion.map((quest) => 
+        <div className="accordion-item mb-2" key={quest.question}>
+          <h2 className="accordion-header" id="headingOne">
+            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onClick={expandAccord(quest)} dangerouslySetInnerHTML={{__html: quest.question}} />
+          </h2>
+          <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div className="accordion-body" dangerouslySetInnerHTML={{__html: quest.answer}} />
+          </div>
+        </div>
+      );
+      function expandAccord(quest) {
+        quest.open = true;
+      }
+      const Section = <div className="row">
+        <div className="col-3">
+          <div className="card text-white bg-primary mb-3">
+            <div className="card-header">Header</div>
+            <div className="card-body">
+              <h5 className="card-title">Primary card title</h5>
+              <p className="card-text">Some quick example text</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-3">
+          <div className="card text-white bg-primary mb-3">
+            <div className="card-header">Header</div>
+            <div className="card-body">
+              <h5 className="card-title">Primary card title</h5>
+              <p className="card-text">Some quick example text</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-3">
+          <div className="card text-white bg-primary mb-3">
+            <div className="card-header">Header</div>
+            <div className="card-body">
+              <h5 className="card-title">Primary card title</h5>
+              <p className="card-text">Some quick example text</p>
+            </div>
+          </div>
+        </div>
+      </div>;
+
+      ReactDOM.render(
+        <div className="container pt-5">
+          <h1 className="mb-3">Welcome to Study Materials</h1>
+          {/*Section*/}
+          <div className="accordion" id="accordionExample">
+            {loadInterviewQuestion}
+          </div><br/>
+          <p>Thank you W3Schools for document</p>
+        </div>,
+        document.getElementById('root')
+      );
+    </script>
+    <!--
+      Note: this page is a great way to try React but it's not suitable for production.
+      It slowly compiles JSX with Babel in the browser and uses a large development build of React.
+
+      Read this section for a production-ready setup with JSX:
+      https://reactjs.org/docs/add-react-to-a-website.html#add-jsx-to-a-project
+
+      In a larger project, you can use an integrated toolchain that includes JSX instead:
+      https://reactjs.org/docs/create-a-new-react-app.html
+
+      You can also use React without JSX, in which case you can remove Babel:
+      https://reactjs.org/docs/react-without-jsx.html
+    -->
+  </body>
+</html>
