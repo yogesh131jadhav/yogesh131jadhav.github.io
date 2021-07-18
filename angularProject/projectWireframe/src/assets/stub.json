@@ -1,0 +1,12 @@
+{
+  "user": [{
+    "username": "test123",
+    "password": "test123",
+    "fname": "James",
+    "lname": "Bond",
+    "createdBy": "Harry",
+    "createdAt": "1626621108048",
+    "createdBy": "Harry",
+    "createdAt": "1626621108048"
+  }]
+}
