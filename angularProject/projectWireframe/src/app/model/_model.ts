@@ -11,3 +11,11 @@ export interface User extends Common {
   fname?: string;
   lname?: string;
 }
+
+export interface userGetRequest {
+  
+}
+
+export interface userGetResponse {
+  
+}

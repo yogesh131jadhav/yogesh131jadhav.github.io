@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  menus: [{title: 'Home', path: '/home'},{title: 'About Us', path: '/aboutUs'},{title: 'Contact Us', path: '/contactUs'},{title: 'Question', path: '/question'}]
+  menus: [{title: 'Home', path: '/home'},{title: 'About Us', path: '/aboutUs'},{title: 'Contact Us', path: '/contactUs'},{title: 'Question', path: '/question'}],
+  SMSGateWayKey: '12123123123'
 };
 
 /*
