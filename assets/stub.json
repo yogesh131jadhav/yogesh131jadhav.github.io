@@ -1,0 +1,57 @@
+{
+	"blog": [{
+		"title": "Interview as a interviewer",
+		"summaryTitle": "Interview as a interviewer",
+		"summary": "Interview as a interviewer"
+	}, {
+		"title": "Interview as a interviewee",
+		"summaryTitle": "Interview as a interviewee",
+		"summary": "Interview as a interviewee"
+	}, {
+		"title": "Web Worker",
+		"summaryTitle": "Web Worker",
+		"summary": "Web Workers are used for running heavy scripts in a background thread without causing the site to freeze.",
+		"description": [{
+			"list": [
+				"Web Workers are used for running heavy scripts in a background thread without causing the site to freeze.",
+				"You can write a new web worker using new keyword.",
+				"const worker = new Worker('worker.js')"
+			]
+		}]
+	}, {
+		"title": "Service Worker",
+		"summaryTitle": "Service Worker",
+		"summary": "Service Workers are a type of web worker.",
+		"description": [{
+			"list": [
+				"Service Workers are a type of web worker.",
+				"They are useful for modifying responses from network requests.",
+				"They basically act as proxies.",
+				"They are used for building offline applications",
+				"You can write a service worker using register method.",
+				"navigator.serviceWorker.register('sw.js')"
+			]
+		}]
+	}, {
+		"title": "Difference between Web worker vs Service Worker",
+		"summaryTitle": "Difference between Web worker vs Service Worker",
+		"summary": "Service workers are basically web workers but with specific approach.",
+		"description": [{
+			"list": [
+				"Service workers are basically web workers but with specific approach.",
+				"Service workers are specifically target for proxing api responses and for offline application."
+			]
+		}]
+	}, {
+		"title": "What is pure function",
+		"summaryTitle": "What is pure function",
+		"summary": "For Pure function, function should meet two criterias",
+		"description": [{
+			"list": [
+				"For Pure function, function should meet two criterias",
+				"For given same input function should always return same output",
+				"The function should not cause any side effects outside of its scope"
+			]
+		}]
+	}]
+}
