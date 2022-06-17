@@ -2,11 +2,82 @@
 	"blog": [{
 		"title": "Interview as a interviewer",
 		"summaryTitle": "Interview as a interviewer",
-		"summary": "Interview as a interviewer"
+		"summary": "Interview as a interviewer",
+		"description": [{
+			"list": [
+				"This is difficult area to work as a interviewer as no one can judge a candidate in an hour.",
+				"Interview is process to filter out suitable candidate for requirement.",
+				"At time of interview there will be number of candidate and filtering candidate is always a difficult task anyway.",
+				"There is kind of misunderstanding about interview process with respect of interviewer as well as interviewee.",
+				"I have some tips [Questions] for interviewer to rate candidate best",
+				{
+					"listTitle": "Questions as below",
+					"list": [{
+            "questionAnswer": {
+                "question": "Tell me about yourself",
+                "answer": "Here we can judge candidate regarding how much he knows about himself"
+              }
+          },{
+            "questionAnswer": {
+              "question": "Reason for leaving company",
+              "answer": "This is most difficult question in interview as because answer of this question can be use in any angle. This is where a candidate can grab a technology"
+            }
+          },{
+            "questionAnswer": {
+              "question": "Situation where candidate handle difficulties",
+              "answer": "Here we can able to see how much actually candidate have worked upon and his capabilities about handling situation"
+            }
+          },{
+            "questionAnswer": {
+              "question": "Technical Questions",
+              "answer": "For technical issue if we consider 100% scope we can devide scope in below way, 10% Theoretical question, 30% basic concepts, 30% online interview questions technical, 30% Writing tasks to check how much hands on candidate have on technology"
+              }
+          }]
+				}
+			]
+		}]
 	}, {
 		"title": "Interview as a interviewee",
 		"summaryTitle": "Interview as a interviewee",
-		"summary": "Interview as a interviewee"
+		"summary": "Interview as a interviewee",
+		"description": [{
+			"list": [
+				"Based on each individual everyone have different thought about this question. I would like to share mine.",
+				"Giving interview is an art. I must say candidate have many misunderstanding about flow and process.",
+				"Technical knowledge is must have part of interview but mostly a candidate gets judged for his communication, how he handle scenario",
+				{
+          "listTitle": "Some tips for interviewee",
+					"list": [
+						"First focus on resume instead of studying whole theory and projects code as because a person don't know about himself how can anyone believe in his information, Even though that person doesnt look confidence as well as trust worthy",
+						"For resume try to use templates like novoresume or anyone which looks good or awesome. Never ever forget first impression is always your last impression.",
+						"Try to create a story of your overall experience, in IT most of people live life like a robot, even after 10 to 15 year of experience we found ourself",
+						"blank most of time so try to create a story of some amazing, some stupid, some supporting experience content. A movie must be masala movie to attract user right?",
+						"You are hero of your movie now decide how your movie must like. Try to make it at least 10-15 mins introduction."
+					]
+				},
+				{
+					"listTitle": "Introducing is a skill, never ever do below mistakes",
+					"list": [
+						"Start introduction with greeting like Good morning, good evening sir or madam my name is ______.",
+						"Never tell complete educational details like in 10th these are marks, 12th these are marks try to mention your highest education.",
+						"Do not tell your family history or where are you residing whole address. Make it simple with city where you are residing.",
+						"No one have whole day so try to make your experience elaborative but pointwise [Dont add useless information].",
+						"Try to add some experience where you did some good jobs or highlight your certification",
+						"There is one psycological point which I would like to add is reason of you are working as IT person, if possible try to elaborate.",
+						"Your objective is something which represents you. Instead of living in future or kind of over budget try to mention what you believe in so interviewer will able to understnad your maturity and your understanding."
+					]
+				},
+				{
+          "listTitle": "Main Course",
+					"list": [
+						"These are just starter of your interview now coming to main course technical interview. Here are some tips while preparing for interview.",
+						"If you have an idea about golden circle a person get inspired with single question why he is doing something, so whenever you are choosing any technology you must have an idea why you are choosing it, it can be any reason like IT have more package in this field, stay clear and be positive with your believe. no need to lie for creating good impression.",
+						"For technology stack confirm reason why are you working on these technology, how these technology can change you and change world. Try to collect history of technology so you will have something to compare and elaborate information regarding partcular technology.",
+						"Try to get hands on, on basic of technology and if you will ask me I would highly suggest try to use basic editor than autosupport editor like I mostly use notepad++ instead of visual studio. It actually make no sense at first glance you can feel slow speed of development but once you get hands on on editor you will get to know that you have hands on on syntaxes and you will see your development speed soon after consistency."
+					]
+				}
+			]
+		}]
 	}, {
 		"title": "Web Worker",
 		"summaryTitle": "Web Worker",
@@ -51,6 +122,26 @@
 				"For Pure function, function should meet two criterias",
 				"For given same input function should always return same output",
 				"The function should not cause any side effects outside of its scope"
+			]
+		}]
+	}, {
+		"title": "Javascript tricky questions",
+		"summaryTitle": "Javascript tricky questions",
+		"summary": "Some practicable questions",
+		"description": [{
+			"list": [
+				"localstorage.getItem('data') if data is not set at localstorage then what will be output",
+				"How to get unque array of object based on one value"
+			]
+		}]
+	}, {
+		"title": "Javascript time events like timeinterval and settimeout",
+		"summaryTitle": "Javascript time events",
+		"summary": "Javascript time events like timeinterval and settimeout",
+		"description": [{
+			"list": [
+				"localstorage.getItem('data') if data is not set at localstorage then what will be output",
+				"How to get unque array of object based on one value"
 			]
 		}]
 	}]
