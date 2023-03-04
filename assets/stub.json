@@ -125,9 +125,116 @@
 			]
 		}]
 	}, {
+		"title": "What is PWA",
+		"summaryTitle": "What is PWA",
+		"summary": "Progressive web application, is a type of application software delivered through the web, built using common web technologies including HTML, CSS, JavaScript, and WebAssembly.",
+		"description": [{
+			"list": [
+				"Progressive web application, is a type of application software delivered through the web, built using common web technologies including HTML, CSS, JavaScript, and WebAssembly."
+			]
+		}]
+	}, {
+		"title": "What is Capacitor and how to create android and ios apps using Capacitor?",
+		"summaryTitle": "What is Capacitor and how to create android and ios apps using Capacitor?",
+		"summary": "Capacitor is a cross-platform native runtime to build modern web apps that can run natively on iOS or Android with ease.",
+		"description": [{
+			"list": [
+				"Please refer link for detailed information https://betterprogramming.pub/how-to-convert-your-angular-application-to-a-native-mobile-app-android-and-ios-c212b38976df"
+			]
+		}]
+	}, {
+		"title": "Important links for angular to android app development",
+		"summaryTitle": "Important links for angular to android app development",
+		"summary": "Some important link to create android and iphone app using capacitor",
+		"description": [{
+			"list": [
+				"https://betterprogramming.pub/how-to-convert-your-angular-application-to-a-native-mobile-app-android-and-ios-c212b38976df",
+        "https://capacitorjs.com/docs/getting-started/environment-setup",
+        "https://developer.android.com/studio/build/building-cmdline",
+        "https://developer.android.com/studio/command-line/adb#wireless-adb-android-11",
+        "https://developer.android.com/studio/intro/update.html#download-with-gradle"
+			]
+		}]
+	}, {
 		"title": "Javascript tricky questions",
 		"summaryTitle": "Javascript tricky questions",
 		"summary": "Some practicable questions",
+		"description": [{
+			"list": [
+				"localstorage.getItem('data') if data is not set at localstorage then what will be output",
+				"How to get unque array of object based on one value",
+        "What will be output of [...new Set([\"a\",1,\"1\",\"2\",3,1])]",
+        {
+          "listTitle": "HTML",
+					"list": [
+						"Semantic element",
+						"HTML empty elements <br/><hr/>",
+						"Types of element [inline, block]",
+						"What is doctype and why we use it?",
+						"Canvas vs SVG",
+            "How to add reference of file script and style <link rel=”stylesheet” type=”text/css” href=”mystyle.css” />",
+            "sessionstorage, localstorage",
+            "indexDB",
+            "datalist tag [provides autocomplete feature in the HTML files]",
+            "As we can manage list with div tag why we use list elements",
+            "What is the benefit of collapsing the white space in HTML?",
+            "What is data transfer API? [drag drop]",
+            "What does an HTML5 web worker do?",
+            "What are the custom attributes in HTML5? [<element data-*='value'/>]",
+            "What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML elements?",
+            "rowspan colspan",
+            "What are the server-sent events in HTML5?",
+            "What is the usage of a novalidate attribute for the form tag that is introduced in HTML5?",
+            "What is a manifest file in HTML5?",
+            "How to off autocomplete feature in HTML"
+					]
+        },
+        {
+          "listTitle": "CSS",
+					"list": [
+            "limitation",
+						"Flex",
+						"Print Media Query",
+						"float [question if div1 float right div2 float left div3 and div4 dont have float then output]",
+            "clear in float",
+            "how to apply ellipse",
+            "SCSS, SASS",
+            "pseudo element, pseudo classes and pseudo selector",
+            "diff between rem and em",
+            "calc",
+            "sibling selector ~",
+            "adjacent sibling selector +",
+            "immediate child selector >",
+            "diff between reset and normalize css",
+            "box sizing border-box vs content-box or beccause of padding child div dont want break parent div",
+            "how we can handle dark and light mode in browser var(--color-obj); :root { --color-obj: #000}",
+            "What is progressive rendering?",
+            "animation in css",
+            "How will you fix browser-specific styling issues?",
+            "How will you select the anchor element whose href attribute starts with https? a[href^='https']"
+					]
+				},
+        {
+          "listTitle": "JS",
+					"list": [
+            "Literals and variables",
+						"Premitive and non Premitive data type",
+						"regex",
+						"Functions support regex match, search and replace",
+            "this",
+            "for in and for of diff?",
+            "hoisting",
+            "event bubbling",
+            "types of inheritance",
+            "call, apply and bind"
+					]
+				}
+			]
+		}]
+	}, {
+		"title": "Javascript time events like timeinterval and settimeout",
+		"summaryTitle": "Javascript time events",
+		"summary": "Javascript time events like timeinterval and settimeout",
 		"description": [{
 			"list": [
 				"localstorage.getItem('data') if data is not set at localstorage then what will be output",
@@ -135,9 +242,9 @@
 			]
 		}]
 	}, {
-		"title": "Javascript time events like timeinterval and settimeout",
-		"summaryTitle": "Javascript time events",
-		"summary": "Javascript time events like timeinterval and settimeout",
+		"title": "Javascript unique array element with new Set",
+		"summaryTitle": "Javascript unique array",
+		"summary": "The most difficult part of development is getting out distinct array element from array of diff types like string, number, objects",
 		"description": [{
 			"list": [
 				"localstorage.getItem('data') if data is not set at localstorage then what will be output",
