@@ -133,7 +133,14 @@ dd {
 }
 
 blockquote {
-  margin: 0 0 1rem;
+  margin: 0;
+  padding: 10px;
+  border-left: 5px solid #134B70;
+}
+
+blockquote * {
+  font-size: 20px !important;
+  margin: 0;
 }
 
 b,
