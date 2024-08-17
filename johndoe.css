@@ -11511,8 +11511,8 @@ pre .code {
 
 .header {
   position: relative;
-  height: 80vh;
-  min-height: 600px;
+  height: 240px;
+  min-height: 240px;
   background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/imgs/blog3.jpg);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/imgs/blog3.jpg);
   background-size: cover;
@@ -11520,6 +11520,11 @@ pre .code {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
+}
+
+.header.home {
+  height: 80vh;
+  min-height: 600px;
 }
 
 .header .container {
@@ -11544,14 +11549,33 @@ pre .code {
 }
 
 .header .header-content .header-title {
-  font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
+  font-size: 60px;
   font-weight: bold;
   line-height: .7;
   margin-bottom: 25px;
   color: inherit;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.header.home .header-content .header-title {
+  font-size: 100px;
 }
 
 .header .header-content .header-mono {
+  display: none;
+}
+
+.header .header-content .btn-primary {
+  display: none;
+}
+
+.header.home .header-content .btn-primary {
+  display: inline-block;
+}
+
+.header.home .header-content .header-mono {
+  display: block;
   letter-spacing: 5px;
   font-weight: 500;
   font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
