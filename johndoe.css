@@ -11384,9 +11384,9 @@ pre .code {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
+  -webkit-justify-content: flex-start;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: flex-start;
   max-width: 180px;
 }
 
