@@ -1,0 +1,116 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+}
+.justifyEnd {
+    justify-content: flex-end;
+}
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    li {
+        margin: 0 10px;
+    }
+}
+nav {
+    background: #017FC4;
+    * {
+        color: #fff;
+    }
+    .socialMedia {
+        li {
+            margin: 0;
+        }
+        a {
+            padding: 7px;
+            border-radius: 100%;
+            display: inline-block;
+            background: #fff;
+            margin: 5px;
+        }
+    }
+}
+.navWrapper {
+    background: #fff;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.navWrapper img {
+    height: 60px;
+    margin: 20px;
+}
+.navWrapper li {
+    margin: 0 10px;
+}
+.bannerCarousel {
+    height: calc(100% - 150px);
+}
+.navWrapper a {
+    padding: 38px 10px;
+    margin: 0 5px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: bold;
+}
+.testimonial {
+    background: url('./vision.jpg') center bottom no-repeat;
+    background-size: cover;
+}
+.carousel {
+    overflow: hidden;
+}
+.carousel img.d-block {
+    height: 100%;
+}
+.pad60 {
+    padding: 60px 0;
+}
+.pad150 {
+    padding: 150px 0;
+}
+.carouselTestamonial .carousel-item {
+    height: 150px;
+}
+.testimonial h2,
+.testimonial p,
+.carousel-caption h5 {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon,
+.carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
+    filter: none;
+}
+.testimonial {
+    position: relative;
+}
+.testimonial .carouselTestamonial {
+    position: relative;
+    z-index: 1;
+}
+.testimonial::before {
+    position: absolute;
+    content: ' ';
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #fff;
+}
+.links li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.links li a:hover {
+    text-decoration: underline;
+}
