@@ -1,6 +1,11 @@
 * {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
     font-size: 14px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
 }
 a {
     text-decoration: none;
@@ -18,7 +23,10 @@ ul {
     }
 }
 nav {
-    background: #017FC4;
+    background: #ee7811;
+    &.fill {
+        background: #fff;
+    }
     * {
         color: #fff;
     }
@@ -44,22 +52,52 @@ nav {
     margin: 20px;
 }
 .navWrapper li {
-    margin: 0 10px;
+    margin: 0;
+    position: relative;
+}
+.bannerOthers {
+    min-height: 200px;
+}
+.aboutBanner {
+    background: url('./ban1.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutBanner:before {
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.aboutBanner h2 {
+    position: relative;
+    z-index: 2;
+    font-size: 50px;
 }
 .bannerCarousel {
     height: calc(100% - 150px);
 }
 .navWrapper a {
-    padding: 38px 10px;
+    padding: 38px 25px;
     margin: 0 5px;
     display: inline-block;
     text-transform: uppercase;
     color: #333;
     font-weight: bold;
 }
-.testimonial {
+.enquiry {
+    position: relative;
     background: url('./vision.jpg') center bottom no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .carousel {
     overflow: hidden;
@@ -73,12 +111,9 @@ nav {
 .pad150 {
     padding: 150px 0;
 }
-.carouselTestamonial .carousel-item {
-    height: 150px;
-}
-.testimonial h2,
-.testimonial p,
-.carousel-caption h5 {
+.enquiry h2,
+.enquiry p,
+.enquiry .carousel-caption h5 {
     color: #fff;
     position: relative;
     z-index: 1;
@@ -94,7 +129,7 @@ nav {
     position: relative;
     z-index: 1;
 }
-.testimonial::before {
+.enquiry::before {
     position: absolute;
     content: ' ';
     background: rgba(0, 0, 0, 0.5);
@@ -103,9 +138,9 @@ nav {
     width: 100%;
     height: 100%;
 }
-.carousel-dark .carousel-indicators [data-bs-target] {
+/* .carousel-dark .carousel-indicators [data-bs-target] {
     background-color: #fff;
-}
+} */
 .links li a {
     color: #fff;
     text-transform: uppercase;
@@ -113,4 +148,295 @@ nav {
 }
 .links li a:hover {
     text-decoration: underline;
+}
+
+/* stroke */
+nav.stroke > ul li a,
+nav.fill > ul li a {
+  position: relative;
+}
+nav.stroke > ul li a:after,
+nav.fill > ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke > ul li a:hover:after {
+  width: 100%;
+}
+nav.fill > ul li a {
+  transition: all 2s;
+}
+nav.fill > ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill > ul li a.active,
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill > ul li a.active:after,
+nav.fill > ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+.navUl {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.aboutComp .items {
+    cursor: pointer;
+    background: #fff;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+.aboutComp .items .rows {
+    align-items: center;
+}
+.aboutComp .items h4 {
+    color: #ee7811;
+    margin-top: 10px;
+}
+.aboutComp .items:hover {
+    background: #ee7811;
+    transition-duration: 0.5s;
+}
+.aboutComp .items:hover * {
+    color: #fff;
+    fill: #fff;
+    transition-duration: 0.5s;
+}
+.services .title,
+.about .title {
+    text-transform: uppercase;
+    color: #ee7811;
+    text-shadow: 0 0 black;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.about {
+    position: relative;
+}
+.about .titleImg {
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    border: 1px dashed rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+.about::before {
+    content: ' ';
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background: #ee7811;
+    top: 0;
+    z-index: 0;
+}
+.services .accordion {
+    flex-direction: column;
+}
+.services .accordion li {
+    font-size: 18px;
+    line-height: 50px;
+    position: relative;
+    cursor: pointer;
+}
+.services .accordion li::after {
+    background: #ee7811;
+    content: ' ';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition-duration: 0.5s;
+}
+.services .accordion li:hover,
+.services .accordion li.active {
+    color: #ee7811;
+}
+.services .accordion li:hover::after,
+.services .accordion li.active::after {
+    width: 80%;
+    transition-duration: 0.5s;
+}
+.services {
+    position: relative;
+}
+.services::after {
+    position: absolute;
+    content: ' ';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: #ee7811;
+    z-index: 0;
+}
+.servicesWrapper {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+.servicesWrapper .row {
+    position: relative;
+    z-index: 3;
+}
+.servicesWrapper::before,
+.servicesWrapper::after {
+    position: absolute;
+    z-index: 1;
+    content: ' ';
+    background: #fff;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+}
+.servicesWrapper::before {
+    height: 100%;
+    z-index: 2;
+}
+.servicesWrapper::after {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    height: 30%;
+    z-index: 1;
+}
+.servicesImg {
+    float: right;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px dashed rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #ee7811;
+}
+.carouselTestamonial .carousel-item {
+    min-height: 350px;
+    text-align: center;
+}
+.testimonial .carousel-caption {
+    top: 130px;
+}
+.imgWrapper {
+    width: 138px;
+    height: 138px;
+    margin: auto;
+    border-radius: 100%;
+    display: inline-block;
+    border: 1px dashed rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+.btn-outline-primary {
+    --bs-btn-color: #ee7811;
+    --bs-btn-border-color: #ee7811;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ee7811;
+    --bs-btn-hover-border-color: #ee7811;
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #ee7811;
+    --bs-btn-active-border-color: #ee7811;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #ee7811;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #ee7811;
+    --bs-gradient: none;
+}
+.lineHeight40 li {
+    line-height: 40px;
+}
+.navWrapper nav li > ul {
+    flex-direction: column;
+    position: absolute;
+    z-index: 4;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    left: 5px;
+    width: 100%;
+    max-height: 0; /* Collapsed state */
+    transition: max-height 0.5s ease; /* Smooth transition for max-height */
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+.navWrapper nav li:hover > ul {
+    max-height: 400px;
+    transition-duration: 0.5s;
+}
+.navWrapper nav li > ul a {
+    padding: 10px;
+    display: block;
+    margin: 0;
+}
+.navWrapper nav.fill li > ul a.active,
+.navWrapper nav.fill li > ul a:hover {
+    color: #ee7811;
+    transition-duration: 0.5s;
+}
+.navWrapper nav.fill li > ul a.active:after,
+.navWrapper nav.fill li > ul a:hover:after {
+    z-index: -10;
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    opacity: 1;
+}
+blockquote {
+    border-left: 5px solid #ee7811;
+    padding-left: 10px;
+    padding: 10px;
+}
+.primaryColor {
+    color: #ee7811;
+}
+.flexColomn {
+    flex-direction: column;
+}
+.listStyleDisc {
+    list-style-type: disc;
+    margin-left: 15px;
+}
+.aboutDescription {
+    display: none;
+}
+.aboutDescription.active {
+    display: block;
+}
+.aboutComp .list-group-item {
+    cursor: pointer;
+}
+/* Keyframes */
+@-webkit-keyframes fill {
+    0% {
+      width: 0%;
+      height: 1px;
+    }
+    50% {
+      width: 100%;
+      height: 1px;
+    }
+    100% {
+      width: 100%;
+      height: calc(100% - 4px);
+      background: #333;
+    }
 }
