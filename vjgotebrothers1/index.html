@@ -1,5 +1,7 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -72,14 +74,15 @@
         </nav>
         <div class="navWrapper">
             <div class="container">
-                <div class="row">
+                <div class="row position-relative">
                     <div class="col-md-4">
                         <a class="m-0 p-0" href="./index.html">
                             <img src="./goteLogo.png" />
                         </a>
+                        <svg onclick="toggleNav()" class="hamburgerNav" xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
                     </div>
                     <div class="col-md-8">
-                        <nav class="fill">
+                        <nav class="fill" id="fillNav">
                             <ul class="justifyEnd">
                                 <li><a href="./about.html">Why We?</a></li>
                                 <li><a href="./services.html">Services</a></li>
@@ -183,7 +186,7 @@
                             <image height="100%" clip-path="url(#shape1)"  xlink:href="./about.jpg"></image>
                         </svg-->
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 aboutDetailsWrap">
                         <h2 class="title">Why choose V.J. Gote?</h2>
                         <p>To begin with, I would like to express my sincere gratitude to our esteemed customers, clients, bankers, family members and also to express my genuine appreciation for the employees who work efficiently and deliver the projects on time.</p>
                         <p>We excel in today’s competitive environment by presenting our clients the most cost-effective solutions for Infra./ Construction services that they appreciate forever.</p>
@@ -368,6 +371,9 @@
                 });
                 $event.target.classList.add('active');
                 document.querySelector('#dummy h2').innerHTML = $event.target.innerHTML;
+            }
+            function toggleNav() {
+                document.getElementById('fillNav').classList.toggle('active');
             }
         </script>
     </body>

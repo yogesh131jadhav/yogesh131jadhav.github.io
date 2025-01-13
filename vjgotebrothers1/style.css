@@ -464,7 +464,80 @@ blockquote {
 .banner .carousel-dark .carousel-indicators [data-bs-target] {
     border: 2px solid #fff;
 }
-
+.hamburgerNav {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    display: none;
+}
+.aboutDetailsWrap {
+    position: relative;
+    z-index: 10;
+}
+@media screen and (max-width: 767px) {
+    .hamburgerNav {
+        display: block;
+    }
+    .navWrapper a {
+        padding: 10px;
+        display: block;
+    }
+    nav.fill {
+        position: fixed;
+        z-index: 10;
+        background: #fff;
+        width: 100%;
+        left: 0;
+        height: auto;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 1s ease;
+    }
+    nav.fill ul {
+        flex-direction: column;
+    }
+    nav.fill.active {
+        max-height: 500px;
+        transition: max-height 1s ease;
+    }
+    .bannerCarousel {
+        height: 280px;
+    }
+    .banner .carousel-item .carousel-caption h5 {
+        font-size: 20px;
+    }
+    .aboutComp * {
+        text-align: center;
+    }
+    .aboutComp svg {
+        width: 60px;
+    }
+    .aboutDetailsWrap {
+        margin-top: 20px;
+    }
+    .about::before {
+        top: -420px;
+        transform: rotate(90deg);
+    }
+    .about {
+        overflow: hidden;
+    }
+    #dummy {
+        margin-top: 40px;
+    }
+    .servicesImg {
+        width: 100%;
+    }
+    .testimonial .carousel-indicators {
+        display: none;
+    }
+    .aboutDescription {
+        margin-top: 30px;
+    }
+    .aboutBanner h2 {
+        font-size: 35px;
+    }
+}
 /* Keyframes */
 /* The typing effect */
 @keyframes typing {
