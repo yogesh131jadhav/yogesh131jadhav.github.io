@@ -31,6 +31,7 @@ nav {
         color: #fff;
     }
     .socialMedia {
+        justify-content: flex-end;
         li {
             margin: 0;
         }
@@ -220,6 +221,7 @@ nav.fill > ul li a:hover:after {
     fill: #fff;
     transition-duration: 0.5s;
 }
+.testimonial .title,
 .services .title,
 .about .title {
     text-transform: uppercase;
@@ -269,6 +271,12 @@ nav.fill > ul li a:hover:after {
 .services .accordion li:hover,
 .services .accordion li.active {
     color: #ee7811;
+}
+.services .accordion li.active {
+    overflow: hidden;
+    border-right: .15em solid #ee7811;
+    white-space: nowrap;
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
 }
 .services .accordion li:hover::after,
 .services .accordion li.active::after {
@@ -337,14 +345,17 @@ nav.fill > ul li a:hover:after {
     top: 130px;
 }
 .imgWrapper {
-    width: 138px;
-    height: 138px;
+    width: 100px;
+    height: 100px;
     margin: auto;
     border-radius: 100%;
     display: inline-block;
     border: 1px dashed rgba(0, 0, 0, 0.3);
     position: relative;
     overflow: hidden;
+}
+.imgWrapper img {
+    width: 100%;
 }
 .btn-outline-primary {
     --bs-btn-color: #ee7811;
@@ -424,7 +435,48 @@ blockquote {
 .aboutComp .list-group-item {
     cursor: pointer;
 }
+.banner .carousel-item .carousel-caption {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+    right: 10%;
+    left: auto;
+    bottom: -40%;
+    transition-duration: 0.5s;
+    max-width: 600px;
+    /*width: 20%;*/
+}
+.banner .carousel-item .carousel-caption h5 {
+    font-size: 40px;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-right: .15em solid #ee7811;
+    white-space: nowrap;
+    animation-delay: 1s;
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+}
+.banner .carousel-item.active .carousel-caption {
+    bottom: 50%;
+    transition-duration: 0.5s;
+}
+.banner .carousel-dark .carousel-indicators [data-bs-target] {
+    border: 2px solid #fff;
+}
+
 /* Keyframes */
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
 @-webkit-keyframes fill {
     0% {
       width: 0%;
