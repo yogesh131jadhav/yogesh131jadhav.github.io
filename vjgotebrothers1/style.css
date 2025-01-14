@@ -419,6 +419,15 @@ blockquote {
 .primaryColor {
     color: #ee7811;
 }
+.primaryBorder {
+    border-color: #ee7811;
+}
+.primaryBgColor {
+    background: #ee7811;
+}
+.whiteColor {
+    color: #fff;
+}
 .flexColomn {
     flex-direction: column;
 }
@@ -474,6 +483,17 @@ blockquote {
     position: relative;
     z-index: 10;
 }
+footer {
+    background: #ee7811;
+    color: #fff;
+    padding-top: 70px;
+}
+footer a {
+    color: #fff;
+}
+.noBorder {
+    border-color: transparent;
+}
 @media screen and (max-width: 767px) {
     .hamburgerNav {
         display: block;
@@ -483,7 +503,7 @@ blockquote {
         display: block;
     }
     nav.fill {
-        position: fixed;
+        position: absolute;
         z-index: 10;
         background: #fff;
         width: 100%;
