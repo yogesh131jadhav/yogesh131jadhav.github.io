@@ -1,0 +1,149 @@
+[{
+    "title": "What is angular",
+    "tag": "Angular",
+    "details": [
+        "#### this is test description ",
+        " - test is best",
+        " - I love best ",
+        " ```Javascript",
+        "function callMe() {",
+        " console.log('test');",
+        "}"
+    ]
+},{
+    "title": "What is angular life cycle",
+    "tag": "Angular",
+    "details": [
+        "#### this is test description ",
+        " - test is best",
+        " - I love best ",
+        " ```Javascript",
+        "function callMe() {",
+        " console.log('test');",
+        "}"
+    ]
+},{
+    "title": "What is react",
+    "tag": "React",
+    "details": [
+        "#### this is test description ",
+        " - test is best",
+        " - I love best ",
+        " ```Javascript",
+        "function callMe() {",
+        " console.log('test');",
+        "}"
+    ]
+},{
+    "title": "Features of Javascript",
+    "tag": "Javascript",
+    "details": [
+        "#### Features",
+        "- Javascript support event-driven, functional and imperative programing style",
+        "- Allows dynamic typing, run time object creation and variable assignments",
+        "- Uses prototype for inheritance and object creation",
+        "- Javascript can work both at frontend [Client side] as well as backend [Server side]",
+        "- Javascript supports async behaviour using promise, async and await ",
+        "- Light weight with minimal setup things to easy and fast bootstraping of application"
+    ]
+},{
+    "title": "Data types in Javascript",
+    "tag": "Javascript",
+    "details": [
+        "#### Two major types",
+        "__Primitive Data Type__ [A data type where value will not divide further]",
+        "- Number",
+        "- String",
+        "- Boolean",
+        "- undefined",
+        "- null",
+        "- symbol",
+        "\n__Non primitive Data type__ [A data type where values will be having diff data type inside]",
+        "- Object",
+        "- Array",
+        "- Function"
+    ]
+},{
+    "title": "First class function, first order function, high ordered function",
+    "tag": "Javascript",
+    "details": [
+        "#### There are 3 major types of function as below ",
+        " - ___First Class Function___ ",
+        "   - First class function is a functions which treated as like any other variable ",
+        "    - Useful when you need to store, pass or return dynamic function ",
+        " - ___First Order Function___ ",
+        "   - First order functions are standard functions which didnt accept any function as a argument or not even return any function ",
+        "    - Useful for basic operation ",
+        " - ___Hight Order Function___ ",
+        "   - Correct in reverse manner of first order function, high order function is function which either take function as an argument or return function ",
+        "    - Useful for functional programming such as callback, event handling or array transformation ",
+        "\n \n \n",
+        "<iframe height='300' style='width: 100%;' scrolling='no' title='first class function, first order function and high ordered function' src='https://codepen.io/yogeshjadhav/embed/ByaoBMp?default-tab=js' frameborder='no' loading='lazy' allowtransparency='true' allowfullscreen='true'>See the Pen <a href='https://codepen.io/yogeshjadhav/pen/ByaoBMp'> first class function, first order function and high ordered function</a> by yogesh jadhav (<a href='https://codepen.io/yogeshjadhav'>@yogeshjadhav</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>",
+        "\n \n \n",
+        " ```Javascript",
+        "\/\/This is First Class Function ",
+        "const fun = () => {",
+        " console.log('test');",
+        " } ",
+        " /\/ Here in this example we can see function is set to const variable, which we can call anywhere ",
+        " throughout the scope ",
+        " ",
+        "------------------------------------------------------------------------------------------------------- ",
+        "\/\/This is First Order Function ",
+        " function callMe() {",
+        " console.log('test');",
+        " } ",
+        " /\/ Just like first class function this function also severs same purpose but having some differences",
+        "as you can see",
+        " This Function does not assigned to any variable or const",
+        " as well as this function not accepting any function as a argument or return any function. It only works",
+        "with basic data types  ",
+        " ",
+        " ------------------------------------------------------------------------------------------------------- ",
+        "\/\/This is High Order Function ",
+        "function callMe(fun()) {",
+        " return fun()",
+        " }",
+        " /\/ Unlike all above example this function serves a special purpose",
+        " Here in Hight order function, function either take function as a argument or return a function or support",
+        " both"
+    ]
+},{
+    "title": "Call, apply, bind diff",
+    "tag": "Javascript",
+    "details": [
+        "#### There are 3 major ways to bind this to calling function. All are working same way but with a  little diff which are as below ",
+        " - call() ",
+        "   - Immediate invoking function ",
+        "    - accept arguments individually ",
+        " - apply() ",
+        "   - Apply is same like call and gets execute immediately ",
+        "    - Accepts arguments in an array ",
+        " - bind() ",
+        "   - On the other hand bind didnt get call immediately. We need to call it separately ",
+        "    - The most imp thing is create a new with this bound ",
+        " <iframe height='300' style='width: 100%;' scrolling='no' title='Call(), Apply() and Bind()' src='https://codepen.io/yogeshjadhav/embed/OPJyLmy?default-tab=html%2Cresult' frameborder='no' loading='lazy' allowtransparency='true' allowfullscreen='true'>See the Pen <a href='https://codepen.io/yogeshjadhav/pen/OPJyLmy'>Call(), Apply() and Bind()</a> by yogesh jadhav (<a href='https://codepen.io/yogeshjadhav'>@yogeshjadhav</a>)on <a href='https://codepen.io'>CodePen</a>.</iframe> ",
+        " ```Javascript",
+        "\/\/This is call() function ",
+        " function greet(greet, punc) {",
+        " console.log(greet + ', ' + this.name + punc); ",
+        " } ",
+        " const person = { name: 'Alice'}; ",
+        " greet.call(person, 'Hello', '!');  /\/ O/P- Hello Alice !",
+        "------------------------------------------------------------------------------------------------------- ",
+        "\/\/This is apply() function ",
+        " function greet(greet, punc) {",
+        " console.log(greet + ', ' + this.name + punc); ",
+        " } ",
+        " const person = { name: 'Alice'}; ",
+        " greet.apply(person, ['Hello', '!']);  /\/ O/P- Hello Alice !",
+        "------------------------------------------------------------------------------------------------------- ",
+        "\/\/This is bind() function ",
+        " function greet(greet, punc) {",
+        " console.log(greet + ', ' + this.name + punc); ",
+        " } ",
+        " const person = { name: 'Alice'}; ",
+        " const boundGreet = greet.bind(person, 'Hey'); ",
+        " boundGreet('!!!');  /\/ O/P- Hello Alice ! "
+    ]
+}]
