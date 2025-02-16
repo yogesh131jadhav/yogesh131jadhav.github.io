@@ -122,7 +122,9 @@
         " - bind() ",
         "   - On the other hand bind didnt get call immediately. We need to call it separately ",
         "    - The most imp thing is create a new with this bound ",
+        "\n \n \n",
         " <iframe height='300' style='width: 100%;' scrolling='no' title='Call(), Apply() and Bind()' src='https://codepen.io/yogeshjadhav/embed/OPJyLmy?default-tab=html%2Cresult' frameborder='no' loading='lazy' allowtransparency='true' allowfullscreen='true'>See the Pen <a href='https://codepen.io/yogeshjadhav/pen/OPJyLmy'>Call(), Apply() and Bind()</a> by yogesh jadhav (<a href='https://codepen.io/yogeshjadhav'>@yogeshjadhav</a>)on <a href='https://codepen.io'>CodePen</a>.</iframe> ",
+        "\n \n \n",
         " ```Javascript",
         "\/\/This is call() function ",
         " function greet(greet, punc) {",
@@ -146,4 +148,240 @@
         " const boundGreet = greet.bind(person, 'Hey'); ",
         " boundGreet('!!!');  /\/ O/P- Hello Alice ! "
     ]
+},{
+    "title": "Hoisting",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Promise",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Async & Await",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Closure",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Function Declaration & function expression",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "callback",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "callback hell",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Scope",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Event Bubbling",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Event Capturing",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Package Manager [npm, yarn]",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Debounce & Throttle",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Web Builder",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Template Literals",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Deep copy & Shallow copy",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Pass by value & pass by reference",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Types of errors",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Optional Chaining",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "XSS, CORS",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "ES versions",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Destructuring",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Rest & Spread operator",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Type coersion",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "object.freeze()",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Modules",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Polyphill",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "ArrayBuffer",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "event delegation",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "temporal dead zone",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Event Loop",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Obfuscator",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "is Javascript single threaded?",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Memoization",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Reflow and repaint",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "weakset and weakmap",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Currying",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Prototypes",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Prototypal inheritance vs classical inheritance",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Prototypal & prototype chaining",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Generator Function",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Heaps",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "How Javascript executes in browser?",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Memory leak",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "System design",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Dependency Injection",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Bigint in JS",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Dynamic arguments to function",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Flatmap vs flat",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Preventdefault & Stoppropagation",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Webworker, service worker, websocket",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Improve performance and security",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "How to optimize app",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Indexed DB",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Lazy loading",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "How to check performance at inspect -> performance at browser",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Diff between fetch(), XMLHttpReq",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Type of & instance of",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Regex",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "SOLID principal",
+    "tag": "Javascript",
+    "details": []
 }]
