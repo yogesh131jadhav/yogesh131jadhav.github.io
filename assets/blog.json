@@ -384,4 +384,108 @@
     "title": "SOLID principal",
     "tag": "Javascript",
     "details": []
+},{
+    "title": "Web Accessibility (a11y)",
+    "tag": "Javascript",
+    "details": [
+        "Need to follow WCAG guidelines",
+        "Need to follow semantic elements",
+        "Provide alt text for images",
+        "test with screen readers"
+    ]
+},{
+    "title": "Progressive Web Application (PWA)",
+    "tag": "Javascript",
+    "details": [
+        "- Usage modern web technologies to provide fast, reliable and engaging user experience.",
+        "- Key features",
+        "    - Ability to work offline",
+        "    - Receive push notification",
+        "    - Access hardware features",
+        "    - Improve engaging and performance on mobile devices"
+    ]
+},{
+    "title": "Web performance Metrics",
+    "tag": "Javascript",
+    "details": [
+        "- First contentful paint [FCP]",
+        "- Largest Contentful paint [LCP]",
+        "- Time to interactive [TTI]",
+        "- First Input Delay [FID]",
+        "- Speed Index",
+        "- Cumulative Layout Shift [CLS]"
+        "These metrics help to undrestand load experience, interactivity and visual stability of page"
+    ]
+},{
+    "title": "First contentful paint [FCP]",
+    "tag": "Javascript",
+    "details": [
+        "This metrics measures time from when a page starts loading to when any part of page of the ppages content is rendered on screen.",
+        "This could be text, image, svg or any other visible element",
+        "### Benefit",
+        "- Optimize critical rendering path",
+        "- Use efficient caching",
+        "- Preload Key Resources",
+        "- Minimize server response time",
+        "- Reduce third party scripts",
+        "- Use modern image formats"
+    ]
+},{
+    "title": "Largest Contentful paint [LCP]",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Time to interactive [TTI]",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "First Input Delay [FID]",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Speed Index",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Cumulative Layout Shift [CLS]",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Security in Frontend application",
+    "tag": "Javascript",
+    "details": [
+        "- Content Security Policy [CSP]",
+        "- Sanitize user input to prevent XSS attacks",
+        "- use HTTPs for secure connection",
+        "- Store sensitive data securely",
+        "- Keep dependencies up to date to avoid vulnerabilities"
+    ]
+},{
+    "title": "Javascript OOPs",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Cookies, Localstorage, session storage, Indexed DB",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Exception Handling",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "performance.now()",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "requestAnimationFrame()",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "Web Workers for multithreading",
+    "tag": "Javascript",
+    "details": []
+},{
+    "title": "documentFragment for DOM manipulation",
+    "tag": "Javascript",
+    "details": []
 }]
