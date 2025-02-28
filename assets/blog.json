@@ -413,7 +413,7 @@
         "- Time to interactive [TTI]",
         "- First Input Delay [FID]",
         "- Speed Index",
-        "- Cumulative Layout Shift [CLS]"
+        "- Cumulative Layout Shift [CLS]",
         "These metrics help to undrestand load experience, interactivity and visual stability of page"
     ]
 },{
