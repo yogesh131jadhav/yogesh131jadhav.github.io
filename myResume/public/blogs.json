@@ -1,0 +1,158 @@
+{
+    "blogs": [{
+        "path": "javascript-quick-interview-questions-answers",
+        "title": "Quick interview questions and answers",
+        "shortDesc": "",
+        "tags": "Javascript"
+    },{
+        "path": "event-loop",
+        "title": "What is Event Loop?",
+        "shortDesc": "",
+        "tags": "Javascript"
+    },{
+        "path": "what-is-react",
+        "title": "What is React?",
+        "shortDesc": "",
+        "tags": "React"
+    },{
+        "path": "practical-question-1",
+        "title": "What is true - false",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "practical-question-2",
+        "title": "What is false - true",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "practical-question-3",
+        "title": "0.1 + 0.2 == 0.3",
+        "shortDesc": "false",
+        "tags": "Interview-Questions"
+    },{
+        "path": "practical-question-4",
+        "title": "why type of null is object? and even after that why null == null returns true?",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "type-of-nan",
+        "title": "typeof NaN",
+        "shortDesc": "returns Number",
+        "tags": "Interview-Questions"
+    },{
+        "path": "practical-question-5",
+        "title": "[] == []",
+        "shortDesc": "false as typeof [] is object",
+        "tags": "Interview-Questions"
+    },{
+        "path": "practical-question-6",
+        "title": "{} == {}",
+        "shortDesc": "Throws Syntax error but keeping a = {}; b = {}; a == b will be false as typeof {} is object",
+        "tags": "Interview-Questions"
+    },{
+        "path": "design-pattern-modularization-scalability",
+        "title": "How do you handle large-scale application architecture in JavaScript?",
+        "shortDesc": "Design patterns, modularization, dependency management, and scalability.",
+        "tags": "Interview-Questions"
+    },{
+        "path": "object-freeze-seal",
+        "title": "What is the difference between Object.freeze() and Object.seal()?",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "v8-engine",
+        "title": "Explain the role of V8 engine in JavaScript execution.",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "reflows-repaints",
+        "title": "How to minimize reflows/repaints?",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "javascript-promise-details",
+        "title": "What's the difference between Promise.all, Promise.race, Promise.allSettled, and Promise.any in terms of error handling?",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "prototype-chain-resolution",
+        "title": "How does prototype chain resolution work in JavaScript?",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "react-event-delegation-internally",
+        "title": "How does React handle event delegation internally?",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "proxies-intercept-operation",
+        "title": "What are proxies and how can they be used to intercept operations?",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "reflect-api",
+        "title": "What's the use case for Reflect API?",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "generator-iterator",
+        "title": "What's Generators and Iterators",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "observable-promises",
+        "title": "Explain how RxJS observables differ from Promises.",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "security-javascript",
+        "title": "How to add security in javascript",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "security-javascript",
+        "title": "Design Patterns in JavaScript",
+        "shortDesc": "How would you implement the Observer, Singleton, or Factory patterns in JavaScript?, What's the difference between Mixin, Decorator, and HOC?",
+        "tags": "Interview-Questions"
+    },{
+        "path": "pub-sub",
+        "title": "Create a tiny event bus system (pub/sub).",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "vanilla-js-saftey",
+        "title": "How do you enforce type safety in vanilla JS?",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "trade-offs-typescript",
+        "title": "What are the trade-offs of using TypeScript in large-scale projects?",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "webpack-vite",
+        "title": "How webpack / vite works",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "css-performance",
+        "title": "CSS performance pipeline",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "minimize-reflows-repaints",
+        "title": "How to minimize reflows and repaints in the browser?",
+        "shortDesc": "",
+        "tags": "Interview-Questions"
+    },{
+        "path": "will-change",
+        "title": "Why is will-change used, and what are the risks of overusing it?",
+        "shortDesc": "",
+        "tags": "CSS"
+    },{
+        "path": "hardware-acceleration-vs-normal-rendering",
+        "title": "What is the difference between hardware acceleration and normal rendering?",
+        "shortDesc": "",
+        "tags": "CSS"
+    }]
+}
